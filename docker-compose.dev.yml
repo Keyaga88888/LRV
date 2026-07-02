@@ -1,0 +1,207 @@
+
+services:
+
+####################################################
+# Laravel App
+####################################################
+
+  app:
+
+    environment:
+
+      APP_ENV: local
+
+      APP_DEBUG: "true"
+
+      LOG_CHANNEL: stack
+
+      XDEBUG_MODE: develop,debug
+
+      PHP_IDE_CONFIG: serverName=Laravel
+
+    volumes:
+
+      - .:/var/www
+
+####################################################
+horizon:
+
+  environment:
+
+    APP_ENV: local
+
+reverb:
+
+  ports:
+
+    - "8080:8080"
+####################################################
+# Queue Worker
+####################################################
+
+  worker:
+
+    environment:
+
+      APP_ENV: local
+
+      APP_DEBUG: "true"
+
+####################################################
+# Scheduler
+####################################################
+
+  scheduler:
+
+    environment:
+
+      APP_ENV: local
+
+      APP_DEBUG: "true"
+
+####################################################
+# MySQL
+####################################################
+
+  mysql:
+
+    ports:
+
+      - "3306:3306"
+
+####################################################
+# Redis
+####################################################
+
+  redis:
+
+    ports:
+
+      - "6379:6379"
+
+####################################################
+# Mailpit
+####################################################
+
+  mailpit:
+
+    ports:
+
+      - "1025:1025"
+
+      - "8025:8025"
+
+####################################################
+# phpMyAdmin
+####################################################
+
+  phpmyadmin:
+
+    ports:
+
+      - "8081:80"
+
+####################################################
+# Meilisearch
+####################################################
+
+  meilisearch:
+
+    ports:
+
+      - "7700:7700"
+
+####################################################
+# MinIO
+####################################################
+
+  minio:
+
+    ports:
+
+      - "9000:9000"
+
+      - "9001:9001"
+
+####################################################
+# Soketi
+####################################################
+
+  soketi:
+
+    ports:
+
+      - "6001:6001"
+
+####################################################
+# Prometheus
+####################################################
+
+  prometheus:
+
+    ports:
+
+      - "9090:9090"
+
+####################################################
+# Grafana
+####################################################
+
+  grafana:
+
+    ports:
+
+      - "3000:3000"
+
+# Luồng hoạt động
+# docker-compose.yml
+#         +
+# docker-compose.dev.yml
+#         │
+#         ▼
+# Docker Development Environment
+# Chạy:
+# docker compose \
+# -f docker-compose.yml \
+# -f docker-compose.dev.yml \
+# up -d --build  
+
+# Tại sao lại có file này?
+# App Debug = true
+
+# Mailpit = bật
+
+# phpMyAdmin = bật
+
+# Grafana = bật
+
+# Prometheus = bật
+
+# Xdebug = bật
+# Production :
+# App Debug = false
+
+# Mailpit = tắt
+
+# phpMyAdmin = tắt
+
+# Grafana = có thể tắt
+
+# Prometheus = có thể chạy riêng
+
+# Xdebug = tắt
+# Không cần sửa file chính.
+
+
+# Đây là điểm mạnh của cách làm này
+# Bạn sẽ có:
+# docker-compose.yml
+# ↓
+# Là file dùng chung.
+# docker-compose.dev.yml
+# ↓
+# Chỉ dành cho lập trình.
+# docker-compose.prod.yml
+# ↓
+# Chỉ dành cho Production.
+# Đây là cách tổ chức mà rất nhiều dự án sử dụng Docker Compose áp dụng.

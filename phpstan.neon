@@ -1,0 +1,16 @@
+includes:
+    - vendor/nunomaduro/larastan/extension.neon
+
+parameters:
+
+    level: max
+
+    paths:
+        - app
+        - Modules
+
+    tmpDir: storage/phpstan
+
+    checkMissingIterableValueType: false
+
+    reportUnmatchedIgnoredErrors: false

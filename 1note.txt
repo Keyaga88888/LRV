@@ -1,0 +1,249 @@
+thực hành 
+tạo file log text riêng
+vào terminal
+touch note.txt
+ls
+open note.txt
+
+
+1.users
+id
+name       varchar 255    
+email          varchar 255
+birthday       date
+sex            nam/nữ
+part_id        liên kết bảng parts            bộ phận
+position_id    liên kết bảng positions        vị trí 
+type_work      fulltime/partime     
+team_id        liên kết bảng teams
+phone           varchar 255
+address         varchar 255
+status          đang làm/nghĩ việc
+start_day        datetime
+end_day          datetime
+type_account_id    liên kết bảng type_accounts           hệ thống tài khoản
+createdd_at      datetime
+update_at        datetime
+
+2 parts                           phòng ban
+id
+name           varchar 200
+createdd_at     datetime
+update_at       datetime
+
+3 positions
+id
+name           varchar 255
+createdd_at     datetime
+update_at       datetime
+
+4 teams
+id
+name           varchar 255
+part_id        liên kết bảng parts 
+createdd_at     datetime
+update_at       datetime
+
+5 type_accounts 
+id
+name           varchar 255
+description     text                mô tả
+createdd_at     datetime
+update_at       datetime
+
+6 salary_mechanisms                                      bảng cơ chế lương
+id
+user_id         liên kết bảng users
+salary          int
+ot_day          int
+ot_hour         int
+responsibility  int                dịch:trách nhiệm
+enthusiasm      int                dịch:nhiệt tình
+support         int
+salary_keep     int
+salary_need_keep     int                dịch:tháng giữ
+month_keep      int
+createdd_at     datetime
+update_at       datetime
+
+7 recruitments                   bảng tuyển dụng
+id
+position_id     liên kết bảng positions
+part_id         liên kết bảng parts 
+number          int
+prioritize      cao/trung bình/thấp    dịch:ưu tiên     tính năng
+deadline        datetime
+user_id         liên kết bảng users
+social          varchar 255
+result          đạt/ko đạt         dịch:kết quả
+status          đang tuyển/hoàn thành/trễ              dịch:trạng thái
+obstacle        varchar 255          dịch:trở ngại
+solution        varchar 255
+createdd_at     datetime
+update_at       datetime
+
+8 list_recruitments               bảng danh sách ứng viên
+id
+recruitment_id  liên kết bảng recruitments
+day             datetime
+name
+phone           varchar 255
+birthday        date
+interview       có/không      1 0             dịch: phỏng vấn
+user_id         liên kết bảng users
+result          đạt/ko đạt         dịch:kết quả
+day_work        datetime
+note            text
+createdd_at     datetime
+update_at       datetime
+
+9 facilities                      bảng cơ sở vật chất
+id
+name            varchar 255
+number          int
+description     text            dịch:miêu tả
+status          varchar 255     dịch:trạng thái
+position        varchar 255 
+need_user_id         liên kết bảng users           người phụ trách
+manager_user_id         liên kết bảng users           người bàn giao
+day             datetime
+note            text
+createdd_at     datetime
+update_at       datetime
+
+10 timesheets                      bảng chấm công     bảng tăng ca
+id
+user_id         liên kết bảng users
+day             date
+number          float
+hour            float
+createdd_at     datetime
+update_at       datetime
+
+11 arranges                                                 bảng xếp lô
+id
+day              date
+name_arrange     varchar 255
+name_customer    varchar 255
+address          varchar 255
+phone_customer   varchar 255 
+name       varchar 255 ?
+sale_user_id         liên kết bảng users           người phụ trách     
+part_id        liên kết bảng parts            bộ phận
+team_id        liên kết bảng teams
+account_social   varchar 255                            tài khoản chốt
+user_id         liên kết bảng users           người phụ trách     
+support_user_id         liên kết bảng users           người phụ trách     
+type_arrange         mới/cũ
+result          hoàn thành/chưa bốc/fail
+reaoson_fail         text
+total_arrange        int
+createdd_at     datetime
+update_at       datetime
+
+
+12 shipments                                                    bảng danh sách lô hàng
+arrange_id      liên kết bảng arranges
+customer_id     liên kết bảng customers
+car_money       int                      dịch:tiền xe
+
+createdd_at     datetime
+update_at       datetime
+
+13 customers                                                   bảng khách hàng thu mua
+id
+fullname          varchar 255
+phone          varchar 255
+address          varchar 255
+source            varchar 255                     nguồn gốc
+classify        hết hàng/còn hàng           phân loại
+product_sale          varchar 255                              mặt hàng
+scale           nhỏ/vừa/lớn                            quy mô
+care_customer_id   liên kết bảng care_customers
+information       text
+potential        thấp/trung bình/cao         tiềm năng 
+note            text
+createdd_at     datetime
+update_at       datetime
+
+12.5 products                                                 bảng sản phẩm con của danh sách lô hàng
+id
+shipment_id     liên kế bảng shipments  
+name            varchar 255
+number_in        int
+number_out        int
+price            int                      sản phảm
+createdd_at     datetime
+update_at       datetime
+
+13.5 care_customers                                             bảng lịch sử chăm sóc con của khách hàng thu mua
+id 
+day             date
+action          varchar 255
+result          text
+note            text                             ghi chú
+createdd_at     datetime
+update_at       datetime
+
+14 sells                                                      bảng bán hàng
+id  
+shipments_id         liên kế bảng shipments         có thể lấy dữ liệu của bảng products
+name            varchar 255 
+status               chưa ban/đã bán/lưu kho
+shipments_revenue              int                             dịch : daonh thu     doanh thulô hàng
+profit                         int
+storage                 có/không
+createdd_at     datetime
+update_at       datetime
+
+14.5 sell_products                                            bảng thông tin sản phẩm bán-con của bảng bán hàng
+id
+product_id           liên kết bảng products
+sell_id              liên kết bảng sells
+sell_day             date
+fullname_customer     varchar 255     
+number_sell          int
+price_sell           int
+revenue              int                             dịch : daonh thu
+atm_id                 liên kết bảng atms
+number_product       int
+bagging             chưa đóng bao/đã đóng bao                 dịch:đóng bao 
+number_bagging      int                            số lượng bao
+transport            varchar 255                             vận chuyển
+note                 text
+createdd_at     datetime
+update_at       datetime
+
+15 storages                                                   bảng lưu tồn kho 
+id 
+shipment_id     liên kế bảng shipments  
+name_storege        varchar 255
+createdd_at     datetime
+update_at       datetime
+
+16 atms
+id
+name                   varchar 255
+code                  varchar 100
+money_start           int
+money_now             int
+createdd_at     datetime
+update_at       datetime
+
+17 type_fees
+id
+name                   varchar 255
+code                  varchar 100
+type      chi/thu (o: chi , 1: thu)
+createdd_at     datetime
+update_at       datetime
+
+18 total_fees
+id
+day             date
+content         varchar 255
+money           int
+type_fee_id        liên kết bảng type_fees
+atm_id                 liên kết bảng atms
+createdd_at     datetime
+update_at       datetime

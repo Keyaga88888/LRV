@@ -1,0 +1,169 @@
+name: Laravel CI/CD
+
+on:
+  push:
+    branches:
+      - develop
+      - main
+  pull_request:
+    branches:
+      - develop
+      - main
+
+permissions:
+  contents: read
+  packages: write
+
+jobs:
+
+  quality:
+
+    name: Code Quality
+
+    runs-on: ubuntu-latest
+
+    services:
+
+      mysql:
+
+        image: mysql:8.0
+
+        env:
+          MYSQL_DATABASE: attendance_test
+          MYSQL_ROOT_PASSWORD: root
+
+        ports:
+          - 3306:3306
+
+        options: >-
+          --health-cmd="mysqladmin ping --silent"
+          --health-interval=10s
+          --health-timeout=5s
+          --health-retries=5
+
+      redis:
+
+        image: redis:7
+
+        ports:
+          - 6379:6379
+
+    steps:
+
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: 8.4
+          coverage: xdebug
+          extensions: mbstring, bcmath, pdo_mysql, redis
+
+      - name: Cache Composer
+        uses: actions/cache@v4
+        with:
+          path: vendor
+          key: composer-${{ hashFiles('composer.lock') }}
+
+      - name: Install Composer
+        run: composer install --prefer-dist --no-interaction
+
+      - name: Environment
+        run: |
+          cp .env.example .env
+          php artisan key:generate
+
+      - name: Permission
+        run: chmod -R 777 storage bootstrap/cache
+
+      - name: Database
+        env:
+          DB_CONNECTION: mysql
+          DB_HOST: 127.0.0.1
+          DB_PORT: 3306
+          DB_DATABASE: attendance_test
+          DB_USERNAME: root
+          DB_PASSWORD: root
+        run: php artisan migrate --force
+
+      - name: Pint
+        run: vendor/bin/pint --test
+
+      - name: PHPStan
+        run: vendor/bin/phpstan analyse
+
+      - name: Psalm
+        run: vendor/bin/psalm
+
+      - name: PHPUnit
+        run: php artisan test
+
+      - name: Coverage
+        run: php artisan test --coverage-clover=coverage.xml
+
+      - name: Upload Coverage
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage
+          path: coverage.xml
+
+  docker:
+
+    name: Build Docker
+
+    needs: quality
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - uses: actions/checkout@v4
+
+      - name: Build Docker
+        run: |
+          docker build -t attendance-app .
+
+  deploy-staging:
+
+    name: Deploy Staging
+
+    needs: docker
+
+    if: github.ref == 'refs/heads/develop'
+
+    runs-on: ubuntu-latest
+
+    environment: staging
+
+    steps:
+
+      - name: Deploy
+        run: |
+          echo "Deploying to Staging..."
+          # ssh ${{ secrets.STAGING_USER }}@${{ secrets.STAGING_HOST }}
+          # cd /var/www/project
+          # git pull
+          # docker compose up -d --build
+
+  deploy-production:
+
+    name: Deploy Production
+
+    needs: docker
+
+    if: github.ref == 'refs/heads/main'
+
+    runs-on: ubuntu-latest
+
+    environment: production
+
+    steps:
+
+      - name: Deploy
+        run: |
+          echo "Deploying to Production..."
+          # ssh ${{ secrets.PROD_USER }}@${{ secrets.PROD_HOST }}
+          # cd /var/www/project
+          # git pull
+          # docker compose up -d --build

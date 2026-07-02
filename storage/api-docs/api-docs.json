@@ -1,0 +1,175 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Attendance API",
+        "description": "Attendance Module API",
+        "version": "1.0.0"
+    },
+    "servers": [
+        {
+            "url": "http://localhost",
+            "description": "Local Server"
+        }
+    ],
+    "paths": {
+        "/api/v1/attendances/dashboard": {
+            "get": {
+                "tags": [
+                    "Attendance"
+                ],
+                "summary": "Dashboard Attendance",
+                "operationId": "d4786f3e75283945c89686a6edc6075a",
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "/api/v1/attendances": {
+            "get": {
+                "tags": [
+                    "Attendance"
+                ],
+                "summary": "Attendance List",
+                "operationId": "1fa9ab24272182c4a6b8fe3d0e43cc73",
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
+            },
+            "post": {
+                "tags": [
+                    "Attendance"
+                ],
+                "summary": "Create Attendance",
+                "operationId": "edac30a0e41210d163f42bde7dd03ef3",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "user_id",
+                                    "work_date",
+                                    "check_in",
+                                    "check_out",
+                                    "status"
+                                ],
+                                "properties": {
+                                    "user_id": {
+                                        "type": "integer",
+                                        "example": 1
+                                    },
+                                    "work_date": {
+                                        "type": "string",
+                                        "example": "2026-06-15"
+                                    },
+                                    "check_in": {
+                                        "type": "string",
+                                        "example": "2026-06-15 08:00:00"
+                                    },
+                                    "check_out": {
+                                        "type": "string",
+                                        "example": "2026-06-15 17:00:00"
+                                    },
+                                    "status": {
+                                        "type": "string",
+                                        "example": "Present"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "/api/v1/attendances/{id}": {
+            "put": {
+                "tags": [
+                    "Attendance"
+                ],
+                "summary": "Update Attendance",
+                "operationId": "acc7cb2fcbd8e8b8ff83efad1adf3e53",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "Attendance"
+                ],
+                "summary": "Delete Attendance",
+                "operationId": "d7ada40ff7e6aeff0f2108adde28a534",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "/api/v1/attendances/export": {
+            "post": {
+                "tags": [
+                    "Attendance"
+                ],
+                "summary": "Export Attendance Excel",
+                "operationId": "cdab418ce97343e890bb78a35c0da296",
+                "responses": {
+                    "200": {
+                        "description": "Export queued"
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "securitySchemes": {
+            "bearerAuth": {
+                "type": "http",
+                "bearerFormat": "JWT",
+                "scheme": "bearer"
+            }
+        }
+    },
+    "tags": [
+        {
+            "name": "Attendance",
+            "description": "Attendance API"
+        }
+    ]
+}

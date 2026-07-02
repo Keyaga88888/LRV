@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            min-height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background:#0f172a;
+            overflow:hidden;
+        }
+
+        .bg{
+            position:fixed;
+            inset:0;
+            background:
+            radial-gradient(circle at top left,#1e3a8a,transparent 40%),
+            radial-gradient(circle at bottom right,#7c3aed,transparent 40%),
+            #0f172a;
+        }
+
+        .wrap{
+            position:relative;
+            z-index:2;
+            width:100%;
+            max-width:420px;
+            padding:20px;
+        }
+
+        .card{
+            background:rgba(255,255,255,0.08);
+            backdrop-filter:blur(10px);
+            border:1px solid rgba(255,255,255,0.1);
+            border-radius:20px;
+            padding:35px;
+            box-shadow:0 10px 30px rgba(0,0,0,0.4);
+        }
+
+        h1{
+            color:white;
+            margin-bottom:25px;
+            text-align:center;
+            font-size:28px;
+        }
+
+        .field{
+            margin-bottom:18px;
+        }
+
+        .input{
+            width:100%;
+            padding:14px;
+            border:none;
+            outline:none;
+            border-radius:12px;
+            background:rgba(255,255,255,0.12);
+            color:white;
+            font-size:15px;
+        }
+
+        .input::placeholder{
+            color:#d1d5db;
+        }
+
+        .check{
+            display:flex;
+            align-items:center;
+            gap:8px;
+            margin-bottom:20px;
+            color:white;
+            font-size:14px;
+        }
+
+        .btn{
+            width:100%;
+            padding:14px;
+            border:none;
+            border-radius:12px;
+            background:#2563eb;
+            color:white;
+            font-size:16px;
+            cursor:pointer;
+            transition:.3s;
+        }
+
+        .btn:hover{
+            background:#1d4ed8;
+        }
+
+        .help{
+            margin-top:18px;
+            text-align:center;
+            color:#cbd5e1;
+            font-size:14px;
+        }
+
+        .error{
+            margin-top:8px;
+            font-size:13px;
+            color: yellow;
+            opacity:.95;
+        }
+        #remember{
+    width:18px;
+    height:18px;
+    accent-color:#2563eb;
+    cursor:pointer;
+}
+    </style>
+</head>
+
+<body>
+
+<div class="bg" aria-hidden="true"></div>
+
+<main class="wrap">
+
+    <div class="card">
+
+        <h1>Đăng nhập</h1>
+
+        <form method="POST" action="/login" autocomplete="on" novalidate>
+
+            <div class="field">
+                <input
+                    id="email"
+                    class="input"
+                    type="email"
+                    name="email"
+                    placeholder="Tên đăng nhập"
+                    required
+                    autofocus
+                    autocomplete="username"
+                >
+            </div>
+
+            <div class="field">
+                <input
+                    id="password"
+                    class="input"
+                    type="password"
+                    name="password"
+                    placeholder="Mật khẩu"
+                    required
+                    autocomplete="current-password"
+                >
+            </div>
+
+            <div class="check">
+                <input
+                    id="remember"
+                    type="checkbox"
+                    name="remember"
+                >
+
+                <label for="remember">
+                    Ghi nhớ mật khẩu
+                </label>
+            </div>
+
+            <div class="actions">
+                <button type="submit" class="btn">
+                    Đăng nhập
+                </button>
+            </div>
+
+            <p class="help">
+                Hỗ trợ kỹ thuật 0842460196 - Zalo
+            </p>
+
+        </form>
+
+    </div>
+
+</main>
+<x-guest-layout> {{-- @push('style') gọi name để dùng dc @stack('style')ở views/layouts/guest.blade.php --}} @push('style') <style> *{ margin:0; padding:0; box-sizing:border-box; font-family:Arial, Helvetica, sans-serif; } body{ min-height:100vh; display:flex; justify-content:center; align-items:center; background:#020617; overflow:hidden; } .bg{ position:fixed; inset:0; background: radial-gradient(circle at top left,#2563eb,transparent 30%), radial-gradient(circle at bottom right,#9333ea,transparent 35%), radial-gradient(circle at center,#0f172a,transparent 60%), #020617; } .wrap{ position:relative; z-index:2; width:100%; max-width:620px; padding:30px; } .card{ width:100%; background:rgba(255,255,255,0.08); backdrop-filter:blur(18px); border:1px solid rgba(255,255,255,0.12); border-radius:28px; padding:55px; box-shadow: 0 20px 50px rgba(0,0,0,0.45), inset 0 1px 1px rgba(255,255,255,0.08); } h1{ color:white; margin-bottom:35px; text-align:center; font-size:42px; font-weight:700; letter-spacing:.5px; } .field{ margin-bottom:22px; } .input{ width:100%; padding:18px 20px; border:none; outline:none; border-radius:16px; background:rgba(255,255,255,0.09); border:1px solid rgba(255,255,255,0.08); color:white; font-size:16px; transition:.3s; } .input:focus{ border:1px solid #3b82f6; background:rgba(255,255,255,0.13); box-shadow:0 0 15px rgba(59,130,246,.35); } .input::placeholder{ color:#cbd5e1; } .check{ display:flex; align-items:center; gap:10px; margin-bottom:28px; color:white; font-size:15px; } #remember{ width:18px; height:18px; accent-color:#facc15; cursor:pointer; } .btn{ width:100%; padding:17px; border:none; border-radius:16px; background:linear-gradient(135deg,#2563eb,#7c3aed); color:white; font-size:17px; font-weight:700; cursor:pointer; transition:.3s; letter-spacing:.4px; box-shadow:0 10px 25px rgba(37,99,235,.35); } .btn:hover{ transform:translateY(-2px); box-shadow:0 15px 30px rgba(37,99,235,.45); } .help{ margin-top:24px; text-align:center; color:#cbd5e1; font-size:14px; line-height:1.6; } .error{ margin-top:8px; font-size:13px; color:#fde047; opacity:.95; } @media(max-width:640px){ .wrap{ padding:20px; } .card{ padding:35px 25px; border-radius:22px; } h1{ font-size:32px; } } </style>
+
+</body>
+</html>
+

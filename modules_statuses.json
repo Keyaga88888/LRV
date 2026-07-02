@@ -1,0 +1,6 @@
+{
+    "User": true,
+    "Product": true,
+    "Salary": true,
+    "Attendance": true
+}

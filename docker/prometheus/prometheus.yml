@@ -1,0 +1,70 @@
+global:
+
+  scrape_interval: 15s
+
+  evaluation_interval: 15s
+
+scrape_configs:
+
+#############################################
+# Prometheus
+#############################################
+
+  - job_name: prometheus
+
+    static_configs:
+
+      - targets:
+
+          - localhost:9090
+
+#############################################
+# Laravel
+#############################################
+
+  - job_name: laravel
+
+    metrics_path: /metrics
+
+    static_configs:
+
+      - targets:
+
+          - app:9000
+
+#############################################
+# Nginx
+#############################################
+
+  - job_name: nginx
+
+    static_configs:
+
+      - targets:
+
+          - nginx:80
+# Đây là cấu hình tối thiểu để Prometheus tự theo dõi chính nó.   
+# Sau này có thể mở rộng:
+  #   scrape_configs:
+
+  # - job_name: "laravel"
+
+  #   static_configs:
+
+  #     - targets:
+  #         - app:9000
+
+  # - job_name: "mysql"
+
+  #   static_configs:
+
+  #     - targets:
+  #         - mysql-exporter:9104
+
+  # - job_name: "redis"
+
+  #   static_configs:
+
+  #     - targets:
+  #         - redis-exporter:9121
+# Khi bạn bổ sung exporter thì chỉ cần thêm vào đây.

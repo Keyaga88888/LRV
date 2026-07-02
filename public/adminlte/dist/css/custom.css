@@ -1,0 +1,211 @@
+             
+                        /* content không co cứng */
+                        .content-wrapper{
+                        
+                            overflow-x: hidden;
+                        
+                        }
+                        
+                        /* card */
+                        
+                        .card{
+                        
+                            border-radius: 18px;
+                        
+                            overflow: hidden;
+                        
+                        }
+                        
+                        /* KHUNG SCROLL */
+                        .table-responsive-custom{
+                        
+                            width: 100%;
+                        
+                            overflow-x: auto;
+                        
+                            overflow-y: hidden;
+                        
+                        }
+                        
+                        /* table */
+                        #users-table{
+                        
+                            min-width: 2200px !important;
+                        
+                            width: 2200px !important;
+                        
+                            white-space: nowrap;
+                        
+                            margin: 0;
+                        
+                        }
+                        
+                        /* thead */
+                        #users-table thead th{
+                        
+                            border: none !important;
+                        
+                            background: #f8fafc !important;
+                        
+                            color: #374151;
+                        
+                            font-size: 14px;
+                        
+                            font-weight: 700;
+                        
+                            padding: 16px;
+                        
+                        }
+                        
+                        /* tbody */
+                        #users-table tbody td{
+                        
+                            padding: 16px;
+                        
+                            vertical-align: middle;
+                        
+                            border-top: 1px solid #eef2f7;
+                        
+                            font-size: 14px;
+                        
+                        }
+                        
+                        /* hover */
+                        #users-table tbody tr{
+                        
+                            transition: .2s;
+                        
+                        }
+                        
+                        #users-table tbody tr:hover{
+                        
+                            background: #f8fbff;
+                        
+                        }
+                        
+                        /* search */
+                        .dataTables_filter{
+                        
+                            padding: 16px;
+                        
+                        }
+                        
+                        .dataTables_filter input{
+                        
+                            border-radius: 12px !important;
+                        
+                            border: 1px solid #dbe3ec !important;
+                        
+                            padding: 8px 14px !important;
+                        
+                            outline: none !important;
+                        
+                            margin-left: 8px !important;
+                        
+                        }
+                        
+                        /* select */
+                        .dataTables_length{
+                        
+                            padding: 16px;
+                        
+                        }
+                        
+                        .dataTables_length select{
+                        
+                            border-radius: 10px !important;
+                        
+                            border: 1px solid #dbe3ec !important;
+                        
+                            padding: 4px 10px !important;
+                        
+                        }
+                        
+                        /* pagination */
+                        .dataTables_paginate{
+                        
+                            padding: 16px !important;
+                        
+                        }
+                        
+                        /* info */
+                        .dataTables_info{
+                        
+                            padding: 20px 16px !important;
+                        
+                        }
+                        
+                        /* scrollbar đẹp */
+                        .table-responsive-custom::-webkit-scrollbar{
+                        
+                            height: 10px;
+                        
+                        }
+                        
+                        .table-responsive-custom::-webkit-scrollbar-thumb{
+                        
+                            background: #cbd5e1;
+                        
+                            border-radius: 20px;
+                        
+                        }
+                        
+                        /* FIX ADMINLTE KHÔNG CO TABLE */
+                        @media (max-width: 1200px){
+                        
+                            .content-wrapper{
+                        
+                                min-width: 100%;
+                        
+                            }
+                        
+                        }
+
+
+
+                        /* cái này của _MENU_ của trang list.blade.php */
+
+/* khung select */
+.dataTables_length select{
+
+    border-radius: 10px !important;
+
+    border: 1px solid #dbe3ec !important;
+
+    padding: 4px 35px 4px 10px !important;
+
+    appearance: auto !important;
+
+    -webkit-appearance: auto !important;
+
+    -moz-appearance: auto !important;
+
+}
+/* dòng "Hiển thị _MENU_ users mỗi trang" */
+.dataTables_length label{
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    font-weight: 500;
+
+}
+
+/* fix icon đè */
+.dataTables_length .custom-select{
+
+    background-image: none !important;
+
+}
+
+/* nếu dùng bootstrap4 */
+.dataTables_length select.form-control{
+
+    display: inline-block;
+
+    width: auto;
+
+}

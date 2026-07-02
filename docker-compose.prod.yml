@@ -1,0 +1,242 @@
+services:
+
+####################################################
+# Laravel App
+####################################################
+
+  app:
+
+    image: horizon888/keyagatwo-app:latest
+
+    environment:
+
+      APP_ENV: production
+
+      APP_DEBUG: "false"
+
+      LOG_CHANNEL: stack
+
+    volumes: []
+
+    restart: unless-stopped
+####################################################
+
+horizon:
+
+  image: horizon888/keyagatwo-horizon:latest
+
+  restart: unless-stopped
+
+reverb:
+
+  image: horizon888/keyagatwo-reverb:latest
+
+  restart: unless-stopped
+####################################################
+# Queue Worker
+####################################################
+
+  worker:
+
+    # image: horizon888/keyagatwo-worker:latest
+    image: horizon888/keyagatwo-app:latest
+
+    command: php artisan queue:work redis --sleep=3 --tries=3 --timeout=90
+
+    environment:
+
+      APP_ENV: production
+
+      APP_DEBUG: "false"
+
+    volumes: []
+
+    restart: unless-stopped
+
+####################################################
+# Scheduler
+####################################################
+
+  scheduler:
+
+    # image: horizon888/keyagatwo-scheduler:latest
+    image: horizon888/keyagatwo-app:latest
+
+    command: php artisan schedule:work
+    
+    environment:
+
+      APP_ENV: production
+
+      APP_DEBUG: "false"
+
+    volumes: []
+
+    restart: unless-stopped
+
+####################################################
+# Nginx
+####################################################
+
+  nginx:
+
+    restart: unless-stopped
+
+####################################################
+# MySQL
+####################################################
+
+  mysql:
+
+    restart: unless-stopped
+
+####################################################
+# Redis
+####################################################
+
+  redis:
+
+    restart: unless-stopped
+
+####################################################
+# Không chạy ở Production
+####################################################
+
+  phpmyadmin:
+
+    profiles:
+
+      - dev
+
+  mailpit:
+
+    profiles:
+
+      - dev
+# docker-compose.prod.yml.
+# Đây là file quan trọng nhất vì đây là file sẽ chạy trên VPS/Server.
+# Ý tưởng
+# Development:
+# Code trên máy
+#         │
+# Volume Mount
+#         │
+# Docker
+
+# Production :
+# Docker Image
+# ↓
+# Docker Hub
+# ↓
+# VPS
+# ↓
+# docker compose pull
+# ↓
+# docker compose up -d
+# Không mount source code nữa.
+
+# Tại sao volumes: []?
+# Trong development:
+# volumes:
+#   - .:/var/www
+# Code trên máy sẽ được mount vào container.
+# Production
+# Không được làm vậy.
+# Docker sẽ chạy từ image.
+# Docker Image
+# ↓
+# Laravel
+# ↓
+# Server
+
+# APP_ENV
+# Development :
+# APP_ENV=local
+# Production :
+# APP_ENV=production
+
+# APP_DEBUG
+# Production :
+# APP_DEBUG=false
+# Nếu lỗi Laravel chỉ ghi:
+# storage/logs
+# Không hiện Stack Trace cho người dùng.
+
+# restart
+# Development :
+# restart: always
+# Production : 
+# restart: unless-stopped
+# Khác nhau
+# always : Máy restart > Container luôn chạy lại
+# unless-stopped : Nếu Admin cố tình stop > Docker không tự bật lại
+# Đây là lựa chọn rất phổ biến cho production.
+
+# Mailpit
+# Production :
+# Không cần
+# profiles:
+
+#   - dev
+# Nó sẽ không chạy nếu bạn không kích hoạt profile dev.
+
+# phpMyAdmin
+# Production :
+# Không nên mở
+# 8081
+# ra Internet.
+
+# Chạy Development
+# docker compose \
+# -f docker-compose.yml \
+# -f docker-compose.dev.yml \
+# up -d
+# Chạy Production
+# docker compose \
+# -f docker-compose.yml \
+# -f docker-compose.prod.yml \
+# up -d
+
+# Khi deploy
+# Server chỉ cần :
+# docker compose pull
+
+# docker compose \
+# -f docker-compose.yml \
+# -f docker-compose.prod.yml \
+# up -d
+
+# Không cần build.
+
+# Kiến trúc CI/CD
+# GitHub > GitHub Actions > Build Docker Image > Docker Hub > SSH VPS
+#    v
+# docker compose pull
+#    v
+# docker compose up -d
+#    v
+# Laravel chạy
+# Mình có một góp ý quan trọng
+# Ở các câu trả lời trước mình dùng:
+
+# image: horizon888/keyagatwo-worker:latest
+# image: horizon888/keyagatwo-scheduler:latest
+
+# Thực tế, worker và scheduler dùng cùng một Dockerfile và cùng một mã nguồn với app, chỉ khác lệnh khởi động (command).
+
+# Vì vậy, bạn không cần build và push 3 image khác nhau. Bạn chỉ cần một image:
+
+# image: horizon888/keyagatwo-app:latest
+
+# rồi cấu hình:
+
+# app → chạy PHP-FPM.
+# worker → command: php artisan queue:work.
+# scheduler → command: php artisan schedule:work.
+
+# Cách này giúp:
+
+# Chỉ build 1 image.
+# Chỉ push 1 image lên Docker Hub.
+# CI/CD nhanh hơn.
+# Dễ quản lý phiên bản hơn.

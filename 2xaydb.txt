@@ -1,0 +1,78 @@
+touch note.txt 
+ls
+open note.txt
+ 
+  tạo migration đơn trước
+parts
+positions
+type_accounts
+care_customers
+atms
+type_fees
+
+  tạo các bảng chỉ 1 liên kết với bảng đã tạo trước đó
+teams ( lk parts )
+users ( lk parts , positions ,teams , type_accounts  )
+salary_mechanisms ( lk users )
+recruitments ( lk positions , parts , users)
+lists_recruitments ( lk users , recruitments  )
+facilities  ( lk users )
+timesheets  ( lk users )
+arranges  ( lk teams , parts , users)
+customers ( lk care_customers )
+shipments ( lk arranges ,customers )
+products  ( lk shipments )
+sells ( lk shipments )
+sell_products ( lk products , sells , atms )
+storages ( lk shipments )
+total_fees ( lk type_fees )
+
+tạo laravel
+composer create-projec laravel/laravel  ten-du-an
+
+vào composer.json dán
+   "setup-dev": [
+            "composer install",
+            "npm install"
+        ],
+   
+    nhập tài khoản db     config/database.php
+    
+    npm run dev
+
+terminal > + > bash > cd keyagatwo
+php artisan migrate
+
+tạo file migration
+php artisan migrate
+xoá bảng users / xoá file migration users
+
+tạo migration bảng 
+php artisan make:migration create_parts_table
+php artisan make:migration create_positions_table
+php artisan make:migration create_type_accounts_table
+php artisan make:migration create_care_customers_table
+php artisan make:migration create_atms_table
+php artisan make:migration create_type_fees_table
+php artisan make:migration create_teams_table
+php artisan make:migration create_users_table
+php artisan make:migration create_salary_mechanisms_table
+php artisan make:migration create_salary_recruitments_table
+php artisan make:migration create_salary_list_recruitments_table
+php artisan make:migration create_salary_facilities_table
+php artisan make:migration create_timesheets_table
+php artisan make:migration create_arranges_table
+php artisan make:migration create_customers_table
+php artisan make:migration create_shipments_table
+php artisan make:migration create_products_table
+php artisan make:migration create_sells_table
+php artisan make:migration create_sell_products_table
+php artisan make:migration create_sell_storages_table
+php artisan make:migration create_sell_total_fees_table
+
+chạy tạo vào db
+php artisan migrate
+
+nếu bị lỗi sai foreignId
+chạy xoá hết bảng ròi chạy lại
+php artisan migrate:fresh

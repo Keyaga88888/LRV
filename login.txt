@@ -1,0 +1,2383 @@
+BREEZE
+touch resources/js/bootstrap.js
+thêm vào bootstrap.js
+
+import axios from "axios";
+
+window.axios = axios;
+
+
+trong composer.json
+   "setup-dev": [
+            "composer install",
+            "npm install"
+        ],
+
+npm install axios
+npm run dev
+
+composer require laravel/breeze --dev	
+php artisan breeze:install      |  chọn Blade with Alpine  (html thuần) | cái khác thì phải cài thêm nodejs  > No > Pest
+
+php artisan session:table
+php artisan migrate
+
+Mở terminal trong project và chạy:
+cái này
+npm run build
+
+hoặc khi dev thì chạy:
+
+npm run dev
+
+và giữ terminal đó mở.
+
+sinh ra các file
+Http/Controller/Auth/.......
+resources/views/auth/......
+
+trong register laravel chỉ tạo các trường mặc định nên ta sẽ tạo acc trong db 
+insert các bảng đang dc nối với bảng user trước
+
+passworh hash
+php artisan tinker
+echo Hash::make(''):
+
+
+giao diện login
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            min-height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background:#0f172a;
+            overflow:hidden;
+        }
+
+        .bg{
+            position:fixed;
+            inset:0;
+            background:
+        radial-gradient(circle at top left,#2563eb,transparent 30%), 
+        radial-gradient(circle at bottom right,#9333ea,transparent 35%), 
+        radial-gradient(circle at center,#0f172a,transparent 60%), #020617;
+        }
+
+.wrap{ 
+    position:relative; 
+    z-index:2; 
+    width:100%; 
+    max-width:900px; /* tăng thêm */ 
+    padding:30px; 
+}
+
+        .card{
+    width:100%; 
+    max-width:700px; /* thêm dòng này */ margin:auto; /* canh giữa */
+    background:rgba(255,255,255,0.08); 
+    backdrop-filter:blur(18px); 
+    border:1px solid rgba(255,255,255,0.12); 
+    border-radius:28px;
+    padding:70px; /* 55px -> 70px */ 
+    box-shadow: 0 20px 50px rgba(0,0,0,0.45), inset 0 1px 1px rgba(255,255,255,0.08);  }
+
+        h1{
+      color:white;
+       margin-bottom:35px; 
+       text-align:center; 
+       font-size:42px; 
+       font-weight:700; 
+       letter-spacing:.5px;
+        }
+
+        .field{
+margin-bottom:22px;
+        }
+
+        .input{
+  width:100%; 
+  padding:22px 24px; /* 18px 20px -> 22px 24px */ 
+  border:none; 
+  outline:none; 
+  border-radius:16px; 
+  background:rgba(255,255,255,0.09);
+   border:1px solid rgba(255,255,255,0.08); 
+   color:white; 
+   font-size:17px; /* 16px -> 17px */ 
+   transition:.3s;
+        }
+
+.input:focus{ 
+    border:1px solid #3b82f6;
+     background:rgba(255,255,255,0.13); 
+     box-shadow:0 0 15px rgba(59,130,246,.35); 
+    }
+
+        .input::placeholder{
+color:#cbd5e1;
+        }
+
+        .check{
+           display:flex; 
+           align-items:center; 
+           gap:10px; 
+           margin-bottom:28px; 
+           color:white; 
+           font-size:15px;
+        }
+
+        .btn{
+     width:100%; 
+     padding:17px;
+      border:none; 
+      border-radius:16px; 
+      background:linear-gradient(135deg,#2563eb,#7c3aed); 
+      color:white; 
+      font-size:17px; 
+      font-weight:700; 
+      cursor:pointer; 
+      transition:.3s; 
+      letter-spacing:.4px; 
+      box-shadow:0 10px 25px rgba(37,99,235,.35);
+        }
+
+        .btn:hover{
+transform:translateY(-2px); 
+box-shadow:0 15px 30px rgba(37,99,235,.45);  
+      }
+
+        .help{
+         margin-top:24px; 
+         text-align:center; 
+         color:#cbd5e1; 
+         font-size:14px; 
+         line-height:1.6;
+        }
+
+        .error{
+            margin-top:8px;
+            font-size:13px;
+            color: yellow;
+            opacity:.95;
+        }
+        #remember{
+    width:18px;
+    height:18px;
+    accent-color:#ebd725;
+    cursor:pointer;
+}
+@media(max-width:640px){ .wrap{ padding:20px; } .card{ padding:35px 25px; border-radius:22px; } h1{ font-size:32px; } }
+    </style>
+</head>
+
+<body>
+
+<div class="bg" aria-hidden="true"></div>
+
+<main class="wrap">
+
+    <div class="card">
+
+        <h1>Đăng nhập</h1>
+
+        <form method="POST" action="/login" autocomplete="on" novalidate>
+
+            <div class="field">
+                <input
+                    id="email"
+                    class="input"
+                    type="email"
+                    name="email"
+                    placeholder="Tên đăng nhập"
+                    required
+                    autofocus
+                    autocomplete="username"
+                >
+            </div>
+
+            <div class="field">
+                <input
+                    id="password"
+                    class="input"
+                    type="password"
+                    name="password"
+                    placeholder="Mật khẩu"
+                    required
+                    autocomplete="current-password"
+                >
+            </div>
+
+            <div class="check">
+                <input
+                    id="remember"
+                    type="checkbox"
+                    name="remember"
+                >
+
+                <label for="remember">
+                    Ghi nhớ mật khẩu
+                </label>
+            </div>
+
+            <div class="actions">
+                <button type="submit" class="btn">
+                    Đăng nhập
+                </button>
+            </div>
+
+            <p class="help">
+                Hỗ trợ kỹ thuật 0842460196 - Zalo
+            </p>
+
+        </form>
+
+    </div>
+
+</main>
+
+</body>
+</html>
+
+
+
+ views/auth/login.blade.php  chứa cái body nối vào 
+file>New File>index.html    |    tạo lahyout bên ngoài để dán zo
+views/layouts/guest.blade.php  nối body vào 
+
+
+000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+
+vào 
+adminlte
+AdminLTE v3.2.0
+-nhấp chọn
+tìm file zip
+-copy file  | cmd + nhập > copy
+dist
+plugins
+
+tạo folder adminlte: 
+public/adminlte > paste vào
+
+tìm trong AdminLTE v3.2.0 > file index 3 > nhấp chọn > open with VSCODE
+
+2
+Nếu muốn lấy giao diện/chart từ AdminLTE thì làm kiểu này:
+    tạo folder:
+resources/views/admin/charts/
+    mở file demo:
+pages/charts/chartjs.html
+    copy PHẦN HTML bên trong:
+<div class="card">
+    ...
+</div>
+    dán vào:
+resources/views/admin/charts/index.blade.php
+    copy phần script cuối file:
+<script>
+...
+</script>
+      dán xuống cuối blade:
+    @section('script')
+<script>
+...
+</script>
+@endsection
+     hoặc dán trực tiếp trước:
+ </body>
+
+
+1
+  tạo folder layout  >  parts > 
+  tạo file > header.blade.php
+resources/views/layouts/parts/header.blade.php      |    copy dán vào
+  tạo file > sidebar.blade.php
+resources/views/layouts/parts/sidebar.blade.php
+  tạo file > foot.blade.php
+resources/views/layouts/parts/footer.blade.php
+  | content dán vào   |  nhớ xoá or comment cái html của laravel
+  resources/views/dashboard.blade.php
+
+  nhúng header , sidebar , footer vào  
+  resources/views/dashboard.blade.php     |    vd: @include('layouts.parts.header')
+chưa có css,js > vào chỉnh link css,js
+
+resources/views/layouts/parts/header.blade.php 
+  <link rel="stylesheet" href="{{ asset('adminlte/plugins/fontawesome-free/css/all.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('adminlte/dist/css/adminlte.min.css') }}">
+
+resources/views/layouts/parts/sidebar.blade.php
+vào chỉnh link theo from header
+resources/views/layouts/parts/footer.blade.php
+vào chỉnh link theo from header
+
+  check xem fontawesome đang dùng là phiên bản gì
+public/adminite/plugins/fontawesome-free/css/fontawesome.min.css 
+  save cho chạy fontawesome
+5.15.4    |  đã thấy
+   vào fontawesome.com
+chỉnh phiên bản góc trên bên phải
+   
+
+
+  vào google >gỏ   laravel datatable > AI
+    cài đặt gói datatable
+composer require yajra/laravel-datatables-oracle
+
+tạo modal User   |   có sẵn khỏi tạo
+tạo controller User
+
+php artisan make:controller UserController
+app/Http/Controllers/UserController.php
+
+  tạo views User
+tạo folter riêng-tạo file > resources/views/users/list.blade.php > cho nó html ra view
+
+  tạo đường dẫn rotes`
+kiểm tra đường dẫn hoạt động chưa roi mới gắn JS
+
+cho cái CDN vảo header , foodter để dùng dc datatables
+
+Routes:     dường dẫn
+Model:      cho phép dc xuất cột nào trong DB
+Controller: gọi db gắn với giao diện
+Views:      cái giao diện
+Controllers < > 
+      model   >  Routes > Views
+
+
+  -thêm function thể hiện các mối quan hệ cho Models>User 
+vd: part_id nối với bảng part
+ chưa có model/part thì tạo mới nối dc part_id vào part
+php artisan make:model Part
+php artisan make:model Position
+php artisan make:model Team
+php artisan make:model typeAccount
+mẫu:
+public function part(){ 
+    return $this->belongTo(Part::class, 'part_id');
+}
+   sau khi nối quan hệ các bảng vào User.php
+qua các bảng khác gắn $fillable xem trong DB có cột nào ròi gắn vào bảng đó
+ thêm thể hiện mối quan hệ với bảng User.php
+mẫu:
+    public function users(){
+        return $this->hasMany(User::class, 'part_id');
+    }
+>nếu các bảng khác có khoá ngoại thì phải thêm thể hiện mối quan hệ
+// đặt tên function tương tự nhưng khác vơi User.php vì đây là 2 cái class khác
+mẫu:
+  public function parts()
+    {
+        return $this->belongsTo(Part::class, 'part_id'); // liên kết với bảng parts = Part::class
+    }
+ 
+
+ gắn link vào thẻ 
+ mẫu:        |     gắn link bên routes đổ vào html
+ <a href="/user"
+
+
+ thêm class active vào menu cha cho sáng màu nhấp chuột
+ mẫu: toán tử 3 ngôi
+           {{-- kiểm tra đường link có phải users ko nếu có >thêm class menu-open còn ko thì để trống    |     ||=hoặc--}}
+          <li class="nav-item {{  request()->is('users') || request()->is('account') ? 'menu-is-opening menu-open' : '' }}">
+             <a href="#" class="nav-link">
+                {{-- <i class="fas fa-users"></i> --}}
+
+              <i class="nav-icon fas fa-users"></i>
+              <p>
+                Tài khoản 
+                <i class="fas fa-angle-left right"></i>
+              </p>
+             </a>
+             <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="account" class="nav-link {{ request()->is('account') ? 'active' : '' }}">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Hệ thống tài khoản</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="users" class="nav-link {{ request()->is('users') ? 'active' : '' }}">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Danh sách nhân sự</p>
+                </a>
+              </li>
+             
+            </ul>
+          </li>
+
+vào google> LENGUAGE DATATABLE > copy code đầu tiên > dán zo resources/views/users/list.blade.php
+new DataTable('#example', {
+    language: {
+        info: 'Showing page _PAGE_ of _PAGES_',
+        infoEmpty: 'No records available',
+        infoFiltered: '(filtered from _MAX_ total records)',
+        lengthMenu: 'Display _MENU_ records per page',
+        zeroRecords: 'Nothing found - sorry'
+    }
+});
+vào google> LENGUAGE DATATABLE Search > copy code đầu tiên > dán zo resources/views/users/list.blade.php
+gắn vào language: {
+        search: 'Filter records:'
+}
+
+   tạo ra một Factory cho model User
+   php artisan make:factory UserFactory --model=User
+database/factories/UserFactory
+chỉnh truyền các cột vào
+database/seeders/DatabaseSeeder.php
+comment cái mặc định
+chạy tạo acc fake
+php artisan db:seed
+
+vào google : dom in datatable
+vào google : initcomplete trong datatables
+
+lệnh xoá hết sessions củ
+rm -rf storage/framework/sessions/*
+php artisan optimize:clear
+nếu bị dính chữ thì kiểm tra trong migration có default(0 ko (xoá nó trong db)
+
+
+  thư viện SweetAlert2
+  https://sweetalert2.github.io/
+  cách 1 cài vào projec
+  npm install sweetalert2
+
+  cách 2 cài CDN  > google > cdn SweetAlert2
+  https://cdnjs.com/libraries/sweetalert2
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+vào
+views/layouts/parts/footer.blade.php
+dán zo
+
+
+Repository Design Pattern Laravel
+tạo folder 
+app/Repositories/Interfaces/UserRepositoryInterface.php
+app/Repositories/Interfaces/ProductRepositoryInterface.php
+app/Repositories/UsertRepository.php
+app/Repositories/ProductRepository.php
+muốn sử dụng thì phải khai báo provider  |   Providers/AppServiceProvider.php
+
+   app/Repositories/Interfaces/UserRepositoryInterface.php
+khai báo  | chỉ truyền function từ UserController.php nối với UsertRepository.php
+   app/Repositories/UsertRepository.php
+viết function thay UserController.php
+UserController.php nối UserRepositoryInterface.php
+class UsertRepository implements UserRepositoryInterface{
+    muốn sử dụng thì phải khai báo provider  |   Providers/AppServiceProvider.php
+vd:
+    public function register(): void
+    {
+        $this->app->bind(UserRepositoryInterface::class, UsertRepository::class);
+    }
+   UserController.php
+chỉ chứa validated , còn thêm,sửa,xoá,input vào UserRepository.php
+
+
+ 
+
+
+   cài đặt Laravel Modules: 
+composer require nwidart/laravel-modules
+   Publish config: 
+php artisan vendor:publish --provider="Nwidart\Modules\LaravelModulesServiceProvider"
+y
+   Sau bước này sẽ có:
+config/modules.php
+  Sửa composer.json đúng chuẩn
+{
+    "$schema": "https://getcomposer.org/schema.json",
+    "name": "laravel/laravel",
+    "type": "project",
+    "description": "The skeleton application for the Laravel framework.",
+    "keywords": [
+        "laravel",
+        "framework"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^8.3",
+        "laravel/framework": "^13.0",
+        "laravel/tinker": "^3.0",
+        "nwidart/laravel-modules": "*",
+        "yajra/laravel-datatables-oracle": "^13.1"
+    },
+    "require-dev": {
+        "fakerphp/faker": "^1.23",
+        "laravel/boost": "^2.0",
+        "laravel/breeze": "^2.4",
+        "laravel/pail": "^1.2.5",
+        "laravel/pao": "^1.0.6",
+        "laravel/pint": "^1.27",
+        "mockery/mockery": "^1.6",
+        "nunomaduro/collision": "^8.6",
+        "pestphp/pest": "^4.7",
+        "pestphp/pest-plugin-laravel": "^4.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+        "Modules\\": "Modules/",
+            "Database\\Factories\\": "database/factories/",
+            "Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "setup": [
+            "composer install",
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
+            "@php artisan key:generate",
+            "@php artisan migrate --force",
+            "npm install --ignore-scripts",
+            "npm run build"
+        ],
+        "dev": [
+            "Composer\\Config::disableProcessTimeout",
+            "npx concurrently -c \"#93c5fd,#c4b5fd,#fb7185,#fdba74\" \"php artisan serve\" \"php artisan queue:listen --tries=1 --timeout=0\" \"php artisan pail --timeout=0\" \"npm run dev\" --names=server,queue,logs,vite --kill-others"
+        ],
+        "test": [
+            "@php artisan config:clear --ansi @no_additional_args",
+            "@php artisan test"
+        ],
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover --ansi"
+        ],
+        "post-update-cmd": [
+            "@php artisan vendor:publish --tag=laravel-assets --ansi --force"
+        ],
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "setup-dev": [
+            "composer install",
+            "npm install"
+        ],
+        "post-create-project-cmd": [
+            "@php artisan key:generate --ansi",
+            "@php -r \"file_exists('database/database.sqlite') || touch('database/database.sqlite');\"",
+            "@php artisan migrate --graceful --ansi"
+        ],
+        "pre-package-uninstall": [
+            "Illuminate\\Foundation\\ComposerScripts::prePackageUninstall"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": []
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "php-http/discovery": true,
+            "wikimedia/composer-merge-plugin": true
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
+
+php artisan optimize:clear
+composer dump-autoload
+
+mở config/modules.php
+<?php
+
+use Nwidart\Modules\Activators\FileActivator;
+use Nwidart\Modules\Providers\ConsoleServiceProvider;
+
+chú ý sửa thành         'app_folder' => 'App',
+return [
+
+    /*
+    |--------------------------------------------------------------------------
+    | Module Namespace
+    |--------------------------------------------------------------------------
+    |
+    | Default module namespace.
+    |
+    */
+    'namespace' => 'Modules',
+
+    /*
+    |--------------------------------------------------------------------------
+    | Vapor Maintenance Mode
+    |--------------------------------------------------------------------------
+    |
+    | Indicates if the application is running on Laravel Vapor.
+    | When enabled, cached services path will be set to a writable location.
+    |
+    */
+    'vapor_maintenance_mode' => env('VAPOR_MAINTENANCE_MODE', false),
+
+    /*
+    |--------------------------------------------------------------------------
+    | Module Stubs
+    |--------------------------------------------------------------------------
+    |
+    | Default module stubs.
+    |
+    */
+    'stubs' => [
+        'enabled' => false,
+        'path' => base_path('vendor/nwidart/laravel-modules/src/Commands/stubs'),
+        'files' => [
+            'routes/web' => 'routes/web.php',
+            'routes/api' => 'routes/api.php',
+            'views/index' => 'resources/views/index.blade.php',
+            'views/master' => 'resources/views/components/layouts/master.blade.php',
+            'scaffold/config' => 'config/config.php',
+            'composer' => 'composer.json',
+            'assets/js/app' => 'resources/assets/js/app.js',
+            'assets/sass/app' => 'resources/assets/sass/app.scss',
+            'vite' => 'vite.config.js',
+            'package' => 'package.json',
+        ],
+        'replacements' => [
+            /**
+             * Define custom replacements for each section.
+             * You can now specify a class name that extends
+             * \Nwidart\Modules\Support\ReplacementKeyCommand for dynamic values.
+             *
+             * Example:
+             *
+             * 'composer' => [
+             *      // Map the UPPERCASE token to your command class
+             *      'CUSTOM_KEY' => \App\Modules\Support\Replacements\CustomKey::class,
+             *      // You can still list built-in tokens by their names
+             *      'LOWER_NAME',
+             *      'STUDLY_NAME',
+             *      // ...
+             * ],
+             *
+             * The command class must extend ReplacementKeyCommand and implement handle(): string
+             * to return the replacement text.
+             *
+             * Note: Keys should be in UPPERCASE.
+             */
+            'routes/web' => ['LOWER_NAME', 'STUDLY_NAME', 'PLURAL_LOWER_NAME', 'KEBAB_NAME', 'MODULE_NAMESPACE', 'CONTROLLER_NAMESPACE'],
+            'routes/api' => ['LOWER_NAME', 'STUDLY_NAME', 'PLURAL_LOWER_NAME', 'KEBAB_NAME', 'MODULE_NAMESPACE', 'CONTROLLER_NAMESPACE'],
+            'vite' => ['LOWER_NAME', 'STUDLY_NAME', 'KEBAB_NAME'],
+            'json' => ['LOWER_NAME', 'STUDLY_NAME', 'KEBAB_NAME', 'MODULE_NAMESPACE', 'PROVIDER_NAMESPACE'],
+            'views/index' => ['LOWER_NAME'],
+            'views/master' => ['LOWER_NAME', 'STUDLY_NAME', 'KEBAB_NAME'],
+            'scaffold/config' => ['STUDLY_NAME'],
+            'composer' => [
+                'LOWER_NAME',
+                'STUDLY_NAME',
+                'VENDOR',
+                'AUTHOR_NAME',
+                'AUTHOR_EMAIL',
+                'MODULE_NAMESPACE',
+                'PROVIDER_NAMESPACE',
+                'APP_FOLDER_NAME',
+            ],
+        ],
+        'gitkeep' => true,
+    ],
+    'paths' => [
+        /*
+        |--------------------------------------------------------------------------
+        | Modules path
+        |--------------------------------------------------------------------------
+        |
+        | This path is used to save the generated module.
+        | This path will also be added automatically to the list of scanned folders.
+        |
+        */
+        'modules' => base_path('Modules'),
+
+        /*
+        |--------------------------------------------------------------------------
+        | Modules assets path
+        |--------------------------------------------------------------------------
+        |
+        | Here you may update the modules' assets path.
+        |
+        */
+        'assets' => public_path('modules'),
+
+        /*
+        |--------------------------------------------------------------------------
+        | The migrations' path
+        |--------------------------------------------------------------------------
+        |
+        | Where you run the 'module:publish-migration' command, where do you publish the
+        | the migration files?
+        |
+        */
+        'migration' => base_path('database/migrations'),
+
+        /*
+        |--------------------------------------------------------------------------
+        | The app path
+        |--------------------------------------------------------------------------
+        |
+        | app folder name
+        | for example can change it to 'src' or 'App'
+        */
+        'app_folder' => 'App',
+
+        /*
+        |--------------------------------------------------------------------------
+        | Generator path
+        |--------------------------------------------------------------------------
+        | Customise the paths where the folders will be generated.
+        | Setting the generate key to false will not generate that folder
+        */
+        'generator' => [
+            // app/
+            'actions' => ['path' => 'app/Actions', 'generate' => false],
+            'casts' => ['path' => 'app/Casts', 'generate' => false],
+            'channels' => ['path' => 'app/Broadcasting', 'generate' => false],
+            'class' => ['path' => 'app/Classes', 'generate' => false],
+            'command' => ['path' => 'app/Console', 'generate' => false],
+            'command_replacements' => ['path' => 'app/Console/Replacements', 'generate' => false],
+            'component-class' => ['path' => 'app/View/Components', 'generate' => false],
+            'emails' => ['path' => 'app/Emails', 'generate' => false],
+            'event' => ['path' => 'app/Events', 'generate' => false],
+            'enums' => ['path' => 'app/Enums', 'generate' => false],
+            'exceptions' => ['path' => 'app/Exceptions', 'generate' => false],
+            'jobs' => ['path' => 'app/Jobs', 'generate' => false],
+            'helpers' => ['path' => 'app/Helpers', 'generate' => false],
+            'interfaces' => ['path' => 'app/Interfaces', 'generate' => false],
+            'listener' => ['path' => 'app/Listeners', 'generate' => false],
+            'model' => ['path' => 'app/Models', 'generate' => false],
+            'notifications' => ['path' => 'app/Notifications', 'generate' => false],
+            'observer' => ['path' => 'app/Observers', 'generate' => false],
+            'policies' => ['path' => 'app/Policies', 'generate' => false],
+            'provider' => ['path' => 'app/Providers', 'generate' => true],
+            'repository' => ['path' => 'app/Repositories', 'generate' => false],
+            'resource' => ['path' => 'app/Transformers', 'generate' => false],
+            'route-provider' => ['path' => 'app/Providers', 'generate' => true],
+            'rules' => ['path' => 'app/Rules', 'generate' => false],
+            'services' => ['path' => 'app/Services', 'generate' => false],
+            'scopes' => ['path' => 'app/Models/Scopes', 'generate' => false],
+            'traits' => ['path' => 'app/Traits', 'generate' => false],
+
+            // app/Http/
+            'controller' => ['path' => 'app/Http/Controllers', 'generate' => true],
+            'filter' => ['path' => 'app/Http/Middleware', 'generate' => false],
+            'request' => ['path' => 'app/Http/Requests', 'generate' => false],
+
+            // config/
+            'config' => ['path' => 'config', 'generate' => true],
+
+            // database/
+            'factory' => ['path' => 'database/factories', 'generate' => true],
+            'migration' => ['path' => 'database/migrations', 'generate' => true],
+            'seeder' => ['path' => 'database/seeders', 'generate' => true],
+
+            // lang/
+            'lang' => ['path' => 'lang', 'generate' => false],
+
+            // resource/
+            'assets' => ['path' => 'resources/assets', 'generate' => true],
+            'component-view' => ['path' => 'resources/views/components', 'generate' => false],
+            'views' => ['path' => 'resources/views', 'generate' => true],
+            'inertia' => ['path' => 'resources/js/Pages', 'generate' => false],
+            'inertia-components' => ['path' => 'resources/js/Components', 'generate' => false],
+
+            // routes/
+            'routes' => ['path' => 'routes', 'generate' => true],
+
+            // tests/
+            'test-feature' => ['path' => 'tests/Feature', 'generate' => true],
+            'test-unit' => ['path' => 'tests/Unit', 'generate' => true],
+        ],
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Auto Discover of Modules
+    |--------------------------------------------------------------------------
+    |
+    | Here you configure auto discover of module
+    | This is useful for simplify module providers.
+    |
+    */
+    'auto-discover' => [
+        /*
+        |--------------------------------------------------------------------------
+        | Migrations
+        |--------------------------------------------------------------------------
+        |
+        | This option for register migration automatically.
+        |
+        */
+        'migrations' => true,
+
+        /*
+        |--------------------------------------------------------------------------
+        | Translations
+        |--------------------------------------------------------------------------
+        |
+        | This option for register lang file automatically.
+        |
+        */
+        'translations' => false,
+
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Package commands
+    |--------------------------------------------------------------------------
+    |
+    | Here you can define which commands will be visible and used in your
+    | application. You can add your own commands to merge section.
+    |
+    */
+    'commands' => ConsoleServiceProvider::defaultCommands()
+        ->merge([
+            // New commands go here
+        ])->toArray(),
+
+    /*
+    |--------------------------------------------------------------------------
+    | Scan Path
+    |--------------------------------------------------------------------------
+    |
+    | Here you define which folder will be scanned. By default will scan vendor
+    | directory. This is useful if you host the package in packagist website.
+    |
+    */
+    'scan' => [
+        'enabled' => false,
+        'paths' => [
+            base_path('vendor/*/*'),
+        ],
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Composer File Template
+    |--------------------------------------------------------------------------
+    |
+    | Here is the config for the composer.json file, generated by this package
+    |
+    */
+    'composer' => [
+        'vendor' => env('MODULE_VENDOR', 'nwidart'),
+        'author' => [
+            'name' => env('MODULE_AUTHOR_NAME', 'Nicolas Widart'),
+            'email' => env('MODULE_AUTHOR_EMAIL', 'n.widart@gmail.com'),
+        ],
+        'composer-output' => false,
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Choose what laravel-modules will register as custom namespaces.
+    | Setting one to false will require you to register that part
+    | in your own Service Provider class.
+    |--------------------------------------------------------------------------
+    */
+    'register' => [
+        'translations' => true,
+        /**
+         * load files on boot or register method
+         */
+        'files' => 'register',
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Activators
+    |--------------------------------------------------------------------------
+    |
+    | You can define new types of activators here, file, database, etc. The only
+    | required parameter is 'class'.
+    | The file activator will store the activation status in storage/installed_modules
+    */
+    'activators' => [
+        'file' => [
+            'class' => FileActivator::class,
+            'statuses-file' => base_path('modules_statuses.json'),
+        ],
+    ],
+
+    'activator' => 'file',
+
+    /*
+    |--------------------------------------------------------------------------
+    | Inertia
+    |--------------------------------------------------------------------------
+    |
+    | Default Inertia frontend framework used by make commands when no
+    | framework flag (--vue, --react, --svelte) is provided.
+    |
+    | Supported: "vue", "react", "svelte"
+    |
+    */
+    'inertia' => [
+        'frontend' => 'vue',
+    ],
+];
+
+
+php artisan optimize:clear
+composer dump-autoload
+
++ Tạo module đầu tiên: 
+php artisan module:make User
+    Modules/User/app    |  tạo ròi mà thiếu phần mmodel
++ Tạo controller trong module:
+php artisan module:make-controller UserController User
+    Modules/User/app/Http/Controllers/UserController.php
+chạy thêm lệnh để chỉnh đường dẫn bên trông file
+
++ Tạo model trong module: 
+php artisan module:make-model User User
+
+
+
+
+tạo thêm module Product
+php artisan module:make Product
+dán tất cả vào các file tương ứng
+ copy nội dung UserController dán vào UserController mini
+di chuyển cả folder Repositories > vàophần  app
+ copy nội dung Models/User.php dán vào Models/User.php mini     |  xoá User.php trong Models bên ngoài
+di chuyển hết file.php trong Models sang 
+ copy dòng lệnh liên kết Repository ở Providers/AppServiceProvider.php
+vd:
+copy views > resources/views/users > bế cả folder users sang resources/views trong  Laravel Modules mini
+copy đường dẫn trong routes/wed.php sang routes/wed.php Laravel Modules mini
+ chỉnh hết các đường dẫn trong all file 
+vào google > marge-plugn in composer json
+    "extra": {
+        "laravel": {
+            "dont-discover": []
+        },
+    
+        "merge-plugin": {
+            "include": [
+                "Modules/*/composer.json"
+           
+            ],
+            "recurse": true,
+            "replace": false,
+            "ignore-duplicates": false,
+            "merge-dev": true,
+            "merge-extra": false,
+            "merge-scripts": false
+        }
+    },
+ chỉnh composer.json bên ngoài 
+ chạy lại packit
+ composer dump-autoload
+lỗi >kiểm tra  config/auth.php  |   Laravel auth (Breeze / Jetstream / starter kit) mặc định: 
+ kiểm tra .env  | AUTH_MODEL=
+ thành : AUTH_MODEL=Modules\User\App\Models\User
+
+<?php
+
+namespace App\Models;
+
+// use Illuminate\Contracts\Auth\MustVerifyEmail;
+use App\Models\Part;
+use App\Models\Position;
+use App\Models\Team;
+use App\Models\TypeAccount;
+use Database\Factories\UserFactory;
+use Illuminate\Database\Eloquent\Attributes\Fillable;
+use Illuminate\Database\Eloquent\Attributes\Hidden;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Notifications\Notifiable;
+
+#[Fillable(['name', 'email', 'password'])]
+#[Hidden(['password', 'remember_token'])]
+class User extends Authenticatable
+{
+    /** @use HasFactory<UserFactory> */
+    use HasFactory, Notifiable;
+
+    /**
+     * Get the attributes that should be cast.
+     * @ var list<string>
+     * cho phép dc tương tác các cột trong DB
+     * @return array<string, string>
+     */
+    protected $fillable = [
+        'name',
+        'email',
+        'password',
+        'birthday',
+        'sex',
+        'part_id',
+        'position_id',
+        'type_work',
+        'team_id',
+        'phone',
+        'address',
+        'status',
+        'start_day',
+        'end_day',
+        'type_account_id',
+
+    ];
+
+    protected $hidden = [
+        'password',
+        'remember_token',
+    ];
+
+// thêm function để thể hiện các mối quan hệ
+// tạo váo Models/Part để ánh xạ với bảng parts trongDB
+public function part(){ 
+    return $this->belongsTo(Part::class, 'part_id');
+}
+// tạo váo Models/Position để ánh xạ với bảng positions trongDB
+    public function position(){
+    return $this->belongsTo(Position::class, 'position_id');
+}
+// tạo váo Models/Team để ánh xạ với bảng teams trongDB
+    public function team(){
+    return $this->belongsTo(Team::class, 'team_id');
+}
+// tạo váo Models/typeAccount để ánh xạ với bảng type_accounts trongDB
+    public function typeAccount(){
+        return $this->belongsTo(TypeAccount::class, 'type_account_id');
+}
+
+    protected function casts(): array
+    {
+        return [
+            'email_verified_at' => 'datetime',
+            'password' => 'hashed',
+        ];
+    }
+}
+
+
+<?php
+
+namespace App\Http\Controllers;
+
+
+// use App\Models\Part; //đã khai báo UserRepository.php
+// use App\Models\Position; //đã khai báo UserRepository.php
+// use App\Models\Team; //đã khai báo UserRepository.php
+// use App\Models\TypeAccount; //đã khai báo UserRepository.php
+use App\Models\User;
+use App\Repositories\Interfaces\UserRepositoryInterface;
+use Illuminate\Http\Request;
+// use Illuminate\Support\Facades\Hash; //đã khai báo UserRepository.php
+use Illuminate\Validation\Rule;
+// use Yajra\DataTables\DataTables; // ko dùng tới vì đã chuyển qua UserRepository.php
+
+class UserController extends Controller
+{
+    // tạo biến để dùng UserRepositoryInterface.php
+    protected $userRepository;
+    public function __construct(UserRepositoryInterface $userRepository)
+    {
+        $this->userRepository =  $userRepository; //userRepository=protected $userRepository;   |  $userRepository=(UserRepositoryInterface $userRepository)
+
+    }
+    // Giao diện
+    public function index()
+    {
+        return view('users.list');
+    }
+    // cách 1    |   nếu dùng cách 2 thì coment all cách 1
+    public function getFilters() // vào route/wed.php
+    {
+        return response()->json($this->userRepository->getFilters()); //getFilters() ở UserRepository.php
+        // chuyển cái này qua UserRepository.php
+        // $status_f = collect([
+        //     ['id' => 1, 'text' => 'Nghỉ việc'],
+        //     ['id' => 0, 'text' => 'Đang làm'],
+        // ]);
+        // $part_f = Part::select('id', 'name as text')->orderBy('name')->get();
+        // $team_f = Team::select('id', 'name as text')->orderBy('name')->get();
+        // $role_f = TypeAccount::select('id', 'name as text')->orderBy('name')->get();
+        // return response()->json([
+        //     'status_f' => $status_f,
+        //     'part_f' => $part_f,
+        //     'team_f' => $team_f,
+        //     'role_f' => $role_f
+        // ]);
+    }
+    public function getUsersData(Request $request)
+    {
+        if ($request->ajax()) { //dùng cách 2 thì bỏ cái này
+            return $this->userRepository->getUsersData($request); //getUsersData() ở UserRepository.php
+            // chuyển cái này qua UserRepository.php
+            // // $data = User::select(['id','name','email','created_at','updated_at' ]);
+            // // gọi các function bảng đang dc nối + lấy all từ users 
+            // $users = User::with('part', 'position', 'team', 'typeAccount');
+            // $users->orderByDesc('created_at');
+            // // Kiểm tra filter   d.part_id      |   lấy ra dữ liệu mới   |   table ko vẫn giữ dử liệu cũ thì qua view strip chỉnh
+            // if ($request->filled('part_id')) { // chọn cột trong nút select filled() nếu có data trả về thì = true |ko = rỗng     |  //dùng cách 2 thì bỏ cái này
+            //     $users->where('part_id', $request->part_id);
+            // }
+            // // Kiểm tra filter   d.status
+            // if ($request->filled('status')) { // chọn cột trong nút select filled() nếu có data trả về thì = true |ko = rỗng     |  //dùng cách 2 thì bỏ cái này
+            //     $users->where('status', $request->status);
+            // }
+            // // Kiểm tra filter   d.team
+            // if ($request->filled('team')) { // chọn cột trong nút select filled() nếu có data trả về thì = true |ko = rỗng     |  //dùng cách 2 thì bỏ cái này
+            //     $users->where('team_id', $request->team);
+            // }
+            // // Kiểm tra filter   d.type_account_id
+            // if ($request->filled('type_account_id')) { // chọn cột trong nút select filled() nếu có data trả về thì = true |ko = rỗng     |  //dùng cách 2 thì bỏ cái này
+            //     $users->where('type_account_id', $request->type_account_id);
+            // }
+            // return DataTables::of($users)
+
+            //     ->addIndexColumn() // Tạo cột số thứ tự tự động | trả dữ liệu cho datatable resources/views/users/list.blade.php 
+            //     ->editColumn('sex', function ($row) { //editColumn() sủa thông tin hiển thị
+            //         return $row->sex == 0 ? 'Nam' : 'Nữ';
+            //     })
+
+            //     ->editColumn('part_id', function ($row) {
+            //         return $row->part->name ?? '';
+            //     })
+            //     // cách2
+            //     // ->filterColumn('part_id', function ($query, $keyword) { //filterColumn() ko dung kiểu mặc định mà dùng custom theo tên bảng | = query hiện tại của User | = giá trị user chọn filter
+
+            //     // $query->whereHas('part', function ($q) use ($keyword) {
+            //     //         $q->where('name', 'like', "%{$keyword}%");
+            //     //     });
+            //     // })
+
+            //     ->editColumn('position_id', function ($row) {
+            //         return $row->position?->name ?? '';
+            //     })
+            //     // cách2
+            //     // ->filterColumn('position_id', function ($query, $keyword) {
+            //     //     $query->whereHas('position', function ($q) use ($keyword) {
+            //     //         $q->where('name', 'like', "%{$keyword}%");
+            //     //     });
+            //     // })
+
+            //     ->editColumn('type_work', function ($row) {
+            //         return $row->sex == 0 ? 'Fulltime' : 'Parttime';
+            //     })
+            //     ->editColumn('position_id', function ($row) {
+            //         return $row->position?->name ?? '';
+            //     })
+
+            //     ->editColumn('team_id', function ($row) {
+            //         return $row->team->name ?? '';
+            //     })
+            //     ->editColumn('status', function ($row) {
+            //         return $row->status == 0 ? 'Đang làm' : 'Nghỉ việc';
+            //     })
+
+            //     ->editColumn('type_account_id', function ($row) {
+            //         return $row->typeAccount->name ?? ''; //function typeAccount>gọi bảng TypeAccount=type_account_id ->trỏ tới cột name
+            //     })
+            //     ->addColumn('action', function ($row) {
+
+            //     // nhớ tạo link trong route/wed.php nối vào thẻ này   |   tạo thêm cái file edit.blade.php
+            //     // này bình thường   onsubmit="return confirm(\'Bạn có chắc muốn xoá?\')">      |  đổi qua SweetAlert2 thì gắn script vào layout
+            //     return '
+            //    <div class="d-flex align-items-center justify-content-center">            
+            //         <a href="' . route('users.edit', $row->id) . '" 
+            //            class="btn btn-light border btn-sm mr-2 action-btn edit-btn">
+            //             <i class="fas fa-pen"></i>
+            //         </a>  
+            //         <form action="' . route('users.delete', $row->id) . '" 
+            //               method="POST">
+            //               ' . csrf_field() . '
+            //               ' . method_field('DELETE') . '
+            //               <button type="submit"
+            //                   class="btn btn-light border btn-sm action-btn delete-btn">
+            //                <i class="fas fa-trash-alt"></i>
+            //           </button>
+            //          </form>
+            //    </div>
+            //     ';
+            //         //                 return '
+
+            //         // <div class="d-flex">
+
+            //         //     <button class="btn btn-warning btn-sm mr-2">
+            //         //         <i class="fas fa-edit"></i>
+            //         //     </button>
+
+            //         //     <button class="btn btn-danger btn-sm">
+            //         //         <i class="fas fa-trash"></i>
+            //         //     </button>
+
+            //         // </div>
+
+            //         // ';
+            //     })
+
+            //     // chỉnh cái nút SEARCH tìm kiếm thì vào UserController chỉnh
+            //     ->filter(function ($query) use ($request) {
+            //         $search = $request->input('search.value');
+            //         if ($search !== null && $search !== '') { //nếu $search khác null và khác rỗng
+            //             $like = '%' . trim($search) . '%'; //like trong SQL | trim() xoá khoảng trắng
+            //             $query->where(function ($q) use ($like) {
+            //                 // $q->orWhere('users.name', 'like', $like)//orWhere so khớp với 1 trong nhìu cột | so khớp bảng users với cột name | like so khớp
+            //                 $q->orWhere('name', 'like', $like)->orWhere('email', 'like', $like)->orWhere('phone', 'like', $like)->orWhere('address', 'like', $like); //orWhere so khớp với 1 trong nhìu cột | so khớp bảng users với cột name | like so khớp
+            //             });
+            //         }
+            //     })
+            //     ->rawColumns(['action'])
+            //     ->make(true);
+        }
+    }
+    // Hàm load dữ liệu ô input  |  cho kết hợp với function create cho ra view  |  add.blade.php
+    // nếu khai báo hết function ở  UserRepository.php thì bỏ cái function này ở đây
+    // public function fromOptions()
+    // {
+
+    //     // chuyển cái này qua UserRepository.php
+    //     // return [
+    //     //     'part' => Part::select('id', 'name as text')->orderBy('name')->get(),
+    //     //     'position' => Position::select('id', 'name as text')->orderBy('name')->get(),
+    //     //     'team' => Team::select('id', 'name as text')->orderBy('name')->get(),
+    //     //     'type_account_idd' => TypeAccount::select('id', 'name as text')->orderBy('name')->get(),
+    //     //     'genders' => [ 
+    //     //         ['id' => 0, 'text' => 'Nam'],
+    //     //         ['id' => 1, 'text' => 'Nữ'],
+    //     //     ],
+    //     //     'type_workk' => [
+    //     //         ['id' => 0, 'text' => 'Fulltime'],
+    //     //         ['id' => 1, 'text' => 'Parttime'],
+    //     //     ],
+    //     //     'status' => [
+    //     //         ['id' => 0, 'text' => 'Đang làm'],
+    //     //         ['id' => 1, 'text' => 'Nghỉ việc'],
+    //     //     ],
+    //     // ];
+    // }
+    public function create() // lấy hàm nối vào input
+    {
+        // session()->forget('_old_input');
+        // $option = $this->fromOptions(); // lấy dữ liệu từ form option
+        $option = $this->userRepository->fromOptions(); // lấy dữ liệu từ form option   |  //fromOptions() ở UserRepository.php
+        return view('users.add', [
+            'option' => $option,
+            'mode' => 'create',
+            'user' => new User() // User rỗng=value="" có khoảng trống cho điền vào
+
+        ]);
+    }
+    // VALIDATE kiểm tra trước khi vào db
+    public function store(Request $request)
+    {
+        $validated = $request->validate([
+            //CRUD gắn cho từng ô input tên thẻ
+            'name' => ['required', 'string', 'max:255'], //bắt buộc , kiểu chuổi , tối đa bao nhiu ký tự |  name của thẻ form name="name"
+            'email' => ['required', 'email', 'max:255', Rule::unique('users', 'email')], //bắt buộc , định dạng email , tối đa bao nhiu ký tự,unique() 1 lần duy nhất-bảng users-cột email |  email của thẻ form name="email"
+            'password' => ['required', 'string', 'min:6'],
+            'birthday' => ['date', 'nullable'], //kiểu date , có thể numfmt_get_locale
+            'sexx' => ['required'], //sexx của thẻ form name="sexx"
+            'part_id' => ['integer', 'nullable', 'exists:parts,id'], // dạng số , có thể null , exists:kiểm bảngparts có cộtid đó ko
+            'position_id' => ['integer', 'nullable', 'exists:positions,id'],
+            'team_id' => ['integer', 'nullable', 'exists:teams,id'],
+            'type_account_id' => ['integer', 'nullable', 'exists:type_accounts,id'],
+            'type_work' => ['required'],
+            'phone' => ['nullable', 'string', 'max:20'],
+            'address' => ['nullable', 'string', 'max:255'],
+            'statuss' => ['required'],
+            'start_day' => ['nullable', 'date'],
+            'end_day' => ['nullable', 'date'],
+        ], [
+            // tên thẻ
+            'name.required' => 'Họ tên bắt buộc phải nhập',
+            'email.required' => 'Email bắt buộc phải nhập',
+            'email.unique' => 'Email đã tồn tại',
+            'password.required' => 'Password bắt buộc phải nhập',
+            'sexx.required' => 'Giói tính bắt buộc phải nhập',
+            'type_work.required' => 'Hình thức làm bắt buộc phải nhập',
+            'statuss.required' => 'Trạng thái bắt buộc phải nhập',
+            'type_account_id.required' => 'Loại tài khoản bắt buộc phải nhập',
+
+        ]);
+        // dd($validated);
+        // chuyển cái này qua UserRepository.php
+        // User::create([
+        //     // tên cột DB => tên thẻ
+        //     'name' => $validated['name'],
+        //     'email' => $validated['email'],
+        //     'password' => Hash::make($validated['password']),
+        //     'birthday' => $validated['birthday'],
+        //     'sex' => $validated['sexx'],
+        //     'part_id' => $validated['part_id'],
+        //     'position_id' => $validated['position_id'],
+        //     'team_id' => $validated['team_id'],
+        //     'type_account_id' => $validated['type_account_id'],
+        //     'type_work' => $validated['type_work'],
+        //     'phone' => $validated['phone'],
+        //     'address' => $validated['address'],
+        //     'status' => $validated['statuss'],
+        //     'start_day' => $validated['start_day'],
+        //     'end_day' => $validated['end_day'],
+        // ]);
+$this->userRepository->store($validated); // store()  ở UserRepository.php 
+
+        return redirect()->route('users.list')->with('success', 'Thêm mới tài khoản thành công'); //success là tên tự đặt | with() → tạo session flash để hiện thông báo 1 lần
+    }
+    public function edit(User $user)
+    {
+        // $option = $this->fromOptions(); // lấy dữ liệu từ form option
+        $option = $this->userRepository->fromOptions(); // lấy dữ liệu từ form option  |  fromOptions()  ở UserRepository.php 
+        return view('users.edit', [
+            'option' => $option,
+            'mode' => 'edit',
+            'user' => $user // Lấy ra dữ liệu cũ từ User
+        ]);
+    }
+    public function update(Request $request, User $user)
+    {
+        $validated = $request->validate([
+            //CRUD gắn cho từng ô input tên thẻ
+            'name' => ['required', 'string', 'max:255'], //bắt buộc , kiểu chuổi , tối đa bao nhiu ký tự |  name của thẻ form name="name"
+            'email' => ['required', 'email', 'max:255', Rule::unique('users', 'email')->ignore($user->id)], //bắt buộc , định dạng email , tối đa bao nhiu ký tự,unique() 1 lần duy nhất-bảng users-cột email |  email của thẻ form name="email" | ignore() Bỏ qua record có id = user hiện tại > email cũ vẫn update được bình thường.
+            'password' => ['nullable', 'string', 'min:6'],
+            'birthday' => ['date', 'nullable'], //kiểu date , có thể numfmt_get_locale
+            'sexx' => ['required'], //sexx của thẻ form name="sexx"
+            'part_id' => ['integer', 'nullable', 'exists:parts,id'], // dạng số , có thể null , exists:kiểm bảngparts có cộtid đó ko
+            'position_id' => ['integer', 'nullable', 'exists:positions,id'],
+            'team_id' => ['integer', 'nullable', 'exists:teams,id'],
+            'type_account_id' => ['integer', 'nullable', 'exists:type_accounts,id'],
+            'type_work' => ['required'],
+            'phone' => ['nullable', 'string', 'max:20'],
+            'address' => ['nullable', 'string', 'max:255'],
+            'statuss' => ['required'],
+            'start_day' => ['nullable', 'date'],
+            'end_day' => ['nullable', 'date'],
+        ], [
+            // tên thẻ
+            'name.required' => 'Họ tên bắt buộc phải nhập',
+            'email.required' => 'Email bắt buộc phải nhập',
+            'email.unique' => 'Email đã tồn tại',
+            'password.required' => 'Password bắt buộc phải nhập',
+            'sexx.required' => 'Giói tính bắt buộc phải nhập',
+            'type_work.required' => 'Hình thức làm bắt buộc phải nhập',
+            'statuss.required' => 'Trạng thái bắt buộc phải nhập',
+            'type_account_id.required' => 'Loại tài khoản bắt buộc phải nhập',
+
+        ]);
+        // chuyển cái này qua UserRepository.php
+        // $dataUpdate = $validated; //Clone toàn bộ dữ liệu validate sang biến mới:
+        // unset($dataUpdate['password']); // xoá field password khỏi mảng update
+        // // - Có nhập password mới -> hash rồi update
+        // // - Không nhập -> giữ nguyên password cũ
+        // if (!empty($validated['password'])) { // nếu rỗng 
+        //     $dataUpdate['password'] = Hash::make($validated['password']); // thì có lệnh hash password update password mới Để cho nhập
+        // }
+        // // update
+        // $user->update($dataUpdate);
+        $this->userRepository->update($validated, $user); // update() ở UserRepository.php 
+
+        return redirect()->route('users.list')->with('success', 'Chỉnh sửa  tài khoản thành công'); //success là tên tự đặt | with() → tạo session flash để hiện thông báo 1 lần
+
+    }
+
+    public function destroy(User $user)
+    {
+        // chuyển cái này qua UserRepository.php
+        // $user->delete();
+        $this->userRepository->destroy($user); // destroy() ở UserRepository.php 
+        return redirect()->route('users.list')->with('success', 'Xoá tài khoản thành công');
+    }
+}
+
+
+
+
+
+        "merge-plugin": 
+"include": [
+"composer.local.json",
+"web/modules/contrib/*/composer.libraries.json",
+"src/my-library/composer.json"],
+"require": [
+"composer.required.json"]
+
+
+
+
+
+
+1. yajra/datatables  có
+2. spatie/permission         composer require spatie/laravel-permission | php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvider"  |   php artisan migrate
+3. 
+4. debugbar
+5.
+6. sanctum  có
+7. repository pattern có
+8. Activity Log     có          |    Spatie Activity Log  | composer require spatie/laravel-activitylog
+9. Excel Export     có          |    SalaryExport         | composer require maatwebsite/excel
+8. queue/job                   php artisan module:make-job ExportAttendanceExcelJob Attendance     
+9. cache                       
+10. websocket
+11 Realtime                 composer require laravel/reverb   |  php artisan reverb:install  |  php artisan reverb:start
+
+php artisan module:make Salary   
+php artisan module:make-model SalaryMechanism Salary
+
+🔐 SPATIE PERMISSION 
+  Middleware route (Salary routes)
+// Repositories tách file thao tác function  v
+Modules/Salary/App/Repositories/SalaryRepository.php
+
+Modules/Salary/App/Services/SalaryService.php
+Modules/Salary/App/Events/SalaryUpdated.php
+
+// xuất file excel  v
+Modules\Salary\App\Exports\SalaryExport.php
+// cài cái này trước ròi mói chạy dc php
+composer require maatwebsite/excel
+
+// log lại kiểu: ai đang sửa    |   database > bảng activity_log
+Modules/Salary/App/Listeners/LogSalaryActivity.php
+   activity  : 
+composer require spatie/laravel-activitylog
+php artisan vendor:publish --provider="Spatie\Activitylog\ActivitylogServiceProvider"
+php artisan migrate
+// tách file Repositories
+EventServiceProvider : 
+protected $listen = [
+    \Modules\Salary\App\Events\SalaryUpdated::class => [
+        \Modules\Salary\App\Listeners\LogSalaryActivity::class,
+    ],
+];
+
+// phân quyền
+php artisan make:middleware CheckSalaryPermission
+<?php
+
+namespace App\Http\Middleware;
+
+use Closure;
+use Illuminate\Http\Request;
+use Symfony\Component\HttpFoundation\Response;
+use Illuminate\Support\Facades\Auth;
+
+class CheckSalaryPermission
+{
+    public function handle(Request $request, Closure $next): Response
+    {
+        if (!Auth::check()) {
+            abort(403);
+        }
+
+        if (!in_array(Auth::user()->type_account_id, [3, 4, 5])) {
+            abort(403);
+        }
+
+        return $next($request);
+    }
+}
+// phân quyền
+   đăng ký middleware alias.
+bootstrap/app.php
+<?php
+
+use Illuminate\Foundation\Application;
+use Illuminate\Foundation\Configuration\Exceptions;
+use Illuminate\Foundation\Configuration\Middleware;
+
+return Application::configure(basePath: dirname(__DIR__))
+    ->withRouting(
+        web: __DIR__ . '/../routes/web.php',
+        commands: __DIR__ . '/../routes/console.php',
+        health: '/up',
+    )
+
+    ->withMiddleware(function (Middleware $middleware): void {
+
+        $middleware->alias([
+            'check.salary' => \App\Http\Middleware\CheckSalaryPermission::class,
+        ]);
+    })
+
+    ->withExceptions(function (Exceptions $exceptions): void {
+        //
+    })
+
+    ->create();
+
+composer require spatie/laravel-permission
+php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvider"
+Tạo Permission
+Trong Tinker:
+php artisan tinker
+vd:
+use Spatie\Permission\Models\Permission;
+
+Permission::create(['name'=>'salary.view']);
+Permission::create(['name'=>'salary.create']);
+Permission::create(['name'=>'salary.edit']);
+Permission::create(['name'=>'salary.delete']);
+     v
+$role = Role::findByName('Admin');
+
+$role->givePermissionTo([
+    'salary.view',
+    'salary.create',
+    'salary.edit',
+    'salary.delete',
+]);
+     v
+use Spatie\Permission\Models\Role;
+     v
+$role = Role::findByName('Admin');
+     v
+$role->givePermissionTo([
+    'salary.view',
+    'salary.create',
+    'salary.edit',
+    'salary.delete'
+]);
+     v
+$role->permissions;
+ q   v
+$role->permissions->pluck('name');     
+     v
+$user = \Modules\User\App\Models\User::find(1);     
+     v     |    Nếu chưa gán role thì sẽ ra:   []
+$user->assignRole('Admin');    
+     v     |   
+$user->getRoleNames(); 
+     v     |    kiểm tra gán Admin chưa 
+$user->getPermissionNames();      |  kiểm tra coi còn  [] không
+     v     | còn []  thì qua bước này
+$role = \Spatie\Permission\Models\Role::findByName('Admin');
+$role->permissions->pluck('name');
+nó ra vd : 
+[
+ "salary.view",
+ "salary.create",
+ "salary.edit",
+ "salary.delete"
+] >  thì Role OK.
+     v 
+$user->roles;    |    nếu name ra: Admin 
+     v
+mở file Modules/User/App/Models/User.php xem có   use Spatie\Permission\Traits\HasRoles; class User extends Authenticatable{use HasFactory, Notifiable, HasRoles;
+     v           |  thoát tinker 
+php artisan permission:cache-reset 
+     v
+php artisan tinker
+     v
+$user = \Modules\User\App\Models\User::find(1);
+$user->getPermissionNames();
+     v           |   kiểm tra có []  nếu có chạy $user->hasRole('Admin');  chạy đại 
+$user->hasRole('Admin');       |   ra: true
+     v 
+$role = \Spatie\Permission\Models\Role::findByName('Admin');
+$role->permissions->pluck('name');    
+     v           |  kiểm tra có đủ các quyền không    nếu ko Nếu không đủ 4 quyền thì role chưa gán permission.
+$user = \Modules\User\App\Models\User::find(1);
+     v
+$user->permissions;
+     v
+$user->roles;
+     v 
+$user->hasPermissionTo('salary.view');       |  Nếu TRUE thì Permission hoạt động rồi. > Lúc đó:$user->getPermissionNames() không quan trọng nữa.
+     v           | kiểm tra cuối xem xác nhận 100%
+$user->getAllPermissions()->pluck('name');     
+     nếu chỉnh hết mà vào view ko chạy thì kiểm tra gán giá trị đúng id chưa
+
+
+     cái này chạy ngoài terminal:
+Ngoài ra để tránh Tinker cứ hiện ...skipping..., chạy:
+
+export PAGER=cat
+php artisan tinker
+
+
+
+✓ MVC
+index.blade.php > web.php > SalaryController > SalaryMechanism > salary_mechanisms table
+
+✓ Repository Pattern
+SalaryController > SalaryService > SalaryRepository > SalaryMechanism > DB
+file : SalaryController.php > SalaryService.php > SalaryRepository.php > SalaryMechanism.php
+
+✓ Service Layer
+Controller > Business Logic > Repository
+file : SalaryController.php > SalaryService.php > SalaryRepository.php
+
+✓ Event Driven Architecture
+SalaryService > event() > SalaryUpdated > EventServiceProvider > LogSalaryActivity
+file : SalaryService.php > SalaryUpdated.php > EventServiceProvider.php > LogSalaryActivity.php
+
+  Job  
+✓ Event
+✓ Listener
+SalaryUpdated Event > Listener > Queue > Worker > Handle()
+SalaryService.php > SalaryUpdated.php > LogSalaryActivity.php > jobs table
+
+✓ DataTable Server Side
+index.blade.php -> AJAX > salary.data > SalaryController::data() > SalaryMechanism > JSON > DataTable Render
+
+✓ AJAX CRUD
+CREATE: 
+Modal > AJAX POST > salary.store > Controller > Service > Repository > DB
+UPDATE: 
+Edit Modal > AJAX > salary.update > Controller > Service > Repository
+DELETE: 
+Delete Button > AJAX > salary.delete > Controller > Service > Repository
+
+✓ Validation Request
+AJAX > StoreSalaryRequest > validated() > Controller
+StoreSalaryRequest.php
+UpdateSalaryRequest.php
+
+✓ Middleware
+
+✓ Spatie Permission
+
+✓ Eloquent Relationship
+SalaryMechanism > belongsTo > User > belongsTo > Part User > belongsTo > Position
+
+✓ Eager Loading
+SalaryController > with([ user.part, user.position ]) > 4 Query > DataTable
+
+✓ Cache
+Controller > Cache::remember() > Redis/File > DB
+
+✓ Excel Export
+Button Export > salary.export > SalaryController > SalaryExport > SalaryMechanism > Excel Download
+
+✓ Activity Log
+SalaryService > SalaryUpdated Event > Listener > activity() > activity_log
+
+✓ Chart.js
+
+✓ Laravel Modules
+
+✓ Sanctum
+Login > Token > sanctum > API
+file : AuthController > createToken()
+
+✓ REST API
+
+✓ RBAC (Role Permission)
+Role > Permission > Middleware > Controller
+File : RoleSeeder > PermissionSeeder > bootstrap/app.php > web.php
+
+✓ Soft Delete (nếu bật)
+
+✓ Authentication
+Login > Session > Auth::user()
+
+✓ Authorization
+User > Permission > Middleware > Controller
+
+
+Blade
+ ↓
+Ajax
+ ↓
+Route
+ ↓
+Controller
+ ↓
+Service
+ ↓
+Repository
+ ↓
+Model
+ ↓
+DB
+
+
+
+    nên học thêm : 
+1. Observer                php artisan module:make-observer AttendanceObserver Attendance
+2. Notification
+3. Mail                    composer require laravel/pail --dev      |    composer require symfony/mailer
+4. Queue Chain
+5. Redis                    composer require predis/predis     |    .env : CACHE_STORE=redis  REDIS_HOST=127.0.0.1   REDIS_PASSWORD=null   REDIS_PORT=6379 
+  Kiểm tra:redis-server --version    Nếu báo: command not found  | thì cài:  brew install redis  | Khởi động:  brew services start redis  |  Kiểm tra:  redis-cli ping   |  Nếu trả: PONG   là OK.
+6. API Resource             php artisan module:make-resource AttendanceResource Attendance
+7. Policy                   php artisan make:policy AttendancePolicy --model=Modules\\Attendance\\App\\Models\\Attendance
+8. Feature Test             php artisan module:make-test AttendanceFeatureTest Attendance
+9. Unit Test
+10. CI/CD
+11. Docker    https://www.docker.com/products/docker-desktop/?utm_source=chatgpt.com   kiểm tra terminal: uname -m  nếu ra: arm64 > tải bản: Mac Apple Silicon   
+docker --version    docker compose version    docker compose up -d   docker ps   
+Sau đó vào: → Settings  >  Resources  >  File Sharing   thêm:/Users/lahoathanh/Desktop/laravel
+mkdir -p docker/supervisor
+touch docker/supervisor/laravel-worker.conf
+
+3 lệnh thường dùng
+ # Khởi động container
+ # Kiểm tra container đang chạy
+ # Xem log realtime của toàn bộ project
+docker compose up -d     
+docker compose ps         
+docker compose logs -f    
+19 touch Dockerfile             docker-compose build      docker-compose up -d    docker ps    docker exec -it hrm_app bash       php artisan migrate
+vd: FROM php:8.3-fpm   Nếu sau này Laravel yêu cầu PHP 8.4 thì chỉ cần đổi:   FROM php:8.4-fpm   rồi build lại: 
+docker compose build --no-cache
+docker compose up -d 
+kiểm tra nơi quyết định phiên bản PHP mà project Laravel yêu cầu. > composer.json
+20 touch docker-compose.yml       |   file này chứa Laravel > PHP > MySQL > Redis > Nginx
+> nếu xoá container trong docker desktop  | Kiểm tra có file:docker-compose.yml |  Sau đó chạy:  docker compose up -d
+>lệnh xoá hết các hàng image không còn được container nào sử dụng:   docker image prune -a
+>
+>lệnh dọn rác Docker:   docker system prune -a   |   ( System Prune )
+>Save / Load  |  Backup Image:   docker save   |  Khôi phục:   docker load
+>Kiểm tra tên thật:  docker ps     |   Ví dụ kết quả:     keyagatwo-app-1
+# Chạy project
+docker compose up -d
+# Dừng project
+docker compose down
+# Xem container
+docker ps
+# Xem image
+docker images
+# Xem log realtime
+docker compose logs -f
+# Vào container
+docker exec -it app bash
+# Xem CPU/RAM
+docker stats
+# Xóa rác Docker
+docker system prune
+# Build lại image
+docker compose build
+# Khởi động lại container
+docker compose restart
+>Restart Policy : gắn vào docker-compose.yml  |       restart: always      |   máy chạy thì docker tự đọng chạy
+
+>Muốn project hiện tại dùng Image trên Docker Hub:
+cách 1
+Nếu hiện tại docker-compose.yml của bạn là:
+app:
+  build: .
+thì Docker sẽ build từ Dockerfile trên máy.
+
+>Muốn dùng image từ Docker Hub thì đổi thành:
+app:
+  image: horizon888/docker1:latest
+rồi chạy:
+docker compose pull
+docker compose up -d
+Docker sẽ:
+Docker Hub > Download Image > Run Container > Không cần build trên máy người dùng.
+
+>Muốn đưa lên Docker Hub:
+Đăng nhập:
+docker login
+Tag image:
+docker tag keyagatwo-app yourusername/keyagatwo-app:latest
+Push:
+docker push yourusername/keyagatwo-app:latest
+
+cách 2
+>Người khác lấy image
+docker pull yourusername/keyagatwo-app:latest
+là có image giống hệt của bạn.
+
+>Cập nhật file DockerHub
+- lấy image cũ : horizon888/keyagatwo-app:latest
+- kiểm tra đã login Docker Hub chưa : 
+docker login       |    Nếu đã login sẽ hiện :   Login Succeeded
+- Build lại image : 
+docker build -t horizon888/keyagatwo-app:latest .
+Docker sẽ đọc lại : Dockerfile > COPY docker/php/php.ini > COPY docker/supervisor/laravel-worker.conf > COPY .
+- Push lên Docker Hub:
+docker push horizon888/keyagatwo-app:latest
+>Nếu đang chạy Docker Compose
+- Bạn nên chạy : 
+docker compose down
+rồi : 
+docker compose build --no-cache
+để chắc chắn image được build lại hoàn toàn.
+Sau đó : 
+docker compose push
+nếu các service đều có image: hợp lệ.
+
+12. Websocket                   composer require laravel/reverb      |     php artisan reverb:install
+13. Microservice cơ bản
+14 Queue Export Excel           php artisan module:make-job ExportAttendanceExcelJob Attendance
+Queue hiện tại chưa chạy nền   |   Chạy: php artisan queue:work  | Mở terminal khác:  php artisan attendance:summary   | Sau đó xem:  tail -f storage/logs/laravel.log  |  Nếu thấy:  ATTENDANCE SUMMARY  >> báo: No such file or directory = nghĩa là Laravel chưa tạo file log. >>  Kiểm tra: laravel-2026-06-04.log   
+15 sanctum                       composer show laravel/sanctum   nếu báo not found thì cài    composer require laravel/sanctum  >  php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
+16 Dùng Mailpit là testmail                  brew install mailpit    |    mailpit    |    sẽ thấy:SMTP server listening on 0.0.0.0:1025 Web UI available at http://localhost:8025
+17 Horizon                     composer require laravel/horizon     php artisan horizon:install    php artisan migrate    php artisan horizon
+18 Swagger / OpenAPI          composer require darkaonline/l5-swagger
+    php artisan vendor:publish --provider="L5Swagger\L5SwaggerServiceProvider"         php artisan l5-swagger:generate 
+21 GitHub Actions CI/CD        .github/workflows/laravel.yml
+mkdir -p .github/workflows
+touch .github/workflows/laravel.yml
+   Mở file GitHub Actions:
+✅ Pint
+✅ PHPStan
+✅ Psalm
+✅ PHPUnit
+✅ Coverage
+✅ Build Docker
+?  Docker Hub
+?  GHCR
+?  SSH
+Deploy Staging và Deploy Production chỉ hoạt động khi bạn đã cấu hình GitHub Secrets (SSH hoặc Docker Registry). Nếu chưa có server thì mình để sẵn chỗ để thêm sau.
+nano .github/workflows/laravel.yml        | xoá:Ctrl + K
+   chỉnh:
+name: Laravel CI/CD
+
+on:
+  push:
+    branches:
+      - develop
+      - main
+  pull_request:
+    branches:
+      - develop
+      - main
+
+permissions:
+  contents: read
+  packages: write
+
+jobs:
+
+  quality:
+
+    name: Code Quality
+
+    runs-on: ubuntu-latest
+
+    services:
+
+      mysql:
+
+        image: mysql:8.0
+
+        env:
+          MYSQL_DATABASE: attendance_test
+          MYSQL_ROOT_PASSWORD: root
+
+        ports:
+          - 3306:3306
+
+        options: >-
+          --health-cmd="mysqladmin ping --silent"
+          --health-interval=10s
+          --health-timeout=5s
+          --health-retries=5
+
+      redis:
+
+        image: redis:7
+
+        ports:
+          - 6379:6379
+
+    steps:
+
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: 8.4
+          coverage: xdebug
+          extensions: mbstring, bcmath, pdo_mysql, redis
+
+      - name: Cache Composer
+        uses: actions/cache@v4
+        with:
+          path: vendor
+          key: composer-${{ hashFiles('composer.lock') }}
+
+      - name: Install Composer
+        run: composer install --prefer-dist --no-interaction
+
+      - name: Environment
+        run: |
+          cp .env.example .env
+          php artisan key:generate
+
+      - name: Permission
+        run: chmod -R 777 storage bootstrap/cache
+
+      - name: Database
+        env:
+          DB_CONNECTION: mysql
+          DB_HOST: 127.0.0.1
+          DB_PORT: 3306
+          DB_DATABASE: attendance_test
+          DB_USERNAME: root
+          DB_PASSWORD: root
+        run: php artisan migrate --force
+
+      - name: Pint
+        run: vendor/bin/pint --test
+
+      - name: PHPStan
+        run: vendor/bin/phpstan analyse
+
+      - name: Psalm
+        run: vendor/bin/psalm
+
+      - name: PHPUnit
+        run: php artisan test
+
+      - name: Coverage
+        run: php artisan test --coverage-clover=coverage.xml
+
+      - name: Upload Coverage
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage
+          path: coverage.xml
+
+  docker:
+
+    name: Build Docker
+
+    needs: quality
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - uses: actions/checkout@v4
+
+      - name: Build Docker
+        run: |
+          docker build -t attendance-app .
+
+  deploy-staging:
+
+    name: Deploy Staging
+
+    needs: docker
+
+    if: github.ref == 'refs/heads/develop'
+
+    runs-on: ubuntu-latest
+
+    environment: staging
+
+    steps:
+
+      - name: Deploy
+        run: |
+          echo "Deploying to Staging..."
+          # ssh ${{ secrets.STAGING_USER }}@${{ secrets.STAGING_HOST }}
+          # cd /var/www/project
+          # git pull
+          # docker compose up -d --build
+
+  deploy-production:
+
+    name: Deploy Production
+
+    needs: docker
+
+    if: github.ref == 'refs/heads/main'
+
+    runs-on: ubuntu-latest
+
+    environment: production
+
+    steps:
+
+      - name: Deploy
+        run: |
+          echo "Deploying to Production..."
+          # ssh ${{ secrets.PROD_USER }}@${{ secrets.PROD_HOST }}
+          # cd /var/www/project
+          # git pull
+          # docker compose up -d --build
+   Lưu:
+Ctrl + O
+Enter
+Ctrl + X
+>21.0 Laravel extension: larastan:  composer require --dev larastan/larastan
+>21.1 Pint      composer require laravel/pint --dev    |    vendor/bin/pint  | kiểm tra:  vendor/bin/pint --test
+>22.2 PHPStan   composer require --dev phpstan/phpstan   |  Tạo:  phpstan.neon
+gắn : 
+parameters:
+    level: 8
+
+    paths:
+        - app
+        - Modules
+Chạy :
+  vendor/bin/phpstan analyse
+Senior thường để :  level 8      or     level max
+>22.3 Psalm     composer require --dev vimeo/psalm    |   vendor/bin/psalm --init   |  vendor/bin/psalm
+Không phải công ty nào cũng dùng Psalm.    |   Laravel hiện nay đa số: PHPStan
+22.4 PHPUnit    Bạn đã có khá nhiều test. 
+php artisan test
+or:
+vendor/bin/phpunit
+22.5 Coverage
+Github Action:
+- name: Coverage XML
+
+  run: php artisan test --coverage-clover coverage.xml
+22.6 Docker Build
+- name: Build Docker
+
+  run: docker build -t attendance .
+Có thể push luôn:
+- name: Login DockerHub
+
+- name: Push Image
+22.7 Deploy Staging
+Ví dụ:  if: github.ref == 'refs/heads/develop'
+Deploy:
+git pull
+
+composer install
+
+php artisan migrate --force
+
+php artisan optimize
+
+php artisan horizon:terminate
+22.7 Deploy Production
+ví dụ :  if: github.ref == 'refs/heads/main'
+SSH : 
+git pull
+
+composer install --no-dev
+
+php artisan migrate --force
+
+php artisan optimize
+
+php artisan horizon:terminate
+
+php artisan queue:restart
+
+php artisan reverb:restart
+22.8 Security Scan (rất nên có)
+- name: Composer Audit
+
+  run: composer audit
+>Kiểm tra package có lỗ hổng.
+22.9 Docker Compose Validation
+- name: Validate Docker
+
+  run: docker compose config
+22.10  Laravel Optimize
+php artisan config:cache
+
+php artisan route:cache
+
+php artisan view:cache
+22.11 Kiểm tra Migration
+php artisan migrate --pretend
+22.12 Kiểm tra Queue
+php artisan queue:restart
+22.13 Kiểm tra Horizon
+php artisan horizon:terminate
+22.14 Kiểm tra Reverb
+php artisan reverb:restart
+22 Docker Production Ready      docker/supervisor/laravel-worker.conf
+   Mở file Supervisor:
+nano docker/supervisor/laravel-worker.conf
+   chỉnh : 
+[program:laravel-worker]
+
+process_name=%(program_name)s_%(process_num)02d
+
+command=php /var/www/artisan queue:work redis --queue=attendance,default --sleep=3 --tries=3
+
+autostart=true
+
+autorestart=true
+
+numprocs=2
+
+redirect_stderr=true
+
+stdout_logfile=/var/www/storage/logs/worker.log 
+   Lưu:
+Ctrl + O
+Enter
+Ctrl + X
+23 Dashboard Chart.    composer require consoletvs/charts
+24 PDF REPORT          composer require barryvdh/laravel-dompdf
+PDF View        
+Mail View     Modules/Attendance/resources/views/emails/attendance-approved.blade.php
+Queue Job     Modules/Attendance/App/Jobs/SendAttendanceApprovedMailJob.php
+php artisan attendance:summary
+25 Frontend Realtime    npm install laravel-echo pusher-js   |?  php artisan reverb:install   >  tạo ra : routes/channels.php
+chạy Reverb: 
+Terminal 1 :      php artisan reverb:start
+Terminal 2 :      php artisan queue:work   |  or:  php artisan horizon
+Terminal 3 :      php artisan serve
+Terminal 4 :      npm run dev
+resources/views/layouts/app.blade.php   :  thêm :  @vite(['resources/js/app.js'])
+hoặc:  resources>views>layouts>parts>footer.blade.php
+php artisan optimize:clear
+php artisan config:clear
+php artisan reverb:restart
+php artisan reverb:start
+php artisan about
+php artisan reverb:start --debug   |  ra: Address already in use (EADDRINUSE) > nghĩa là đã có 1 process Reverb khác đang chiếm: 0.0.0.0:8080  | kill -9 89387  | kiểm tra:  lsof -i :8080   > ko hiện là đã giải phóng cổng
+kiểm tra đã nối file vào footer chưa
+npm run dev
+chạy lại mới thấy event (nếu ko thấy realtime) :
+kill 67365
+hoặc
+pkill -f reverb
+php artisan reverb:start --debug
+Mở Console:
+window.Echo   
+window.Echo.connector.pusher.connection.state
+26 Cài TypeScript    npm install -D typescript   |  kiểm tra: npx tsc --version 
+chưa có thì tạo: touch tsconfig.json     |    kiểm tra: ls
+
+Permission
+Tạo Role trong DB      |  Nếu chưa có role.
+php artisan tinker
+
+use Spatie\Permission\Models\Role;
+
+Role::create(['name' => 'Admin']);
+Role::create(['name' => 'Employee']);
+Role::create(['name' => 'Accountant']);
+
+User::all()->each(function ($user) {
+    $type = TypeAccount::find($user->type_account_id);
+    if ($type) {
+        $user->syncRoles($type->name);
+    }
+});
+
+Sau đó phân quyền:
+Role::findByName('Admin')->givePermissionTo([
+    'users.create',
+    'users.edit',
+    'users.delete'
+]);
+
+Role::findByName('HR Manager')->givePermissionTo([
+    'users.create',
+    'users.edit'
+]);
+
+Role::findByName('Employee')->givePermissionTo([]);
+
+và trong route:
+Route::delete('/users/{user}', ...)
+    ->middleware('permission:users.delete');
+
+ Sau đó tạo permission:
+ use Spatie\Permission\Models\Permission;
+
+Permission::create(['name' => 'users.view']);
+Permission::create(['name' => 'users.create']);
+Permission::create(['name' => 'users.edit']);
+Permission::create(['name' => 'users.delete']);
+
+Gán quyền:
+use Spatie\Permission\Models\Role;
+
+Role::findByName('Admin')->givePermissionTo([
+    'users.view',
+    'users.create',
+    'users.edit',
+    'users.delete',
+]);
+Role::findByName('HR Manager')->givePermissionTo([
+    'users.view',
+    'users.create',
+    'users.edit',
+]);
+Role::findByName('Employee')->givePermissionTo([
+    'users.view',
+]);
+Role::findByName('Nhân viên')->givePermissionTo([
+    'users.view',
+]);
+
+TypeAccount::pluck('name', 'id');
+
+DB::table('model_has_roles')->get();
+
+cách kiểm tra trong DB xem có khoảng trắng không : 
+SELECT id, CONCAT('[',name,']') as role_name
+FROM roles;
+
+lệnh chỉnh name trỏ của permission:
+use Spatie\Permission\Models\Permission;
+
+Permission::where('name', 'users.create')->update(['name' => 'user.create']);
+Permission::where('name', 'users.edit')->update(['name' => 'user.edit']);
+Permission::where('name', 'users.delete')->update(['name' => 'user.delete']);
+Permission::where('name', 'users.view')->update(['name' => 'user.view']);
+
+
+lệnh xoá name trỏ của permission:
+Permission::where('name', 'users.edit')->delete();
+
+Permission::where('name', 'users.delete')->delete();
+
+Permission::where('name', 'users.view')->delete();
+
+lệnh tạo name trỏ của permission:
+$role = Spatie\Permission\Models\Role::findByName('Admin');
+
+$role->givePermissionTo('user.edit');
+
+$role->givePermissionTo('user.delete');
+
+xem tổng : name
+> $role->permissions->pluck('name')->toArray();
+
+xem có cái loại tài khoản:
+TypeAccount::all(['id','name']);
+
+xem toàn bộ db
+SHOW CREATE TABLE users;
+SHOW CREATE TABLE attendances;
+SHOW CREATE TABLE salary_mechanisms;
+
+
+File nên note trong Portfolio
+$  Modular Laravel (nwidart)
+$  AttendanceController
+Modules/Attendance/App/Http/Controllers/AttendanceController.php
+$  Repository Pattern
+Modules/Attendance/App/Repositories/AttendanceRepository.php
+
+Modules/Attendance/App/Repositories/AttendanceRepositoryInterface.php
+$  Service Layer
+Modules/Attendance/App/Services/AttendanceService.php
+
+Modules/Attendance/App/Services/AttendanceDashboardService.php
+
+Modules/Attendance/App/Services/AttendanceCalculator.php
+$  Request Validation
+Modules/Attendance/App/Http/Requests/StoreAttendanceRequest.php
+
+Modules/Attendance/App/Http/Requests/UpdateAttendanceRequest.php
+$  Event
+Modules/Attendance/App/Events/AttendanceCreated.php
+$  Listener
+Modules/Attendance/App/Listeners/SendAttendanceNotification.php
+$  Queue
+Modules/Attendance/App/Jobs/ExportAttendanceExcelJob.php
+$  Notification
+Modules/Attendance/App/Notifications/AttendanceCreatedNotification.php
+$  Resource
+Modules/Attendance/App/Transformers/AttendanceResource.php
+$  Export
+Modules/Attendance/App/Exports/AttendanceExport.php
+$  Console Command
+Modules/Attendance/App/Console/AttendanceSummaryCommand.php
+$  Swagger
+app/Swagger/OpenApiSpec.php
+
+Modules/Attendance/App/Http/Controllers/AttendanceController.php
+$  Horizon
+config/horizon.php
+$  Redis Cache
+$  Dashboard Performance Optimization
+Modules/Attendance/App/Services/AttendanceDashboardService.php
+$  Laravel Scheduler
+$  Background Processing
+File:
+Modules/Attendance/App/Jobs/AttendanceDailySummaryJob.php
+Command:
+Modules/Attendance/App/Console/AttendanceSummaryCommand.php
+Schedule:
+routes/console.php
+$  PHPUnit Testing   Chỉ test logic.
+$  Feature Testing   Test request.
+Modules/Attendance/Tests/Feature/AttendanceApiTest.php
+$  Real time (Reverb) là WebSocket Server
+Modules/Attendance/App/Events/AttendanceApproved.php
+Modules/Attendance/App/Events/AttendanceCreated.php
+Modules/Attendance/App/Events/AttendanceDeleted.php
+Modules/Attendance/App/Events/AttendanceRejected.php
+Modules/Attendance/App/Events/AttendanceUpdated.php
+Modules/Attendance/App/Http/Controllers/AttendanceApprovalController.php
+config/reverb.php
+routes/channels.php
+resources/js/bootstrap.js
+resources/js/app.js
+$  PHPStan 
+phpstan.neon
+$  Docker
+Dockerfile
+docker-compose.yml
+docker-compose.prod.yml
+docker-compose.dev.yml
+docker/mysql/init.sql
+docker/nginx/default.conf
+docker/php/php.ini
+docker/prometheus/prometheus.yml
+docker/supervisor/laravel-worker.conf 
+docker/php/opcache.ini
+docker/nginx/nginx.conf
+docker/php/www.conf
+pint.json
+.dockerignore
+.gitattributes
+mkdir -p .vscode |  touch .vscode/settings.json   |   touch .vscode/extensions.json
+mkdir scripts  |   touch scripts/deploy.sh  |  touch scripts/backup.sh  |  touch scripts/restore.sh  |  touch scripts/permissions.sh
+Makefile
+$ Github
+.github/workflows/ci.yml
+.github/workflows/deploy.yml
+.github/workflows/laravel.yml
+.github/workflows/laravel.yml.save
+.github/CODEOWNERS
+.github/dependabot.yml
+
+GitHub Actions
+thêm:
+Pint
+PHPStan
+Psalm (nếu dùng)
+PHPUnit
+Coverage
+Build Docker
+Deploy staging
+Deploy production
+
+Docker  Hiện mới có worker.
+nginx
+php-fpm
+redis
+mysql
+horizon
+scheduler
+reverb
+healthcheck
+multi-stage build

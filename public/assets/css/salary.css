@@ -1,0 +1,22 @@
+.employee-hover-wrapper {
+    position: relative;
+}
+
+.employee-name {
+    color: #0d6efd;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.employee-card {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 250px;
+    z-index: 999;
+    display: none;
+}
+
+.employee-hover-wrapper:hover .employee-card {
+    display: block;
+}

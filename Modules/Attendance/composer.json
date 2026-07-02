@@ -1,0 +1,30 @@
+{
+    "name": "nwidart/attendance",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Attendance\\": "App",
+            "Modules\\Attendance\\Database\\Factories\\": "Database/Factories/",
+            "Modules\\Attendance\\Database\\Seeders\\": "Database/Seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Modules\\Attendance\\Tests\\": "tests/"
+        }
+    }
+}
