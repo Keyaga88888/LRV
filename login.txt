@@ -2466,6 +2466,7 @@ git push
  |  public/build  > Là file build sinh ra từ Vite. Có thể tạo lại bằng:  npm run build
  |  .env > → Đây là file chứa thông tin nhạy cảm như:  mật khẩu MySQL : APP_KEY | Redis | Mail | API Key | AWS Key | Docker secrets  > Thay vào đó, commit:  .env.example  > để người khác tạo .env của riêng họ.
 
+Nếu lỗi Laravel Pint :
 cho pint tự sửa toàn bộ projec
 ./vendor/bin/pint
 xem các file đã được format.
@@ -2474,3 +2475,53 @@ Commit:
 git add .
 git commit -m "Fix Pint style"
 git push
+Nếu lỗi PHPStan : 
+Bước 1:Mở composer.json, xem có phần này không:
+"require-dev": {
+    "nunomaduro/larastan": "^3.0",
+    "phpstan/phpstan": "^2.0"
+}
+Nếu không có, cài:
+composer require --dev larastan/larastan phpstan/phpstan
+Bước 2: Kiểm tra phpstan.neon : 
+Rất có thể file của bạn đang là
+includes:
+    - vendor/nunomaduro/larastan/extension.neon
+Nếu bạn vừa cài package mới:
+composer require --dev larastan/larastan
+thì sửa thành
+includes:
+    - vendor/larastan/larastan/extension.neon
+Bước 3 : Kiểm tra vendor
+ls vendor/larastan
+Bước 4 : Kiểm tra Composer Lock : 
+composer show larastan/larastan
+Nếu hiện:
+larastan/larastan 3.10.x
+thì OK.
+Sau đó kiểm tra:
+git status
+Nếu thấy:
+modified: composer.lock
+thì bạn chưa push composer.lock.
+Commit:
+git add composer.json composer.lock
+git commit -m "Install Larastan"
+git push
+Rất nhiều người chỉ push composer.json mà quên composer.lock.
+Bước 5 : Kiểm tra CI có đang dùng cache cũ không  |  ci.yml | chatGPT
+Bước 6 : Kiểm tra Composer install  | ci.yml | chatGPT
+Bước 7 : Kiểm tra Git có đang theo dõi composer.lock không
+git status -- composer.lock
+git ls-files composer.lock
+Bước 8 : Commit tất cả
+git add composer.json composer.lock phpstan.neon .github/workflows/ci.yml
+git commit -m "Fix Larastan configuration"
+git push
+Bước 9 : Kiểm tra có bị dính vendor/nunomaduro/larastan/extension.neon
+git grep "nunomaduro/larastan"
+ở bất kỳ file nào thì đó chính là nguyên nhân.
+Bước 10 : Kiểm tra commit hiện tại
+git show HEAD:phpstan.neon
+cat phpstan.neon
+git log --oneline -5

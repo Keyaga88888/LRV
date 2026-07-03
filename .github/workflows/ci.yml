@@ -62,10 +62,17 @@ jobs:
       #     key: composer-${{ hashFiles('composer.lock') }}
 
       - name: Install Composer
+        run: |
          composer install \
           --no-interaction \
           --prefer-dist \
           --no-progress
+
+      - name: Debug Composer
+        run: |
+          composer show larastan/larastan
+          ls -la vendor/larastan/larastan
+          ls -la vendor/larastan/larastan/extension.neon
 
       - name: Check Larastan
         run: |
@@ -112,6 +119,12 @@ jobs:
 
       - name: Laravel Pint
         run: ./vendor/bin/pint --test
+
+      - name: Debug PHPStan
+        run: |
+          pwd
+          ls -la
+          cat phpstan.neon
 
       - name: PHPStan
         run: ./vendor/bin/phpstan analyse
