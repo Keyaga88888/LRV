@@ -2466,3 +2466,11 @@ git push
  |  public/build  > Là file build sinh ra từ Vite. Có thể tạo lại bằng:  npm run build
  |  .env > → Đây là file chứa thông tin nhạy cảm như:  mật khẩu MySQL : APP_KEY | Redis | Mail | API Key | AWS Key | Docker secrets  > Thay vào đó, commit:  .env.example  > để người khác tạo .env của riêng họ.
 
+cho pint tự sửa toàn bộ projec
+./vendor/bin/pint
+xem các file đã được format.
+git status
+Commit:
+git add .
+git commit -m "Fix Pint style"
+git push

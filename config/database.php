@@ -1,11 +1,10 @@
 <?php
 
-
 use Illuminate\Support\Str;
-use Pdo\Mysql;
 use PDO;
-return [
+use Pdo\Mysql;
 
+return [
     /*
     |--------------------------------------------------------------------------
     | Default Database Connection Name

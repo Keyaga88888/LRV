@@ -19,7 +19,8 @@ use Yajra\DataTables\DataTables;
 class UserRepository implements UserRepositoryInterface
 {
     public function getFilters(): array // vào route/wed.php
-    {$status_f = collect([
+    {
+        $status_f = collect([
             ['id' => 1, 'text' => 'Nghỉ việc'],
             ['id' => 0, 'text' => 'Đang làm'],
         ]);
@@ -250,7 +251,8 @@ class UserRepository implements UserRepositoryInterface
             })
             ->rawColumns([
                 'thumbnail',
-                'action'])
+                'action',
+            ])
             ->make(true);
     }
 
@@ -347,7 +349,7 @@ class UserRepository implements UserRepositoryInterface
             $dataUpdate['password'] = Hash::make($validated['password']); // thì có lệnh hash password update password mới Để cho nhập
         }
         // upload thumbnail
-        if (! empty($validated['thumbnail'])) {// nếu chưa có ảnh
+        if (! empty($validated['thumbnail'])) { // nếu chưa có ảnh
             // xoá ảnh cũ
             if ($user->thumbnail) { // nếu chọn ảnh
                 Storage::disk('public')->delete($user->thumbnail); // thì xoá ảnh cũ
