@@ -2440,3 +2440,28 @@ là thành công.
 
 Push :
 git push -u origin main
+
+Nếu muốn lưu thay đổi:
+git add login.txt
+git commit -m "Update login.txt"
+git push
+
+Nếu không muốn lưu thay đổi :
+Khôi phục về phiên bản trên GitHub:
+git restore login.txt
+
+Nếu login.txt chỉ là file ghi chú cá nhân
+Thì nên cho Git bỏ qua.
+Thêm vào .gitignore:
+login.txt
+Sau đó:
+git rm --cached login.txt
+git add .gitignore
+git commit -m "Ignore login.txt"
+git push
+>Vì sao trước đó có nhiều dòng ẩn như vậy?
+ |  node_modules  > Vì có thể cài lại bằng:  npm install 
+ |  vendor > Vì có thể cài lại bằng:   composer install
+ |  .vscode | .idea    >  Đây là cấu hình IDE của từng người. Nếu làm việc nhóm, thường không commit để tránh ghi đè cấu hình của nhau.
+ |  public/build  > Là file build sinh ra từ Vite. Có thể tạo lại bằng:  npm run build
+ |  .env > → Đây là file chứa thông tin nhạy cảm như:  mật khẩu MySQL : APP_KEY | Redis | Mail | API Key | AWS Key | Docker secrets  > Thay vào đó, commit:  .env.example  > để người khác tạo .env của riêng họ.
