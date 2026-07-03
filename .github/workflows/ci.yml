@@ -68,8 +68,19 @@ jobs:
         run: composer install --no-interaction --prefer-dist
 
       - name: Copy ENV
+  run: |
+    cp .env.example .env
 
-        run: cp .env.example .env
+    echo "APP_ENV=testing" >> .env
+    echo "APP_KEY=" >> .env
+
+    echo "REVERB_APP_ID=local" >> .env
+    echo "REVERB_APP_KEY=localkey" >> .env
+    echo "REVERB_APP_SECRET=localsecret" >> .env
+
+    echo "REVERB_HOST=127.0.0.1" >> .env
+    echo "REVERB_PORT=8080" >> .env
+    echo "REVERB_SCHEME=http"
 
       - name: Generate Key
 
