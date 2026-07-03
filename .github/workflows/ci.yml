@@ -55,14 +55,22 @@ jobs:
           extensions: mbstring,pdo_mysql,bcmath,redis
           coverage: none
 
-      - name: Cache Composer
-        uses: actions/cache@v4
-        with:
-          path: vendor
-          key: composer-${{ hashFiles('composer.lock') }}
+      # - name: Cache Composer
+      #   uses: actions/cache@v4
+      #   with:
+      #     path: vendor
+      #     key: composer-${{ hashFiles('composer.lock') }}
 
       - name: Install Composer
-        run: composer install --no-interaction --prefer-dist
+         composer install \
+          --no-interaction \
+          --prefer-dist \
+          --no-progress
+
+      - name: Check Larastan
+        run: |
+          composer show larastan/larastan
+          ls -la vendor/larastan/larastan
 
       - name: Create ENV
         run: |
