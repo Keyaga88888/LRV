@@ -38,24 +38,32 @@ jobs:
 
           port: ${{ secrets.VPS_PORT }}
 
-          script: |
+    script: |
 
-            cd ${{ secrets.PROJECT_PATH }}
+       cd ${{ secrets.PROJECT_PATH }}
 
-            docker compose pull
+       docker compose pull
 
-            docker compose \
-              -f docker-compose.yml \
-              -f docker-compose.prod.yml \
-              up -d
+       docker compose \
+       -f docker-compose.yml \
+       -f docker-compose.prod.yml \
+       up -d
 
-            docker compose exec -T app php artisan migrate --force
+       docker compose exec -T app php artisan migrate --force
 
-            docker compose exec -T app php artisan optimize:clear
+       docker compose exec -T app php artisan optimize:clear
 
-            docker compose exec -T app php artisan optimize
+       docker compose exec -T app php artisan optimize
 
-            docker compose exec -T app php artisan queue:restart
+       docker compose exec -T app php artisan config:cache
+
+       docker compose exec -T app php artisan route:cache
+
+       docker compose exec -T app php artisan view:cache
+
+       docker compose exec -T app php artisan event:cache
+
+       docker compose exec -T app php artisan queue:restart
 # Luồng hoạt động:
 # git push > GitHub > CI > PHPUnit > PHPStan > Docker Build > Docker Hub > Deploy > SSH VPS >
 # > docker compose pull > docker compose up -d > migrate --force > optimize > queue:restart > Deploy thành công            

@@ -2465,3 +2465,4 @@ git push
  |  .vscode | .idea    >  Đây là cấu hình IDE của từng người. Nếu làm việc nhóm, thường không commit để tránh ghi đè cấu hình của nhau.
  |  public/build  > Là file build sinh ra từ Vite. Có thể tạo lại bằng:  npm run build
  |  .env > → Đây là file chứa thông tin nhạy cảm như:  mật khẩu MySQL : APP_KEY | Redis | Mail | API Key | AWS Key | Docker secrets  > Thay vào đó, commit:  .env.example  > để người khác tạo .env của riêng họ.
+
