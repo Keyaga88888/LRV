@@ -2381,3 +2381,62 @@ scheduler
 reverb
 healthcheck
 multi-stage build
+
+
+Còn Git thì phải khởi tạo lại
+Nếu project này chưa có Git:
+git init
+Sau đó :
+git add .
+git commit -m "Initial commit"
+kiểm tra git được bật chưa :
+git status
+ra :
+On branch master
+nothing to commit, working tree clean
+Rồi kết nối GitHub : ( điều kiện trong github phải có responsitory nếu chưa có thì tạo ròi mới chạy lệnh )
+git remote add origin https://github.com/Keyaga88888/LRV.git      
+Kiểm tra:
+git remote -v
+ra:
+origin  https://github.com/Keyaga88888/LRV.git (fetch)
+origin  https://github.com/Keyaga88888/LRV.git (push)
+nối tới GitHub :
+lahoathanh@Mac keyagatwo % git branch -M main
+lahoathanh@Mac keyagatwo % git push -u origin main
+ra : ( lỗi này không phải do Git, mà là do GitHub không còn cho phép dùng mật khẩu để git push qua HTTPS. )
+remote: Invalid username or token. Password authentication is not supported for Git operations.
+fatal: Authentication failed for 'https://github.com/Keyaga88888/LRV.git/'
+Kiểm tra đã có SSH key chưa :
+ls -al ~/.ssh
+ra : ( chưa có key SSH )
+ls: /Users/lahoathanh/.ssh: No such file or directory
+Tạo SSH Key : 
+Ví dụ :
+ssh-keygen -t ed25519 -C "abc@gmail.com"
+Nhấn Enter liên tục.
+
+Copy Public Key : 
+cat ~/.ssh/id_ed25519.pub
+ra ví dụ : Copy toàn bộ đoạn bắt đầu bằng : 
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMDIb/9H6qDoVeEGQ4HB7KqTL4zDRb0cHiF+eEIJ1g9g lahoathanh35@gmail.com
+
+Thêm vào GitHub : 
+GitHub > Settings > SSH and GPG keys > New SSH Key > Paste > Save
+
+Đổi Remote :
+git remote set-url origin git@github.com:Keyaga88888/LRV.git
+Kiểm tra :
+git remote -v
+ra :
+origin  git@github.com:Keyaga88888/LRV.git
+
+Test :
+ssh -T git@github.com
+Nếu hiện :
+ Hi keyaga888!
+You've successfully authenticated...
+là thành công.
+
+Push :
+git push -u origin main
