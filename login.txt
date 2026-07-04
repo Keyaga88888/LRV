@@ -2475,6 +2475,7 @@ Commit:
 git add .
 git commit -m "Fix Pint style"
 git push
+
 Nếu lỗi PHPStan : 
 Bước 1:Mở composer.json, xem có phần này không:
 "require-dev": {
