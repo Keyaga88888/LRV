@@ -84,14 +84,6 @@ class Attendance extends Model
 
     }
 
-    public function scopeToday($query)
-    {
-        return $query->whereDate(
-            'work_date',
-            today()
-        );
-    }
-
     protected static function newFactory()
     {
         return AttendanceFactory::new();
