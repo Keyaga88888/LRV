@@ -5,6 +5,7 @@ namespace Modules\Attendance\App\Transformers;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 use Modules\Attendance\App\Models\Attendance;
+use Modules\User\App\Models\User;
 
 /**
  * @mixin Attendance
@@ -15,15 +16,18 @@ class AttendanceResource extends JsonResource
         Request $request
     ): array {
 
+        /** @var User|null $user */
+        $user = $this->user;
+
         return [
 
             'id' => $this->id,
 
             'employee' => [
 
-                'id' => $this->user?->id,
+                'id' => $user?->id,
 
-                'name' => $this->user?->name,
+                'name' => $user?->name,
 
             ],
 

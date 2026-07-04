@@ -10,18 +10,18 @@ class ProductController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
-    {
-        return view('product::index');
-    }
+/** @var view-string $view */
+$view = 'product::index';
+
+return view($view);
 
     /**
      * Show the form for creating a new resource.
      */
-    public function create()
-    {
-        return view('product::create');
-    }
+/** @var view-string $view */
+$view = 'product::create';
+
+return view($view);
 
     /**
      * Store a newly created resource in storage.
@@ -31,19 +31,18 @@ class ProductController extends Controller
     /**
      * Show the specified resource.
      */
-    public function show($id)
-    {
-        return view('product::show');
-    }
+/** @var view-string $view */
+$view = 'product::show';
+
+return view($view);
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit($id)
-    {
-        return view('product::edit');
-    }
+/** @var view-string $view */
+$view = 'product::edit';
 
+return view($view);
     /**
      * Update the specified resource in storage.
      */

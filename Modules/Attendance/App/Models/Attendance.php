@@ -12,6 +12,9 @@ use Modules\User\App\Models\User;
 use Spatie\Activitylog\Models\Concerns\LogsActivity;
 use Spatie\Activitylog\Support\LogOptions;
 
+/**
+ * @property-read User|null $user
+ */
 class Attendance extends Model
 {
     use HasFactory;
