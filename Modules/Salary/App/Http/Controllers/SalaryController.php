@@ -94,10 +94,11 @@ class SalaryController extends Controller
             ->get();
 
         // trả view + data users
-/** @var view-string $view */
-$view = 'salary::index';
+        /** @var view-string $view */
+        $view = 'salary::index';
 
-return view($view, compact('users'));    }
+        return view($view, compact('users'));
+    }
 
     /**
      * GET: /salary/data

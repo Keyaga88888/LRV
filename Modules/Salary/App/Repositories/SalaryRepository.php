@@ -60,9 +60,8 @@
 
 namespace Modules\Salary\App\Repositories;
 
-use Modules\Salary\App\Models\SalaryMechanism;
 use Illuminate\Database\Eloquent\Collection;
-
+use Modules\Salary\App\Models\SalaryMechanism;
 
 /**
  * ==========================================================
@@ -133,14 +132,14 @@ class SalaryRepository
      * UPDATE
      * ======================================================
      */
-public function update($id, array $data): SalaryMechanism
-{
-    $salary = SalaryMechanism::findOrFail($id);
+    public function update($id, array $data): SalaryMechanism
+    {
+        $salary = SalaryMechanism::findOrFail($id);
 
-    $salary->update($data);
+        $salary->update($data);
 
-    return $salary;
-}
+        return $salary;
+    }
 
     /**
      * ======================================================
