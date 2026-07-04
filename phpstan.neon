@@ -2,7 +2,6 @@ includes:
     - vendor/larastan/larastan/extension.neon
 
 parameters:
-
     level: max
 
     paths:
@@ -10,7 +9,5 @@ parameters:
         - Modules
 
     tmpDir: storage/phpstan
-
-    checkMissingIterableValueType: false
 
     reportUnmatchedIgnoredErrors: false
