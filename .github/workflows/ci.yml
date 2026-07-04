@@ -125,9 +125,8 @@ jobs:
           pwd
           ls -la
           cat phpstan.neon
-
       - name: PHPStan
-        run: ./vendor/bin/phpstan analyse
+        run: ./vendor/bin/phpstan analyse --memory-limit=2G
 
       - name: PHPUnit
         run: php artisan test

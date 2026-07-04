@@ -119,6 +119,9 @@
             "wikimedia/composer-merge-plugin": true
         }
     },
+    "scripts": {
+    "phpstan": "phpstan analyse --memory-limit=2G" 
+    },
     "minimum-stability": "stable",
     "prefer-stable": true
 }
