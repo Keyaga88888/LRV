@@ -180,18 +180,14 @@ namespace Modules\User\App\Models;
 use Illuminate\Auth\MustVerifyEmail;
 use Illuminate\Contracts\Auth\MustVerifyEmail as MustVerifyEmailContract;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 use Modules\Attendance\App\Models\Attendance;
 use Modules\Salary\App\Models\SalaryMechanism;
 use Spatie\Permission\Traits\HasRoles;
-use Modules\User\App\Models\Part;
-use Modules\User\App\Models\Position;
-use Modules\User\App\Models\Team;
-use Modules\User\App\Models\TypeAccount;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Illuminate\Database\Eloquent\Relations\HasMany;
 
 /**
  * @property-read Part|null $part
@@ -236,39 +232,39 @@ class User extends Authenticatable implements MustVerifyEmailContract
         'password' => 'hashed',
     ];
 
-  public function part(): BelongsTo
-{
-    return $this->belongsTo(Part::class, 'part_id');
-}
+    public function part(): BelongsTo
+    {
+        return $this->belongsTo(Part::class, 'part_id');
+    }
 
-  public function position(): BelongsTo
-{
-    return $this->belongsTo(Position::class, 'position_id');
-}
+    public function position(): BelongsTo
+    {
+        return $this->belongsTo(Position::class, 'position_id');
+    }
 
-public function team(): BelongsTo
-{
-    return $this->belongsTo(Team::class, 'team_id');
-}
+    public function team(): BelongsTo
+    {
+        return $this->belongsTo(Team::class, 'team_id');
+    }
 
-public function typeAccount(): BelongsTo
-{
-    return $this->belongsTo(TypeAccount::class, 'type_account_id');
-}
+    public function typeAccount(): BelongsTo
+    {
+        return $this->belongsTo(TypeAccount::class, 'type_account_id');
+    }
 
-public function attendances(): HasMany
-{
-    return $this->hasMany(
-        Attendance::class,
-        'user_id'
-    );
-}
+    public function attendances(): HasMany
+    {
+        return $this->hasMany(
+            Attendance::class,
+            'user_id'
+        );
+    }
 
-public function salaryMechanisms(): HasMany
-{
-    return $this->hasMany(
-        SalaryMechanism::class,
-        'user_id'
-    );
-}
+    public function salaryMechanisms(): HasMany
+    {
+        return $this->hasMany(
+            SalaryMechanism::class,
+            'user_id'
+        );
+    }
 }

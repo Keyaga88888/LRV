@@ -72,10 +72,10 @@ namespace Modules\Salary\App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Modules\User\App\Models\User;
 use Spatie\Activitylog\Models\Concerns\LogsActivity;
 use Spatie\Activitylog\Support\LogOptions;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class SalaryMechanism extends Model
 {
@@ -238,17 +238,17 @@ class SalaryMechanism extends Model
      *
      * Blade
      */
-   public function getTotalSalaryAttribute(): float
-{
-    return
-        ($this->basic_salary ?? 0)
-        + ($this->allowance ?? 0)
-        + ($this->bonus ?? 0)
-        + ($this->overtime_salary ?? 0)
-        - ($this->insurance_deduction ?? 0)
-        - ($this->tax_deduction ?? 0)
-        - ($this->late_penalty ?? 0);
-}
+    public function getTotalSalaryAttribute(): float
+    {
+        return
+            ($this->basic_salary ?? 0)
+            + ($this->allowance ?? 0)
+            + ($this->bonus ?? 0)
+            + ($this->overtime_salary ?? 0)
+            - ($this->insurance_deduction ?? 0)
+            - ($this->tax_deduction ?? 0)
+            - ($this->late_penalty ?? 0);
+    }
 }
 // namespace Modules\Salary\App\Models;
 

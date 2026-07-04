@@ -43,10 +43,10 @@ class AttendanceController extends Controller
         $users = User::orderBy('name')->get();
 
         // tránh lỗi PHPStan
-     /** @var view-string $view */
-     $view = 'attendance::index';
+        /** @var view-string $view */
+        $view = 'attendance::index';
 
-     return view($view, compact('users'));
+        return view($view, compact('users'));
     }
     #[OA\Get(
         path: '/api/v1/attendances/dashboard',

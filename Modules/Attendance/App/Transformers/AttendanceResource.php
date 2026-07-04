@@ -4,9 +4,10 @@ namespace Modules\Attendance\App\Transformers;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
+use Modules\Attendance\App\Models\Attendance;
 
 /**
- * @mixin \Modules\Attendance\App\Models\Attendance
+ * @mixin Attendance
  */
 class AttendanceResource extends JsonResource
 {

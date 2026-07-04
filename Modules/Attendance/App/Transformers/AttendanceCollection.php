@@ -6,7 +6,7 @@ use Illuminate\Http\Resources\Json\ResourceCollection;
 
 class AttendanceCollection extends ResourceCollection
 {
-    public function toArray($request)// cái này cho phép xuất ra data table  
+    public function toArray($request)// cái này cho phép xuất ra data table
     {
         return [
 

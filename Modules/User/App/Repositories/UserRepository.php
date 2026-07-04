@@ -61,7 +61,7 @@ class UserRepository implements UserRepositoryInterface
 
         // dd(Auth::check(), Auth::user()?->email);
         return DataTables::of($users)
-            ->addColumn('thumbnail', function ( User $row) {
+            ->addColumn('thumbnail', function (User $row) {
 
                 if ($row->thumbnail) {
 
@@ -89,11 +89,11 @@ class UserRepository implements UserRepositoryInterface
     ';
             })
             ->addIndexColumn() // Tạo cột số thứ tự tự động | trả dữ liệu cho datatable resources/views/users/list.blade.php
-            ->editColumn('sex', function ( User $row) { // editColumn() sủa thông tin hiển thị
+            ->editColumn('sex', function (User $row) { // editColumn() sủa thông tin hiển thị
                 return $row->sex == 0 ? 'Nam' : 'Nữ';
             })
 
-            ->editColumn('part_id', function ( User $row) {
+            ->editColumn('part_id', function (User $row) {
                 return $row->part->name ?? '';
             })
             // cách2
@@ -104,7 +104,7 @@ class UserRepository implements UserRepositoryInterface
             //     });
             // })
 
-            ->editColumn('position_id', function ( User $row) {
+            ->editColumn('position_id', function (User $row) {
                 return $row->position->name ?? '';
             })
             // cách2
@@ -114,24 +114,24 @@ class UserRepository implements UserRepositoryInterface
             //     });
             // })
 
-            ->editColumn('type_work', function ( User $row) {
+            ->editColumn('type_work', function (User $row) {
                 return $row->type_work == 0 ? 'Fulltime' : 'Parttime';
             })
-            ->editColumn('position_id', function ( User $row) {
+            ->editColumn('position_id', function (User $row) {
                 return $row->position->name ?? '';
             })
 
-            ->editColumn('team_id', function ( User $row) {
+            ->editColumn('team_id', function (User $row) {
                 return $row->team->name ?? '';
             })
-            ->editColumn('status', function ( User $row) {
+            ->editColumn('status', function (User $row) {
                 return $row->status == 0 ? 'Đang làm' : 'Nghỉ việc';
             })
 
-            ->editColumn('type_account_id', function ( User $row) {
+            ->editColumn('type_account_id', function (User $row) {
                 return $row->typeAccount->name ?? ''; // function typeAccount>gọi bảng TypeAccount=type_account_id ->trỏ tới cột name
             })
-            ->addColumn('action', function ( User $row) {
+            ->addColumn('action', function (User $row) {
 
                 // nhớ tạo link trong route/wed.php nối vào thẻ này   |   tạo thêm cái file edit.blade.php
                 // này bình thường   onsubmit="return confirm(\'Bạn có chắc muốn xoá?\')">      |  đổi qua SweetAlert2 thì gắn script vào layout

@@ -7,9 +7,6 @@ use Maatwebsite\Excel\Concerns\FromCollection;
 
 class AttendanceExport implements FromCollection
 {
-    /**
-     * @return Collection
-     */
     public function collection(): Collection
     {
         return collect();
