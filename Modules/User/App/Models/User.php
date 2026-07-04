@@ -186,7 +186,19 @@ use Laravel\Sanctum\HasApiTokens;
 use Modules\Attendance\App\Models\Attendance;
 use Modules\Salary\App\Models\SalaryMechanism;
 use Spatie\Permission\Traits\HasRoles;
+use Modules\User\App\Models\Part;
+use Modules\User\App\Models\Position;
+use Modules\User\App\Models\Team;
+use Modules\User\App\Models\TypeAccount;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
+/**
+ * @property-read Part|null $part
+ * @property-read Position|null $position
+ * @property-read Team|null $team
+ * @property-read TypeAccount|null $typeAccount
+ */
 class User extends Authenticatable implements MustVerifyEmailContract
 {
     use HasApiTokens;
@@ -224,39 +236,39 @@ class User extends Authenticatable implements MustVerifyEmailContract
         'password' => 'hashed',
     ];
 
-    public function part()
-    {
-        return $this->belongsTo(Part::class, 'part_id');
-    }
+  public function part(): BelongsTo
+{
+    return $this->belongsTo(Part::class, 'part_id');
+}
 
-    public function position()
-    {
-        return $this->belongsTo(Position::class, 'position_id');
-    }
+  public function position(): BelongsTo
+{
+    return $this->belongsTo(Position::class, 'position_id');
+}
 
-    public function team()
-    {
-        return $this->belongsTo(Team::class, 'team_id');
-    }
+public function team(): BelongsTo
+{
+    return $this->belongsTo(Team::class, 'team_id');
+}
 
-    public function typeAccount()
-    {
-        return $this->belongsTo(TypeAccount::class, 'type_account_id');
-    }
+public function typeAccount(): BelongsTo
+{
+    return $this->belongsTo(TypeAccount::class, 'type_account_id');
+}
 
-    public function salaryMechanisms()
-    {
-        return $this->hasMany(
-            SalaryMechanism::class,
-            'user_id'
-        );
-    }
+public function attendances(): HasMany
+{
+    return $this->hasMany(
+        Attendance::class,
+        'user_id'
+    );
+}
 
-    public function attendances()
-    {
-        return $this->hasMany(
-            Attendance::class,
-            'user_id'
-        );
-    }
+public function salaryMechanisms(): HasMany
+{
+    return $this->hasMany(
+        SalaryMechanism::class,
+        'user_id'
+    );
+}
 }

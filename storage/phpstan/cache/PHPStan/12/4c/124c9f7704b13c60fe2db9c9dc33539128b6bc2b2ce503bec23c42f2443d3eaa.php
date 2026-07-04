@@ -13,7 +13,6 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'uses' => 
         array (
           'controller' => 'App\\Http\\Controllers\\Controller',
-          'user' => 'Modules\\User\\App\\Models\\User',
           'registered' => 'Illuminate\\Auth\\Events\\Registered',
           'redirectresponse' => 'Illuminate\\Http\\RedirectResponse',
           'request' => 'Illuminate\\Http\\Request',
@@ -22,6 +21,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'rules' => 'Illuminate\\Validation\\Rules',
           'validationexception' => 'Illuminate\\Validation\\ValidationException',
           'view' => 'Illuminate\\View\\View',
+          'user' => 'Modules\\User\\App\\Models\\User',
         ),
          'className' => 'App\\Http\\Controllers\\Auth\\RegisteredUserController',
          'functionName' => NULL,
@@ -45,7 +45,6 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'uses' => 
         array (
           'controller' => 'App\\Http\\Controllers\\Controller',
-          'user' => 'Modules\\User\\App\\Models\\User',
           'registered' => 'Illuminate\\Auth\\Events\\Registered',
           'redirectresponse' => 'Illuminate\\Http\\RedirectResponse',
           'request' => 'Illuminate\\Http\\Request',
@@ -54,6 +53,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'rules' => 'Illuminate\\Validation\\Rules',
           'validationexception' => 'Illuminate\\Validation\\ValidationException',
           'view' => 'Illuminate\\View\\View',
+          'user' => 'Modules\\User\\App\\Models\\User',
         ),
          'className' => 'App\\Http\\Controllers\\Auth\\RegisteredUserController',
          'functionName' => 'create',
@@ -77,7 +77,6 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'uses' => 
         array (
           'controller' => 'App\\Http\\Controllers\\Controller',
-          'user' => 'Modules\\User\\App\\Models\\User',
           'registered' => 'Illuminate\\Auth\\Events\\Registered',
           'redirectresponse' => 'Illuminate\\Http\\RedirectResponse',
           'request' => 'Illuminate\\Http\\Request',
@@ -86,6 +85,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'rules' => 'Illuminate\\Validation\\Rules',
           'validationexception' => 'Illuminate\\Validation\\ValidationException',
           'view' => 'Illuminate\\View\\View',
+          'user' => 'Modules\\User\\App\\Models\\User',
         ),
          'className' => 'App\\Http\\Controllers\\Auth\\RegisteredUserController',
          'functionName' => 'store',
@@ -106,7 +106,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     1 => 
     array (
-      '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/RegisteredUserController.php' => 'b7364de7788c2f07606941eb6afae9fa8cd2c92ee00a0d0617a4ab9838d7f413',
+      '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/RegisteredUserController.php' => '178389b79149f7d2785a69085ebd52eb105223073a915d17742bb17bdfcb2a43',
     ),
   ),
 ));

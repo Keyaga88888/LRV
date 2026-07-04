@@ -13,7 +13,6 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'uses' => 
         array (
           'controller' => 'App\\Http\\Controllers\\Controller',
-          'user' => 'Modules\\User\\App\\Models\\User',
           'passwordreset' => 'Illuminate\\Auth\\Events\\PasswordReset',
           'redirectresponse' => 'Illuminate\\Http\\RedirectResponse',
           'request' => 'Illuminate\\Http\\Request',
@@ -23,6 +22,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'rules' => 'Illuminate\\Validation\\Rules',
           'validationexception' => 'Illuminate\\Validation\\ValidationException',
           'view' => 'Illuminate\\View\\View',
+          'user' => 'Modules\\User\\App\\Models\\User',
         ),
          'className' => 'App\\Http\\Controllers\\Auth\\NewPasswordController',
          'functionName' => NULL,
@@ -46,7 +46,6 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'uses' => 
         array (
           'controller' => 'App\\Http\\Controllers\\Controller',
-          'user' => 'Modules\\User\\App\\Models\\User',
           'passwordreset' => 'Illuminate\\Auth\\Events\\PasswordReset',
           'redirectresponse' => 'Illuminate\\Http\\RedirectResponse',
           'request' => 'Illuminate\\Http\\Request',
@@ -56,6 +55,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'rules' => 'Illuminate\\Validation\\Rules',
           'validationexception' => 'Illuminate\\Validation\\ValidationException',
           'view' => 'Illuminate\\View\\View',
+          'user' => 'Modules\\User\\App\\Models\\User',
         ),
          'className' => 'App\\Http\\Controllers\\Auth\\NewPasswordController',
          'functionName' => 'create',
@@ -79,7 +79,6 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'uses' => 
         array (
           'controller' => 'App\\Http\\Controllers\\Controller',
-          'user' => 'Modules\\User\\App\\Models\\User',
           'passwordreset' => 'Illuminate\\Auth\\Events\\PasswordReset',
           'redirectresponse' => 'Illuminate\\Http\\RedirectResponse',
           'request' => 'Illuminate\\Http\\Request',
@@ -89,6 +88,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'rules' => 'Illuminate\\Validation\\Rules',
           'validationexception' => 'Illuminate\\Validation\\ValidationException',
           'view' => 'Illuminate\\View\\View',
+          'user' => 'Modules\\User\\App\\Models\\User',
         ),
          'className' => 'App\\Http\\Controllers\\Auth\\NewPasswordController',
          'functionName' => 'store',
@@ -109,7 +109,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     1 => 
     array (
-      '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/NewPasswordController.php' => '1fce2595f7afd4afe933560be00b2a309a8320939eae35425eb7dfe5efc20956',
+      '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/NewPasswordController.php' => '045d1a8b435de1df5d76a7bb76f4ead3581fef0fe7b04a623d3153bae23763b8',
     ),
   ),
 ));

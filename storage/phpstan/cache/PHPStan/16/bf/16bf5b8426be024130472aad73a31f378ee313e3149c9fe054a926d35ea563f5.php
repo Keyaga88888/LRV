@@ -2,7 +2,7 @@
 
 // odsl-/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/NewPasswordController.php-PHPStan\BetterReflection\Reflection\ReflectionClass-App\Http\Controllers\Auth\NewPasswordController
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.4.21-1fce2595f7afd4afe933560be00b2a309a8320939eae35425eb7dfe5efc20956',
+   'variableKey' => 'v2-6.70.0.3-8.4.21-045d1a8b435de1df5d76a7bb76f4ead3581fef0fe7b04a623d3153bae23763b8',
    'data' => 
   array (
     'locatedSource' => 

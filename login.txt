@@ -2527,3 +2527,6 @@ Bước 10 : Kiểm tra commit hiện tại
 git show HEAD:phpstan.neon
 cat phpstan.neon
 git log --oneline -5
+ 
+lệnh xem file lỗi trong Github Action  PHPStan
+vendor/bin/phpstan analyse --memory-limit=1G 

@@ -7,7 +7,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
   array (
     '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Exports/AttendanceExport.php' => 
     array (
-      0 => '62570086964068b48563832a6add52c6a60b0b0c8f6f23ff6dbb9a3207cb123f',
+      0 => 'c534c34bba9f4f0c5b06763fb47c069f78c73ac16a34924068ad0477f2beba28',
       1 => 
       array (
         0 => 'app\\exports\\attendanceexport',
@@ -85,7 +85,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/NewPasswordController.php' => 
     array (
-      0 => '1fce2595f7afd4afe933560be00b2a309a8320939eae35425eb7dfe5efc20956',
+      0 => '045d1a8b435de1df5d76a7bb76f4ead3581fef0fe7b04a623d3153bae23763b8',
       1 => 
       array (
         0 => 'app\\http\\controllers\\auth\\newpasswordcontroller',
@@ -132,7 +132,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/RegisteredUserController.php' => 
     array (
-      0 => 'b7364de7788c2f07606941eb6afae9fa8cd2c92ee00a0d0617a4ab9838d7f413',
+      0 => '178389b79149f7d2785a69085ebd52eb105223073a915d17742bb17bdfcb2a43',
       1 => 
       array (
         0 => 'app\\http\\controllers\\auth\\registeredusercontroller',

@@ -3720,40 +3720,6 @@ return [
   array (
     0 => 
     \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Relation \'part\' is not found in Modules\\User\\App\\Models\\User model.',
-       'file' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Http/Controllers/SalaryController.php',
-       'line' => 92,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Http/Controllers/SalaryController.php',
-       'traitFilePath' => NULL,
-       'tip' => NULL,
-       'nodeLine' => 92,
-       'nodeType' => 'PhpParser\\Node\\Expr\\StaticCall',
-       'identifier' => 'larastan.relationExistence',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    1 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Relation \'position\' is not found in Modules\\User\\App\\Models\\User model.',
-       'file' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Http/Controllers/SalaryController.php',
-       'line' => 92,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Http/Controllers/SalaryController.php',
-       'traitFilePath' => NULL,
-       'tip' => NULL,
-       'nodeLine' => 92,
-       'nodeType' => 'PhpParser\\Node\\Expr\\StaticCall',
-       'identifier' => 'larastan.relationExistence',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    2 => 
-    \PHPStan\Analyser\Error::__set_state(array(
        'message' => 'Relation \'user\' is not found in Modules\\Salary\\App\\Models\\SalaryMechanism model.',
        'file' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Http/Controllers/SalaryController.php',
        'line' => 109,
@@ -3807,20 +3773,20 @@ return [
        'fixedErrorDiff' => NULL,
     )),
   ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Repositories/UserRepository.php' => 
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/User.php' => 
   array (
     0 => 
     \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Relation \'part\' is not found in Modules\\User\\App\\Models\\User model.',
-       'file' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Repositories/UserRepository.php',
-       'line' => 43,
+       'message' => 'Method Modules\\User\\App\\Models\\User::attendances() has invalid return type Modules\\User\\App\\Models\\HasMany.',
+       'file' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/User.php',
+       'line' => 258,
        'canBeIgnored' => true,
-       'filePath' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Repositories/UserRepository.php',
+       'filePath' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/User.php',
        'traitFilePath' => NULL,
        'tip' => NULL,
-       'nodeLine' => 43,
-       'nodeType' => 'PhpParser\\Node\\Expr\\StaticCall',
-       'identifier' => 'larastan.relationExistence',
+       'nodeLine' => 258,
+       'nodeType' => 'PHPStan\\Node\\InClassMethodNode',
+       'identifier' => 'class.notFound',
        'metadata' => 
       array (
       ),
@@ -3828,16 +3794,16 @@ return [
     )),
     1 => 
     \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Using nullsafe property access "?->name" on left side of ?? is unnecessary. Use -> instead.',
-       'file' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Repositories/UserRepository.php',
-       'line' => 108,
+       'message' => 'Method Modules\\User\\App\\Models\\User::attendances() should return Modules\\User\\App\\Models\\HasMany but returns Illuminate\\Database\\Eloquent\\Relations\\HasMany<Modules\\Attendance\\App\\Models\\Attendance, $this(Modules\\User\\App\\Models\\User)>.',
+       'file' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/User.php',
+       'line' => 260,
        'canBeIgnored' => true,
-       'filePath' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Repositories/UserRepository.php',
+       'filePath' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/User.php',
        'traitFilePath' => NULL,
        'tip' => NULL,
-       'nodeLine' => 108,
-       'nodeType' => 'PhpParser\\Node\\Expr\\BinaryOp\\Coalesce',
-       'identifier' => 'nullsafe.neverNull',
+       'nodeLine' => 260,
+       'nodeType' => 'PhpParser\\Node\\Stmt\\Return_',
+       'identifier' => 'return.type',
        'metadata' => 
       array (
       ),
@@ -3845,16 +3811,16 @@ return [
     )),
     2 => 
     \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Using nullsafe property access "?->name" on left side of ?? is unnecessary. Use -> instead.',
-       'file' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Repositories/UserRepository.php',
-       'line' => 121,
+       'message' => 'Method Modules\\User\\App\\Models\\User::salaryMechanisms() has invalid return type Modules\\User\\App\\Models\\HasMany.',
+       'file' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/User.php',
+       'line' => 266,
        'canBeIgnored' => true,
-       'filePath' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Repositories/UserRepository.php',
+       'filePath' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/User.php',
        'traitFilePath' => NULL,
        'tip' => NULL,
-       'nodeLine' => 121,
-       'nodeType' => 'PhpParser\\Node\\Expr\\BinaryOp\\Coalesce',
-       'identifier' => 'nullsafe.neverNull',
+       'nodeLine' => 266,
+       'nodeType' => 'PHPStan\\Node\\InClassMethodNode',
+       'identifier' => 'class.notFound',
        'metadata' => 
       array (
       ),
@@ -3862,53 +3828,16 @@ return [
     )),
     3 => 
     \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Relation \'part\' is not found in Modules\\User\\App\\Models\\User model.',
-       'file' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Repositories/UserRepository.php',
-       'line' => 262,
+       'message' => 'Method Modules\\User\\App\\Models\\User::salaryMechanisms() should return Modules\\User\\App\\Models\\HasMany but returns Illuminate\\Database\\Eloquent\\Relations\\HasMany<Modules\\Salary\\App\\Models\\SalaryMechanism, $this(Modules\\User\\App\\Models\\User)>.',
+       'file' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/User.php',
+       'line' => 268,
        'canBeIgnored' => true,
-       'filePath' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Repositories/UserRepository.php',
+       'filePath' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/User.php',
        'traitFilePath' => NULL,
        'tip' => NULL,
-       'nodeLine' => 262,
-       'nodeType' => 'PhpParser\\Node\\Expr\\StaticCall',
-       'identifier' => 'larastan.relationExistence',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    4 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Relation \'position\' is not found in Modules\\User\\App\\Models\\User model.',
-       'file' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Repositories/UserRepository.php',
-       'line' => 262,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Repositories/UserRepository.php',
-       'traitFilePath' => NULL,
-       'tip' => NULL,
-       'nodeLine' => 262,
-       'nodeType' => 'PhpParser\\Node\\Expr\\StaticCall',
-       'identifier' => 'larastan.relationExistence',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Exports/AttendanceExport.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Method App\\Exports\\AttendanceExport::collection() should return Illuminate\\Support\\Collection but return statement is missing.',
-       'file' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Exports/AttendanceExport.php',
-       'line' => 15,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Exports/AttendanceExport.php',
-       'traitFilePath' => NULL,
-       'tip' => NULL,
-       'nodeLine' => 15,
-       'nodeType' => 'PHPStan\\Node\\ExecutionEndNode',
-       'identifier' => 'return.missing',
+       'nodeLine' => 268,
+       'nodeType' => 'PhpParser\\Node\\Stmt\\Return_',
+       'identifier' => 'return.type',
        'metadata' => 
       array (
       ),
@@ -5435,10 +5364,22 @@ return [
       0 => 
       array (
         0 => 'Laravel\\Sanctum\\HasApiTokens',
-        1 => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
-        2 => 'Spatie\\Permission\\Traits\\HasRoles',
-        3 => 'Illuminate\\Notifications\\Notifiable',
-        4 => 'Illuminate\\Auth\\MustVerifyEmail',
+      ),
+      1 => 
+      array (
+        0 => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+      ),
+      2 => 
+      array (
+        0 => 'Spatie\\Permission\\Traits\\HasRoles',
+      ),
+      3 => 
+      array (
+        0 => 'Illuminate\\Auth\\MustVerifyEmail',
+      ),
+      4 => 
+      array (
+        0 => 'Illuminate\\Notifications\\Notifiable',
       ),
     ),
   ),
@@ -5453,6 +5394,7 @@ return [
         2 => 'App\\Exports\\AttendanceExport',
         3 => 
         array (
+          0 => 'f' . "\0" . 'collect',
         ),
       ),
     ),
@@ -6684,9 +6626,48 @@ return [
     'fileHash' => 'd8d9f2a8a1fc396aaf096848055a28613231ae91528e2698c7615f577933703b',
     'dependentFiles' => 
     array (
-      0 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/Team.php',
-      1 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/User.php',
-      2 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Repositories/UserRepository.php',
+      0 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/AttendanceActionController.php',
+      1 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/AttendanceController.php',
+      2 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Requests/StoreAttendanceRequest.php',
+      3 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Requests/UpdateAttendanceRequest.php',
+      4 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Jobs/ExportAttendanceExcelJob.php',
+      5 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Jobs/ExportAttendancePdfJob.php',
+      6 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Jobs/SendAttendanceApprovedMailJob.php',
+      7 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Mail/AttendanceApprovedMail.php',
+      8 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Mail/AttendanceCheckInMail.php',
+      9 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Mail/AttendanceRejectedMail.php',
+      10 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Models/Attendance.php',
+      11 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Policies/AttendancePolicy.php',
+      12 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Scopes/CompanyScope.php',
+      13 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/Database/Factories/AttendanceFactory.php',
+      14 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/Database/Seeders/AttendanceSeeder.php',
+      15 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceApiTest.php',
+      16 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceCrudTest.php',
+      17 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceDashboardTest.php',
+      18 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceServiceTest.php',
+      19 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Http/Controllers/SalaryController.php',
+      20 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Listeners/LogSalaryActivity.php',
+      21 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Models/SalaryMechanism.php',
+      22 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/Database/Seeders/SalaryDatabaseSeeder.php',
+      23 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Http/Controllers/AuthController.php',
+      24 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Http/Controllers/UserController.php',
+      25 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/Position.php',
+      26 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/Team.php',
+      27 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/TypeAccount.php',
+      28 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/User.php',
+      29 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Repositories/Interfaces/UserRepositoryInterface.php',
+      30 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Repositories/UserRepository.php',
+      31 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/Database/Factories/UserFactory.php',
+      32 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/ConfirmablePasswordController.php',
+      33 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/EmailVerificationNotificationController.php',
+      34 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/EmailVerificationPromptController.php',
+      35 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/NewPasswordController.php',
+      36 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/PasswordController.php',
+      37 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/RegisteredUserController.php',
+      38 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/VerifyEmailController.php',
+      39 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/ProfileController.php',
+      40 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Requests/ProfileUpdateRequest.php',
+      41 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Policies/AttendancePolicy.php',
     ),
   ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/Position.php' => 
@@ -6694,8 +6675,48 @@ return [
     'fileHash' => '0c6a49b279773f4698df2743d06ba78de81983207b634c234a7c4f459bdcbb3d',
     'dependentFiles' => 
     array (
-      0 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/User.php',
-      1 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Repositories/UserRepository.php',
+      0 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/AttendanceActionController.php',
+      1 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/AttendanceController.php',
+      2 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Requests/StoreAttendanceRequest.php',
+      3 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Requests/UpdateAttendanceRequest.php',
+      4 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Jobs/ExportAttendanceExcelJob.php',
+      5 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Jobs/ExportAttendancePdfJob.php',
+      6 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Jobs/SendAttendanceApprovedMailJob.php',
+      7 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Mail/AttendanceApprovedMail.php',
+      8 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Mail/AttendanceCheckInMail.php',
+      9 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Mail/AttendanceRejectedMail.php',
+      10 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Models/Attendance.php',
+      11 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Policies/AttendancePolicy.php',
+      12 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Scopes/CompanyScope.php',
+      13 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/Database/Factories/AttendanceFactory.php',
+      14 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/Database/Seeders/AttendanceSeeder.php',
+      15 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceApiTest.php',
+      16 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceCrudTest.php',
+      17 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceDashboardTest.php',
+      18 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceServiceTest.php',
+      19 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Http/Controllers/SalaryController.php',
+      20 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Listeners/LogSalaryActivity.php',
+      21 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Models/SalaryMechanism.php',
+      22 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/Database/Seeders/SalaryDatabaseSeeder.php',
+      23 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Http/Controllers/AuthController.php',
+      24 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Http/Controllers/UserController.php',
+      25 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/Part.php',
+      26 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/Team.php',
+      27 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/TypeAccount.php',
+      28 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/User.php',
+      29 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Repositories/Interfaces/UserRepositoryInterface.php',
+      30 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Repositories/UserRepository.php',
+      31 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/Database/Factories/UserFactory.php',
+      32 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/ConfirmablePasswordController.php',
+      33 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/EmailVerificationNotificationController.php',
+      34 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/EmailVerificationPromptController.php',
+      35 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/NewPasswordController.php',
+      36 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/PasswordController.php',
+      37 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/RegisteredUserController.php',
+      38 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/VerifyEmailController.php',
+      39 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/ProfileController.php',
+      40 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Requests/ProfileUpdateRequest.php',
+      41 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Policies/AttendancePolicy.php',
     ),
   ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/Team.php' => 
@@ -6703,8 +6724,48 @@ return [
     'fileHash' => '8f98b29b036cbf9f8e213bce079c1888611c416cc4b49b815b250c3fbb51ef14',
     'dependentFiles' => 
     array (
-      0 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/User.php',
-      1 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Repositories/UserRepository.php',
+      0 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/AttendanceActionController.php',
+      1 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/AttendanceController.php',
+      2 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Requests/StoreAttendanceRequest.php',
+      3 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Requests/UpdateAttendanceRequest.php',
+      4 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Jobs/ExportAttendanceExcelJob.php',
+      5 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Jobs/ExportAttendancePdfJob.php',
+      6 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Jobs/SendAttendanceApprovedMailJob.php',
+      7 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Mail/AttendanceApprovedMail.php',
+      8 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Mail/AttendanceCheckInMail.php',
+      9 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Mail/AttendanceRejectedMail.php',
+      10 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Models/Attendance.php',
+      11 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Policies/AttendancePolicy.php',
+      12 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Scopes/CompanyScope.php',
+      13 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/Database/Factories/AttendanceFactory.php',
+      14 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/Database/Seeders/AttendanceSeeder.php',
+      15 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceApiTest.php',
+      16 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceCrudTest.php',
+      17 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceDashboardTest.php',
+      18 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceServiceTest.php',
+      19 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Http/Controllers/SalaryController.php',
+      20 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Listeners/LogSalaryActivity.php',
+      21 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Models/SalaryMechanism.php',
+      22 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/Database/Seeders/SalaryDatabaseSeeder.php',
+      23 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Http/Controllers/AuthController.php',
+      24 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Http/Controllers/UserController.php',
+      25 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/Part.php',
+      26 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/Position.php',
+      27 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/TypeAccount.php',
+      28 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/User.php',
+      29 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Repositories/Interfaces/UserRepositoryInterface.php',
+      30 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Repositories/UserRepository.php',
+      31 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/Database/Factories/UserFactory.php',
+      32 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/ConfirmablePasswordController.php',
+      33 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/EmailVerificationNotificationController.php',
+      34 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/EmailVerificationPromptController.php',
+      35 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/NewPasswordController.php',
+      36 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/PasswordController.php',
+      37 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/RegisteredUserController.php',
+      38 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/VerifyEmailController.php',
+      39 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/ProfileController.php',
+      40 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Requests/ProfileUpdateRequest.php',
+      41 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Policies/AttendancePolicy.php',
     ),
   ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/TypeAccount.php' => 
@@ -6712,13 +6773,53 @@ return [
     'fileHash' => '847477e8a8cb4a400faf64b78d56e2f539497a3149bfe36f73a003f70f56b42e',
     'dependentFiles' => 
     array (
-      0 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/User.php',
-      1 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Repositories/UserRepository.php',
+      0 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/AttendanceActionController.php',
+      1 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/AttendanceController.php',
+      2 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Requests/StoreAttendanceRequest.php',
+      3 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Requests/UpdateAttendanceRequest.php',
+      4 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Jobs/ExportAttendanceExcelJob.php',
+      5 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Jobs/ExportAttendancePdfJob.php',
+      6 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Jobs/SendAttendanceApprovedMailJob.php',
+      7 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Mail/AttendanceApprovedMail.php',
+      8 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Mail/AttendanceCheckInMail.php',
+      9 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Mail/AttendanceRejectedMail.php',
+      10 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Models/Attendance.php',
+      11 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Policies/AttendancePolicy.php',
+      12 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Scopes/CompanyScope.php',
+      13 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/Database/Factories/AttendanceFactory.php',
+      14 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/Database/Seeders/AttendanceSeeder.php',
+      15 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceApiTest.php',
+      16 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceCrudTest.php',
+      17 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceDashboardTest.php',
+      18 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceServiceTest.php',
+      19 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Http/Controllers/SalaryController.php',
+      20 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Listeners/LogSalaryActivity.php',
+      21 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Models/SalaryMechanism.php',
+      22 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/Database/Seeders/SalaryDatabaseSeeder.php',
+      23 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Http/Controllers/AuthController.php',
+      24 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Http/Controllers/UserController.php',
+      25 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/Part.php',
+      26 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/Position.php',
+      27 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/Team.php',
+      28 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/User.php',
+      29 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Repositories/Interfaces/UserRepositoryInterface.php',
+      30 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Repositories/UserRepository.php',
+      31 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/Database/Factories/UserFactory.php',
+      32 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/ConfirmablePasswordController.php',
+      33 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/EmailVerificationNotificationController.php',
+      34 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/EmailVerificationPromptController.php',
+      35 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/NewPasswordController.php',
+      36 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/PasswordController.php',
+      37 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/RegisteredUserController.php',
+      38 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/VerifyEmailController.php',
+      39 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/ProfileController.php',
+      40 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Requests/ProfileUpdateRequest.php',
+      41 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Policies/AttendancePolicy.php',
     ),
   ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/User.php' => 
   array (
-    'fileHash' => '8ec1819b5f4b22a3e7271af0fc8f15c718733a220071285ca135c7f60debb9ae',
+    'fileHash' => '0fc01ca321b503ec262adde4f07ed7b177f0bbc502c83dbd0c0d5dccef521c90',
     'dependentFiles' => 
     array (
       0 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/AttendanceActionController.php',
@@ -6798,7 +6899,7 @@ return [
   ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Repositories/UserRepository.php' => 
   array (
-    'fileHash' => '81fa72a3d3b6fe321de6e79aa9a5f6a9bc4c352a4ec4f56843df8a6b24610498',
+    'fileHash' => 'eddd873cd48fd503d9b2a0c956ea7e503d3b9d856cd0cbb9a07ae8e038edf85f',
     'dependentFiles' => 
     array (
       0 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Providers/UserServiceProvider.php',
@@ -6890,7 +6991,7 @@ return [
   ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Exports/AttendanceExport.php' => 
   array (
-    'fileHash' => '62570086964068b48563832a6add52c6a60b0b0c8f6f23ff6dbb9a3207cb123f',
+    'fileHash' => 'c534c34bba9f4f0c5b06763fb47c069f78c73ac16a34924068ad0477f2beba28',
     'dependentFiles' => 
     array (
     ),
@@ -6925,7 +7026,7 @@ return [
   ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/NewPasswordController.php' => 
   array (
-    'fileHash' => '1fce2595f7afd4afe933560be00b2a309a8320939eae35425eb7dfe5efc20956',
+    'fileHash' => '045d1a8b435de1df5d76a7bb76f4ead3581fef0fe7b04a623d3153bae23763b8',
     'dependentFiles' => 
     array (
     ),
@@ -6946,7 +7047,7 @@ return [
   ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/RegisteredUserController.php' => 
   array (
-    'fileHash' => 'b7364de7788c2f07606941eb6afae9fa8cd2c92ee00a0d0617a4ab9838d7f413',
+    'fileHash' => '178389b79149f7d2785a69085ebd52eb105223073a915d17742bb17bdfcb2a43',
     'dependentFiles' => 
     array (
     ),
@@ -18953,7 +19054,36 @@ return [
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
        'name' => 'Modules\\User\\App\\Models\\User',
-       'phpDoc' => NULL,
+       'phpDoc' => 
+      \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+         'phpDocString' => '/**
+ * @property-read Part|null $part
+ * @property-read Position|null $position
+ * @property-read Team|null $team
+ * @property-read TypeAccount|null $typeAccount
+ */',
+         'namespace' => 'Modules\\User\\App\\Models',
+         'uses' => 
+        array (
+          'mustverifyemail' => 'Illuminate\\Auth\\MustVerifyEmail',
+          'mustverifyemailcontract' => 'Illuminate\\Contracts\\Auth\\MustVerifyEmail',
+          'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+          'authenticatable' => 'Illuminate\\Foundation\\Auth\\User',
+          'notifiable' => 'Illuminate\\Notifications\\Notifiable',
+          'hasapitokens' => 'Laravel\\Sanctum\\HasApiTokens',
+          'attendance' => 'Modules\\Attendance\\App\\Models\\Attendance',
+          'salarymechanism' => 'Modules\\Salary\\App\\Models\\SalaryMechanism',
+          'hasroles' => 'Spatie\\Permission\\Traits\\HasRoles',
+          'part' => 'Modules\\User\\App\\Models\\Part',
+          'position' => 'Modules\\User\\App\\Models\\Position',
+          'team' => 'Modules\\User\\App\\Models\\Team',
+          'typeaccount' => 'Modules\\User\\App\\Models\\TypeAccount',
+          'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+        ),
+         'constUses' => 
+        array (
+        ),
+      )),
        'abstract' => false,
        'final' => false,
        'extends' => 'Illuminate\\Foundation\\Auth\\User',
@@ -18966,8 +19096,8 @@ return [
         0 => 'Laravel\\Sanctum\\HasApiTokens',
         1 => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
         2 => 'Spatie\\Permission\\Traits\\HasRoles',
-        3 => 'Illuminate\\Notifications\\Notifiable',
-        4 => 'Illuminate\\Auth\\MustVerifyEmail',
+        3 => 'Illuminate\\Auth\\MustVerifyEmail',
+        4 => 'Illuminate\\Notifications\\Notifiable',
       ),
        'traitUseAdaptations' => 
       array (
@@ -19059,7 +19189,7 @@ return [
            'abstract' => false,
            'final' => false,
            'static' => false,
-           'returnType' => NULL,
+           'returnType' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
            'parameters' => 
           array (
           ),
@@ -19077,7 +19207,7 @@ return [
            'abstract' => false,
            'final' => false,
            'static' => false,
-           'returnType' => NULL,
+           'returnType' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
            'parameters' => 
           array (
           ),
@@ -19095,7 +19225,7 @@ return [
            'abstract' => false,
            'final' => false,
            'static' => false,
-           'returnType' => NULL,
+           'returnType' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
            'parameters' => 
           array (
           ),
@@ -19113,7 +19243,7 @@ return [
            'abstract' => false,
            'final' => false,
            'static' => false,
-           'returnType' => NULL,
+           'returnType' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
            'parameters' => 
           array (
           ),
@@ -19123,7 +19253,7 @@ return [
         )),
         7 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
-           'name' => 'salaryMechanisms',
+           'name' => 'attendances',
            'phpDoc' => NULL,
            'byRef' => false,
            'public' => true,
@@ -19131,7 +19261,7 @@ return [
            'abstract' => false,
            'final' => false,
            'static' => false,
-           'returnType' => NULL,
+           'returnType' => 'Modules\\User\\App\\Models\\HasMany',
            'parameters' => 
           array (
           ),
@@ -19141,7 +19271,7 @@ return [
         )),
         8 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
-           'name' => 'attendances',
+           'name' => 'salaryMechanisms',
            'phpDoc' => NULL,
            'byRef' => false,
            'public' => true,
@@ -19149,7 +19279,7 @@ return [
            'abstract' => false,
            'final' => false,
            'static' => false,
-           'returnType' => NULL,
+           'returnType' => 'Modules\\User\\App\\Models\\HasMany',
            'parameters' => 
           array (
           ),
@@ -20155,7 +20285,7 @@ return [
            'abstract' => false,
            'final' => false,
            'static' => false,
-           'returnType' => NULL,
+           'returnType' => 'Illuminate\\Support\\Collection',
            'parameters' => 
           array (
           ),
@@ -20617,7 +20747,6 @@ return [
              'uses' => 
             array (
               'controller' => 'App\\Http\\Controllers\\Controller',
-              'user' => 'Modules\\User\\App\\Models\\User',
               'passwordreset' => 'Illuminate\\Auth\\Events\\PasswordReset',
               'redirectresponse' => 'Illuminate\\Http\\RedirectResponse',
               'request' => 'Illuminate\\Http\\Request',
@@ -20627,6 +20756,7 @@ return [
               'rules' => 'Illuminate\\Validation\\Rules',
               'validationexception' => 'Illuminate\\Validation\\ValidationException',
               'view' => 'Illuminate\\View\\View',
+              'user' => 'Modules\\User\\App\\Models\\User',
             ),
              'constUses' => 
             array (
@@ -20673,7 +20803,6 @@ return [
              'uses' => 
             array (
               'controller' => 'App\\Http\\Controllers\\Controller',
-              'user' => 'Modules\\User\\App\\Models\\User',
               'passwordreset' => 'Illuminate\\Auth\\Events\\PasswordReset',
               'redirectresponse' => 'Illuminate\\Http\\RedirectResponse',
               'request' => 'Illuminate\\Http\\Request',
@@ -20683,6 +20812,7 @@ return [
               'rules' => 'Illuminate\\Validation\\Rules',
               'validationexception' => 'Illuminate\\Validation\\ValidationException',
               'view' => 'Illuminate\\View\\View',
+              'user' => 'Modules\\User\\App\\Models\\User',
             ),
              'constUses' => 
             array (
@@ -20940,7 +21070,6 @@ return [
              'uses' => 
             array (
               'controller' => 'App\\Http\\Controllers\\Controller',
-              'user' => 'Modules\\User\\App\\Models\\User',
               'registered' => 'Illuminate\\Auth\\Events\\Registered',
               'redirectresponse' => 'Illuminate\\Http\\RedirectResponse',
               'request' => 'Illuminate\\Http\\Request',
@@ -20949,6 +21078,7 @@ return [
               'rules' => 'Illuminate\\Validation\\Rules',
               'validationexception' => 'Illuminate\\Validation\\ValidationException',
               'view' => 'Illuminate\\View\\View',
+              'user' => 'Modules\\User\\App\\Models\\User',
             ),
              'constUses' => 
             array (
@@ -20982,7 +21112,6 @@ return [
              'uses' => 
             array (
               'controller' => 'App\\Http\\Controllers\\Controller',
-              'user' => 'Modules\\User\\App\\Models\\User',
               'registered' => 'Illuminate\\Auth\\Events\\Registered',
               'redirectresponse' => 'Illuminate\\Http\\RedirectResponse',
               'request' => 'Illuminate\\Http\\Request',
@@ -20991,6 +21120,7 @@ return [
               'rules' => 'Illuminate\\Validation\\Rules',
               'validationexception' => 'Illuminate\\Validation\\ValidationException',
               'view' => 'Illuminate\\View\\View',
+              'user' => 'Modules\\User\\App\\Models\\User',
             ),
              'constUses' => 
             array (

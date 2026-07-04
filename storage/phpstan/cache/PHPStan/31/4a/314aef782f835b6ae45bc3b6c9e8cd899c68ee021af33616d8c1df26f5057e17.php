@@ -21,6 +21,11 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'attendance' => 'Modules\\Attendance\\App\\Models\\Attendance',
           'salarymechanism' => 'Modules\\Salary\\App\\Models\\SalaryMechanism',
           'hasroles' => 'Spatie\\Permission\\Traits\\HasRoles',
+          'part' => 'Modules\\User\\App\\Models\\Part',
+          'position' => 'Modules\\User\\App\\Models\\Position',
+          'team' => 'Modules\\User\\App\\Models\\Team',
+          'typeaccount' => 'Modules\\User\\App\\Models\\TypeAccount',
+          'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
         ),
          'className' => 'Modules\\User\\App\\Models\\User',
          'functionName' => NULL,
@@ -3305,6 +3310,186 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           4 => NULL,
         ),
       )),
+      'c3fe6763bcf23f5ea27694fff44f5b04' => 
+      \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+         'namespace' => 'Illuminate\\Auth',
+         'uses' => 
+        array (
+          'verifyemail' => 'Illuminate\\Auth\\Notifications\\VerifyEmail',
+        ),
+         'className' => 'Modules\\User\\App\\Models\\User',
+         'functionName' => NULL,
+         'templatePhpDocNodes' => 
+        array (
+        ),
+         'parent' => NULL,
+         'typeAliasesMap' => 
+        array (
+        ),
+         'bypassTypeAliases' => false,
+         'constUses' => 
+        array (
+        ),
+         'typeAliasClassName' => 'Illuminate\\Auth\\MustVerifyEmail',
+         'traitData' => 
+        array (
+          0 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/User.php',
+          1 => 'Modules\\User\\App\\Models\\User',
+          2 => 'Illuminate\\Auth\\MustVerifyEmail',
+          3 => NULL,
+          4 => NULL,
+        ),
+      )),
+      '2c6e6c71f0f1f1baf244db57022002b7' => 
+      \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+         'namespace' => 'Illuminate\\Auth',
+         'uses' => 
+        array (
+          'verifyemail' => 'Illuminate\\Auth\\Notifications\\VerifyEmail',
+        ),
+         'className' => 'Modules\\User\\App\\Models\\User',
+         'functionName' => 'hasVerifiedEmail',
+         'templatePhpDocNodes' => 
+        array (
+        ),
+         'parent' => NULL,
+         'typeAliasesMap' => 
+        array (
+        ),
+         'bypassTypeAliases' => false,
+         'constUses' => 
+        array (
+        ),
+         'typeAliasClassName' => 'Illuminate\\Auth\\MustVerifyEmail',
+         'traitData' => 
+        array (
+          0 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/User.php',
+          1 => 'Modules\\User\\App\\Models\\User',
+          2 => 'Illuminate\\Auth\\MustVerifyEmail',
+          3 => NULL,
+          4 => NULL,
+        ),
+      )),
+      'ca2de378f921607559af530c3d43b5dc' => 
+      \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+         'namespace' => 'Illuminate\\Auth',
+         'uses' => 
+        array (
+          'verifyemail' => 'Illuminate\\Auth\\Notifications\\VerifyEmail',
+        ),
+         'className' => 'Modules\\User\\App\\Models\\User',
+         'functionName' => 'markEmailAsVerified',
+         'templatePhpDocNodes' => 
+        array (
+        ),
+         'parent' => NULL,
+         'typeAliasesMap' => 
+        array (
+        ),
+         'bypassTypeAliases' => false,
+         'constUses' => 
+        array (
+        ),
+         'typeAliasClassName' => 'Illuminate\\Auth\\MustVerifyEmail',
+         'traitData' => 
+        array (
+          0 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/User.php',
+          1 => 'Modules\\User\\App\\Models\\User',
+          2 => 'Illuminate\\Auth\\MustVerifyEmail',
+          3 => NULL,
+          4 => NULL,
+        ),
+      )),
+      'c4e6b7ff2c3a228950d47c98b4bc011d' => 
+      \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+         'namespace' => 'Illuminate\\Auth',
+         'uses' => 
+        array (
+          'verifyemail' => 'Illuminate\\Auth\\Notifications\\VerifyEmail',
+        ),
+         'className' => 'Modules\\User\\App\\Models\\User',
+         'functionName' => 'markEmailAsUnverified',
+         'templatePhpDocNodes' => 
+        array (
+        ),
+         'parent' => NULL,
+         'typeAliasesMap' => 
+        array (
+        ),
+         'bypassTypeAliases' => false,
+         'constUses' => 
+        array (
+        ),
+         'typeAliasClassName' => 'Illuminate\\Auth\\MustVerifyEmail',
+         'traitData' => 
+        array (
+          0 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/User.php',
+          1 => 'Modules\\User\\App\\Models\\User',
+          2 => 'Illuminate\\Auth\\MustVerifyEmail',
+          3 => NULL,
+          4 => NULL,
+        ),
+      )),
+      '269aaad546fdff96ac95b677a2977502' => 
+      \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+         'namespace' => 'Illuminate\\Auth',
+         'uses' => 
+        array (
+          'verifyemail' => 'Illuminate\\Auth\\Notifications\\VerifyEmail',
+        ),
+         'className' => 'Modules\\User\\App\\Models\\User',
+         'functionName' => 'sendEmailVerificationNotification',
+         'templatePhpDocNodes' => 
+        array (
+        ),
+         'parent' => NULL,
+         'typeAliasesMap' => 
+        array (
+        ),
+         'bypassTypeAliases' => false,
+         'constUses' => 
+        array (
+        ),
+         'typeAliasClassName' => 'Illuminate\\Auth\\MustVerifyEmail',
+         'traitData' => 
+        array (
+          0 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/User.php',
+          1 => 'Modules\\User\\App\\Models\\User',
+          2 => 'Illuminate\\Auth\\MustVerifyEmail',
+          3 => NULL,
+          4 => NULL,
+        ),
+      )),
+      'ffc33510fc215c82c5ccaab4f00e1270' => 
+      \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+         'namespace' => 'Illuminate\\Auth',
+         'uses' => 
+        array (
+          'verifyemail' => 'Illuminate\\Auth\\Notifications\\VerifyEmail',
+        ),
+         'className' => 'Modules\\User\\App\\Models\\User',
+         'functionName' => 'getEmailForVerification',
+         'templatePhpDocNodes' => 
+        array (
+        ),
+         'parent' => NULL,
+         'typeAliasesMap' => 
+        array (
+        ),
+         'bypassTypeAliases' => false,
+         'constUses' => 
+        array (
+        ),
+         'typeAliasClassName' => 'Illuminate\\Auth\\MustVerifyEmail',
+         'traitData' => 
+        array (
+          0 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/User.php',
+          1 => 'Modules\\User\\App\\Models\\User',
+          2 => 'Illuminate\\Auth\\MustVerifyEmail',
+          3 => NULL,
+          4 => NULL,
+        ),
+      )),
       'cfece6da3318bf507939136830332e12' => 
       \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
          'namespace' => 'Illuminate\\Notifications',
@@ -3574,186 +3759,6 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           4 => NULL,
         ),
       )),
-      'c3fe6763bcf23f5ea27694fff44f5b04' => 
-      \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
-         'namespace' => 'Illuminate\\Auth',
-         'uses' => 
-        array (
-          'verifyemail' => 'Illuminate\\Auth\\Notifications\\VerifyEmail',
-        ),
-         'className' => 'Modules\\User\\App\\Models\\User',
-         'functionName' => NULL,
-         'templatePhpDocNodes' => 
-        array (
-        ),
-         'parent' => NULL,
-         'typeAliasesMap' => 
-        array (
-        ),
-         'bypassTypeAliases' => false,
-         'constUses' => 
-        array (
-        ),
-         'typeAliasClassName' => 'Illuminate\\Auth\\MustVerifyEmail',
-         'traitData' => 
-        array (
-          0 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/User.php',
-          1 => 'Modules\\User\\App\\Models\\User',
-          2 => 'Illuminate\\Auth\\MustVerifyEmail',
-          3 => NULL,
-          4 => NULL,
-        ),
-      )),
-      '2c6e6c71f0f1f1baf244db57022002b7' => 
-      \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
-         'namespace' => 'Illuminate\\Auth',
-         'uses' => 
-        array (
-          'verifyemail' => 'Illuminate\\Auth\\Notifications\\VerifyEmail',
-        ),
-         'className' => 'Modules\\User\\App\\Models\\User',
-         'functionName' => 'hasVerifiedEmail',
-         'templatePhpDocNodes' => 
-        array (
-        ),
-         'parent' => NULL,
-         'typeAliasesMap' => 
-        array (
-        ),
-         'bypassTypeAliases' => false,
-         'constUses' => 
-        array (
-        ),
-         'typeAliasClassName' => 'Illuminate\\Auth\\MustVerifyEmail',
-         'traitData' => 
-        array (
-          0 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/User.php',
-          1 => 'Modules\\User\\App\\Models\\User',
-          2 => 'Illuminate\\Auth\\MustVerifyEmail',
-          3 => NULL,
-          4 => NULL,
-        ),
-      )),
-      'ca2de378f921607559af530c3d43b5dc' => 
-      \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
-         'namespace' => 'Illuminate\\Auth',
-         'uses' => 
-        array (
-          'verifyemail' => 'Illuminate\\Auth\\Notifications\\VerifyEmail',
-        ),
-         'className' => 'Modules\\User\\App\\Models\\User',
-         'functionName' => 'markEmailAsVerified',
-         'templatePhpDocNodes' => 
-        array (
-        ),
-         'parent' => NULL,
-         'typeAliasesMap' => 
-        array (
-        ),
-         'bypassTypeAliases' => false,
-         'constUses' => 
-        array (
-        ),
-         'typeAliasClassName' => 'Illuminate\\Auth\\MustVerifyEmail',
-         'traitData' => 
-        array (
-          0 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/User.php',
-          1 => 'Modules\\User\\App\\Models\\User',
-          2 => 'Illuminate\\Auth\\MustVerifyEmail',
-          3 => NULL,
-          4 => NULL,
-        ),
-      )),
-      'c4e6b7ff2c3a228950d47c98b4bc011d' => 
-      \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
-         'namespace' => 'Illuminate\\Auth',
-         'uses' => 
-        array (
-          'verifyemail' => 'Illuminate\\Auth\\Notifications\\VerifyEmail',
-        ),
-         'className' => 'Modules\\User\\App\\Models\\User',
-         'functionName' => 'markEmailAsUnverified',
-         'templatePhpDocNodes' => 
-        array (
-        ),
-         'parent' => NULL,
-         'typeAliasesMap' => 
-        array (
-        ),
-         'bypassTypeAliases' => false,
-         'constUses' => 
-        array (
-        ),
-         'typeAliasClassName' => 'Illuminate\\Auth\\MustVerifyEmail',
-         'traitData' => 
-        array (
-          0 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/User.php',
-          1 => 'Modules\\User\\App\\Models\\User',
-          2 => 'Illuminate\\Auth\\MustVerifyEmail',
-          3 => NULL,
-          4 => NULL,
-        ),
-      )),
-      '269aaad546fdff96ac95b677a2977502' => 
-      \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
-         'namespace' => 'Illuminate\\Auth',
-         'uses' => 
-        array (
-          'verifyemail' => 'Illuminate\\Auth\\Notifications\\VerifyEmail',
-        ),
-         'className' => 'Modules\\User\\App\\Models\\User',
-         'functionName' => 'sendEmailVerificationNotification',
-         'templatePhpDocNodes' => 
-        array (
-        ),
-         'parent' => NULL,
-         'typeAliasesMap' => 
-        array (
-        ),
-         'bypassTypeAliases' => false,
-         'constUses' => 
-        array (
-        ),
-         'typeAliasClassName' => 'Illuminate\\Auth\\MustVerifyEmail',
-         'traitData' => 
-        array (
-          0 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/User.php',
-          1 => 'Modules\\User\\App\\Models\\User',
-          2 => 'Illuminate\\Auth\\MustVerifyEmail',
-          3 => NULL,
-          4 => NULL,
-        ),
-      )),
-      'ffc33510fc215c82c5ccaab4f00e1270' => 
-      \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
-         'namespace' => 'Illuminate\\Auth',
-         'uses' => 
-        array (
-          'verifyemail' => 'Illuminate\\Auth\\Notifications\\VerifyEmail',
-        ),
-         'className' => 'Modules\\User\\App\\Models\\User',
-         'functionName' => 'getEmailForVerification',
-         'templatePhpDocNodes' => 
-        array (
-        ),
-         'parent' => NULL,
-         'typeAliasesMap' => 
-        array (
-        ),
-         'bypassTypeAliases' => false,
-         'constUses' => 
-        array (
-        ),
-         'typeAliasClassName' => 'Illuminate\\Auth\\MustVerifyEmail',
-         'traitData' => 
-        array (
-          0 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/User.php',
-          1 => 'Modules\\User\\App\\Models\\User',
-          2 => 'Illuminate\\Auth\\MustVerifyEmail',
-          3 => NULL,
-          4 => NULL,
-        ),
-      )),
       'dab339bab31f9b83bbbe049bb8b6e89b' => 
       \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
          'namespace' => 'Modules\\User\\App\\Models',
@@ -3768,13 +3773,53 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'attendance' => 'Modules\\Attendance\\App\\Models\\Attendance',
           'salarymechanism' => 'Modules\\Salary\\App\\Models\\SalaryMechanism',
           'hasroles' => 'Spatie\\Permission\\Traits\\HasRoles',
+          'part' => 'Modules\\User\\App\\Models\\Part',
+          'position' => 'Modules\\User\\App\\Models\\Position',
+          'team' => 'Modules\\User\\App\\Models\\Team',
+          'typeaccount' => 'Modules\\User\\App\\Models\\TypeAccount',
+          'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
         ),
          'className' => 'Modules\\User\\App\\Models\\User',
          'functionName' => 'part',
          'templatePhpDocNodes' => 
         array (
         ),
-         'parent' => NULL,
+         'parent' => 
+        \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+           'namespace' => 'Modules\\User\\App\\Models',
+           'uses' => 
+          array (
+            'mustverifyemail' => 'Illuminate\\Auth\\MustVerifyEmail',
+            'mustverifyemailcontract' => 'Illuminate\\Contracts\\Auth\\MustVerifyEmail',
+            'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+            'authenticatable' => 'Illuminate\\Foundation\\Auth\\User',
+            'notifiable' => 'Illuminate\\Notifications\\Notifiable',
+            'hasapitokens' => 'Laravel\\Sanctum\\HasApiTokens',
+            'attendance' => 'Modules\\Attendance\\App\\Models\\Attendance',
+            'salarymechanism' => 'Modules\\Salary\\App\\Models\\SalaryMechanism',
+            'hasroles' => 'Spatie\\Permission\\Traits\\HasRoles',
+            'part' => 'Modules\\User\\App\\Models\\Part',
+            'position' => 'Modules\\User\\App\\Models\\Position',
+            'team' => 'Modules\\User\\App\\Models\\Team',
+            'typeaccount' => 'Modules\\User\\App\\Models\\TypeAccount',
+            'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+          ),
+           'className' => 'Modules\\User\\App\\Models\\User',
+           'functionName' => NULL,
+           'templatePhpDocNodes' => 
+          array (
+          ),
+           'parent' => NULL,
+           'typeAliasesMap' => 
+          array (
+          ),
+           'bypassTypeAliases' => false,
+           'constUses' => 
+          array (
+          ),
+           'typeAliasClassName' => NULL,
+           'traitData' => NULL,
+        )),
          'typeAliasesMap' => 
         array (
         ),
@@ -3799,13 +3844,53 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'attendance' => 'Modules\\Attendance\\App\\Models\\Attendance',
           'salarymechanism' => 'Modules\\Salary\\App\\Models\\SalaryMechanism',
           'hasroles' => 'Spatie\\Permission\\Traits\\HasRoles',
+          'part' => 'Modules\\User\\App\\Models\\Part',
+          'position' => 'Modules\\User\\App\\Models\\Position',
+          'team' => 'Modules\\User\\App\\Models\\Team',
+          'typeaccount' => 'Modules\\User\\App\\Models\\TypeAccount',
+          'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
         ),
          'className' => 'Modules\\User\\App\\Models\\User',
          'functionName' => 'position',
          'templatePhpDocNodes' => 
         array (
         ),
-         'parent' => NULL,
+         'parent' => 
+        \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+           'namespace' => 'Modules\\User\\App\\Models',
+           'uses' => 
+          array (
+            'mustverifyemail' => 'Illuminate\\Auth\\MustVerifyEmail',
+            'mustverifyemailcontract' => 'Illuminate\\Contracts\\Auth\\MustVerifyEmail',
+            'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+            'authenticatable' => 'Illuminate\\Foundation\\Auth\\User',
+            'notifiable' => 'Illuminate\\Notifications\\Notifiable',
+            'hasapitokens' => 'Laravel\\Sanctum\\HasApiTokens',
+            'attendance' => 'Modules\\Attendance\\App\\Models\\Attendance',
+            'salarymechanism' => 'Modules\\Salary\\App\\Models\\SalaryMechanism',
+            'hasroles' => 'Spatie\\Permission\\Traits\\HasRoles',
+            'part' => 'Modules\\User\\App\\Models\\Part',
+            'position' => 'Modules\\User\\App\\Models\\Position',
+            'team' => 'Modules\\User\\App\\Models\\Team',
+            'typeaccount' => 'Modules\\User\\App\\Models\\TypeAccount',
+            'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+          ),
+           'className' => 'Modules\\User\\App\\Models\\User',
+           'functionName' => NULL,
+           'templatePhpDocNodes' => 
+          array (
+          ),
+           'parent' => NULL,
+           'typeAliasesMap' => 
+          array (
+          ),
+           'bypassTypeAliases' => false,
+           'constUses' => 
+          array (
+          ),
+           'typeAliasClassName' => NULL,
+           'traitData' => NULL,
+        )),
          'typeAliasesMap' => 
         array (
         ),
@@ -3830,13 +3915,53 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'attendance' => 'Modules\\Attendance\\App\\Models\\Attendance',
           'salarymechanism' => 'Modules\\Salary\\App\\Models\\SalaryMechanism',
           'hasroles' => 'Spatie\\Permission\\Traits\\HasRoles',
+          'part' => 'Modules\\User\\App\\Models\\Part',
+          'position' => 'Modules\\User\\App\\Models\\Position',
+          'team' => 'Modules\\User\\App\\Models\\Team',
+          'typeaccount' => 'Modules\\User\\App\\Models\\TypeAccount',
+          'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
         ),
          'className' => 'Modules\\User\\App\\Models\\User',
          'functionName' => 'team',
          'templatePhpDocNodes' => 
         array (
         ),
-         'parent' => NULL,
+         'parent' => 
+        \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+           'namespace' => 'Modules\\User\\App\\Models',
+           'uses' => 
+          array (
+            'mustverifyemail' => 'Illuminate\\Auth\\MustVerifyEmail',
+            'mustverifyemailcontract' => 'Illuminate\\Contracts\\Auth\\MustVerifyEmail',
+            'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+            'authenticatable' => 'Illuminate\\Foundation\\Auth\\User',
+            'notifiable' => 'Illuminate\\Notifications\\Notifiable',
+            'hasapitokens' => 'Laravel\\Sanctum\\HasApiTokens',
+            'attendance' => 'Modules\\Attendance\\App\\Models\\Attendance',
+            'salarymechanism' => 'Modules\\Salary\\App\\Models\\SalaryMechanism',
+            'hasroles' => 'Spatie\\Permission\\Traits\\HasRoles',
+            'part' => 'Modules\\User\\App\\Models\\Part',
+            'position' => 'Modules\\User\\App\\Models\\Position',
+            'team' => 'Modules\\User\\App\\Models\\Team',
+            'typeaccount' => 'Modules\\User\\App\\Models\\TypeAccount',
+            'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+          ),
+           'className' => 'Modules\\User\\App\\Models\\User',
+           'functionName' => NULL,
+           'templatePhpDocNodes' => 
+          array (
+          ),
+           'parent' => NULL,
+           'typeAliasesMap' => 
+          array (
+          ),
+           'bypassTypeAliases' => false,
+           'constUses' => 
+          array (
+          ),
+           'typeAliasClassName' => NULL,
+           'traitData' => NULL,
+        )),
          'typeAliasesMap' => 
         array (
         ),
@@ -3861,44 +3986,53 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'attendance' => 'Modules\\Attendance\\App\\Models\\Attendance',
           'salarymechanism' => 'Modules\\Salary\\App\\Models\\SalaryMechanism',
           'hasroles' => 'Spatie\\Permission\\Traits\\HasRoles',
+          'part' => 'Modules\\User\\App\\Models\\Part',
+          'position' => 'Modules\\User\\App\\Models\\Position',
+          'team' => 'Modules\\User\\App\\Models\\Team',
+          'typeaccount' => 'Modules\\User\\App\\Models\\TypeAccount',
+          'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
         ),
          'className' => 'Modules\\User\\App\\Models\\User',
          'functionName' => 'typeAccount',
          'templatePhpDocNodes' => 
         array (
         ),
-         'parent' => NULL,
-         'typeAliasesMap' => 
-        array (
-        ),
-         'bypassTypeAliases' => false,
-         'constUses' => 
-        array (
-        ),
-         'typeAliasClassName' => NULL,
-         'traitData' => NULL,
-      )),
-      '349574063b88d07dd3782d487003ab82' => 
-      \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
-         'namespace' => 'Modules\\User\\App\\Models',
-         'uses' => 
-        array (
-          'mustverifyemail' => 'Illuminate\\Auth\\MustVerifyEmail',
-          'mustverifyemailcontract' => 'Illuminate\\Contracts\\Auth\\MustVerifyEmail',
-          'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
-          'authenticatable' => 'Illuminate\\Foundation\\Auth\\User',
-          'notifiable' => 'Illuminate\\Notifications\\Notifiable',
-          'hasapitokens' => 'Laravel\\Sanctum\\HasApiTokens',
-          'attendance' => 'Modules\\Attendance\\App\\Models\\Attendance',
-          'salarymechanism' => 'Modules\\Salary\\App\\Models\\SalaryMechanism',
-          'hasroles' => 'Spatie\\Permission\\Traits\\HasRoles',
-        ),
-         'className' => 'Modules\\User\\App\\Models\\User',
-         'functionName' => 'salaryMechanisms',
-         'templatePhpDocNodes' => 
-        array (
-        ),
-         'parent' => NULL,
+         'parent' => 
+        \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+           'namespace' => 'Modules\\User\\App\\Models',
+           'uses' => 
+          array (
+            'mustverifyemail' => 'Illuminate\\Auth\\MustVerifyEmail',
+            'mustverifyemailcontract' => 'Illuminate\\Contracts\\Auth\\MustVerifyEmail',
+            'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+            'authenticatable' => 'Illuminate\\Foundation\\Auth\\User',
+            'notifiable' => 'Illuminate\\Notifications\\Notifiable',
+            'hasapitokens' => 'Laravel\\Sanctum\\HasApiTokens',
+            'attendance' => 'Modules\\Attendance\\App\\Models\\Attendance',
+            'salarymechanism' => 'Modules\\Salary\\App\\Models\\SalaryMechanism',
+            'hasroles' => 'Spatie\\Permission\\Traits\\HasRoles',
+            'part' => 'Modules\\User\\App\\Models\\Part',
+            'position' => 'Modules\\User\\App\\Models\\Position',
+            'team' => 'Modules\\User\\App\\Models\\Team',
+            'typeaccount' => 'Modules\\User\\App\\Models\\TypeAccount',
+            'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+          ),
+           'className' => 'Modules\\User\\App\\Models\\User',
+           'functionName' => NULL,
+           'templatePhpDocNodes' => 
+          array (
+          ),
+           'parent' => NULL,
+           'typeAliasesMap' => 
+          array (
+          ),
+           'bypassTypeAliases' => false,
+           'constUses' => 
+          array (
+          ),
+           'typeAliasClassName' => NULL,
+           'traitData' => NULL,
+        )),
          'typeAliasesMap' => 
         array (
         ),
@@ -3923,13 +4057,124 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'attendance' => 'Modules\\Attendance\\App\\Models\\Attendance',
           'salarymechanism' => 'Modules\\Salary\\App\\Models\\SalaryMechanism',
           'hasroles' => 'Spatie\\Permission\\Traits\\HasRoles',
+          'part' => 'Modules\\User\\App\\Models\\Part',
+          'position' => 'Modules\\User\\App\\Models\\Position',
+          'team' => 'Modules\\User\\App\\Models\\Team',
+          'typeaccount' => 'Modules\\User\\App\\Models\\TypeAccount',
+          'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
         ),
          'className' => 'Modules\\User\\App\\Models\\User',
          'functionName' => 'attendances',
          'templatePhpDocNodes' => 
         array (
         ),
-         'parent' => NULL,
+         'parent' => 
+        \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+           'namespace' => 'Modules\\User\\App\\Models',
+           'uses' => 
+          array (
+            'mustverifyemail' => 'Illuminate\\Auth\\MustVerifyEmail',
+            'mustverifyemailcontract' => 'Illuminate\\Contracts\\Auth\\MustVerifyEmail',
+            'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+            'authenticatable' => 'Illuminate\\Foundation\\Auth\\User',
+            'notifiable' => 'Illuminate\\Notifications\\Notifiable',
+            'hasapitokens' => 'Laravel\\Sanctum\\HasApiTokens',
+            'attendance' => 'Modules\\Attendance\\App\\Models\\Attendance',
+            'salarymechanism' => 'Modules\\Salary\\App\\Models\\SalaryMechanism',
+            'hasroles' => 'Spatie\\Permission\\Traits\\HasRoles',
+            'part' => 'Modules\\User\\App\\Models\\Part',
+            'position' => 'Modules\\User\\App\\Models\\Position',
+            'team' => 'Modules\\User\\App\\Models\\Team',
+            'typeaccount' => 'Modules\\User\\App\\Models\\TypeAccount',
+            'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+          ),
+           'className' => 'Modules\\User\\App\\Models\\User',
+           'functionName' => NULL,
+           'templatePhpDocNodes' => 
+          array (
+          ),
+           'parent' => NULL,
+           'typeAliasesMap' => 
+          array (
+          ),
+           'bypassTypeAliases' => false,
+           'constUses' => 
+          array (
+          ),
+           'typeAliasClassName' => NULL,
+           'traitData' => NULL,
+        )),
+         'typeAliasesMap' => 
+        array (
+        ),
+         'bypassTypeAliases' => false,
+         'constUses' => 
+        array (
+        ),
+         'typeAliasClassName' => NULL,
+         'traitData' => NULL,
+      )),
+      '349574063b88d07dd3782d487003ab82' => 
+      \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+         'namespace' => 'Modules\\User\\App\\Models',
+         'uses' => 
+        array (
+          'mustverifyemail' => 'Illuminate\\Auth\\MustVerifyEmail',
+          'mustverifyemailcontract' => 'Illuminate\\Contracts\\Auth\\MustVerifyEmail',
+          'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+          'authenticatable' => 'Illuminate\\Foundation\\Auth\\User',
+          'notifiable' => 'Illuminate\\Notifications\\Notifiable',
+          'hasapitokens' => 'Laravel\\Sanctum\\HasApiTokens',
+          'attendance' => 'Modules\\Attendance\\App\\Models\\Attendance',
+          'salarymechanism' => 'Modules\\Salary\\App\\Models\\SalaryMechanism',
+          'hasroles' => 'Spatie\\Permission\\Traits\\HasRoles',
+          'part' => 'Modules\\User\\App\\Models\\Part',
+          'position' => 'Modules\\User\\App\\Models\\Position',
+          'team' => 'Modules\\User\\App\\Models\\Team',
+          'typeaccount' => 'Modules\\User\\App\\Models\\TypeAccount',
+          'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+        ),
+         'className' => 'Modules\\User\\App\\Models\\User',
+         'functionName' => 'salaryMechanisms',
+         'templatePhpDocNodes' => 
+        array (
+        ),
+         'parent' => 
+        \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+           'namespace' => 'Modules\\User\\App\\Models',
+           'uses' => 
+          array (
+            'mustverifyemail' => 'Illuminate\\Auth\\MustVerifyEmail',
+            'mustverifyemailcontract' => 'Illuminate\\Contracts\\Auth\\MustVerifyEmail',
+            'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+            'authenticatable' => 'Illuminate\\Foundation\\Auth\\User',
+            'notifiable' => 'Illuminate\\Notifications\\Notifiable',
+            'hasapitokens' => 'Laravel\\Sanctum\\HasApiTokens',
+            'attendance' => 'Modules\\Attendance\\App\\Models\\Attendance',
+            'salarymechanism' => 'Modules\\Salary\\App\\Models\\SalaryMechanism',
+            'hasroles' => 'Spatie\\Permission\\Traits\\HasRoles',
+            'part' => 'Modules\\User\\App\\Models\\Part',
+            'position' => 'Modules\\User\\App\\Models\\Position',
+            'team' => 'Modules\\User\\App\\Models\\Team',
+            'typeaccount' => 'Modules\\User\\App\\Models\\TypeAccount',
+            'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+          ),
+           'className' => 'Modules\\User\\App\\Models\\User',
+           'functionName' => NULL,
+           'templatePhpDocNodes' => 
+          array (
+          ),
+           'parent' => NULL,
+           'typeAliasesMap' => 
+          array (
+          ),
+           'bypassTypeAliases' => false,
+           'constUses' => 
+          array (
+          ),
+           'typeAliasClassName' => NULL,
+           'traitData' => NULL,
+        )),
          'typeAliasesMap' => 
         array (
         ),
@@ -3943,15 +4188,15 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     1 => 
     array (
-      '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/User.php' => '8ec1819b5f4b22a3e7271af0fc8f15c718733a220071285ca135c7f60debb9ae',
+      '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/User.php' => '0fc01ca321b503ec262adde4f07ed7b177f0bbc502c83dbd0c0d5dccef521c90',
       '/Users/lahoathanh/Desktop/laravel/keyagatwo/vendor/composer/../laravel/sanctum/src/HasApiTokens.php' => '7400600b832dc377ac5f51d051a917775f6efc0d2176a1de7bd7826499ae6509',
       '/Users/lahoathanh/Desktop/laravel/keyagatwo/vendor/composer/../laravel/framework/src/Illuminate/Database/Eloquent/Factories/HasFactory.php' => 'b6cb2b164e90168e80963a5549541f5f3188a3ec8cfd368bf3611bd94fbd46a7',
       '/Users/lahoathanh/Desktop/laravel/keyagatwo/vendor/composer/../spatie/laravel-permission/src/Traits/HasRoles.php' => '3ecec576ac1331eb1a726e12210cdcf1acec58ec0b5658d07d153a36fddc360b',
       '/Users/lahoathanh/Desktop/laravel/keyagatwo/vendor/composer/../spatie/laravel-permission/src/Traits/HasPermissions.php' => 'bde0d041759bdc1d697d201f8d41bd0bbf0c822785e6a4af2dd7bccbd093df9a',
+      '/Users/lahoathanh/Desktop/laravel/keyagatwo/vendor/composer/../laravel/framework/src/Illuminate/Auth/MustVerifyEmail.php' => '4a80ac1802a6f8da8d3ef13318caa9aece348cbc5f15519edb815751c00d5a6b',
       '/Users/lahoathanh/Desktop/laravel/keyagatwo/vendor/composer/../laravel/framework/src/Illuminate/Notifications/Notifiable.php' => '573fa9bb96fa392434450c9cd9deb8d4e40a5bb93c140a648267b48dfa0433ac',
       '/Users/lahoathanh/Desktop/laravel/keyagatwo/vendor/composer/../laravel/framework/src/Illuminate/Notifications/HasDatabaseNotifications.php' => 'a7a163aa1f98a0ae4cd2135905b6852e29a850beb4296aa72c44c37d22832135',
       '/Users/lahoathanh/Desktop/laravel/keyagatwo/vendor/composer/../laravel/framework/src/Illuminate/Notifications/RoutesNotifications.php' => '82891713db67f6df9ea3b400c9905d26da7834b51d26f53dd3bdb1d7f6a78497',
-      '/Users/lahoathanh/Desktop/laravel/keyagatwo/vendor/composer/../laravel/framework/src/Illuminate/Auth/MustVerifyEmail.php' => '4a80ac1802a6f8da8d3ef13318caa9aece348cbc5f15519edb815751c00d5a6b',
     ),
   ),
 ));

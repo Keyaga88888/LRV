@@ -2,7 +2,7 @@
 
 // odsl-/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/RegisteredUserController.php-PHPStan\BetterReflection\Reflection\ReflectionClass-App\Http\Controllers\Auth\RegisteredUserController
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.4.21-b7364de7788c2f07606941eb6afae9fa8cd2c92ee00a0d0617a4ab9838d7f413',
+   'variableKey' => 'v2-6.70.0.3-8.4.21-178389b79149f7d2785a69085ebd52eb105223073a915d17742bb17bdfcb2a43',
    'data' => 
   array (
     'locatedSource' => 

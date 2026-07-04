@@ -5,9 +5,12 @@ namespace Modules\Attendance\App\Transformers;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 
+/**
+ * @mixin \Modules\Attendance\App\Models\Attendance
+ */
 class AttendanceResource extends JsonResource
 {
-    public function toArray(// cái này cho data table xuất ra cái gì
+    public function toArray(// cái này cho api data table xuất ra cái gì
         Request $request
     ): array {
 

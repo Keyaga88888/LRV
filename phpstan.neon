@@ -11,3 +11,6 @@ parameters:
     tmpDir: storage/phpstan
 
     reportUnmatchedIgnoredErrors: false
+    
+    universalObjectCratesClasses:
+        - Yajra\DataTables\DataTableAbstract

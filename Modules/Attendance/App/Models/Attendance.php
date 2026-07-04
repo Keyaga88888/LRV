@@ -9,6 +9,8 @@ use Modules\Attendance\Database\Factories\AttendanceFactory;
 use Modules\User\App\Models\User;
 use Spatie\Activitylog\Models\Concerns\LogsActivity;
 use Spatie\Activitylog\Support\LogOptions;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Builder;
 
 class Attendance extends Model
 {
@@ -48,7 +50,7 @@ class Attendance extends Model
         'check_out' => 'datetime',
     ];
 
-    public function user()
+    public function user(): BelongsTo
     {
         return $this->belongsTo(
             User::class,
@@ -101,6 +103,28 @@ class Attendance extends Model
             new CompanyScope
         );
     }
+
+// khai báo type để Larastan hiểu.
+
+public function scopeToday(Builder $query): Builder
+{
+    return $query->whereDate('work_date', today());
+}
+
+public function scopePending(Builder $query): Builder
+{
+    return $query->where('status', 0);
+}
+
+public function scopeApproved(Builder $query): Builder
+{
+    return $query->where('status', 1);
+}
+
+public function scopeRejected(Builder $query): Builder
+{
+    return $query->where('status', 2);
+}
 }
 
 // php artisan make:export AttendanceExport
