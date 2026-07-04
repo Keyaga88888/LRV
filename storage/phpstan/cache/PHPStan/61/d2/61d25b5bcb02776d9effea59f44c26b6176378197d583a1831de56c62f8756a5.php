@@ -2,7 +2,7 @@
 
 // odsl-/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Repositories/SalaryRepository.php-PHPStan\BetterReflection\Reflection\ReflectionClass-Modules\Salary\App\Repositories\SalaryRepository
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.4.21-330e522caf73ec5462040818b33e04989a6911f0fe335f95e4ab3522bc986203',
+   'variableKey' => 'v2-6.70.0.3-8.4.21-b4dbf3e4b47a1f8705dd99467f9d26080cf644732467631cc056b0f3241c5579',
    'data' => 
   array (
     'locatedSource' => 
@@ -53,8 +53,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     'attributes' => 
     array (
     ),
-    'startLine' => 93,
-    'endLine' => 158,
+    'startLine' => 94,
+    'endLine' => 163,
     'startColumn' => 1,
     'endColumn' => 1,
     'parentClassName' => NULL,
@@ -79,7 +79,15 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'returnsReference' => false,
-        'returnType' => NULL,
+        'returnType' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'Illuminate\\Database\\Eloquent\\Collection',
+            'isIdentifier' => false,
+          ),
+        ),
         'attributes' => 
         array (
         ),
@@ -94,8 +102,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
  *      ↓
  * DataTable
  */',
-        'startLine' => 106,
-        'endLine' => 112,
+        'startLine' => 107,
+        'endLine' => 113,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -133,8 +141,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 119,
-            'endLine' => 119,
+            'startLine' => 120,
+            'endLine' => 120,
             'startColumn' => 28,
             'endColumn' => 38,
             'parameterIndex' => 0,
@@ -142,7 +150,15 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           ),
         ),
         'returnsReference' => false,
-        'returnType' => NULL,
+        'returnType' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'Modules\\Salary\\App\\Models\\SalaryMechanism',
+            'isIdentifier' => false,
+          ),
+        ),
         'attributes' => 
         array (
         ),
@@ -151,8 +167,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
  * CREATE
  * ======================================================
  */',
-        'startLine' => 119,
-        'endLine' => 127,
+        'startLine' => 120,
+        'endLine' => 128,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -182,8 +198,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 134,
-            'endLine' => 134,
+            'startLine' => 135,
+            'endLine' => 135,
             'startColumn' => 28,
             'endColumn' => 30,
             'parameterIndex' => 0,
@@ -208,8 +224,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 134,
-            'endLine' => 134,
+            'startLine' => 135,
+            'endLine' => 135,
             'startColumn' => 33,
             'endColumn' => 43,
             'parameterIndex' => 1,
@@ -217,7 +233,15 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           ),
         ),
         'returnsReference' => false,
-        'returnType' => NULL,
+        'returnType' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'Modules\\Salary\\App\\Models\\SalaryMechanism',
+            'isIdentifier' => false,
+          ),
+        ),
         'attributes' => 
         array (
         ),
@@ -226,8 +250,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
  * UPDATE
  * ======================================================
  */',
-        'startLine' => 134,
-        'endLine' => 137,
+        'startLine' => 135,
+        'endLine' => 142,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -257,8 +281,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 144,
-            'endLine' => 144,
+            'startLine' => 149,
+            'endLine' => 149,
             'startColumn' => 26,
             'endColumn' => 28,
             'parameterIndex' => 0,
@@ -275,8 +299,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
  * FIND
  * ======================================================
  */',
-        'startLine' => 144,
-        'endLine' => 147,
+        'startLine' => 149,
+        'endLine' => 152,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -306,8 +330,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 154,
-            'endLine' => 154,
+            'startLine' => 159,
+            'endLine' => 159,
             'startColumn' => 28,
             'endColumn' => 30,
             'parameterIndex' => 0,
@@ -315,7 +339,15 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           ),
         ),
         'returnsReference' => false,
-        'returnType' => NULL,
+        'returnType' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'bool',
+            'isIdentifier' => true,
+          ),
+        ),
         'attributes' => 
         array (
         ),
@@ -324,8 +356,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
  * DELETE
  * ======================================================
  */',
-        'startLine' => 154,
-        'endLine' => 157,
+        'startLine' => 159,
+        'endLine' => 162,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,

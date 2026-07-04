@@ -2,7 +2,7 @@
 
 // odsl-/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Transformers/AttendanceResource.php-PHPStan\BetterReflection\Reflection\ReflectionClass-Modules\Attendance\App\Transformers\AttendanceResource
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.4.21-cd1e7ae8f3e75190cea14b43e08d94e10a95bd3ac667f30e27b2f22d571a8bbd',
+   'variableKey' => 'v2-6.70.0.3-8.4.21-31a28297d3f3c31bbe266d790f36667a1946dd27107ad858e55a8c4350977808',
    'data' => 
   array (
     'locatedSource' => 
@@ -22,12 +22,14 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     'isEnum' => false,
     'isBackedEnum' => false,
     'modifiers' => 0,
-    'docComment' => NULL,
+    'docComment' => '/**
+ * @mixin Attendance
+ */',
     'attributes' => 
     array (
     ),
-    'startLine' => 8,
-    'endLine' => 44,
+    'startLine' => 13,
+    'endLine' => 52,
     'startColumn' => 1,
     'endColumn' => 1,
     'parentClassName' => 'Illuminate\\Http\\Resources\\Json\\JsonResource',
@@ -69,8 +71,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 11,
-            'endLine' => 11,
+            'startLine' => 16,
+            'endLine' => 16,
             'startColumn' => 9,
             'endColumn' => 24,
             'parameterIndex' => 0,
@@ -91,8 +93,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 10,
-        'endLine' => 43,
+        'startLine' => 15,
+        'endLine' => 51,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,

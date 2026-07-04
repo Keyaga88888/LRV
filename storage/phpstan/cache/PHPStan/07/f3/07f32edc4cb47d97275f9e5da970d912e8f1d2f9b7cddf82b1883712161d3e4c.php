@@ -12,6 +12,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'Modules\\Salary\\App\\Repositories',
          'uses' => 
         array (
+          'collection' => 'Illuminate\\Database\\Eloquent\\Collection',
           'salarymechanism' => 'Modules\\Salary\\App\\Models\\SalaryMechanism',
         ),
          'className' => 'Modules\\Salary\\App\\Repositories\\SalaryRepository',
@@ -35,6 +36,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'Modules\\Salary\\App\\Repositories',
          'uses' => 
         array (
+          'collection' => 'Illuminate\\Database\\Eloquent\\Collection',
           'salarymechanism' => 'Modules\\Salary\\App\\Models\\SalaryMechanism',
         ),
          'className' => 'Modules\\Salary\\App\\Repositories\\SalaryRepository',
@@ -47,6 +49,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
            'namespace' => 'Modules\\Salary\\App\\Repositories',
            'uses' => 
           array (
+            'collection' => 'Illuminate\\Database\\Eloquent\\Collection',
             'salarymechanism' => 'Modules\\Salary\\App\\Models\\SalaryMechanism',
           ),
            'className' => 'Modules\\Salary\\App\\Repositories\\SalaryRepository',
@@ -80,6 +83,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'Modules\\Salary\\App\\Repositories',
          'uses' => 
         array (
+          'collection' => 'Illuminate\\Database\\Eloquent\\Collection',
           'salarymechanism' => 'Modules\\Salary\\App\\Models\\SalaryMechanism',
         ),
          'className' => 'Modules\\Salary\\App\\Repositories\\SalaryRepository',
@@ -92,6 +96,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
            'namespace' => 'Modules\\Salary\\App\\Repositories',
            'uses' => 
           array (
+            'collection' => 'Illuminate\\Database\\Eloquent\\Collection',
             'salarymechanism' => 'Modules\\Salary\\App\\Models\\SalaryMechanism',
           ),
            'className' => 'Modules\\Salary\\App\\Repositories\\SalaryRepository',
@@ -125,6 +130,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'Modules\\Salary\\App\\Repositories',
          'uses' => 
         array (
+          'collection' => 'Illuminate\\Database\\Eloquent\\Collection',
           'salarymechanism' => 'Modules\\Salary\\App\\Models\\SalaryMechanism',
         ),
          'className' => 'Modules\\Salary\\App\\Repositories\\SalaryRepository',
@@ -137,6 +143,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
            'namespace' => 'Modules\\Salary\\App\\Repositories',
            'uses' => 
           array (
+            'collection' => 'Illuminate\\Database\\Eloquent\\Collection',
             'salarymechanism' => 'Modules\\Salary\\App\\Models\\SalaryMechanism',
           ),
            'className' => 'Modules\\Salary\\App\\Repositories\\SalaryRepository',
@@ -170,6 +177,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'Modules\\Salary\\App\\Repositories',
          'uses' => 
         array (
+          'collection' => 'Illuminate\\Database\\Eloquent\\Collection',
           'salarymechanism' => 'Modules\\Salary\\App\\Models\\SalaryMechanism',
         ),
          'className' => 'Modules\\Salary\\App\\Repositories\\SalaryRepository',
@@ -182,6 +190,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
            'namespace' => 'Modules\\Salary\\App\\Repositories',
            'uses' => 
           array (
+            'collection' => 'Illuminate\\Database\\Eloquent\\Collection',
             'salarymechanism' => 'Modules\\Salary\\App\\Models\\SalaryMechanism',
           ),
            'className' => 'Modules\\Salary\\App\\Repositories\\SalaryRepository',
@@ -215,6 +224,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'Modules\\Salary\\App\\Repositories',
          'uses' => 
         array (
+          'collection' => 'Illuminate\\Database\\Eloquent\\Collection',
           'salarymechanism' => 'Modules\\Salary\\App\\Models\\SalaryMechanism',
         ),
          'className' => 'Modules\\Salary\\App\\Repositories\\SalaryRepository',
@@ -227,6 +237,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
            'namespace' => 'Modules\\Salary\\App\\Repositories',
            'uses' => 
           array (
+            'collection' => 'Illuminate\\Database\\Eloquent\\Collection',
             'salarymechanism' => 'Modules\\Salary\\App\\Models\\SalaryMechanism',
           ),
            'className' => 'Modules\\Salary\\App\\Repositories\\SalaryRepository',
@@ -260,6 +271,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'Modules\\Salary\\App\\Repositories',
          'uses' => 
         array (
+          'collection' => 'Illuminate\\Database\\Eloquent\\Collection',
           'salarymechanism' => 'Modules\\Salary\\App\\Models\\SalaryMechanism',
         ),
          'className' => NULL,
@@ -281,7 +293,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     1 => 
     array (
-      '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Repositories/SalaryRepository.php' => '330e522caf73ec5462040818b33e04989a6911f0fe335f95e4ab3522bc986203',
+      '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Repositories/SalaryRepository.php' => 'b4dbf3e4b47a1f8705dd99467f9d26080cf644732467631cc056b0f3241c5579',
     ),
   ),
 ));

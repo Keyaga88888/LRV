@@ -1,7 +1,7 @@
 <?php declare(strict_types = 1);
 
 return [
-	'lastFullAnalysisTime' => 1783131224,
+	'lastFullAnalysisTime' => 1783205840,
 	'meta' => array (
   'cacheVersion' => 'v13-packageDependencies',
   'phpstanVersion' => '2.2.4',
@@ -10,7 +10,7 @@ return [
   array (
   ),
   'phpVersion' => 80421,
-  'projectConfig' => '{conditionalTags: {Larastan\\Larastan\\Rules\\NoEnvCallsOutsideOfConfigRule: {phpstan.rules.rule: %noEnvCallsOutsideOfConfig%}, Larastan\\Larastan\\Rules\\NoModelMakeRule: {phpstan.rules.rule: %noModelMake%}, Larastan\\Larastan\\Rules\\NoUnnecessaryCollectionCallRule: {phpstan.rules.rule: %noUnnecessaryCollectionCall%}, Larastan\\Larastan\\Rules\\NoUnnecessaryEnumerableToArrayCallsRule: {phpstan.rules.rule: %noUnnecessaryEnumerableToArrayCalls%}, Larastan\\Larastan\\Rules\\OctaneCompatibilityRule: {phpstan.rules.rule: %checkOctaneCompatibility%}, Larastan\\Larastan\\Rules\\UnusedViewsRule: {phpstan.rules.rule: %checkUnusedViews%}, Larastan\\Larastan\\Rules\\NoMissingTranslationsRule: {phpstan.rules.rule: %checkMissingTranslations%}, Larastan\\Larastan\\Rules\\ModelAppendsRule: {phpstan.rules.rule: %checkModelAppends%}, Larastan\\Larastan\\Rules\\NoPublicModelScopeAndAccessorRule: {phpstan.rules.rule: %checkModelMethodVisibility%}, Larastan\\Larastan\\Rules\\NoAuthFacadeInRequestScopeRule: {phpstan.rules.rule: %checkAuthCallsWhenInRequestScope%}, Larastan\\Larastan\\Rules\\NoAuthHelperInRequestScopeRule: {phpstan.rules.rule: %checkAuthCallsWhenInRequestScope%}, Larastan\\Larastan\\ReturnTypes\\Helpers\\EnvFunctionDynamicFunctionReturnTypeExtension: {phpstan.broker.dynamicFunctionReturnTypeExtension: %generalizeEnvReturnType%}, Larastan\\Larastan\\ReturnTypes\\Helpers\\ConfigFunctionDynamicFunctionReturnTypeExtension: {phpstan.broker.dynamicFunctionReturnTypeExtension: %checkConfigTypes%}, Larastan\\Larastan\\ReturnTypes\\ConfigRepositoryDynamicMethodReturnTypeExtension: {phpstan.broker.dynamicMethodReturnTypeExtension: %checkConfigTypes%}, Larastan\\Larastan\\ReturnTypes\\ConfigFacadeCollectionDynamicStaticMethodReturnTypeExtension: {phpstan.broker.dynamicStaticMethodReturnTypeExtension: %checkConfigTypes%}, Larastan\\Larastan\\Rules\\ConfigCollectionRule: {phpstan.rules.rule: %checkConfigTypes%}}, parameters: {universalObjectCratesClasses: [Illuminate\\Http\\Request, Illuminate\\Support\\Optional], earlyTerminatingFunctionCalls: [abort, dd], mixinExcludeClasses: [Eloquent], bootstrapFiles: [bootstrap.php], checkOctaneCompatibility: false, noEnvCallsOutsideOfConfig: true, noModelMake: true, noUnnecessaryCollectionCall: true, noUnnecessaryCollectionCallOnly: [], noUnnecessaryCollectionCallExcept: [], noUnnecessaryEnumerableToArrayCalls: false, squashedMigrationsPath: [], databaseMigrationsPath: [], disableMigrationScan: false, disableSchemaScan: false, configDirectories: [], viewDirectories: [], translationDirectories: [], checkModelProperties: false, checkUnusedViews: false, checkMissingTranslations: false, checkModelAppends: true, checkModelMethodVisibility: false, generalizeEnvReturnType: false, checkConfigTypes: false, checkAuthCallsWhenInRequestScope: false, parseModelCastsMethod: false, enableMigrationCache: false, level: 5, paths: [/Users/lahoathanh/Desktop/laravel/keyagatwo/app, /Users/lahoathanh/Desktop/laravel/keyagatwo/Modules], tmpDir: /Users/lahoathanh/Desktop/laravel/keyagatwo/storage/phpstan}, rules: [Larastan\\Larastan\\Rules\\UselessConstructs\\NoUselessWithFunctionCallsRule, Larastan\\Larastan\\Rules\\UselessConstructs\\NoUselessValueFunctionCallsRule, Larastan\\Larastan\\Rules\\DeferrableServiceProviderMissingProvidesRule, Larastan\\Larastan\\Rules\\ConsoleCommand\\UndefinedArgumentOrOptionRule], services: {{class: Larastan\\Larastan\\Methods\\RelationForwardsCallsExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Methods\\ModelForwardsCallsExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Methods\\EloquentBuilderForwardsCallsExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Methods\\HigherOrderTapProxyExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Methods\\HigherOrderCollectionProxyExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Methods\\StorageMethodsClassReflectionExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Methods\\ContractsMethodsExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Methods\\FacadesMethodsExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Methods\\ManagersMethodsExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Methods\\AuthsMethodsExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Methods\\ModelFactoryMethodsClassReflectionExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Methods\\RedirectResponseMethodsClassReflectionExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Methods\\MacroMethodsClassReflectionExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Methods\\ViewWithMethodsClassReflectionExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Properties\\ModelAccessorExtension, tags: [phpstan.broker.propertiesClassReflectionExtension]}, {class: Larastan\\Larastan\\Properties\\ModelPropertyExtension, tags: [phpstan.broker.propertiesClassReflectionExtension]}, {class: Larastan\\Larastan\\Properties\\HigherOrderCollectionProxyPropertyExtension, tags: [phpstan.broker.propertiesClassReflectionExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\HigherOrderTapProxyExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\ContainerArrayAccessDynamicMethodReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension], arguments: {className: Illuminate\\Contracts\\Container\\Container}}, {class: Larastan\\Larastan\\ReturnTypes\\ContainerArrayAccessDynamicMethodReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension], arguments: {className: Illuminate\\Container\\Container}}, {class: Larastan\\Larastan\\ReturnTypes\\ContainerArrayAccessDynamicMethodReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension], arguments: {className: Illuminate\\Foundation\\Application}}, {class: Larastan\\Larastan\\ReturnTypes\\ContainerArrayAccessDynamicMethodReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension], arguments: {className: Illuminate\\Contracts\\Foundation\\Application}}, {class: Larastan\\Larastan\\Properties\\ModelRelationsExtension, tags: [phpstan.broker.propertiesClassReflectionExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\ModelOnlyDynamicMethodReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\ModelFactoryDynamicStaticMethodReturnTypeExtension, tags: [phpstan.broker.dynamicStaticMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\ModelDynamicStaticMethodReturnTypeExtension, tags: [phpstan.broker.dynamicStaticMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\AppMakeDynamicReturnTypeExtension, tags: [phpstan.broker.dynamicStaticMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\AuthExtension, tags: [phpstan.broker.dynamicStaticMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\GuardDynamicStaticMethodReturnTypeExtension, tags: [phpstan.broker.dynamicStaticMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\AuthManagerExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\DateExtension, tags: [phpstan.broker.dynamicStaticMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\GuardExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\RequestFileExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\RequestRouteExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\RequestUserExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\EloquentBuilderExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\RelationCollectionExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\TestCaseExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\Support\\CollectionHelper}, {class: Larastan\\Larastan\\ReturnTypes\\Helpers\\AuthExtension, tags: [phpstan.broker.dynamicFunctionReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\Helpers\\CollectExtension, tags: [phpstan.broker.dynamicFunctionReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\Helpers\\NowAndTodayExtension, tags: [phpstan.broker.dynamicFunctionReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\Helpers\\ResponseExtension, tags: [phpstan.broker.dynamicFunctionReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\Helpers\\ValidatorExtension, tags: [phpstan.broker.dynamicFunctionReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\Helpers\\LiteralExtension, tags: [phpstan.broker.dynamicFunctionReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\CollectionFilterRejectDynamicReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\CollectionWhereNotNullDynamicReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\NewModelQueryDynamicMethodReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\FactoryDynamicMethodReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\Types\\AbortIfFunctionTypeSpecifyingExtension, tags: [phpstan.typeSpecifier.functionTypeSpecifyingExtension], arguments: {methodName: abort, negate: false}}, {class: Larastan\\Larastan\\Types\\AbortIfFunctionTypeSpecifyingExtension, tags: [phpstan.typeSpecifier.functionTypeSpecifyingExtension], arguments: {methodName: abort, negate: true}}, {class: Larastan\\Larastan\\Types\\AbortIfFunctionTypeSpecifyingExtension, tags: [phpstan.typeSpecifier.functionTypeSpecifyingExtension], arguments: {methodName: throw, negate: false}}, {class: Larastan\\Larastan\\Types\\AbortIfFunctionTypeSpecifyingExtension, tags: [phpstan.typeSpecifier.functionTypeSpecifyingExtension], arguments: {methodName: throw, negate: true}}, {class: Larastan\\Larastan\\ReturnTypes\\Helpers\\AppExtension, tags: [phpstan.broker.dynamicFunctionReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\Helpers\\ValueExtension, tags: [phpstan.broker.dynamicFunctionReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\Helpers\\StrExtension, tags: [phpstan.broker.dynamicFunctionReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\Helpers\\TapExtension, tags: [phpstan.broker.dynamicFunctionReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\StorageDynamicStaticMethodReturnTypeExtension, tags: [phpstan.broker.dynamicStaticMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\Types\\GenericEloquentCollectionTypeNodeResolverExtension, tags: [phpstan.phpDoc.typeNodeResolverExtension]}, {class: Larastan\\Larastan\\Types\\ViewStringTypeNodeResolverExtension, tags: [phpstan.phpDoc.typeNodeResolverExtension]}, {class: Larastan\\Larastan\\Rules\\OctaneCompatibilityRule}, {class: Larastan\\Larastan\\Rules\\NoEnvCallsOutsideOfConfigRule, arguments: {configDirectories: %configDirectories%}}, {class: Larastan\\Larastan\\Rules\\NoModelMakeRule}, {class: Larastan\\Larastan\\Rules\\NoUnnecessaryCollectionCallRule, arguments: {onlyMethods: %noUnnecessaryCollectionCallOnly%, excludeMethods: %noUnnecessaryCollectionCallExcept%}}, {class: Larastan\\Larastan\\Rules\\NoUnnecessaryEnumerableToArrayCallsRule}, {class: Larastan\\Larastan\\Rules\\ModelAppendsRule}, {class: Larastan\\Larastan\\Rules\\NoPublicModelScopeAndAccessorRule}, {class: Larastan\\Larastan\\Types\\GenericEloquentBuilderTypeNodeResolverExtension, tags: [phpstan.phpDoc.typeNodeResolverExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\AppEnvironmentReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension], arguments: {class: Illuminate\\Foundation\\Application}}, {class: Larastan\\Larastan\\ReturnTypes\\AppEnvironmentReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension], arguments: {class: Illuminate\\Contracts\\Foundation\\Application}}, {class: Larastan\\Larastan\\ReturnTypes\\AppFacadeEnvironmentReturnTypeExtension, tags: [phpstan.broker.dynamicStaticMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\Types\\ModelProperty\\ModelPropertyTypeNodeResolverExtension, tags: [phpstan.phpDoc.typeNodeResolverExtension], arguments: {active: %checkModelProperties%}}, {class: Larastan\\Larastan\\Types\\CollectionOf\\CollectionOfTypeNodeResolverExtension, tags: [phpstan.phpDoc.typeNodeResolverExtension]}, {class: Larastan\\Larastan\\Properties\\MigrationHelper, arguments: {databaseMigrationPath: %databaseMigrationsPath%, disableMigrationScan: %disableMigrationScan%, parser: @migrationsParser, reflectionProvider: @reflectionProvider}}, iamcalSqlParser: {class: Larastan\\Larastan\\SQL\\IamcalSqlParser, autowired: false}, sqlParserFactory: {class: Larastan\\Larastan\\SQL\\SqlParserFactory, arguments: {iamcalSqlParser: @iamcalSqlParser}}, sqlParser: {type: Larastan\\Larastan\\SQL\\SqlParser, factory: [@sqlParserFactory, create]}, {class: Larastan\\Larastan\\Properties\\SquashedMigrationHelper, arguments: {schemaPaths: %squashedMigrationsPath%, disableSchemaScan: %disableSchemaScan%}}, {class: Larastan\\Larastan\\Properties\\ModelCastHelper, arguments: {parser: @currentPhpVersionSimpleDirectParser, parseModelCastsMethod: %parseModelCastsMethod%}}, {class: Larastan\\Larastan\\Properties\\MigrationCache, arguments: {cacheDirectory: %tmpDir%, enabled: %enableMigrationCache%}}, {class: Larastan\\Larastan\\Properties\\ModelPropertyHelper}, {class: Larastan\\Larastan\\Rules\\ModelRuleHelper}, {class: Larastan\\Larastan\\Methods\\BuilderHelper, arguments: {checkProperties: %checkModelProperties%}}, {class: Larastan\\Larastan\\Rules\\RelationExistenceRule, tags: [phpstan.rules.rule]}, {class: Larastan\\Larastan\\Rules\\CheckDispatchArgumentTypesCompatibleWithClassConstructorRule, arguments: {dispatchableClass: Illuminate\\Foundation\\Bus\\Dispatchable}, tags: [phpstan.rules.rule]}, {class: Larastan\\Larastan\\Rules\\CheckDispatchArgumentTypesCompatibleWithClassConstructorRule, arguments: {dispatchableClass: Illuminate\\Foundation\\Events\\Dispatchable}, tags: [phpstan.rules.rule]}, {class: Larastan\\Larastan\\Properties\\Schema\\MySqlDataTypeToPhpTypeConverter}, {class: Larastan\\Larastan\\LarastanStubFilesExtension, tags: [phpstan.stubFilesExtension]}, {class: Larastan\\Larastan\\Rules\\UnusedViewsRule}, {class: Larastan\\Larastan\\Collectors\\UsedViewFunctionCollector, tags: [phpstan.collector]}, {class: Larastan\\Larastan\\Collectors\\UsedEmailViewCollector, tags: [phpstan.collector]}, {class: Larastan\\Larastan\\Collectors\\UsedViewMakeCollector, tags: [phpstan.collector]}, {class: Larastan\\Larastan\\Collectors\\UsedViewFacadeMakeCollector, tags: [phpstan.collector]}, {class: Larastan\\Larastan\\Collectors\\UsedRouteFacadeViewCollector, tags: [phpstan.collector]}, {class: Larastan\\Larastan\\Collectors\\UsedViewInAnotherViewCollector}, {class: Larastan\\Larastan\\Support\\ViewFileHelper, arguments: {viewDirectories: %viewDirectories%}}, {class: Larastan\\Larastan\\Support\\ViewParser, arguments: {parser: @currentPhpVersionSimpleDirectParser}}, {class: Larastan\\Larastan\\Rules\\NoMissingTranslationsRule, arguments: {translationDirectories: %translationDirectories%}}, {class: Larastan\\Larastan\\Collectors\\UsedTranslationFunctionCollector, tags: [phpstan.collector]}, {class: Larastan\\Larastan\\Collectors\\UsedTranslationTranslatorCollector, tags: [phpstan.collector]}, {class: Larastan\\Larastan\\Collectors\\UsedTranslationFacadeCollector, tags: [phpstan.collector]}, {class: Larastan\\Larastan\\Collectors\\UsedTranslationViewCollector}, {class: Larastan\\Larastan\\ReturnTypes\\ApplicationMakeDynamicReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\ContainerMakeDynamicReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\ConsoleCommand\\ArgumentDynamicReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\ConsoleCommand\\HasArgumentDynamicReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\ConsoleCommand\\OptionDynamicReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\ConsoleCommand\\HasOptionDynamicReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\TranslatorGetReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\LangGetReturnTypeExtension, tags: [phpstan.broker.dynamicStaticMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\TransHelperReturnTypeExtension, tags: [phpstan.broker.dynamicFunctionReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\DoubleUnderscoreHelperReturnTypeExtension, tags: [phpstan.broker.dynamicFunctionReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\AppMakeHelper}, {class: Larastan\\Larastan\\Internal\\ConsoleApplicationResolver}, {class: Larastan\\Larastan\\Internal\\ConsoleApplicationHelper}, {class: Larastan\\Larastan\\Support\\HigherOrderCollectionProxyHelper}, {class: Larastan\\Larastan\\ReturnTypes\\Helpers\\ConfigFunctionDynamicFunctionReturnTypeExtension}, {class: Larastan\\Larastan\\ReturnTypes\\ConfigRepositoryDynamicMethodReturnTypeExtension}, {class: Larastan\\Larastan\\ReturnTypes\\ConfigFacadeCollectionDynamicStaticMethodReturnTypeExtension}, {class: Larastan\\Larastan\\Support\\ConfigParser, arguments: {parser: @currentPhpVersionSimpleDirectParser, configPaths: %configDirectories%, treatPhpDocTypesAsCertain: %treatPhpDocTypesAsCertain%}}, {class: Larastan\\Larastan\\Internal\\ConfigHelper}, {class: Larastan\\Larastan\\ReturnTypes\\Helpers\\EnvFunctionDynamicFunctionReturnTypeExtension}, {class: Larastan\\Larastan\\ReturnTypes\\FormRequestSafeDynamicMethodReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\EloquentCollectionMapDynamicReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\Rules\\NoAuthFacadeInRequestScopeRule}, {class: Larastan\\Larastan\\Rules\\NoAuthHelperInRequestScopeRule}, {class: Larastan\\Larastan\\Rules\\ConfigCollectionRule}, {class: Illuminate\\Filesystem\\Filesystem, autowired: self}, migrationsParser: {class: PHPStan\\Parser\\CachedParser, arguments: {originalParser: @currentPhpVersionSimpleDirectParser, cachedNodesByStringCountMax: %cache.nodesByStringCountMax%}, autowired: false}}}',
+  'projectConfig' => '{conditionalTags: {Larastan\\Larastan\\Rules\\NoEnvCallsOutsideOfConfigRule: {phpstan.rules.rule: %noEnvCallsOutsideOfConfig%}, Larastan\\Larastan\\Rules\\NoModelMakeRule: {phpstan.rules.rule: %noModelMake%}, Larastan\\Larastan\\Rules\\NoUnnecessaryCollectionCallRule: {phpstan.rules.rule: %noUnnecessaryCollectionCall%}, Larastan\\Larastan\\Rules\\NoUnnecessaryEnumerableToArrayCallsRule: {phpstan.rules.rule: %noUnnecessaryEnumerableToArrayCalls%}, Larastan\\Larastan\\Rules\\OctaneCompatibilityRule: {phpstan.rules.rule: %checkOctaneCompatibility%}, Larastan\\Larastan\\Rules\\UnusedViewsRule: {phpstan.rules.rule: %checkUnusedViews%}, Larastan\\Larastan\\Rules\\NoMissingTranslationsRule: {phpstan.rules.rule: %checkMissingTranslations%}, Larastan\\Larastan\\Rules\\ModelAppendsRule: {phpstan.rules.rule: %checkModelAppends%}, Larastan\\Larastan\\Rules\\NoPublicModelScopeAndAccessorRule: {phpstan.rules.rule: %checkModelMethodVisibility%}, Larastan\\Larastan\\Rules\\NoAuthFacadeInRequestScopeRule: {phpstan.rules.rule: %checkAuthCallsWhenInRequestScope%}, Larastan\\Larastan\\Rules\\NoAuthHelperInRequestScopeRule: {phpstan.rules.rule: %checkAuthCallsWhenInRequestScope%}, Larastan\\Larastan\\ReturnTypes\\Helpers\\EnvFunctionDynamicFunctionReturnTypeExtension: {phpstan.broker.dynamicFunctionReturnTypeExtension: %generalizeEnvReturnType%}, Larastan\\Larastan\\ReturnTypes\\Helpers\\ConfigFunctionDynamicFunctionReturnTypeExtension: {phpstan.broker.dynamicFunctionReturnTypeExtension: %checkConfigTypes%}, Larastan\\Larastan\\ReturnTypes\\ConfigRepositoryDynamicMethodReturnTypeExtension: {phpstan.broker.dynamicMethodReturnTypeExtension: %checkConfigTypes%}, Larastan\\Larastan\\ReturnTypes\\ConfigFacadeCollectionDynamicStaticMethodReturnTypeExtension: {phpstan.broker.dynamicStaticMethodReturnTypeExtension: %checkConfigTypes%}, Larastan\\Larastan\\Rules\\ConfigCollectionRule: {phpstan.rules.rule: %checkConfigTypes%}}, parameters: {universalObjectCratesClasses: [Illuminate\\Http\\Request, Illuminate\\Support\\Optional, Yajra\\DataTables\\DataTableAbstract], earlyTerminatingFunctionCalls: [abort, dd], mixinExcludeClasses: [Eloquent], bootstrapFiles: [bootstrap.php], checkOctaneCompatibility: false, noEnvCallsOutsideOfConfig: true, noModelMake: true, noUnnecessaryCollectionCall: true, noUnnecessaryCollectionCallOnly: [], noUnnecessaryCollectionCallExcept: [], noUnnecessaryEnumerableToArrayCalls: false, squashedMigrationsPath: [], databaseMigrationsPath: [], disableMigrationScan: false, disableSchemaScan: false, configDirectories: [], viewDirectories: [], translationDirectories: [], checkModelProperties: false, checkUnusedViews: false, checkMissingTranslations: false, checkModelAppends: true, checkModelMethodVisibility: false, generalizeEnvReturnType: false, checkConfigTypes: false, checkAuthCallsWhenInRequestScope: false, parseModelCastsMethod: false, enableMigrationCache: false, level: 5, paths: [/Users/lahoathanh/Desktop/laravel/keyagatwo/app, /Users/lahoathanh/Desktop/laravel/keyagatwo/Modules], tmpDir: /Users/lahoathanh/Desktop/laravel/keyagatwo/storage/phpstan}, rules: [Larastan\\Larastan\\Rules\\UselessConstructs\\NoUselessWithFunctionCallsRule, Larastan\\Larastan\\Rules\\UselessConstructs\\NoUselessValueFunctionCallsRule, Larastan\\Larastan\\Rules\\DeferrableServiceProviderMissingProvidesRule, Larastan\\Larastan\\Rules\\ConsoleCommand\\UndefinedArgumentOrOptionRule], services: {{class: Larastan\\Larastan\\Methods\\RelationForwardsCallsExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Methods\\ModelForwardsCallsExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Methods\\EloquentBuilderForwardsCallsExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Methods\\HigherOrderTapProxyExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Methods\\HigherOrderCollectionProxyExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Methods\\StorageMethodsClassReflectionExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Methods\\ContractsMethodsExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Methods\\FacadesMethodsExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Methods\\ManagersMethodsExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Methods\\AuthsMethodsExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Methods\\ModelFactoryMethodsClassReflectionExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Methods\\RedirectResponseMethodsClassReflectionExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Methods\\MacroMethodsClassReflectionExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Methods\\ViewWithMethodsClassReflectionExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Properties\\ModelAccessorExtension, tags: [phpstan.broker.propertiesClassReflectionExtension]}, {class: Larastan\\Larastan\\Properties\\ModelPropertyExtension, tags: [phpstan.broker.propertiesClassReflectionExtension]}, {class: Larastan\\Larastan\\Properties\\HigherOrderCollectionProxyPropertyExtension, tags: [phpstan.broker.propertiesClassReflectionExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\HigherOrderTapProxyExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\ContainerArrayAccessDynamicMethodReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension], arguments: {className: Illuminate\\Contracts\\Container\\Container}}, {class: Larastan\\Larastan\\ReturnTypes\\ContainerArrayAccessDynamicMethodReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension], arguments: {className: Illuminate\\Container\\Container}}, {class: Larastan\\Larastan\\ReturnTypes\\ContainerArrayAccessDynamicMethodReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension], arguments: {className: Illuminate\\Foundation\\Application}}, {class: Larastan\\Larastan\\ReturnTypes\\ContainerArrayAccessDynamicMethodReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension], arguments: {className: Illuminate\\Contracts\\Foundation\\Application}}, {class: Larastan\\Larastan\\Properties\\ModelRelationsExtension, tags: [phpstan.broker.propertiesClassReflectionExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\ModelOnlyDynamicMethodReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\ModelFactoryDynamicStaticMethodReturnTypeExtension, tags: [phpstan.broker.dynamicStaticMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\ModelDynamicStaticMethodReturnTypeExtension, tags: [phpstan.broker.dynamicStaticMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\AppMakeDynamicReturnTypeExtension, tags: [phpstan.broker.dynamicStaticMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\AuthExtension, tags: [phpstan.broker.dynamicStaticMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\GuardDynamicStaticMethodReturnTypeExtension, tags: [phpstan.broker.dynamicStaticMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\AuthManagerExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\DateExtension, tags: [phpstan.broker.dynamicStaticMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\GuardExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\RequestFileExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\RequestRouteExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\RequestUserExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\EloquentBuilderExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\RelationCollectionExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\TestCaseExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\Support\\CollectionHelper}, {class: Larastan\\Larastan\\ReturnTypes\\Helpers\\AuthExtension, tags: [phpstan.broker.dynamicFunctionReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\Helpers\\CollectExtension, tags: [phpstan.broker.dynamicFunctionReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\Helpers\\NowAndTodayExtension, tags: [phpstan.broker.dynamicFunctionReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\Helpers\\ResponseExtension, tags: [phpstan.broker.dynamicFunctionReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\Helpers\\ValidatorExtension, tags: [phpstan.broker.dynamicFunctionReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\Helpers\\LiteralExtension, tags: [phpstan.broker.dynamicFunctionReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\CollectionFilterRejectDynamicReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\CollectionWhereNotNullDynamicReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\NewModelQueryDynamicMethodReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\FactoryDynamicMethodReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\Types\\AbortIfFunctionTypeSpecifyingExtension, tags: [phpstan.typeSpecifier.functionTypeSpecifyingExtension], arguments: {methodName: abort, negate: false}}, {class: Larastan\\Larastan\\Types\\AbortIfFunctionTypeSpecifyingExtension, tags: [phpstan.typeSpecifier.functionTypeSpecifyingExtension], arguments: {methodName: abort, negate: true}}, {class: Larastan\\Larastan\\Types\\AbortIfFunctionTypeSpecifyingExtension, tags: [phpstan.typeSpecifier.functionTypeSpecifyingExtension], arguments: {methodName: throw, negate: false}}, {class: Larastan\\Larastan\\Types\\AbortIfFunctionTypeSpecifyingExtension, tags: [phpstan.typeSpecifier.functionTypeSpecifyingExtension], arguments: {methodName: throw, negate: true}}, {class: Larastan\\Larastan\\ReturnTypes\\Helpers\\AppExtension, tags: [phpstan.broker.dynamicFunctionReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\Helpers\\ValueExtension, tags: [phpstan.broker.dynamicFunctionReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\Helpers\\StrExtension, tags: [phpstan.broker.dynamicFunctionReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\Helpers\\TapExtension, tags: [phpstan.broker.dynamicFunctionReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\StorageDynamicStaticMethodReturnTypeExtension, tags: [phpstan.broker.dynamicStaticMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\Types\\GenericEloquentCollectionTypeNodeResolverExtension, tags: [phpstan.phpDoc.typeNodeResolverExtension]}, {class: Larastan\\Larastan\\Types\\ViewStringTypeNodeResolverExtension, tags: [phpstan.phpDoc.typeNodeResolverExtension]}, {class: Larastan\\Larastan\\Rules\\OctaneCompatibilityRule}, {class: Larastan\\Larastan\\Rules\\NoEnvCallsOutsideOfConfigRule, arguments: {configDirectories: %configDirectories%}}, {class: Larastan\\Larastan\\Rules\\NoModelMakeRule}, {class: Larastan\\Larastan\\Rules\\NoUnnecessaryCollectionCallRule, arguments: {onlyMethods: %noUnnecessaryCollectionCallOnly%, excludeMethods: %noUnnecessaryCollectionCallExcept%}}, {class: Larastan\\Larastan\\Rules\\NoUnnecessaryEnumerableToArrayCallsRule}, {class: Larastan\\Larastan\\Rules\\ModelAppendsRule}, {class: Larastan\\Larastan\\Rules\\NoPublicModelScopeAndAccessorRule}, {class: Larastan\\Larastan\\Types\\GenericEloquentBuilderTypeNodeResolverExtension, tags: [phpstan.phpDoc.typeNodeResolverExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\AppEnvironmentReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension], arguments: {class: Illuminate\\Foundation\\Application}}, {class: Larastan\\Larastan\\ReturnTypes\\AppEnvironmentReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension], arguments: {class: Illuminate\\Contracts\\Foundation\\Application}}, {class: Larastan\\Larastan\\ReturnTypes\\AppFacadeEnvironmentReturnTypeExtension, tags: [phpstan.broker.dynamicStaticMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\Types\\ModelProperty\\ModelPropertyTypeNodeResolverExtension, tags: [phpstan.phpDoc.typeNodeResolverExtension], arguments: {active: %checkModelProperties%}}, {class: Larastan\\Larastan\\Types\\CollectionOf\\CollectionOfTypeNodeResolverExtension, tags: [phpstan.phpDoc.typeNodeResolverExtension]}, {class: Larastan\\Larastan\\Properties\\MigrationHelper, arguments: {databaseMigrationPath: %databaseMigrationsPath%, disableMigrationScan: %disableMigrationScan%, parser: @migrationsParser, reflectionProvider: @reflectionProvider}}, iamcalSqlParser: {class: Larastan\\Larastan\\SQL\\IamcalSqlParser, autowired: false}, sqlParserFactory: {class: Larastan\\Larastan\\SQL\\SqlParserFactory, arguments: {iamcalSqlParser: @iamcalSqlParser}}, sqlParser: {type: Larastan\\Larastan\\SQL\\SqlParser, factory: [@sqlParserFactory, create]}, {class: Larastan\\Larastan\\Properties\\SquashedMigrationHelper, arguments: {schemaPaths: %squashedMigrationsPath%, disableSchemaScan: %disableSchemaScan%}}, {class: Larastan\\Larastan\\Properties\\ModelCastHelper, arguments: {parser: @currentPhpVersionSimpleDirectParser, parseModelCastsMethod: %parseModelCastsMethod%}}, {class: Larastan\\Larastan\\Properties\\MigrationCache, arguments: {cacheDirectory: %tmpDir%, enabled: %enableMigrationCache%}}, {class: Larastan\\Larastan\\Properties\\ModelPropertyHelper}, {class: Larastan\\Larastan\\Rules\\ModelRuleHelper}, {class: Larastan\\Larastan\\Methods\\BuilderHelper, arguments: {checkProperties: %checkModelProperties%}}, {class: Larastan\\Larastan\\Rules\\RelationExistenceRule, tags: [phpstan.rules.rule]}, {class: Larastan\\Larastan\\Rules\\CheckDispatchArgumentTypesCompatibleWithClassConstructorRule, arguments: {dispatchableClass: Illuminate\\Foundation\\Bus\\Dispatchable}, tags: [phpstan.rules.rule]}, {class: Larastan\\Larastan\\Rules\\CheckDispatchArgumentTypesCompatibleWithClassConstructorRule, arguments: {dispatchableClass: Illuminate\\Foundation\\Events\\Dispatchable}, tags: [phpstan.rules.rule]}, {class: Larastan\\Larastan\\Properties\\Schema\\MySqlDataTypeToPhpTypeConverter}, {class: Larastan\\Larastan\\LarastanStubFilesExtension, tags: [phpstan.stubFilesExtension]}, {class: Larastan\\Larastan\\Rules\\UnusedViewsRule}, {class: Larastan\\Larastan\\Collectors\\UsedViewFunctionCollector, tags: [phpstan.collector]}, {class: Larastan\\Larastan\\Collectors\\UsedEmailViewCollector, tags: [phpstan.collector]}, {class: Larastan\\Larastan\\Collectors\\UsedViewMakeCollector, tags: [phpstan.collector]}, {class: Larastan\\Larastan\\Collectors\\UsedViewFacadeMakeCollector, tags: [phpstan.collector]}, {class: Larastan\\Larastan\\Collectors\\UsedRouteFacadeViewCollector, tags: [phpstan.collector]}, {class: Larastan\\Larastan\\Collectors\\UsedViewInAnotherViewCollector}, {class: Larastan\\Larastan\\Support\\ViewFileHelper, arguments: {viewDirectories: %viewDirectories%}}, {class: Larastan\\Larastan\\Support\\ViewParser, arguments: {parser: @currentPhpVersionSimpleDirectParser}}, {class: Larastan\\Larastan\\Rules\\NoMissingTranslationsRule, arguments: {translationDirectories: %translationDirectories%}}, {class: Larastan\\Larastan\\Collectors\\UsedTranslationFunctionCollector, tags: [phpstan.collector]}, {class: Larastan\\Larastan\\Collectors\\UsedTranslationTranslatorCollector, tags: [phpstan.collector]}, {class: Larastan\\Larastan\\Collectors\\UsedTranslationFacadeCollector, tags: [phpstan.collector]}, {class: Larastan\\Larastan\\Collectors\\UsedTranslationViewCollector}, {class: Larastan\\Larastan\\ReturnTypes\\ApplicationMakeDynamicReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\ContainerMakeDynamicReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\ConsoleCommand\\ArgumentDynamicReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\ConsoleCommand\\HasArgumentDynamicReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\ConsoleCommand\\OptionDynamicReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\ConsoleCommand\\HasOptionDynamicReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\TranslatorGetReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\LangGetReturnTypeExtension, tags: [phpstan.broker.dynamicStaticMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\TransHelperReturnTypeExtension, tags: [phpstan.broker.dynamicFunctionReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\DoubleUnderscoreHelperReturnTypeExtension, tags: [phpstan.broker.dynamicFunctionReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\AppMakeHelper}, {class: Larastan\\Larastan\\Internal\\ConsoleApplicationResolver}, {class: Larastan\\Larastan\\Internal\\ConsoleApplicationHelper}, {class: Larastan\\Larastan\\Support\\HigherOrderCollectionProxyHelper}, {class: Larastan\\Larastan\\ReturnTypes\\Helpers\\ConfigFunctionDynamicFunctionReturnTypeExtension}, {class: Larastan\\Larastan\\ReturnTypes\\ConfigRepositoryDynamicMethodReturnTypeExtension}, {class: Larastan\\Larastan\\ReturnTypes\\ConfigFacadeCollectionDynamicStaticMethodReturnTypeExtension}, {class: Larastan\\Larastan\\Support\\ConfigParser, arguments: {parser: @currentPhpVersionSimpleDirectParser, configPaths: %configDirectories%, treatPhpDocTypesAsCertain: %treatPhpDocTypesAsCertain%}}, {class: Larastan\\Larastan\\Internal\\ConfigHelper}, {class: Larastan\\Larastan\\ReturnTypes\\Helpers\\EnvFunctionDynamicFunctionReturnTypeExtension}, {class: Larastan\\Larastan\\ReturnTypes\\FormRequestSafeDynamicMethodReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\EloquentCollectionMapDynamicReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\Rules\\NoAuthFacadeInRequestScopeRule}, {class: Larastan\\Larastan\\Rules\\NoAuthHelperInRequestScopeRule}, {class: Larastan\\Larastan\\Rules\\ConfigCollectionRule}, {class: Illuminate\\Filesystem\\Filesystem, autowired: self}, migrationsParser: {class: PHPStan\\Parser\\CachedParser, arguments: {originalParser: @currentPhpVersionSimpleDirectParser, cachedNodesByStringCountMax: %cache.nodesByStringCountMax%}, autowired: false}}}',
   'analysedPaths' => 
   array (
     0 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app',
@@ -2965,78 +2965,18 @@ return [
 	'projectExtensionFiles' => array (
 ),
 	'errorsCallback' => static function (): array { return array (
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Application/Handlers/GetAttendanceListHandler.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Relation \'user\' is not found in Modules\\Attendance\\App\\Models\\Attendance model.',
-       'file' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Application/Handlers/GetAttendanceListHandler.php',
-       'line' => 11,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Application/Handlers/GetAttendanceListHandler.php',
-       'traitFilePath' => NULL,
-       'tip' => NULL,
-       'nodeLine' => 11,
-       'nodeType' => 'PhpParser\\Node\\Expr\\MethodCall',
-       'identifier' => 'larastan.relationExistence',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Exports/AttendanceExport.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Relation \'user\' is not found in Modules\\Attendance\\App\\Models\\Attendance model.',
-       'file' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Exports/AttendanceExport.php',
-       'line' => 12,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Exports/AttendanceExport.php',
-       'traitFilePath' => NULL,
-       'tip' => NULL,
-       'nodeLine' => 12,
-       'nodeType' => 'PhpParser\\Node\\Expr\\StaticCall',
-       'identifier' => 'larastan.relationExistence',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/AttendanceApprovalController.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property Modules\\Attendance\\App\\Models\\Attendance::$user.',
-       'file' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/AttendanceApprovalController.php',
-       'line' => 32,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/AttendanceApprovalController.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 32,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/AttendanceController.php' => 
   array (
     0 => 
     \PHPStan\Analyser\Error::__set_state(array(
        'message' => 'Call to an undefined method Yajra\\DataTables\\DataTableAbstract::filterColumn().',
        'file' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/AttendanceController.php',
-       'line' => 167,
+       'line' => 171,
        'canBeIgnored' => true,
        'filePath' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/AttendanceController.php',
        'traitFilePath' => NULL,
        'tip' => NULL,
-       'nodeLine' => 130,
+       'nodeLine' => 134,
        'nodeType' => 'PhpParser\\Node\\Expr\\MethodCall',
        'identifier' => 'method.notFound',
        'metadata' => 
@@ -3048,12 +2988,12 @@ return [
     \PHPStan\Analyser\Error::__set_state(array(
        'message' => 'If condition is always true.',
        'file' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/AttendanceController.php',
-       'line' => 462,
+       'line' => 466,
        'canBeIgnored' => true,
        'filePath' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/AttendanceController.php',
        'traitFilePath' => NULL,
        'tip' => 'Because the type is coming from a PHPDoc, you can turn off this check by setting <fg=cyan>treatPhpDocTypesAsCertain: false</> in your <fg=cyan>%configurationFile%</>.',
-       'nodeLine' => 462,
+       'nodeLine' => 466,
        'nodeType' => 'PhpParser\\Node\\Stmt\\If_',
        'identifier' => 'if.alwaysTrue',
        'metadata' => 
@@ -3065,162 +3005,14 @@ return [
     \PHPStan\Analyser\Error::__set_state(array(
        'message' => 'If condition is always true.',
        'file' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/AttendanceController.php',
-       'line' => 528,
+       'line' => 532,
        'canBeIgnored' => true,
        'filePath' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/AttendanceController.php',
        'traitFilePath' => NULL,
        'tip' => NULL,
-       'nodeLine' => 528,
+       'nodeLine' => 532,
        'nodeType' => 'PhpParser\\Node\\Stmt\\If_',
        'identifier' => 'if.alwaysTrue',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/AttendancePdfController.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Relation \'user\' is not found in Modules\\Attendance\\App\\Models\\Attendance model.',
-       'file' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/AttendancePdfController.php',
-       'line' => 14,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/AttendancePdfController.php',
-       'traitFilePath' => NULL,
-       'tip' => NULL,
-       'nodeLine' => 14,
-       'nodeType' => 'PhpParser\\Node\\Expr\\StaticCall',
-       'identifier' => 'larastan.relationExistence',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/DashboardController.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Call to an undefined static method Modules\\Attendance\\App\\Models\\Attendance::pending().',
-       'file' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/DashboardController.php',
-       'line' => 28,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/DashboardController.php',
-       'traitFilePath' => NULL,
-       'tip' => NULL,
-       'nodeLine' => 28,
-       'nodeType' => 'PhpParser\\Node\\Expr\\StaticCall',
-       'identifier' => 'staticMethod.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    1 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Call to an undefined static method Modules\\Attendance\\App\\Models\\Attendance::approved().',
-       'file' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/DashboardController.php',
-       'line' => 30,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/DashboardController.php',
-       'traitFilePath' => NULL,
-       'tip' => NULL,
-       'nodeLine' => 30,
-       'nodeType' => 'PhpParser\\Node\\Expr\\StaticCall',
-       'identifier' => 'staticMethod.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    2 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Call to an undefined static method Modules\\Attendance\\App\\Models\\Attendance::rejected().',
-       'file' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/DashboardController.php',
-       'line' => 32,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/DashboardController.php',
-       'traitFilePath' => NULL,
-       'tip' => NULL,
-       'nodeLine' => 32,
-       'nodeType' => 'PhpParser\\Node\\Expr\\StaticCall',
-       'identifier' => 'staticMethod.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Jobs/ExportAttendancePdfJob.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Relation \'user\' is not found in Modules\\Attendance\\App\\Models\\Attendance model.',
-       'file' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Jobs/ExportAttendancePdfJob.php',
-       'line' => 25,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Jobs/ExportAttendancePdfJob.php',
-       'traitFilePath' => NULL,
-       'tip' => NULL,
-       'nodeLine' => 25,
-       'nodeType' => 'PhpParser\\Node\\Expr\\StaticCall',
-       'identifier' => 'larastan.relationExistence',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Listeners/SendAttendanceNotification.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property Modules\\Attendance\\App\\Models\\Attendance::$user.',
-       'file' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Listeners/SendAttendanceNotification.php',
-       'line' => 21,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Listeners/SendAttendanceNotification.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 21,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    1 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property Modules\\Attendance\\App\\Models\\Attendance::$user.',
-       'file' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Listeners/SendAttendanceNotification.php',
-       'line' => 22,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Listeners/SendAttendanceNotification.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 22,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    2 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property Modules\\Attendance\\App\\Models\\Attendance::$user.',
-       'file' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Listeners/SendAttendanceNotification.php',
-       'line' => 26,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Listeners/SendAttendanceNotification.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 26,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
        'metadata' => 
       array (
       ),
@@ -3247,43 +3039,6 @@ return [
        'fixedErrorDiff' => NULL,
     )),
   ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Repositories/AttendanceRepository.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Relation \'user\' is not found in Modules\\Attendance\\App\\Models\\Attendance model.',
-       'file' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Repositories/AttendanceRepository.php',
-       'line' => 15,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Repositories/AttendanceRepository.php',
-       'traitFilePath' => NULL,
-       'tip' => NULL,
-       'nodeLine' => 15,
-       'nodeType' => 'PhpParser\\Node\\Expr\\StaticCall',
-       'identifier' => 'larastan.relationExistence',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    1 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Relation \'user\' is not found in Modules\\Attendance\\App\\Models\\Attendance model.',
-       'file' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Repositories/AttendanceRepository.php',
-       'line' => 48,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Repositories/AttendanceRepository.php',
-       'traitFilePath' => NULL,
-       'tip' => NULL,
-       'nodeLine' => 48,
-       'nodeType' => 'PhpParser\\Node\\Expr\\StaticCall',
-       'identifier' => 'larastan.relationExistence',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Scopes/CompanyScope.php' => 
   array (
     0 => 
@@ -3298,546 +3053,6 @@ return [
        'nodeLine' => 21,
        'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
        'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Services/AttendanceDashboardService.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Call to an undefined static method Modules\\Attendance\\App\\Models\\Attendance::pending().',
-       'file' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Services/AttendanceDashboardService.php',
-       'line' => 80,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Services/AttendanceDashboardService.php',
-       'traitFilePath' => NULL,
-       'tip' => NULL,
-       'nodeLine' => 80,
-       'nodeType' => 'PhpParser\\Node\\Expr\\StaticCall',
-       'identifier' => 'staticMethod.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    1 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Call to an undefined static method Modules\\Attendance\\App\\Models\\Attendance::pending().',
-       'file' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Services/AttendanceDashboardService.php',
-       'line' => 100,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Services/AttendanceDashboardService.php',
-       'traitFilePath' => NULL,
-       'tip' => NULL,
-       'nodeLine' => 100,
-       'nodeType' => 'PhpParser\\Node\\Expr\\StaticCall',
-       'identifier' => 'staticMethod.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Transformers/AttendanceCollection.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Call to an undefined method Modules\\Attendance\\App\\Transformers\\AttendanceCollection::total().',
-       'file' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Transformers/AttendanceCollection.php',
-       'line' => 17,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Transformers/AttendanceCollection.php',
-       'traitFilePath' => NULL,
-       'tip' => NULL,
-       'nodeLine' => 17,
-       'nodeType' => 'PhpParser\\Node\\Expr\\MethodCall',
-       'identifier' => 'method.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    1 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Call to an undefined method Modules\\Attendance\\App\\Transformers\\AttendanceCollection::currentPage().',
-       'file' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Transformers/AttendanceCollection.php',
-       'line' => 19,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Transformers/AttendanceCollection.php',
-       'traitFilePath' => NULL,
-       'tip' => NULL,
-       'nodeLine' => 19,
-       'nodeType' => 'PhpParser\\Node\\Expr\\MethodCall',
-       'identifier' => 'method.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    2 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Call to an undefined method Modules\\Attendance\\App\\Transformers\\AttendanceCollection::lastPage().',
-       'file' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Transformers/AttendanceCollection.php',
-       'line' => 21,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Transformers/AttendanceCollection.php',
-       'traitFilePath' => NULL,
-       'tip' => NULL,
-       'nodeLine' => 21,
-       'nodeType' => 'PhpParser\\Node\\Expr\\MethodCall',
-       'identifier' => 'method.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Transformers/AttendanceResource.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property Modules\\Attendance\\App\\Transformers\\AttendanceResource::$id.',
-       'file' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Transformers/AttendanceResource.php',
-       'line' => 16,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Transformers/AttendanceResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 16,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    1 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property Modules\\Attendance\\App\\Transformers\\AttendanceResource::$user.',
-       'file' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Transformers/AttendanceResource.php',
-       'line' => 20,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Transformers/AttendanceResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 20,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    2 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property Modules\\Attendance\\App\\Transformers\\AttendanceResource::$user.',
-       'file' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Transformers/AttendanceResource.php',
-       'line' => 22,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Transformers/AttendanceResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 22,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    3 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property Modules\\Attendance\\App\\Transformers\\AttendanceResource::$work_date.',
-       'file' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Transformers/AttendanceResource.php',
-       'line' => 26,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Transformers/AttendanceResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 26,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    4 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property Modules\\Attendance\\App\\Transformers\\AttendanceResource::$check_in.',
-       'file' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Transformers/AttendanceResource.php',
-       'line' => 28,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Transformers/AttendanceResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 28,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    5 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property Modules\\Attendance\\App\\Transformers\\AttendanceResource::$check_out.',
-       'file' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Transformers/AttendanceResource.php',
-       'line' => 30,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Transformers/AttendanceResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 30,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    6 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property Modules\\Attendance\\App\\Transformers\\AttendanceResource::$late_minutes.',
-       'file' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Transformers/AttendanceResource.php',
-       'line' => 32,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Transformers/AttendanceResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 32,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    7 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property Modules\\Attendance\\App\\Transformers\\AttendanceResource::$work_hours.',
-       'file' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Transformers/AttendanceResource.php',
-       'line' => 34,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Transformers/AttendanceResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 34,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    8 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property Modules\\Attendance\\App\\Transformers\\AttendanceResource::$overtime_hours.',
-       'file' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Transformers/AttendanceResource.php',
-       'line' => 36,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Transformers/AttendanceResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 36,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    9 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property Modules\\Attendance\\App\\Transformers\\AttendanceResource::$status.',
-       'file' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Transformers/AttendanceResource.php',
-       'line' => 38,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Transformers/AttendanceResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 38,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    10 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property Modules\\Attendance\\App\\Transformers\\AttendanceResource::$created_at.',
-       'file' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Transformers/AttendanceResource.php',
-       'line' => 39,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Transformers/AttendanceResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 39,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    11 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property Modules\\Attendance\\App\\Transformers\\AttendanceResource::$updated_at.',
-       'file' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Transformers/AttendanceResource.php',
-       'line' => 41,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Transformers/AttendanceResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 41,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceServiceTest.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Call to method PHPUnit\\Framework\\Assert::assertNotNull() with int will always evaluate to true.',
-       'file' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceServiceTest.php',
-       'line' => 38,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceServiceTest.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Because the type is coming from a PHPDoc, you can turn off this check by setting <fg=cyan>treatPhpDocTypesAsCertain: false</> in your <fg=cyan>%configurationFile%</>.',
-       'nodeLine' => 38,
-       'nodeType' => 'PhpParser\\Node\\Expr\\MethodCall',
-       'identifier' => 'method.alreadyNarrowedType',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Unit/AttendanceServiceTest.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Call to method PHPUnit\\Framework\\Assert::assertTrue() with true will always evaluate to true.',
-       'file' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Unit/AttendanceServiceTest.php',
-       'line' => 14,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Unit/AttendanceServiceTest.php',
-       'traitFilePath' => NULL,
-       'tip' => NULL,
-       'nodeLine' => 14,
-       'nodeType' => 'PhpParser\\Node\\Expr\\MethodCall',
-       'identifier' => 'method.alreadyNarrowedType',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Product/App/Http/Controllers/ProductController.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Parameter #1 $view of function view expects view-string|null, string given.',
-       'file' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Product/App/Http/Controllers/ProductController.php',
-       'line' => 23,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Product/App/Http/Controllers/ProductController.php',
-       'traitFilePath' => NULL,
-       'tip' => NULL,
-       'nodeLine' => 23,
-       'nodeType' => 'PhpParser\\Node\\Expr\\FuncCall',
-       'identifier' => 'argument.type',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    1 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Parameter #1 $view of function view expects view-string|null, string given.',
-       'file' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Product/App/Http/Controllers/ProductController.php',
-       'line' => 36,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Product/App/Http/Controllers/ProductController.php',
-       'traitFilePath' => NULL,
-       'tip' => NULL,
-       'nodeLine' => 36,
-       'nodeType' => 'PhpParser\\Node\\Expr\\FuncCall',
-       'identifier' => 'argument.type',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    2 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Parameter #1 $view of function view expects view-string|null, string given.',
-       'file' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Product/App/Http/Controllers/ProductController.php',
-       'line' => 44,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Product/App/Http/Controllers/ProductController.php',
-       'traitFilePath' => NULL,
-       'tip' => NULL,
-       'nodeLine' => 44,
-       'nodeType' => 'PhpParser\\Node\\Expr\\FuncCall',
-       'identifier' => 'argument.type',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Exports/SalaryExport.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Relation \'user\' is not found in Modules\\Salary\\App\\Models\\SalaryMechanism model.',
-       'file' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Exports/SalaryExport.php',
-       'line' => 18,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Exports/SalaryExport.php',
-       'traitFilePath' => NULL,
-       'tip' => NULL,
-       'nodeLine' => 18,
-       'nodeType' => 'PhpParser\\Node\\Expr\\StaticCall',
-       'identifier' => 'larastan.relationExistence',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Http/Controllers/SalaryController.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Relation \'user\' is not found in Modules\\Salary\\App\\Models\\SalaryMechanism model.',
-       'file' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Http/Controllers/SalaryController.php',
-       'line' => 109,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Http/Controllers/SalaryController.php',
-       'traitFilePath' => NULL,
-       'tip' => NULL,
-       'nodeLine' => 109,
-       'nodeType' => 'PhpParser\\Node\\Expr\\MethodCall',
-       'identifier' => 'larastan.relationExistence',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Repositories/SalaryRepository.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Relation \'user\' is not found in Modules\\Salary\\App\\Models\\SalaryMechanism model.',
-       'file' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Repositories/SalaryRepository.php',
-       'line' => 108,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Repositories/SalaryRepository.php',
-       'traitFilePath' => NULL,
-       'tip' => NULL,
-       'nodeLine' => 108,
-       'nodeType' => 'PhpParser\\Node\\Expr\\StaticCall',
-       'identifier' => 'larastan.relationExistence',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    1 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Call to an undefined method Illuminate\\Support\\HigherOrderTapProxy<Illuminate\\Database\\Eloquent\\Collection<int, Modules\\Salary\\App\\Models\\SalaryMechanism>|Modules\\Salary\\App\\Models\\SalaryMechanism>::update().',
-       'file' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Repositories/SalaryRepository.php',
-       'line' => 136,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Repositories/SalaryRepository.php',
-       'traitFilePath' => NULL,
-       'tip' => NULL,
-       'nodeLine' => 136,
-       'nodeType' => 'PhpParser\\Node\\Expr\\MethodCall',
-       'identifier' => 'method.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/User.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Method Modules\\User\\App\\Models\\User::attendances() has invalid return type Modules\\User\\App\\Models\\HasMany.',
-       'file' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/User.php',
-       'line' => 258,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/User.php',
-       'traitFilePath' => NULL,
-       'tip' => NULL,
-       'nodeLine' => 258,
-       'nodeType' => 'PHPStan\\Node\\InClassMethodNode',
-       'identifier' => 'class.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    1 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Method Modules\\User\\App\\Models\\User::attendances() should return Modules\\User\\App\\Models\\HasMany but returns Illuminate\\Database\\Eloquent\\Relations\\HasMany<Modules\\Attendance\\App\\Models\\Attendance, $this(Modules\\User\\App\\Models\\User)>.',
-       'file' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/User.php',
-       'line' => 260,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/User.php',
-       'traitFilePath' => NULL,
-       'tip' => NULL,
-       'nodeLine' => 260,
-       'nodeType' => 'PhpParser\\Node\\Stmt\\Return_',
-       'identifier' => 'return.type',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    2 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Method Modules\\User\\App\\Models\\User::salaryMechanisms() has invalid return type Modules\\User\\App\\Models\\HasMany.',
-       'file' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/User.php',
-       'line' => 266,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/User.php',
-       'traitFilePath' => NULL,
-       'tip' => NULL,
-       'nodeLine' => 266,
-       'nodeType' => 'PHPStan\\Node\\InClassMethodNode',
-       'identifier' => 'class.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    3 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Method Modules\\User\\App\\Models\\User::salaryMechanisms() should return Modules\\User\\App\\Models\\HasMany but returns Illuminate\\Database\\Eloquent\\Relations\\HasMany<Modules\\Salary\\App\\Models\\SalaryMechanism, $this(Modules\\User\\App\\Models\\User)>.',
-       'file' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/User.php',
-       'line' => 268,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/User.php',
-       'traitFilePath' => NULL,
-       'tip' => NULL,
-       'nodeLine' => 268,
-       'nodeType' => 'PhpParser\\Node\\Stmt\\Return_',
-       'identifier' => 'return.type',
        'metadata' => 
       array (
       ),
@@ -4208,10 +3423,6 @@ return [
   ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/AttendanceController.php' => 
   array (
-    'Larastan\\Larastan\\Collectors\\UsedViewFunctionCollector' => 
-    array (
-      0 => 'attendance::index',
-    ),
     'PHPStan\\Rules\\DeadCode\\ConstructorWithoutImpurePointsCollector' => 
     array (
       0 => 
@@ -4227,17 +3438,17 @@ return [
       0 => 
       array (
         0 => 'event',
-        1 => 364,
+        1 => 368,
       ),
       1 => 
       array (
         0 => 'event',
-        1 => 461,
+        1 => 465,
       ),
       2 => 
       array (
         0 => 'event',
-        1 => 539,
+        1 => 543,
       ),
     ),
     'PHPStan\\Rules\\DeadCode\\PossiblyPureStaticCallCollector' => 
@@ -4246,13 +3457,13 @@ return [
       array (
         0 => 'Modules\\Attendance\\App\\Jobs\\ExportAttendanceExcelJob',
         1 => 'dispatch',
-        2 => 555,
+        2 => 559,
       ),
       1 => 
       array (
         0 => 'Modules\\Attendance\\App\\Jobs\\ExportAttendancePdfJob',
         1 => 'dispatch',
-        2 => 566,
+        2 => 570,
       ),
     ),
   ),
@@ -4623,7 +3834,7 @@ return [
       array (
         0 => 'Illuminate\\Database\\Eloquent\\Model',
         1 => 'addGlobalScope',
-        2 => 100,
+        2 => 97,
       ),
     ),
     'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
@@ -4991,13 +4202,6 @@ return [
   ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Product/App/Http/Controllers/ProductController.php' => 
   array (
-    'Larastan\\Larastan\\Collectors\\UsedViewFunctionCollector' => 
-    array (
-      0 => 'product::index',
-      1 => 'product::create',
-      2 => 'product::show',
-      3 => 'product::edit',
-    ),
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
       0 => 
@@ -5092,13 +4296,6 @@ return [
         array (
         ),
       ),
-    ),
-  ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Http/Controllers/SalaryController.php' => 
-  array (
-    'Larastan\\Larastan\\Collectors\\UsedViewFunctionCollector' => 
-    array (
-      0 => 'salary::index',
     ),
   ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Http/Requests/StoreSalaryRequest.php' => 
@@ -5839,7 +5036,7 @@ return [
   ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/AttendanceController.php' => 
   array (
-    'fileHash' => '066b34c40af7e618b49537ee365cf987943f31e2901025a405a6698aed162edf',
+    'fileHash' => 'b0f1783caeab6618946a84dbfad078d248c3028a5c0f80dd74137ff14cc1c717',
     'dependentFiles' => 
     array (
       0 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/routes/api.php',
@@ -6015,7 +5212,7 @@ return [
   ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Models/Attendance.php' => 
   array (
-    'fileHash' => 'efae4dd3f69d18849eee4f001a8a8cbd6bc4175808ad4d266e99d06cd6ea3753',
+    'fileHash' => '94e1821daee22a28dcda64da50dde07f84be6f90587dacd44a6914c6989c5686',
     'dependentFiles' => 
     array (
       0 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Application/Handlers/CreateAttendanceHandler.php',
@@ -6046,16 +5243,17 @@ return [
       25 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Services/AttendanceService.php',
       26 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Services/AttendanceSummaryService.php',
       27 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Services/Contracts/AttendanceServiceInterface.php',
-      28 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/Database/Factories/AttendanceFactory.php',
-      29 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/Database/Seeders/AttendanceSeeder.php',
-      30 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceApiTest.php',
-      31 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceCrudTest.php',
-      32 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceDashboardTest.php',
-      33 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceServiceTest.php',
-      34 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/User.php',
-      35 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Policies/AttendancePolicy.php',
-      36 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Providers/AppServiceProvider.php',
-      37 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Providers/AuthServiceProvider.php',
+      28 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Transformers/AttendanceResource.php',
+      29 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/Database/Factories/AttendanceFactory.php',
+      30 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/Database/Seeders/AttendanceSeeder.php',
+      31 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceApiTest.php',
+      32 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceCrudTest.php',
+      33 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceDashboardTest.php',
+      34 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceServiceTest.php',
+      35 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/User.php',
+      36 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Policies/AttendancePolicy.php',
+      37 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Providers/AppServiceProvider.php',
+      38 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Providers/AuthServiceProvider.php',
     ),
   ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Notifications/AttendanceCreatedNotification.php' => 
@@ -6191,20 +5389,12 @@ return [
       3 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceServiceTest.php',
     ),
   ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Transformers/AttendanceCollection.php' => 
-  array (
-    'fileHash' => 'a267ef0f817c9fd3472b7ce1fdc399b0df595c77e86953f94881431a875f21da',
-    'dependentFiles' => 
-    array (
-    ),
-  ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Transformers/AttendanceResource.php' => 
   array (
-    'fileHash' => 'cd1e7ae8f3e75190cea14b43e08d94e10a95bd3ac667f30e27b2f22d571a8bbd',
+    'fileHash' => '31a28297d3f3c31bbe266d790f36667a1946dd27107ad858e55a8c4350977808',
     'dependentFiles' => 
     array (
       0 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/AttendanceController.php',
-      1 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Transformers/AttendanceCollection.php',
     ),
   ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/Database/Factories/AttendanceFactory.php' => 
@@ -6351,7 +5541,7 @@ return [
   ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceServiceTest.php' => 
   array (
-    'fileHash' => 'e7dcba110dd72ccb3a0dcf6d1331b0caea3e23eb1a0495c74d5216daa498aa3b',
+    'fileHash' => '9b03f129837c2229780cad76902dadbd7da4712338220dabb803a5fc57295a0d',
     'dependentFiles' => 
     array (
     ),
@@ -6363,16 +5553,9 @@ return [
     array (
     ),
   ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Unit/AttendanceServiceTest.php' => 
-  array (
-    'fileHash' => 'bdf7f2951f77470e56165e724bce7c2eccb169ffa04f69d3ebe72682ca673bed',
-    'dependentFiles' => 
-    array (
-    ),
-  ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Product/App/Http/Controllers/ProductController.php' => 
   array (
-    'fileHash' => 'f6dd4b4282da3a7680811f2a48c9c19aae5a038f8363d0a2af4102bf7d55f900',
+    'fileHash' => '5ea3f0837f0581961baa52f7bd1e0c2455840962d997896980a7381cf05ac157',
     'dependentFiles' => 
     array (
       0 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Product/routes/api.php',
@@ -6471,7 +5654,7 @@ return [
   ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Http/Controllers/SalaryController.php' => 
   array (
-    'fileHash' => 'ad277fb3ccf88733f9baf4e4bf31d5ce3adb4d62940d575d81324b4ac638e30e',
+    'fileHash' => '533521addca5cb40752727899d29e298d61fcf4b95910fb0c03bf5205374b5f5',
     'dependentFiles' => 
     array (
       0 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/routes/api.php',
@@ -6504,7 +5687,7 @@ return [
   ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Models/SalaryMechanism.php' => 
   array (
-    'fileHash' => 'fbe3246924a6b0698eb0338164f2b387ce399ad60765f2490dfb825ffbca828a',
+    'fileHash' => '680535c9e5747d88135cd221766ef5f113e3a2908f6e8e4679e1ced37d60fd6c',
     'dependentFiles' => 
     array (
       0 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Exports/SalaryExport.php',
@@ -6540,7 +5723,7 @@ return [
   ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Repositories/SalaryRepository.php' => 
   array (
-    'fileHash' => '330e522caf73ec5462040818b33e04989a6911f0fe335f95e4ab3522bc986203',
+    'fileHash' => 'b4dbf3e4b47a1f8705dd99467f9d26080cf644732467631cc056b0f3241c5579',
     'dependentFiles' => 
     array (
       0 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Providers/SalaryServiceProvider.php',
@@ -6626,48 +5809,52 @@ return [
     'fileHash' => 'd8d9f2a8a1fc396aaf096848055a28613231ae91528e2698c7615f577933703b',
     'dependentFiles' => 
     array (
-      0 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/AttendanceActionController.php',
-      1 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/AttendanceController.php',
-      2 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Requests/StoreAttendanceRequest.php',
-      3 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Requests/UpdateAttendanceRequest.php',
-      4 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Jobs/ExportAttendanceExcelJob.php',
-      5 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Jobs/ExportAttendancePdfJob.php',
-      6 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Jobs/SendAttendanceApprovedMailJob.php',
-      7 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Mail/AttendanceApprovedMail.php',
-      8 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Mail/AttendanceCheckInMail.php',
-      9 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Mail/AttendanceRejectedMail.php',
-      10 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Models/Attendance.php',
-      11 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Policies/AttendancePolicy.php',
-      12 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Scopes/CompanyScope.php',
-      13 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/Database/Factories/AttendanceFactory.php',
-      14 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/Database/Seeders/AttendanceSeeder.php',
-      15 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceApiTest.php',
-      16 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceCrudTest.php',
-      17 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceDashboardTest.php',
-      18 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceServiceTest.php',
-      19 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Http/Controllers/SalaryController.php',
-      20 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Listeners/LogSalaryActivity.php',
-      21 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Models/SalaryMechanism.php',
-      22 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/Database/Seeders/SalaryDatabaseSeeder.php',
-      23 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Http/Controllers/AuthController.php',
-      24 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Http/Controllers/UserController.php',
-      25 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/Position.php',
-      26 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/Team.php',
-      27 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/TypeAccount.php',
-      28 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/User.php',
-      29 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Repositories/Interfaces/UserRepositoryInterface.php',
-      30 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Repositories/UserRepository.php',
-      31 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/Database/Factories/UserFactory.php',
-      32 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/ConfirmablePasswordController.php',
-      33 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/EmailVerificationNotificationController.php',
-      34 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/EmailVerificationPromptController.php',
-      35 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/NewPasswordController.php',
-      36 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/PasswordController.php',
-      37 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/RegisteredUserController.php',
-      38 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/VerifyEmailController.php',
-      39 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/ProfileController.php',
-      40 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Requests/ProfileUpdateRequest.php',
-      41 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Policies/AttendancePolicy.php',
+      0 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Exports/AttendanceExport.php',
+      1 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/AttendanceActionController.php',
+      2 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/AttendanceApprovalController.php',
+      3 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/AttendanceController.php',
+      4 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Requests/StoreAttendanceRequest.php',
+      5 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Requests/UpdateAttendanceRequest.php',
+      6 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Jobs/ExportAttendanceExcelJob.php',
+      7 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Jobs/ExportAttendancePdfJob.php',
+      8 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Jobs/SendAttendanceApprovedMailJob.php',
+      9 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Listeners/SendAttendanceNotification.php',
+      10 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Mail/AttendanceApprovedMail.php',
+      11 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Mail/AttendanceCheckInMail.php',
+      12 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Mail/AttendanceRejectedMail.php',
+      13 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Models/Attendance.php',
+      14 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Policies/AttendancePolicy.php',
+      15 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Scopes/CompanyScope.php',
+      16 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Transformers/AttendanceResource.php',
+      17 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/Database/Factories/AttendanceFactory.php',
+      18 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/Database/Seeders/AttendanceSeeder.php',
+      19 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceApiTest.php',
+      20 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceCrudTest.php',
+      21 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceDashboardTest.php',
+      22 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceServiceTest.php',
+      23 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Http/Controllers/SalaryController.php',
+      24 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Listeners/LogSalaryActivity.php',
+      25 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Models/SalaryMechanism.php',
+      26 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/Database/Seeders/SalaryDatabaseSeeder.php',
+      27 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Http/Controllers/AuthController.php',
+      28 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Http/Controllers/UserController.php',
+      29 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/Position.php',
+      30 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/Team.php',
+      31 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/TypeAccount.php',
+      32 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/User.php',
+      33 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Repositories/Interfaces/UserRepositoryInterface.php',
+      34 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Repositories/UserRepository.php',
+      35 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/Database/Factories/UserFactory.php',
+      36 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/ConfirmablePasswordController.php',
+      37 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/EmailVerificationNotificationController.php',
+      38 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/EmailVerificationPromptController.php',
+      39 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/NewPasswordController.php',
+      40 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/PasswordController.php',
+      41 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/RegisteredUserController.php',
+      42 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/VerifyEmailController.php',
+      43 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/ProfileController.php',
+      44 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Requests/ProfileUpdateRequest.php',
+      45 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Policies/AttendancePolicy.php',
     ),
   ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/Position.php' => 
@@ -6675,48 +5862,52 @@ return [
     'fileHash' => '0c6a49b279773f4698df2743d06ba78de81983207b634c234a7c4f459bdcbb3d',
     'dependentFiles' => 
     array (
-      0 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/AttendanceActionController.php',
-      1 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/AttendanceController.php',
-      2 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Requests/StoreAttendanceRequest.php',
-      3 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Requests/UpdateAttendanceRequest.php',
-      4 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Jobs/ExportAttendanceExcelJob.php',
-      5 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Jobs/ExportAttendancePdfJob.php',
-      6 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Jobs/SendAttendanceApprovedMailJob.php',
-      7 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Mail/AttendanceApprovedMail.php',
-      8 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Mail/AttendanceCheckInMail.php',
-      9 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Mail/AttendanceRejectedMail.php',
-      10 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Models/Attendance.php',
-      11 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Policies/AttendancePolicy.php',
-      12 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Scopes/CompanyScope.php',
-      13 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/Database/Factories/AttendanceFactory.php',
-      14 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/Database/Seeders/AttendanceSeeder.php',
-      15 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceApiTest.php',
-      16 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceCrudTest.php',
-      17 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceDashboardTest.php',
-      18 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceServiceTest.php',
-      19 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Http/Controllers/SalaryController.php',
-      20 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Listeners/LogSalaryActivity.php',
-      21 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Models/SalaryMechanism.php',
-      22 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/Database/Seeders/SalaryDatabaseSeeder.php',
-      23 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Http/Controllers/AuthController.php',
-      24 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Http/Controllers/UserController.php',
-      25 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/Part.php',
-      26 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/Team.php',
-      27 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/TypeAccount.php',
-      28 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/User.php',
-      29 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Repositories/Interfaces/UserRepositoryInterface.php',
-      30 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Repositories/UserRepository.php',
-      31 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/Database/Factories/UserFactory.php',
-      32 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/ConfirmablePasswordController.php',
-      33 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/EmailVerificationNotificationController.php',
-      34 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/EmailVerificationPromptController.php',
-      35 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/NewPasswordController.php',
-      36 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/PasswordController.php',
-      37 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/RegisteredUserController.php',
-      38 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/VerifyEmailController.php',
-      39 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/ProfileController.php',
-      40 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Requests/ProfileUpdateRequest.php',
-      41 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Policies/AttendancePolicy.php',
+      0 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Exports/AttendanceExport.php',
+      1 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/AttendanceActionController.php',
+      2 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/AttendanceApprovalController.php',
+      3 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/AttendanceController.php',
+      4 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Requests/StoreAttendanceRequest.php',
+      5 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Requests/UpdateAttendanceRequest.php',
+      6 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Jobs/ExportAttendanceExcelJob.php',
+      7 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Jobs/ExportAttendancePdfJob.php',
+      8 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Jobs/SendAttendanceApprovedMailJob.php',
+      9 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Listeners/SendAttendanceNotification.php',
+      10 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Mail/AttendanceApprovedMail.php',
+      11 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Mail/AttendanceCheckInMail.php',
+      12 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Mail/AttendanceRejectedMail.php',
+      13 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Models/Attendance.php',
+      14 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Policies/AttendancePolicy.php',
+      15 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Scopes/CompanyScope.php',
+      16 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Transformers/AttendanceResource.php',
+      17 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/Database/Factories/AttendanceFactory.php',
+      18 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/Database/Seeders/AttendanceSeeder.php',
+      19 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceApiTest.php',
+      20 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceCrudTest.php',
+      21 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceDashboardTest.php',
+      22 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceServiceTest.php',
+      23 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Http/Controllers/SalaryController.php',
+      24 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Listeners/LogSalaryActivity.php',
+      25 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Models/SalaryMechanism.php',
+      26 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/Database/Seeders/SalaryDatabaseSeeder.php',
+      27 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Http/Controllers/AuthController.php',
+      28 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Http/Controllers/UserController.php',
+      29 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/Part.php',
+      30 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/Team.php',
+      31 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/TypeAccount.php',
+      32 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/User.php',
+      33 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Repositories/Interfaces/UserRepositoryInterface.php',
+      34 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Repositories/UserRepository.php',
+      35 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/Database/Factories/UserFactory.php',
+      36 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/ConfirmablePasswordController.php',
+      37 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/EmailVerificationNotificationController.php',
+      38 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/EmailVerificationPromptController.php',
+      39 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/NewPasswordController.php',
+      40 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/PasswordController.php',
+      41 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/RegisteredUserController.php',
+      42 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/VerifyEmailController.php',
+      43 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/ProfileController.php',
+      44 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Requests/ProfileUpdateRequest.php',
+      45 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Policies/AttendancePolicy.php',
     ),
   ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/Team.php' => 
@@ -6724,48 +5915,52 @@ return [
     'fileHash' => '8f98b29b036cbf9f8e213bce079c1888611c416cc4b49b815b250c3fbb51ef14',
     'dependentFiles' => 
     array (
-      0 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/AttendanceActionController.php',
-      1 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/AttendanceController.php',
-      2 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Requests/StoreAttendanceRequest.php',
-      3 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Requests/UpdateAttendanceRequest.php',
-      4 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Jobs/ExportAttendanceExcelJob.php',
-      5 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Jobs/ExportAttendancePdfJob.php',
-      6 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Jobs/SendAttendanceApprovedMailJob.php',
-      7 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Mail/AttendanceApprovedMail.php',
-      8 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Mail/AttendanceCheckInMail.php',
-      9 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Mail/AttendanceRejectedMail.php',
-      10 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Models/Attendance.php',
-      11 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Policies/AttendancePolicy.php',
-      12 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Scopes/CompanyScope.php',
-      13 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/Database/Factories/AttendanceFactory.php',
-      14 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/Database/Seeders/AttendanceSeeder.php',
-      15 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceApiTest.php',
-      16 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceCrudTest.php',
-      17 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceDashboardTest.php',
-      18 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceServiceTest.php',
-      19 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Http/Controllers/SalaryController.php',
-      20 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Listeners/LogSalaryActivity.php',
-      21 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Models/SalaryMechanism.php',
-      22 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/Database/Seeders/SalaryDatabaseSeeder.php',
-      23 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Http/Controllers/AuthController.php',
-      24 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Http/Controllers/UserController.php',
-      25 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/Part.php',
-      26 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/Position.php',
-      27 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/TypeAccount.php',
-      28 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/User.php',
-      29 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Repositories/Interfaces/UserRepositoryInterface.php',
-      30 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Repositories/UserRepository.php',
-      31 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/Database/Factories/UserFactory.php',
-      32 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/ConfirmablePasswordController.php',
-      33 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/EmailVerificationNotificationController.php',
-      34 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/EmailVerificationPromptController.php',
-      35 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/NewPasswordController.php',
-      36 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/PasswordController.php',
-      37 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/RegisteredUserController.php',
-      38 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/VerifyEmailController.php',
-      39 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/ProfileController.php',
-      40 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Requests/ProfileUpdateRequest.php',
-      41 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Policies/AttendancePolicy.php',
+      0 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Exports/AttendanceExport.php',
+      1 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/AttendanceActionController.php',
+      2 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/AttendanceApprovalController.php',
+      3 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/AttendanceController.php',
+      4 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Requests/StoreAttendanceRequest.php',
+      5 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Requests/UpdateAttendanceRequest.php',
+      6 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Jobs/ExportAttendanceExcelJob.php',
+      7 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Jobs/ExportAttendancePdfJob.php',
+      8 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Jobs/SendAttendanceApprovedMailJob.php',
+      9 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Listeners/SendAttendanceNotification.php',
+      10 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Mail/AttendanceApprovedMail.php',
+      11 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Mail/AttendanceCheckInMail.php',
+      12 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Mail/AttendanceRejectedMail.php',
+      13 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Models/Attendance.php',
+      14 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Policies/AttendancePolicy.php',
+      15 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Scopes/CompanyScope.php',
+      16 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Transformers/AttendanceResource.php',
+      17 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/Database/Factories/AttendanceFactory.php',
+      18 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/Database/Seeders/AttendanceSeeder.php',
+      19 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceApiTest.php',
+      20 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceCrudTest.php',
+      21 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceDashboardTest.php',
+      22 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceServiceTest.php',
+      23 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Http/Controllers/SalaryController.php',
+      24 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Listeners/LogSalaryActivity.php',
+      25 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Models/SalaryMechanism.php',
+      26 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/Database/Seeders/SalaryDatabaseSeeder.php',
+      27 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Http/Controllers/AuthController.php',
+      28 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Http/Controllers/UserController.php',
+      29 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/Part.php',
+      30 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/Position.php',
+      31 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/TypeAccount.php',
+      32 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/User.php',
+      33 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Repositories/Interfaces/UserRepositoryInterface.php',
+      34 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Repositories/UserRepository.php',
+      35 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/Database/Factories/UserFactory.php',
+      36 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/ConfirmablePasswordController.php',
+      37 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/EmailVerificationNotificationController.php',
+      38 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/EmailVerificationPromptController.php',
+      39 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/NewPasswordController.php',
+      40 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/PasswordController.php',
+      41 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/RegisteredUserController.php',
+      42 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/VerifyEmailController.php',
+      43 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/ProfileController.php',
+      44 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Requests/ProfileUpdateRequest.php',
+      45 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Policies/AttendancePolicy.php',
     ),
   ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/TypeAccount.php' => 
@@ -6773,97 +5968,128 @@ return [
     'fileHash' => '847477e8a8cb4a400faf64b78d56e2f539497a3149bfe36f73a003f70f56b42e',
     'dependentFiles' => 
     array (
-      0 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/AttendanceActionController.php',
-      1 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/AttendanceController.php',
-      2 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Requests/StoreAttendanceRequest.php',
-      3 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Requests/UpdateAttendanceRequest.php',
-      4 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Jobs/ExportAttendanceExcelJob.php',
-      5 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Jobs/ExportAttendancePdfJob.php',
-      6 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Jobs/SendAttendanceApprovedMailJob.php',
-      7 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Mail/AttendanceApprovedMail.php',
-      8 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Mail/AttendanceCheckInMail.php',
-      9 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Mail/AttendanceRejectedMail.php',
-      10 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Models/Attendance.php',
-      11 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Policies/AttendancePolicy.php',
-      12 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Scopes/CompanyScope.php',
-      13 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/Database/Factories/AttendanceFactory.php',
-      14 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/Database/Seeders/AttendanceSeeder.php',
-      15 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceApiTest.php',
-      16 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceCrudTest.php',
-      17 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceDashboardTest.php',
-      18 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceServiceTest.php',
-      19 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Http/Controllers/SalaryController.php',
-      20 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Listeners/LogSalaryActivity.php',
-      21 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Models/SalaryMechanism.php',
-      22 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/Database/Seeders/SalaryDatabaseSeeder.php',
-      23 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Http/Controllers/AuthController.php',
-      24 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Http/Controllers/UserController.php',
-      25 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/Part.php',
-      26 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/Position.php',
-      27 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/Team.php',
-      28 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/User.php',
-      29 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Repositories/Interfaces/UserRepositoryInterface.php',
-      30 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Repositories/UserRepository.php',
-      31 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/Database/Factories/UserFactory.php',
-      32 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/ConfirmablePasswordController.php',
-      33 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/EmailVerificationNotificationController.php',
-      34 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/EmailVerificationPromptController.php',
-      35 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/NewPasswordController.php',
-      36 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/PasswordController.php',
-      37 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/RegisteredUserController.php',
-      38 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/VerifyEmailController.php',
-      39 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/ProfileController.php',
-      40 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Requests/ProfileUpdateRequest.php',
-      41 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Policies/AttendancePolicy.php',
+      0 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Exports/AttendanceExport.php',
+      1 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/AttendanceActionController.php',
+      2 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/AttendanceApprovalController.php',
+      3 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/AttendanceController.php',
+      4 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Requests/StoreAttendanceRequest.php',
+      5 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Requests/UpdateAttendanceRequest.php',
+      6 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Jobs/ExportAttendanceExcelJob.php',
+      7 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Jobs/ExportAttendancePdfJob.php',
+      8 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Jobs/SendAttendanceApprovedMailJob.php',
+      9 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Listeners/SendAttendanceNotification.php',
+      10 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Mail/AttendanceApprovedMail.php',
+      11 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Mail/AttendanceCheckInMail.php',
+      12 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Mail/AttendanceRejectedMail.php',
+      13 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Models/Attendance.php',
+      14 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Policies/AttendancePolicy.php',
+      15 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Scopes/CompanyScope.php',
+      16 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Transformers/AttendanceResource.php',
+      17 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/Database/Factories/AttendanceFactory.php',
+      18 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/Database/Seeders/AttendanceSeeder.php',
+      19 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceApiTest.php',
+      20 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceCrudTest.php',
+      21 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceDashboardTest.php',
+      22 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceServiceTest.php',
+      23 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Http/Controllers/SalaryController.php',
+      24 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Listeners/LogSalaryActivity.php',
+      25 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Models/SalaryMechanism.php',
+      26 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/Database/Seeders/SalaryDatabaseSeeder.php',
+      27 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Http/Controllers/AuthController.php',
+      28 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Http/Controllers/UserController.php',
+      29 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/Part.php',
+      30 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/Position.php',
+      31 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/Team.php',
+      32 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/User.php',
+      33 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Repositories/Interfaces/UserRepositoryInterface.php',
+      34 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Repositories/UserRepository.php',
+      35 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/Database/Factories/UserFactory.php',
+      36 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/ConfirmablePasswordController.php',
+      37 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/EmailVerificationNotificationController.php',
+      38 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/EmailVerificationPromptController.php',
+      39 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/NewPasswordController.php',
+      40 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/PasswordController.php',
+      41 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/RegisteredUserController.php',
+      42 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/VerifyEmailController.php',
+      43 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/ProfileController.php',
+      44 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Requests/ProfileUpdateRequest.php',
+      45 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Policies/AttendancePolicy.php',
     ),
   ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/User.php' => 
   array (
-    'fileHash' => '0fc01ca321b503ec262adde4f07ed7b177f0bbc502c83dbd0c0d5dccef521c90',
+    'fileHash' => '94c088403fbcb76df3cce30a210779acd81a806d09e0b6818cf2629df15a90a3',
     'dependentFiles' => 
     array (
-      0 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/AttendanceActionController.php',
-      1 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/AttendanceController.php',
-      2 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Requests/StoreAttendanceRequest.php',
-      3 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Requests/UpdateAttendanceRequest.php',
-      4 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Jobs/ExportAttendanceExcelJob.php',
-      5 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Jobs/ExportAttendancePdfJob.php',
-      6 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Jobs/SendAttendanceApprovedMailJob.php',
-      7 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Mail/AttendanceApprovedMail.php',
-      8 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Mail/AttendanceCheckInMail.php',
-      9 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Mail/AttendanceRejectedMail.php',
-      10 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Models/Attendance.php',
-      11 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Policies/AttendancePolicy.php',
-      12 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Scopes/CompanyScope.php',
-      13 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/Database/Factories/AttendanceFactory.php',
-      14 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/Database/Seeders/AttendanceSeeder.php',
-      15 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceApiTest.php',
-      16 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceCrudTest.php',
-      17 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceDashboardTest.php',
-      18 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceServiceTest.php',
-      19 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Http/Controllers/SalaryController.php',
-      20 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Listeners/LogSalaryActivity.php',
-      21 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Models/SalaryMechanism.php',
-      22 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/Database/Seeders/SalaryDatabaseSeeder.php',
-      23 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Http/Controllers/AuthController.php',
-      24 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Http/Controllers/UserController.php',
-      25 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/Part.php',
-      26 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/Position.php',
-      27 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/Team.php',
-      28 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/TypeAccount.php',
-      29 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Repositories/Interfaces/UserRepositoryInterface.php',
-      30 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Repositories/UserRepository.php',
-      31 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/Database/Factories/UserFactory.php',
-      32 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/ConfirmablePasswordController.php',
-      33 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/EmailVerificationNotificationController.php',
-      34 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/EmailVerificationPromptController.php',
-      35 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/NewPasswordController.php',
-      36 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/PasswordController.php',
-      37 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/RegisteredUserController.php',
-      38 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/VerifyEmailController.php',
-      39 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/ProfileController.php',
-      40 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Requests/ProfileUpdateRequest.php',
-      41 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Policies/AttendancePolicy.php',
+      0 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Application/Handlers/CreateAttendanceHandler.php',
+      1 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Application/Handlers/GetAttendanceListHandler.php',
+      2 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Events/AttendanceApproved.php',
+      3 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Events/AttendanceCreated.php',
+      4 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Events/AttendanceRejected.php',
+      5 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Events/AttendanceUpdated.php',
+      6 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Exports/AttendanceExport.php',
+      7 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/AttendanceActionController.php',
+      8 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/AttendanceApprovalController.php',
+      9 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/AttendanceController.php',
+      10 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/AttendancePdfController.php',
+      11 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/DashboardController.php',
+      12 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Requests/StoreAttendanceRequest.php',
+      13 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Requests/UpdateAttendanceRequest.php',
+      14 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Infrastructure/Cache/AttendanceCache.php',
+      15 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Jobs/ExportAttendanceExcelJob.php',
+      16 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Jobs/ExportAttendancePdfJob.php',
+      17 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Jobs/SendAttendanceApprovedMailJob.php',
+      18 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Listeners/AttendanceLogListener.php',
+      19 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Listeners/CalculateAttendanceSalary.php',
+      20 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Listeners/SendAttendanceNotification.php',
+      21 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Listeners/WriteAttendanceLog.php',
+      22 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Mail/AttendanceApprovedMail.php',
+      23 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Mail/AttendanceCheckInMail.php',
+      24 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Mail/AttendanceCheckOutMail.php',
+      25 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Mail/AttendanceRejectedMail.php',
+      26 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Models/Attendance.php',
+      27 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Observers/AttendanceObserver.php',
+      28 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Policies/AttendancePolicy.php',
+      29 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Providers/AttendanceServiceProvider.php',
+      30 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Providers/EventServiceProvider.php',
+      31 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Repositories/AttendanceRepository.php',
+      32 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Scopes/CompanyScope.php',
+      33 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Services/AttendanceDashboardService.php',
+      34 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Services/AttendanceService.php',
+      35 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Services/AttendanceSummaryService.php',
+      36 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Services/Contracts/AttendanceServiceInterface.php',
+      37 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Transformers/AttendanceResource.php',
+      38 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/Database/Factories/AttendanceFactory.php',
+      39 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/Database/Seeders/AttendanceSeeder.php',
+      40 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceApiTest.php',
+      41 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceCrudTest.php',
+      42 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceDashboardTest.php',
+      43 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceServiceTest.php',
+      44 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Http/Controllers/SalaryController.php',
+      45 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Listeners/LogSalaryActivity.php',
+      46 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Models/SalaryMechanism.php',
+      47 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/Database/Seeders/SalaryDatabaseSeeder.php',
+      48 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Http/Controllers/AuthController.php',
+      49 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Http/Controllers/UserController.php',
+      50 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/Part.php',
+      51 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/Position.php',
+      52 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/Team.php',
+      53 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/TypeAccount.php',
+      54 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Repositories/Interfaces/UserRepositoryInterface.php',
+      55 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Repositories/UserRepository.php',
+      56 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/Database/Factories/UserFactory.php',
+      57 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/ConfirmablePasswordController.php',
+      58 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/EmailVerificationNotificationController.php',
+      59 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/EmailVerificationPromptController.php',
+      60 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/NewPasswordController.php',
+      61 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/PasswordController.php',
+      62 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/RegisteredUserController.php',
+      63 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/VerifyEmailController.php',
+      64 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/ProfileController.php',
+      65 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Requests/ProfileUpdateRequest.php',
+      66 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Policies/AttendancePolicy.php',
+      67 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Providers/AppServiceProvider.php',
+      68 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Providers/AuthServiceProvider.php',
     ),
   ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Providers/EventServiceProvider.php' => 
@@ -6899,7 +6125,7 @@ return [
   ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Repositories/UserRepository.php' => 
   array (
-    'fileHash' => 'eddd873cd48fd503d9b2a0c956ea7e503d3b9d856cd0cbb9a07ae8e038edf85f',
+    'fileHash' => '3c5535bc41af6365a5368e10cb84914f149fe0885b599b3922b2f9c4d29af219',
     'dependentFiles' => 
     array (
       0 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Providers/UserServiceProvider.php',
@@ -6991,7 +6217,7 @@ return [
   ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Exports/AttendanceExport.php' => 
   array (
-    'fileHash' => 'c534c34bba9f4f0c5b06763fb47c069f78c73ac16a34924068ad0477f2beba28',
+    'fileHash' => '062ddc8c60733aa0659540ef29bf33975e34c199ecddb1a547bf9829c558695b',
     'dependentFiles' => 
     array (
     ),
@@ -7185,12 +6411,19 @@ return [
   ),
 ),
 	'packageDependencies' => array (
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Requests/UpdateAttendanceRequest.php' => 
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Application/Commands/CreateAttendanceCommand.php' => 
   array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-    2 => 'laravel/sanctum',
-    3 => 'spatie/laravel-permission',
+  ),
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Console/AttendanceSummaryCommand.php' => 
+  array (
+    0 => 'symfony/console',
+    1 => 'laravel/framework',
+  ),
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Console/Kernel.php' => 
+  array (
+  ),
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Domain/Services/AttendanceDomainService.php' => 
+  array (
   ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Listeners/WriteAttendanceLog.php' => 
   array (
@@ -7198,6 +6431,17 @@ return [
     1 => 'spatie/laravel-activitylog',
     2 => 'psr/log',
     3 => 'monolog/monolog',
+  ),
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Mail/AttendanceCheckOutMail.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'spatie/laravel-activitylog',
+  ),
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Observers/AttendanceObserver.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'psr/simple-cache',
+    2 => 'spatie/laravel-activitylog',
   ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Providers/RouteServiceProvider.php' => 
   array (
@@ -7212,14 +6456,7 @@ return [
     2 => 'psr/simple-cache',
     3 => 'nesbot/carbon',
   ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/Database/Seeders/DatabaseSeeder.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/resources/views/components/layouts/master.blade.php' => 
-  array (
-  ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/resources/views/emails/attendance_export.blade.php' => 
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/resources/views/emails/check-out.blade.php' => 
   array (
   ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/routes/console.php' => 
@@ -7228,10 +6465,12 @@ return [
     1 => 'psr/simple-cache',
     2 => 'symfony/console',
   ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Product/routes/api.php' => 
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Exports/SalaryExport.php' => 
   array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
+    0 => 'maatwebsite/excel',
+    1 => 'laravel/framework',
+    2 => 'spatie/laravel-activitylog',
+    3 => 'nesbot/carbon',
   ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Models/SalaryMechanism.php' => 
   array (
@@ -7249,17 +6488,13 @@ return [
     4 => 'fakerphp/faker',
     5 => 'spatie/laravel-activitylog',
   ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/config/config.php' => 
-  array (
-  ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/resources/views/index.blade.php' => 
   array (
   ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/Part.php' => 
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/routes/api.php' => 
   array (
     0 => 'laravel/framework',
-    1 => 'laravel/sanctum',
-    2 => 'spatie/laravel-permission',
+    1 => 'symfony/http-foundation',
   ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/resources/views/users/add.blade.php' => 
   array (
@@ -7268,13 +6503,6 @@ return [
   array (
     0 => 'laravel/framework',
     1 => 'symfony/http-foundation',
-  ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/NewPasswordController.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-    2 => 'laravel/sanctum',
-    3 => 'spatie/laravel-permission',
   ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/PasswordController.php' => 
   array (
@@ -7291,29 +6519,15 @@ return [
     3 => 'spatie/laravel-permission',
     4 => 'nesbot/carbon',
   ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Jobs/ProcessSalaryActivityJob.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Application/Queries/GetAttendanceListQuery.php' => 
-  array (
-  ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Events/AttendanceCreated.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'spatie/laravel-activitylog',
   ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Events/AttendanceRejected.php' => 
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Events/AttendanceUpdated.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'spatie/laravel-activitylog',
-  ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Exports/AttendanceExport.php' => 
-  array (
-    0 => 'maatwebsite/excel',
-    1 => 'laravel/framework',
-    2 => 'spatie/laravel-activitylog',
-    3 => 'nesbot/carbon',
   ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/AttendanceActionController.php' => 
   array (
@@ -7325,30 +6539,42 @@ return [
     5 => 'spatie/laravel-activitylog',
     6 => 'symfony/mailer',
   ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Mail/AttendanceCheckInMail.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'laravel/sanctum',
-    2 => 'spatie/laravel-permission',
-  ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Mail/AttendanceExportReady.php' => 
   array (
     0 => 'laravel/framework',
-  ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Providers/AttendanceServiceProvider.php' => 
-  array (
-    0 => 'nwidart/laravel-modules',
-    1 => 'laravel/framework',
-    2 => 'symfony/console',
-    3 => 'psr/container',
-    4 => 'spatie/laravel-activitylog',
   ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Providers/RepositoryServiceProvider.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'psr/container',
   ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/config/config.php' => 
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Services/Contracts/AttendanceServiceInterface.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'spatie/laravel-activitylog',
+  ),
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Transformers/AttendanceResource.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+    2 => 'laravel/sanctum',
+    3 => 'spatie/laravel-permission',
+    4 => 'spatie/laravel-activitylog',
+    5 => 'nesbot/carbon',
+  ),
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/Database/Seeders/AttendanceSeeder.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'laravel/sanctum',
+    2 => 'spatie/laravel-permission',
+    3 => 'nesbot/carbon',
+    4 => 'spatie/laravel-activitylog',
+  ),
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/Database/Seeders/DatabaseSeeder.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/resources/views/emails/attendance_export.blade.php' => 
   array (
   ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/resources/views/index.blade.php' => 
@@ -7361,19 +6587,16 @@ return [
     2 => 'symfony/http-foundation',
     3 => 'symfony/mailer',
   ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/Position.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'laravel/sanctum',
-    2 => 'spatie/laravel-permission',
-  ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/resources/views/users/edit.blade.php' => 
-  array (
-  ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/routes/api.php' => 
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Product/routes/api.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'symfony/http-foundation',
+  ),
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/config/config.php' => 
+  array (
+  ),
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/resources/views/users/edit.blade.php' => 
+  array (
   ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/AuthenticatedSessionController.php' => 
   array (
@@ -7401,32 +6624,39 @@ return [
     2 => 'spatie/laravel-activitylog',
     3 => 'psr/simple-cache',
   ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/View/Components/AppLayout.php' => 
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Swagger/OpenApiSpec.php' => 
   array (
-    0 => 'laravel/framework',
-  ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Console/AttendanceSummaryCommand.php' => 
-  array (
-    0 => 'symfony/console',
-    1 => 'laravel/framework',
   ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Events/AttendanceApproved.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'spatie/laravel-activitylog',
   ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Events/AttendanceUpdated.php' => 
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Exports/AttendanceExport.php' => 
   array (
-    0 => 'laravel/framework',
-    1 => 'spatie/laravel-activitylog',
+    0 => 'maatwebsite/excel',
+    1 => 'laravel/framework',
+    2 => 'spatie/laravel-activitylog',
+    3 => 'laravel/sanctum',
+    4 => 'spatie/laravel-permission',
+    5 => 'nesbot/carbon',
   ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/AttendanceApprovalController.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'spatie/laravel-activitylog',
     2 => 'nesbot/carbon',
-    3 => 'symfony/http-foundation',
-    4 => 'psr/log',
+    3 => 'laravel/sanctum',
+    4 => 'spatie/laravel-permission',
+    5 => 'symfony/http-foundation',
+    6 => 'psr/log',
+  ),
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Requests/UpdateAttendanceRequest.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+    2 => 'laravel/sanctum',
+    3 => 'spatie/laravel-permission',
   ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Policies/AttendancePolicy.php' => 
   array (
@@ -7435,15 +6665,22 @@ return [
     2 => 'spatie/laravel-permission',
     3 => 'spatie/laravel-activitylog',
   ),
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Providers/AttendanceServiceProvider.php' => 
+  array (
+    0 => 'nwidart/laravel-modules',
+    1 => 'laravel/framework',
+    2 => 'symfony/console',
+    3 => 'psr/container',
+    4 => 'spatie/laravel-activitylog',
+  ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Providers/EventServiceProvider.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'spatie/laravel-activitylog',
   ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Services/Contracts/AttendanceServiceInterface.php' => 
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/Database/Seeders/AttendanceDatabaseSeeder.php' => 
   array (
     0 => 'laravel/framework',
-    1 => 'spatie/laravel-activitylog',
   ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceApiTest.php' => 
   array (
@@ -7459,23 +6696,13 @@ return [
   array (
     0 => 'laravel/framework',
   ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Product/config/config.php' => 
-  array (
-  ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Exports/SalaryExport.php' => 
-  array (
-    0 => 'maatwebsite/excel',
-    1 => 'laravel/framework',
-    2 => 'spatie/laravel-activitylog',
-    3 => 'nesbot/carbon',
-  ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Http/Controllers/SalaryController.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'laravel/sanctum',
     2 => 'spatie/laravel-permission',
-    3 => 'spatie/laravel-activitylog',
-    4 => 'yajra/laravel-datatables-oracle',
+    3 => 'yajra/laravel-datatables-oracle',
+    4 => 'spatie/laravel-activitylog',
     5 => 'symfony/http-foundation',
     6 => 'nesbot/carbon',
     7 => 'maatwebsite/excel',
@@ -7486,20 +6713,27 @@ return [
     1 => 'psr/simple-cache',
     2 => 'spatie/laravel-activitylog',
   ),
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/Database/Seeders/SalarySeeder.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/Part.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'laravel/sanctum',
+    2 => 'spatie/laravel-permission',
+  ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/Team.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'laravel/sanctum',
     2 => 'spatie/laravel-permission',
   ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/Database/Seeders/UserDatabaseSeeder.php' => 
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/config/config.php' => 
   array (
-    0 => 'laravel/framework',
   ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Exports/AttendanceExport.php' => 
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/resources/views/emails/attendance-approved.blade.php' => 
   array (
-    0 => 'maatwebsite/excel',
-    1 => 'laravel/framework',
   ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/ConfirmablePasswordController.php' => 
   array (
@@ -7515,14 +6749,9 @@ return [
     2 => 'laravel/sanctum',
     3 => 'spatie/laravel-permission',
   ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/SwaggerController.php' => 
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Jobs/ProcessSalaryActivityJob.php' => 
   array (
-  ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Swagger/OpenApiSpec.php' => 
-  array (
-  ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Domain/Services/AttendanceDomainService.php' => 
-  array (
+    0 => 'laravel/framework',
   ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/AttendanceController.php' => 
   array (
@@ -7537,6 +6766,18 @@ return [
     8 => 'zircote/swagger-php',
     9 => 'psr/log',
   ),
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/AttendanceExportController.php' => 
+  array (
+    0 => 'maatwebsite/excel',
+    1 => 'symfony/http-foundation',
+    2 => 'laravel/framework',
+  ),
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/DashboardController.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+    2 => 'spatie/laravel-activitylog',
+  ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Jobs/AttendanceDailySummaryJob.php' => 
   array (
     0 => 'laravel/framework',
@@ -7545,16 +6786,11 @@ return [
     3 => 'psr/log',
     4 => 'symfony/mailer',
   ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Mail/AttendanceCheckOutMail.php' => 
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Mail/AttendanceApprovedMail.php' => 
   array (
     0 => 'laravel/framework',
-    1 => 'spatie/laravel-activitylog',
-  ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Observers/AttendanceObserver.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'psr/simple-cache',
-    2 => 'spatie/laravel-activitylog',
+    1 => 'laravel/sanctum',
+    2 => 'spatie/laravel-permission',
   ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Services/AttendanceService.php' => 
   array (
@@ -7562,15 +6798,8 @@ return [
     1 => 'spatie/laravel-activitylog',
     2 => 'psr/log',
   ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Transformers/AttendanceCollection.php' => 
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/resources/views/components/layouts/master.blade.php' => 
   array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-  ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Transformers/AttendanceResource.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
   ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceDashboardTest.php' => 
   array (
@@ -7580,21 +6809,18 @@ return [
     3 => 'spatie/laravel-permission',
     4 => 'spatie/laravel-activitylog',
   ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Unit/AttendanceServiceTest.php' => 
-  array (
-    0 => 'phpunit/phpunit',
-    1 => 'laravel/framework',
-  ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Product/App/Http/Controllers/ProductController.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-  ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Product/App/Providers/RouteServiceProvider.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'nwidart/laravel-modules',
     2 => 'symfony/http-foundation',
+  ),
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Product/Database/Seeders/ProductDatabaseSeeder.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Product/resources/views/index.blade.php' => 
+  array (
   ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Listeners/LogSalaryActivity.php' => 
   array (
@@ -7612,9 +6838,11 @@ return [
     1 => 'laravel/framework',
     2 => 'psr/container',
   ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/Database/Seeders/SalarySeeder.php' => 
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/TypeAccount.php' => 
   array (
     0 => 'laravel/framework',
+    1 => 'laravel/sanctum',
+    2 => 'spatie/laravel-permission',
   ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Providers/EventServiceProvider.php' => 
   array (
@@ -7627,34 +6855,22 @@ return [
     2 => 'laravel/sanctum',
     3 => 'spatie/laravel-permission',
   ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/config/config.php' => 
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/Database/Factories/UserFactory.php' => 
   array (
+    0 => 'laravel/framework',
+    1 => 'fakerphp/faker',
+    2 => 'laravel/sanctum',
+    3 => 'spatie/laravel-permission',
   ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/resources/views/emails/attendance-approved.blade.php' => 
-  array (
-  ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Requests/Auth/LoginRequest.php' => 
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/NewPasswordController.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'symfony/http-foundation',
+    2 => 'laravel/sanctum',
+    3 => 'spatie/laravel-permission',
   ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Application/Commands/CreateAttendanceCommand.php' => 
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Controller.php' => 
   array (
-  ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Console/Kernel.php' => 
-  array (
-  ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/AttendanceExportController.php' => 
-  array (
-    0 => 'maatwebsite/excel',
-    1 => 'symfony/http-foundation',
-    2 => 'laravel/framework',
-  ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/DashboardController.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-    2 => 'spatie/laravel-activitylog',
   ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Listeners/AttendanceLogListener.php' => 
   array (
@@ -7663,11 +6879,20 @@ return [
     2 => 'psr/log',
     3 => 'monolog/monolog',
   ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Mail/AttendanceApprovedMail.php' => 
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Listeners/CalculateAttendanceSalary.php' => 
   array (
     0 => 'laravel/framework',
-    1 => 'laravel/sanctum',
-    2 => 'spatie/laravel-permission',
+    1 => 'spatie/laravel-activitylog',
+    2 => 'psr/log',
+    3 => 'monolog/monolog',
+  ),
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Listeners/SendAttendanceNotification.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'psr/log',
+    2 => 'laravel/sanctum',
+    3 => 'spatie/laravel-permission',
+    4 => 'spatie/laravel-activitylog',
   ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Services/AttendanceSummaryService.php' => 
   array (
@@ -7676,21 +6901,16 @@ return [
     2 => 'spatie/laravel-activitylog',
     3 => 'psr/simple-cache',
   ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/Database/Seeders/AttendanceDatabaseSeeder.php' => 
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/resources/views/emails/attendance-approved.blade.php' => 
+  array (
+  ),
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/resources/views/emails/rejected.blade.php' => 
+  array (
+  ),
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Product/App/Http/Controllers/ProductController.php' => 
   array (
     0 => 'laravel/framework',
-  ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/resources/views/emails/check-out.blade.php' => 
-  array (
-  ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceCrudTest.php' => 
-  array (
-    0 => 'phpunit/phpunit',
-    1 => 'laravel/framework',
-    2 => 'nesbot/carbon',
-    3 => 'spatie/laravel-activitylog',
-    4 => 'laravel/sanctum',
-    5 => 'spatie/laravel-permission',
+    1 => 'symfony/http-foundation',
   ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Product/resources/views/components/layouts/master.blade.php' => 
   array (
@@ -7712,21 +6932,16 @@ return [
     2 => 'laravel/sanctum',
     3 => 'spatie/laravel-permission',
   ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/TypeAccount.php' => 
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/resources/views/index.blade.php' => 
   array (
-    0 => 'laravel/framework',
-    1 => 'laravel/sanctum',
-    2 => 'spatie/laravel-permission',
-  ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/Database/Factories/UserFactory.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'fakerphp/faker',
-    2 => 'laravel/sanctum',
-    3 => 'spatie/laravel-permission',
   ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/resources/views/users/form.blade.php' => 
   array (
+  ),
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Exports/AttendanceExport.php' => 
+  array (
+    0 => 'maatwebsite/excel',
+    1 => 'laravel/framework',
   ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/RegisteredUserController.php' => 
   array (
@@ -7740,6 +6955,11 @@ return [
     0 => 'laravel/framework',
     1 => 'symfony/http-foundation',
   ),
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Requests/Auth/LoginRequest.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+  ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Requests/ProfileUpdateRequest.php' => 
   array (
     0 => 'laravel/framework',
@@ -7747,9 +6967,29 @@ return [
     2 => 'laravel/sanctum',
     3 => 'spatie/laravel-permission',
   ),
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Providers/AuthServiceProvider.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'spatie/laravel-activitylog',
+  ),
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Application/Handlers/GetAttendanceListHandler.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'spatie/laravel-activitylog',
+  ),
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Application/Queries/GetAttendanceListQuery.php' => 
+  array (
+  ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Events/AttendanceDeleted.php' => 
   array (
     0 => 'laravel/framework',
+  ),
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Requests/StoreAttendanceRequest.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+    2 => 'laravel/sanctum',
+    3 => 'spatie/laravel-permission',
   ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Infrastructure/Cache/AttendanceCache.php' => 
   array (
@@ -7776,41 +7016,24 @@ return [
     9 => 'psr/http-message',
     10 => 'symfony/http-foundation',
   ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Mail/AttendanceRejectedMail.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'laravel/sanctum',
-    2 => 'spatie/laravel-permission',
-  ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Models/Attendance.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'spatie/laravel-activitylog',
-    2 => 'laravel/sanctum',
-    3 => 'spatie/laravel-permission',
-    4 => 'nesbot/carbon',
-  ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Notifications/AttendanceCreatedNotification.php' => 
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Mail/AttendanceSummaryMail.php' => 
   array (
     0 => 'laravel/framework',
   ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Scopes/CompanyScope.php' => 
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Repositories/AttendanceRepositoryInterface.php' => 
   array (
-    0 => 'laravel/framework',
-    1 => 'laravel/sanctum',
-    2 => 'spatie/laravel-permission',
-    3 => 'symfony/http-foundation',
   ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Services/AttendanceCalculator.php' => 
   array (
     0 => 'nesbot/carbon',
   ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/resources/views/emails/rejected.blade.php' => 
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/config/config.php' => 
   array (
   ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Product/Database/Seeders/ProductDatabaseSeeder.php' => 
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Product/App/Providers/ProductServiceProvider.php' => 
   array (
-    0 => 'laravel/framework',
+    0 => 'nwidart/laravel-modules',
+    1 => 'laravel/framework',
   ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Events/SalaryUpdated.php' => 
   array (
@@ -7830,11 +7053,13 @@ return [
     1 => 'nwidart/laravel-modules',
     2 => 'symfony/http-foundation',
   ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/resources/views/index.blade.php' => 
-  array (
-  ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/resources/views/users/list.blade.php' => 
   array (
+  ),
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/routes/api.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
   ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Policies/AttendancePolicy.php' => 
   array (
@@ -7843,24 +7068,27 @@ return [
     2 => 'spatie/laravel-permission',
     3 => 'spatie/laravel-activitylog',
   ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/View/Components/GuestLayout.php' => 
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Domain/DTO/AttendanceDTO.php' => 
   array (
-    0 => 'laravel/framework',
   ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Application/Handlers/GetAttendanceListHandler.php' => 
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Events/AttendanceRejected.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'spatie/laravel-activitylog',
   ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Domain/DTO/AttendanceDTO.php' => 
-  array (
-  ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Mail/AttendanceSummaryMail.php' => 
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Mail/AttendanceCheckInMail.php' => 
   array (
     0 => 'laravel/framework',
+    1 => 'laravel/sanctum',
+    2 => 'spatie/laravel-permission',
   ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Repositories/AttendanceRepositoryInterface.php' => 
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Models/Attendance.php' => 
   array (
+    0 => 'laravel/framework',
+    1 => 'spatie/laravel-activitylog',
+    2 => 'laravel/sanctum',
+    3 => 'spatie/laravel-permission',
+    4 => 'nesbot/carbon',
   ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Services/AttendanceDashboardService.php' => 
   array (
@@ -7877,20 +7105,6 @@ return [
     3 => 'spatie/laravel-permission',
     4 => 'spatie/laravel-activitylog',
   ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/Database/Seeders/AttendanceSeeder.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'laravel/sanctum',
-    2 => 'spatie/laravel-permission',
-    3 => 'nesbot/carbon',
-    4 => 'spatie/laravel-activitylog',
-  ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/resources/views/emails/check-in.blade.php' => 
-  array (
-  ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/resources/views/emails/summary.blade.php' => 
-  array (
-  ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/resources/views/pdf/attendance.blade.php' => 
   array (
   ),
@@ -7904,15 +7118,8 @@ return [
     0 => 'phpunit/phpunit',
     1 => 'laravel/framework',
   ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Product/App/Providers/ProductServiceProvider.php' => 
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Product/config/config.php' => 
   array (
-    0 => 'nwidart/laravel-modules',
-    1 => 'laravel/framework',
-  ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Product/routes/web.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
   ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Events/SalaryUpdatedBroadcast.php' => 
   array (
@@ -7927,13 +7134,30 @@ return [
     0 => 'laravel/framework',
     1 => 'symfony/http-foundation',
   ),
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/Position.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'laravel/sanctum',
+    2 => 'spatie/laravel-permission',
+  ),
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/Database/Seeders/UserDatabaseSeeder.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/resources/views/components/layouts/master.blade.php' => 
+  array (
+  ),
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/SwaggerController.php' => 
   array (
   ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Providers/HorizonServiceProvider.php' => 
   array (
     0 => 'laravel/horizon',
     1 => 'laravel/framework',
+  ),
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/View/Components/AppLayout.php' => 
+  array (
+    0 => 'laravel/framework',
   ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Application/Handlers/CreateAttendanceHandler.php' => 
   array (
@@ -7949,13 +7173,6 @@ return [
     4 => 'dompdf/dompdf',
     5 => 'symfony/http-foundation',
     6 => 'symfony/var-dumper',
-  ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Requests/StoreAttendanceRequest.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-    2 => 'laravel/sanctum',
-    3 => 'spatie/laravel-permission',
   ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Jobs/ExportAttendanceExcelJob.php' => 
   array (
@@ -7975,21 +7192,37 @@ return [
     2 => 'spatie/laravel-permission',
     3 => 'symfony/mailer',
   ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Listeners/CalculateAttendanceSalary.php' => 
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Mail/AttendanceRejectedMail.php' => 
   array (
     0 => 'laravel/framework',
-    1 => 'spatie/laravel-activitylog',
-    2 => 'psr/log',
-    3 => 'monolog/monolog',
+    1 => 'laravel/sanctum',
+    2 => 'spatie/laravel-permission',
   ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Listeners/SendAttendanceNotification.php' => 
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Notifications/AttendanceCreatedNotification.php' => 
   array (
     0 => 'laravel/framework',
-    1 => 'psr/log',
-    2 => 'spatie/laravel-activitylog',
   ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/resources/views/emails/attendance-approved.blade.php' => 
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Scopes/CompanyScope.php' => 
   array (
+    0 => 'laravel/framework',
+    1 => 'laravel/sanctum',
+    2 => 'spatie/laravel-permission',
+    3 => 'symfony/http-foundation',
+  ),
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/resources/views/emails/check-in.blade.php' => 
+  array (
+  ),
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/resources/views/emails/summary.blade.php' => 
+  array (
+  ),
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceCrudTest.php' => 
+  array (
+    0 => 'phpunit/phpunit',
+    1 => 'laravel/framework',
+    2 => 'nesbot/carbon',
+    3 => 'spatie/laravel-activitylog',
+    4 => 'laravel/sanctum',
+    5 => 'spatie/laravel-permission',
   ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceServiceTest.php' => 
   array (
@@ -8000,15 +7233,12 @@ return [
     4 => 'laravel/sanctum',
     5 => 'spatie/laravel-permission',
   ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Product/resources/views/index.blade.php' => 
-  array (
-  ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Http/Requests/StoreSalaryRequest.php' => 
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Product/routes/web.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'symfony/http-foundation',
   ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/routes/api.php' => 
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Http/Requests/StoreSalaryRequest.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'symfony/http-foundation',
@@ -8048,13 +7278,9 @@ return [
     0 => 'laravel/framework',
     1 => 'symfony/http-foundation',
   ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Controller.php' => 
-  array (
-  ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Providers/AuthServiceProvider.php' => 
+  '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/View/Components/GuestLayout.php' => 
   array (
     0 => 'laravel/framework',
-    1 => 'spatie/laravel-activitylog',
   ),
 ),
 	'exportedNodesCallback' => static function (): array { return array (
@@ -11584,7 +10810,28 @@ return [
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
        'name' => 'Modules\\Attendance\\App\\Models\\Attendance',
-       'phpDoc' => NULL,
+       'phpDoc' => 
+      \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+         'phpDocString' => '/**
+ * @property-read User|null $user
+ */',
+         'namespace' => 'Modules\\Attendance\\App\\Models',
+         'uses' => 
+        array (
+          'builder' => 'Illuminate\\Database\\Eloquent\\Builder',
+          'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+          'model' => 'Illuminate\\Database\\Eloquent\\Model',
+          'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+          'companyscope' => 'Modules\\Attendance\\App\\Scopes\\CompanyScope',
+          'attendancefactory' => 'Modules\\Attendance\\Database\\Factories\\AttendanceFactory',
+          'user' => 'Modules\\User\\App\\Models\\User',
+          'logsactivity' => 'Spatie\\Activitylog\\Models\\Concerns\\LogsActivity',
+          'logoptions' => 'Spatie\\Activitylog\\Support\\LogOptions',
+        ),
+         'constUses' => 
+        array (
+        ),
+      )),
        'abstract' => false,
        'final' => false,
        'extends' => 'Illuminate\\Database\\Eloquent\\Model',
@@ -11661,7 +10908,7 @@ return [
            'abstract' => false,
            'final' => false,
            'static' => false,
-           'returnType' => NULL,
+           'returnType' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
            'parameters' => 
           array (
           ),
@@ -11689,30 +10936,17 @@ return [
         )),
         4 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
-           'name' => 'scopeToday',
+           'name' => 'newFactory',
            'phpDoc' => NULL,
            'byRef' => false,
-           'public' => true,
+           'public' => false,
            'private' => false,
            'abstract' => false,
            'final' => false,
-           'static' => false,
+           'static' => true,
            'returnType' => NULL,
            'parameters' => 
           array (
-            0 => 
-            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
-               'name' => 'query',
-               'type' => NULL,
-               'byRef' => false,
-               'variadic' => false,
-               'hasDefault' => false,
-               'attributes' => 
-              array (
-              ),
-               'phpDoc' => NULL,
-               'flags' => 0,
-            )),
           ),
            'attributes' => 
           array (
@@ -11720,7 +10954,7 @@ return [
         )),
         5 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
-           'name' => 'newFactory',
+           'name' => 'booted',
            'phpDoc' => NULL,
            'byRef' => false,
            'public' => false,
@@ -11738,17 +10972,123 @@ return [
         )),
         6 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
-           'name' => 'booted',
+           'name' => 'scopeToday',
            'phpDoc' => NULL,
            'byRef' => false,
-           'public' => false,
+           'public' => true,
            'private' => false,
            'abstract' => false,
            'final' => false,
-           'static' => true,
-           'returnType' => NULL,
+           'static' => false,
+           'returnType' => 'Illuminate\\Database\\Eloquent\\Builder',
            'parameters' => 
           array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'query',
+               'type' => 'Illuminate\\Database\\Eloquent\\Builder',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        7 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'scopePending',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'Illuminate\\Database\\Eloquent\\Builder',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'query',
+               'type' => 'Illuminate\\Database\\Eloquent\\Builder',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        8 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'scopeApproved',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'Illuminate\\Database\\Eloquent\\Builder',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'query',
+               'type' => 'Illuminate\\Database\\Eloquent\\Builder',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        9 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'scopeRejected',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'Illuminate\\Database\\Eloquent\\Builder',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'query',
+               'type' => 'Illuminate\\Database\\Eloquent\\Builder',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
           ),
            'attributes' => 
           array (
@@ -13927,69 +13267,28 @@ return [
       ),
     )),
   ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Transformers/AttendanceCollection.php' => 
-  array (
-    0 => 
-    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
-       'name' => 'Modules\\Attendance\\App\\Transformers\\AttendanceCollection',
-       'phpDoc' => NULL,
-       'abstract' => false,
-       'final' => false,
-       'extends' => 'Illuminate\\Http\\Resources\\Json\\ResourceCollection',
-       'implements' => 
-      array (
-      ),
-       'usedTraits' => 
-      array (
-      ),
-       'traitUseAdaptations' => 
-      array (
-      ),
-       'statements' => 
-      array (
-        0 => 
-        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
-           'name' => 'toArray',
-           'phpDoc' => NULL,
-           'byRef' => false,
-           'public' => true,
-           'private' => false,
-           'abstract' => false,
-           'final' => false,
-           'static' => false,
-           'returnType' => NULL,
-           'parameters' => 
-          array (
-            0 => 
-            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
-               'name' => 'request',
-               'type' => NULL,
-               'byRef' => false,
-               'variadic' => false,
-               'hasDefault' => false,
-               'attributes' => 
-              array (
-              ),
-               'phpDoc' => NULL,
-               'flags' => 0,
-            )),
-          ),
-           'attributes' => 
-          array (
-          ),
-        )),
-      ),
-       'attributes' => 
-      array (
-      ),
-    )),
-  ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Transformers/AttendanceResource.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
        'name' => 'Modules\\Attendance\\App\\Transformers\\AttendanceResource',
-       'phpDoc' => NULL,
+       'phpDoc' => 
+      \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+         'phpDocString' => '/**
+ * @mixin Attendance
+ */',
+         'namespace' => 'Modules\\Attendance\\App\\Transformers',
+         'uses' => 
+        array (
+          'request' => 'Illuminate\\Http\\Request',
+          'jsonresource' => 'Illuminate\\Http\\Resources\\Json\\JsonResource',
+          'attendance' => 'Modules\\Attendance\\App\\Models\\Attendance',
+          'user' => 'Modules\\User\\App\\Models\\User',
+        ),
+         'constUses' => 
+        array (
+        ),
+      )),
        'abstract' => false,
        'final' => false,
        'extends' => 'Illuminate\\Http\\Resources\\Json\\JsonResource',
@@ -14641,63 +13940,6 @@ return [
       ),
     )),
   ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Unit/AttendanceServiceTest.php' => 
-  array (
-    0 => 
-    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
-       'name' => 'Modules\\Attendance\\Tests\\Unit\\AttendanceServiceTest',
-       'phpDoc' => NULL,
-       'abstract' => false,
-       'final' => false,
-       'extends' => 'Tests\\TestCase',
-       'implements' => 
-      array (
-      ),
-       'usedTraits' => 
-      array (
-      ),
-       'traitUseAdaptations' => 
-      array (
-      ),
-       'statements' => 
-      array (
-        0 => 
-        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
-           'name' => 'test_that_true_is_true',
-           'phpDoc' => 
-          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
-             'phpDocString' => '/**
-     * A basic test example.
-     */',
-             'namespace' => 'Modules\\Attendance\\Tests\\Unit',
-             'uses' => 
-            array (
-              'testcase' => 'Tests\\TestCase',
-            ),
-             'constUses' => 
-            array (
-            ),
-          )),
-           'byRef' => false,
-           'public' => true,
-           'private' => false,
-           'abstract' => false,
-           'final' => false,
-           'static' => false,
-           'returnType' => 'void',
-           'parameters' => 
-          array (
-          ),
-           'attributes' => 
-          array (
-          ),
-        )),
-      ),
-       'attributes' => 
-      array (
-      ),
-    )),
-  ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Product/App/Http/Controllers/ProductController.php' => 
   array (
     0 => 
@@ -14721,21 +13963,7 @@ return [
         0 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'index',
-           'phpDoc' => 
-          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
-             'phpDocString' => '/**
-     * Display a listing of the resource.
-     */',
-             'namespace' => 'Modules\\Product\\App\\Http\\Controllers',
-             'uses' => 
-            array (
-              'controller' => 'App\\Http\\Controllers\\Controller',
-              'request' => 'Illuminate\\Http\\Request',
-            ),
-             'constUses' => 
-            array (
-            ),
-          )),
+           'phpDoc' => NULL,
            'byRef' => false,
            'public' => true,
            'private' => false,
@@ -14753,21 +13981,7 @@ return [
         1 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'create',
-           'phpDoc' => 
-          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
-             'phpDocString' => '/**
-     * Show the form for creating a new resource.
-     */',
-             'namespace' => 'Modules\\Product\\App\\Http\\Controllers',
-             'uses' => 
-            array (
-              'controller' => 'App\\Http\\Controllers\\Controller',
-              'request' => 'Illuminate\\Http\\Request',
-            ),
-             'constUses' => 
-            array (
-            ),
-          )),
+           'phpDoc' => NULL,
            'byRef' => false,
            'public' => true,
            'private' => false,
@@ -14785,21 +13999,7 @@ return [
         2 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'store',
-           'phpDoc' => 
-          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
-             'phpDocString' => '/**
-     * Store a newly created resource in storage.
-     */',
-             'namespace' => 'Modules\\Product\\App\\Http\\Controllers',
-             'uses' => 
-            array (
-              'controller' => 'App\\Http\\Controllers\\Controller',
-              'request' => 'Illuminate\\Http\\Request',
-            ),
-             'constUses' => 
-            array (
-            ),
-          )),
+           'phpDoc' => NULL,
            'byRef' => false,
            'public' => true,
            'private' => false,
@@ -14830,21 +14030,7 @@ return [
         3 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'show',
-           'phpDoc' => 
-          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
-             'phpDocString' => '/**
-     * Show the specified resource.
-     */',
-             'namespace' => 'Modules\\Product\\App\\Http\\Controllers',
-             'uses' => 
-            array (
-              'controller' => 'App\\Http\\Controllers\\Controller',
-              'request' => 'Illuminate\\Http\\Request',
-            ),
-             'constUses' => 
-            array (
-            ),
-          )),
+           'phpDoc' => NULL,
            'byRef' => false,
            'public' => true,
            'private' => false,
@@ -14875,21 +14061,7 @@ return [
         4 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'edit',
-           'phpDoc' => 
-          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
-             'phpDocString' => '/**
-     * Show the form for editing the specified resource.
-     */',
-             'namespace' => 'Modules\\Product\\App\\Http\\Controllers',
-             'uses' => 
-            array (
-              'controller' => 'App\\Http\\Controllers\\Controller',
-              'request' => 'Illuminate\\Http\\Request',
-            ),
-             'constUses' => 
-            array (
-            ),
-          )),
+           'phpDoc' => NULL,
            'byRef' => false,
            'public' => true,
            'private' => false,
@@ -14920,21 +14092,7 @@ return [
         5 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'update',
-           'phpDoc' => 
-          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
-             'phpDocString' => '/**
-     * Update the specified resource in storage.
-     */',
-             'namespace' => 'Modules\\Product\\App\\Http\\Controllers',
-             'uses' => 
-            array (
-              'controller' => 'App\\Http\\Controllers\\Controller',
-              'request' => 'Illuminate\\Http\\Request',
-            ),
-             'constUses' => 
-            array (
-            ),
-          )),
+           'phpDoc' => NULL,
            'byRef' => false,
            'public' => true,
            'private' => false,
@@ -14978,21 +14136,7 @@ return [
         6 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'destroy',
-           'phpDoc' => 
-          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
-             'phpDocString' => '/**
-     * Remove the specified resource from storage.
-     */',
-             'namespace' => 'Modules\\Product\\App\\Http\\Controllers',
-             'uses' => 
-            array (
-              'controller' => 'App\\Http\\Controllers\\Controller',
-              'request' => 'Illuminate\\Http\\Request',
-            ),
-             'constUses' => 
-            array (
-            ),
-          )),
+           'phpDoc' => NULL,
            'byRef' => false,
            'public' => true,
            'private' => false,
@@ -16654,6 +15798,7 @@ return [
             array (
               'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
               'model' => 'Illuminate\\Database\\Eloquent\\Model',
+              'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
               'user' => 'Modules\\User\\App\\Models\\User',
               'logsactivity' => 'Spatie\\Activitylog\\Models\\Concerns\\LogsActivity',
               'logoptions' => 'Spatie\\Activitylog\\Support\\LogOptions',
@@ -16704,6 +15849,7 @@ return [
             array (
               'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
               'model' => 'Illuminate\\Database\\Eloquent\\Model',
+              'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
               'user' => 'Modules\\User\\App\\Models\\User',
               'logsactivity' => 'Spatie\\Activitylog\\Models\\Concerns\\LogsActivity',
               'logoptions' => 'Spatie\\Activitylog\\Support\\LogOptions',
@@ -16751,6 +15897,7 @@ return [
             array (
               'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
               'model' => 'Illuminate\\Database\\Eloquent\\Model',
+              'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
               'user' => 'Modules\\User\\App\\Models\\User',
               'logsactivity' => 'Spatie\\Activitylog\\Models\\Concerns\\LogsActivity',
               'logoptions' => 'Spatie\\Activitylog\\Support\\LogOptions',
@@ -16795,6 +15942,7 @@ return [
             array (
               'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
               'model' => 'Illuminate\\Database\\Eloquent\\Model',
+              'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
               'user' => 'Modules\\User\\App\\Models\\User',
               'logsactivity' => 'Spatie\\Activitylog\\Models\\Concerns\\LogsActivity',
               'logoptions' => 'Spatie\\Activitylog\\Support\\LogOptions',
@@ -16837,6 +15985,7 @@ return [
             array (
               'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
               'model' => 'Illuminate\\Database\\Eloquent\\Model',
+              'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
               'user' => 'Modules\\User\\App\\Models\\User',
               'logsactivity' => 'Spatie\\Activitylog\\Models\\Concerns\\LogsActivity',
               'logoptions' => 'Spatie\\Activitylog\\Support\\LogOptions',
@@ -16876,6 +16025,7 @@ return [
             array (
               'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
               'model' => 'Illuminate\\Database\\Eloquent\\Model',
+              'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
               'user' => 'Modules\\User\\App\\Models\\User',
               'logsactivity' => 'Spatie\\Activitylog\\Models\\Concerns\\LogsActivity',
               'logoptions' => 'Spatie\\Activitylog\\Support\\LogOptions',
@@ -16932,6 +16082,7 @@ return [
             array (
               'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
               'model' => 'Illuminate\\Database\\Eloquent\\Model',
+              'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
               'user' => 'Modules\\User\\App\\Models\\User',
               'logsactivity' => 'Spatie\\Activitylog\\Models\\Concerns\\LogsActivity',
               'logoptions' => 'Spatie\\Activitylog\\Support\\LogOptions',
@@ -16946,7 +16097,7 @@ return [
            'abstract' => false,
            'final' => false,
            'static' => false,
-           'returnType' => NULL,
+           'returnType' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
            'parameters' => 
           array (
           ),
@@ -16990,6 +16141,7 @@ return [
             array (
               'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
               'model' => 'Illuminate\\Database\\Eloquent\\Model',
+              'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
               'user' => 'Modules\\User\\App\\Models\\User',
               'logsactivity' => 'Spatie\\Activitylog\\Models\\Concerns\\LogsActivity',
               'logoptions' => 'Spatie\\Activitylog\\Support\\LogOptions',
@@ -17004,7 +16156,7 @@ return [
            'abstract' => false,
            'final' => false,
            'static' => false,
-           'returnType' => NULL,
+           'returnType' => 'float',
            'parameters' => 
           array (
           ),
@@ -17576,6 +16728,7 @@ return [
          'namespace' => 'Modules\\Salary\\App\\Repositories',
          'uses' => 
         array (
+          'collection' => 'Illuminate\\Database\\Eloquent\\Collection',
           'salarymechanism' => 'Modules\\Salary\\App\\Models\\SalaryMechanism',
         ),
          'constUses' => 
@@ -17615,6 +16768,7 @@ return [
              'namespace' => 'Modules\\Salary\\App\\Repositories',
              'uses' => 
             array (
+              'collection' => 'Illuminate\\Database\\Eloquent\\Collection',
               'salarymechanism' => 'Modules\\Salary\\App\\Models\\SalaryMechanism',
             ),
              'constUses' => 
@@ -17627,7 +16781,7 @@ return [
            'abstract' => false,
            'final' => false,
            'static' => false,
-           'returnType' => NULL,
+           'returnType' => 'Illuminate\\Database\\Eloquent\\Collection',
            'parameters' => 
           array (
           ),
@@ -17648,6 +16802,7 @@ return [
              'namespace' => 'Modules\\Salary\\App\\Repositories',
              'uses' => 
             array (
+              'collection' => 'Illuminate\\Database\\Eloquent\\Collection',
               'salarymechanism' => 'Modules\\Salary\\App\\Models\\SalaryMechanism',
             ),
              'constUses' => 
@@ -17660,7 +16815,7 @@ return [
            'abstract' => false,
            'final' => false,
            'static' => false,
-           'returnType' => NULL,
+           'returnType' => 'Modules\\Salary\\App\\Models\\SalaryMechanism',
            'parameters' => 
           array (
             0 => 
@@ -17694,6 +16849,7 @@ return [
              'namespace' => 'Modules\\Salary\\App\\Repositories',
              'uses' => 
             array (
+              'collection' => 'Illuminate\\Database\\Eloquent\\Collection',
               'salarymechanism' => 'Modules\\Salary\\App\\Models\\SalaryMechanism',
             ),
              'constUses' => 
@@ -17706,7 +16862,7 @@ return [
            'abstract' => false,
            'final' => false,
            'static' => false,
-           'returnType' => NULL,
+           'returnType' => 'Modules\\Salary\\App\\Models\\SalaryMechanism',
            'parameters' => 
           array (
             0 => 
@@ -17753,6 +16909,7 @@ return [
              'namespace' => 'Modules\\Salary\\App\\Repositories',
              'uses' => 
             array (
+              'collection' => 'Illuminate\\Database\\Eloquent\\Collection',
               'salarymechanism' => 'Modules\\Salary\\App\\Models\\SalaryMechanism',
             ),
              'constUses' => 
@@ -17799,6 +16956,7 @@ return [
              'namespace' => 'Modules\\Salary\\App\\Repositories',
              'uses' => 
             array (
+              'collection' => 'Illuminate\\Database\\Eloquent\\Collection',
               'salarymechanism' => 'Modules\\Salary\\App\\Models\\SalaryMechanism',
             ),
              'constUses' => 
@@ -17811,7 +16969,7 @@ return [
            'abstract' => false,
            'final' => false,
            'static' => false,
-           'returnType' => NULL,
+           'returnType' => 'bool',
            'parameters' => 
           array (
             0 => 
@@ -19068,17 +18226,14 @@ return [
           'mustverifyemail' => 'Illuminate\\Auth\\MustVerifyEmail',
           'mustverifyemailcontract' => 'Illuminate\\Contracts\\Auth\\MustVerifyEmail',
           'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+          'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+          'hasmany' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
           'authenticatable' => 'Illuminate\\Foundation\\Auth\\User',
           'notifiable' => 'Illuminate\\Notifications\\Notifiable',
           'hasapitokens' => 'Laravel\\Sanctum\\HasApiTokens',
           'attendance' => 'Modules\\Attendance\\App\\Models\\Attendance',
           'salarymechanism' => 'Modules\\Salary\\App\\Models\\SalaryMechanism',
           'hasroles' => 'Spatie\\Permission\\Traits\\HasRoles',
-          'part' => 'Modules\\User\\App\\Models\\Part',
-          'position' => 'Modules\\User\\App\\Models\\Position',
-          'team' => 'Modules\\User\\App\\Models\\Team',
-          'typeaccount' => 'Modules\\User\\App\\Models\\TypeAccount',
-          'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
         ),
          'constUses' => 
         array (
@@ -19261,7 +18416,7 @@ return [
            'abstract' => false,
            'final' => false,
            'static' => false,
-           'returnType' => 'Modules\\User\\App\\Models\\HasMany',
+           'returnType' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
            'parameters' => 
           array (
           ),
@@ -19279,7 +18434,7 @@ return [
            'abstract' => false,
            'final' => false,
            'static' => false,
-           'returnType' => 'Modules\\User\\App\\Models\\HasMany',
+           'returnType' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
            'parameters' => 
           array (
           ),
@@ -20264,21 +19419,7 @@ return [
         0 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'collection',
-           'phpDoc' => 
-          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
-             'phpDocString' => '/**
-     * @return Collection
-     */',
-             'namespace' => 'App\\Exports',
-             'uses' => 
-            array (
-              'collection' => 'Illuminate\\Support\\Collection',
-              'fromcollection' => 'Maatwebsite\\Excel\\Concerns\\FromCollection',
-            ),
-             'constUses' => 
-            array (
-            ),
-          )),
+           'phpDoc' => NULL,
            'byRef' => false,
            'public' => true,
            'private' => false,

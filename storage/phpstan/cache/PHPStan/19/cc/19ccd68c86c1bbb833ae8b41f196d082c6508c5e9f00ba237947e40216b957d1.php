@@ -262,7 +262,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/AttendanceController.php' => 
     array (
-      0 => '066b34c40af7e618b49537ee365cf987943f31e2901025a405a6698aed162edf',
+      0 => 'b0f1783caeab6618946a84dbfad078d248c3028a5c0f80dd74137ff14cc1c717',
       1 => 
       array (
         0 => 'modules\\attendance\\app\\http\\controllers\\attendancecontroller',
@@ -622,7 +622,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Models/Attendance.php' => 
     array (
-      0 => 'efae4dd3f69d18849eee4f001a8a8cbd6bc4175808ad4d266e99d06cd6ea3753',
+      0 => '94e1821daee22a28dcda64da50dde07f84be6f90587dacd44a6914c6989c5686',
       1 => 
       array (
         0 => 'modules\\attendance\\app\\models\\attendance',
@@ -631,9 +631,12 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       array (
         0 => 'modules\\attendance\\app\\models\\user',
         1 => 'modules\\attendance\\app\\models\\getactivitylogoptions',
-        2 => 'modules\\attendance\\app\\models\\scopetoday',
-        3 => 'modules\\attendance\\app\\models\\newfactory',
-        4 => 'modules\\attendance\\app\\models\\booted',
+        2 => 'modules\\attendance\\app\\models\\newfactory',
+        3 => 'modules\\attendance\\app\\models\\booted',
+        4 => 'modules\\attendance\\app\\models\\scopetoday',
+        5 => 'modules\\attendance\\app\\models\\scopepending',
+        6 => 'modules\\attendance\\app\\models\\scopeapproved',
+        7 => 'modules\\attendance\\app\\models\\scoperejected',
       ),
       3 => 
       array (
@@ -900,24 +903,9 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       array (
       ),
     ),
-    '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Transformers/AttendanceCollection.php' => 
-    array (
-      0 => 'a267ef0f817c9fd3472b7ce1fdc399b0df595c77e86953f94881431a875f21da',
-      1 => 
-      array (
-        0 => 'modules\\attendance\\app\\transformers\\attendancecollection',
-      ),
-      2 => 
-      array (
-        0 => 'modules\\attendance\\app\\transformers\\toarray',
-      ),
-      3 => 
-      array (
-      ),
-    ),
     '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Transformers/AttendanceResource.php' => 
     array (
-      0 => 'cd1e7ae8f3e75190cea14b43e08d94e10a95bd3ac667f30e27b2f22d571a8bbd',
+      0 => '31a28297d3f3c31bbe266d790f36667a1946dd27107ad858e55a8c4350977808',
       1 => 
       array (
         0 => 'modules\\attendance\\app\\transformers\\attendanceresource',
@@ -1211,7 +1199,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceServiceTest.php' => 
     array (
-      0 => 'e7dcba110dd72ccb3a0dcf6d1331b0caea3e23eb1a0495c74d5216daa498aa3b',
+      0 => '9b03f129837c2229780cad76902dadbd7da4712338220dabb803a5fc57295a0d',
       1 => 
       array (
         0 => 'modules\\attendance\\tests\\feature\\attendanceservicetest',
@@ -1243,24 +1231,9 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       array (
       ),
     ),
-    '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Unit/AttendanceServiceTest.php' => 
-    array (
-      0 => 'bdf7f2951f77470e56165e724bce7c2eccb169ffa04f69d3ebe72682ca673bed',
-      1 => 
-      array (
-        0 => 'modules\\attendance\\tests\\unit\\attendanceservicetest',
-      ),
-      2 => 
-      array (
-        0 => 'modules\\attendance\\tests\\unit\\test_that_true_is_true',
-      ),
-      3 => 
-      array (
-      ),
-    ),
     '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Product/App/Http/Controllers/ProductController.php' => 
     array (
-      0 => 'f6dd4b4282da3a7680811f2a48c9c19aae5a038f8363d0a2af4102bf7d55f900',
+      0 => '5ea3f0837f0581961baa52f7bd1e0c2455840962d997896980a7381cf05ac157',
       1 => 
       array (
         0 => 'modules\\product\\app\\http\\controllers\\productcontroller',
@@ -1452,7 +1425,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Http/Controllers/SalaryController.php' => 
     array (
-      0 => 'ad277fb3ccf88733f9baf4e4bf31d5ce3adb4d62940d575d81324b4ac638e30e',
+      0 => '533521addca5cb40752727899d29e298d61fcf4b95910fb0c03bf5205374b5f5',
       1 => 
       array (
         0 => 'modules\\salary\\app\\http\\controllers\\salarycontroller',
@@ -1520,7 +1493,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Models/SalaryMechanism.php' => 
     array (
-      0 => 'fbe3246924a6b0698eb0338164f2b387ce399ad60765f2490dfb825ffbca828a',
+      0 => '680535c9e5747d88135cd221766ef5f113e3a2908f6e8e4679e1ced37d60fd6c',
       1 => 
       array (
         0 => 'modules\\salary\\app\\models\\salarymechanism',
@@ -1587,7 +1560,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Repositories/SalaryRepository.php' => 
     array (
-      0 => '330e522caf73ec5462040818b33e04989a6911f0fe335f95e4ab3522bc986203',
+      0 => 'b4dbf3e4b47a1f8705dd99467f9d26080cf644732467631cc056b0f3241c5579',
       1 => 
       array (
         0 => 'modules\\salary\\app\\repositories\\salaryrepository',
@@ -1821,7 +1794,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/User.php' => 
     array (
-      0 => '0fc01ca321b503ec262adde4f07ed7b177f0bbc502c83dbd0c0d5dccef521c90',
+      0 => '94c088403fbcb76df3cce30a210779acd81a806d09e0b6818cf2629df15a90a3',
       1 => 
       array (
         0 => 'modules\\user\\app\\models\\user',
@@ -1910,7 +1883,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Repositories/UserRepository.php' => 
     array (
-      0 => 'eddd873cd48fd503d9b2a0c956ea7e503d3b9d856cd0cbb9a07ae8e038edf85f',
+      0 => '3c5535bc41af6365a5368e10cb84914f149fe0885b599b3922b2f9c4d29af219',
       1 => 
       array (
         0 => 'modules\\user\\app\\repositories\\userrepository',

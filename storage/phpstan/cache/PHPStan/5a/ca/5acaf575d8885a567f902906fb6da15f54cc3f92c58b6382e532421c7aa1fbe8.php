@@ -2,7 +2,7 @@
 
 // odsl-/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Http/Controllers/SalaryController.php-PHPStan\BetterReflection\Reflection\ReflectionClass-Modules\Salary\App\Http\Controllers\SalaryController
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.4.21-ad277fb3ccf88733f9baf4e4bf31d5ce3adb4d62940d575d81324b4ac638e30e',
+   'variableKey' => 'v2-6.70.0.3-8.4.21-533521addca5cb40752727899d29e298d61fcf4b95910fb0c03bf5205374b5f5',
    'data' => 
   array (
     'locatedSource' => 
@@ -43,7 +43,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     array (
     ),
     'startLine' => 73,
-    'endLine' => 588,
+    'endLine' => 591,
     'startColumn' => 1,
     'endColumn' => 1,
     'parentClassName' => 'App\\Http\\Controllers\\Controller',
@@ -78,7 +78,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
  * 📌 Trả giao diện chính (Blade)
  */',
         'startLine' => 80,
-        'endLine' => 98,
+        'endLine' => 101,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -110,8 +110,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
  *
  * Blade DataTable gọi AJAX vào đây
  */',
-        'startLine' => 107,
-        'endLine' => 266,
+        'startLine' => 110,
+        'endLine' => 269,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -149,8 +149,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 483,
-            'endLine' => 483,
+            'startLine' => 486,
+            'endLine' => 486,
             'startColumn' => 27,
             'endColumn' => 53,
             'parameterIndex' => 0,
@@ -167,8 +167,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
  * -----------------------------------------
  * 📌 tạo salary mới
  */',
-        'startLine' => 483,
-        'endLine' => 500,
+        'startLine' => 486,
+        'endLine' => 503,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -206,8 +206,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 521,
-            'endLine' => 521,
+            'startLine' => 524,
+            'endLine' => 524,
             'startColumn' => 9,
             'endColumn' => 36,
             'parameterIndex' => 0,
@@ -224,8 +224,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 522,
-            'endLine' => 522,
+            'startLine' => 525,
+            'endLine' => 525,
             'startColumn' => 9,
             'endColumn' => 11,
             'parameterIndex' => 1,
@@ -250,8 +250,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 523,
-            'endLine' => 523,
+            'startLine' => 526,
+            'endLine' => 526,
             'startColumn' => 9,
             'endColumn' => 30,
             'parameterIndex' => 2,
@@ -268,8 +268,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
  * -----------------------------------------
  * 📌 update salary
  */',
-        'startLine' => 520,
-        'endLine' => 534,
+        'startLine' => 523,
+        'endLine' => 537,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -299,8 +299,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 559,
-            'endLine' => 559,
+            'startLine' => 562,
+            'endLine' => 562,
             'startColumn' => 9,
             'endColumn' => 11,
             'parameterIndex' => 0,
@@ -325,8 +325,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 560,
-            'endLine' => 560,
+            'startLine' => 563,
+            'endLine' => 563,
             'startColumn' => 9,
             'endColumn' => 30,
             'parameterIndex' => 1,
@@ -343,8 +343,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
  * -----------------------------------------
  * 📌 xoá salary
  */',
-        'startLine' => 558,
-        'endLine' => 567,
+        'startLine' => 561,
+        'endLine' => 570,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -374,8 +374,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
  * -----------------------------------------
  * 📌 export Excel
  */',
-        'startLine' => 581,
-        'endLine' => 587,
+        'startLine' => 584,
+        'endLine' => 590,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,

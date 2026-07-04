@@ -12,8 +12,10 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'Modules\\Attendance\\App\\Models',
          'uses' => 
         array (
+          'builder' => 'Illuminate\\Database\\Eloquent\\Builder',
           'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
           'model' => 'Illuminate\\Database\\Eloquent\\Model',
+          'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
           'companyscope' => 'Modules\\Attendance\\App\\Scopes\\CompanyScope',
           'attendancefactory' => 'Modules\\Attendance\\Database\\Factories\\AttendanceFactory',
           'user' => 'Modules\\User\\App\\Models\\User',
@@ -1352,8 +1354,10 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'Modules\\Attendance\\App\\Models',
          'uses' => 
         array (
+          'builder' => 'Illuminate\\Database\\Eloquent\\Builder',
           'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
           'model' => 'Illuminate\\Database\\Eloquent\\Model',
+          'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
           'companyscope' => 'Modules\\Attendance\\App\\Scopes\\CompanyScope',
           'attendancefactory' => 'Modules\\Attendance\\Database\\Factories\\AttendanceFactory',
           'user' => 'Modules\\User\\App\\Models\\User',
@@ -1365,7 +1369,37 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'templatePhpDocNodes' => 
         array (
         ),
-         'parent' => NULL,
+         'parent' => 
+        \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+           'namespace' => 'Modules\\Attendance\\App\\Models',
+           'uses' => 
+          array (
+            'builder' => 'Illuminate\\Database\\Eloquent\\Builder',
+            'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+            'model' => 'Illuminate\\Database\\Eloquent\\Model',
+            'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+            'companyscope' => 'Modules\\Attendance\\App\\Scopes\\CompanyScope',
+            'attendancefactory' => 'Modules\\Attendance\\Database\\Factories\\AttendanceFactory',
+            'user' => 'Modules\\User\\App\\Models\\User',
+            'logsactivity' => 'Spatie\\Activitylog\\Models\\Concerns\\LogsActivity',
+            'logoptions' => 'Spatie\\Activitylog\\Support\\LogOptions',
+          ),
+           'className' => 'Modules\\Attendance\\App\\Models\\Attendance',
+           'functionName' => NULL,
+           'templatePhpDocNodes' => 
+          array (
+          ),
+           'parent' => NULL,
+           'typeAliasesMap' => 
+          array (
+          ),
+           'bypassTypeAliases' => false,
+           'constUses' => 
+          array (
+          ),
+           'typeAliasClassName' => NULL,
+           'traitData' => NULL,
+        )),
          'typeAliasesMap' => 
         array (
         ),
@@ -1381,8 +1415,10 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'Modules\\Attendance\\App\\Models',
          'uses' => 
         array (
+          'builder' => 'Illuminate\\Database\\Eloquent\\Builder',
           'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
           'model' => 'Illuminate\\Database\\Eloquent\\Model',
+          'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
           'companyscope' => 'Modules\\Attendance\\App\\Scopes\\CompanyScope',
           'attendancefactory' => 'Modules\\Attendance\\Database\\Factories\\AttendanceFactory',
           'user' => 'Modules\\User\\App\\Models\\User',
@@ -1394,36 +1430,37 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'templatePhpDocNodes' => 
         array (
         ),
-         'parent' => NULL,
-         'typeAliasesMap' => 
-        array (
-        ),
-         'bypassTypeAliases' => false,
-         'constUses' => 
-        array (
-        ),
-         'typeAliasClassName' => NULL,
-         'traitData' => NULL,
-      )),
-      'd8e55a5f8ff6c46e2851ae9140c77730' => 
-      \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
-         'namespace' => 'Modules\\Attendance\\App\\Models',
-         'uses' => 
-        array (
-          'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
-          'model' => 'Illuminate\\Database\\Eloquent\\Model',
-          'companyscope' => 'Modules\\Attendance\\App\\Scopes\\CompanyScope',
-          'attendancefactory' => 'Modules\\Attendance\\Database\\Factories\\AttendanceFactory',
-          'user' => 'Modules\\User\\App\\Models\\User',
-          'logsactivity' => 'Spatie\\Activitylog\\Models\\Concerns\\LogsActivity',
-          'logoptions' => 'Spatie\\Activitylog\\Support\\LogOptions',
-        ),
-         'className' => 'Modules\\Attendance\\App\\Models\\Attendance',
-         'functionName' => 'scopeToday',
-         'templatePhpDocNodes' => 
-        array (
-        ),
-         'parent' => NULL,
+         'parent' => 
+        \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+           'namespace' => 'Modules\\Attendance\\App\\Models',
+           'uses' => 
+          array (
+            'builder' => 'Illuminate\\Database\\Eloquent\\Builder',
+            'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+            'model' => 'Illuminate\\Database\\Eloquent\\Model',
+            'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+            'companyscope' => 'Modules\\Attendance\\App\\Scopes\\CompanyScope',
+            'attendancefactory' => 'Modules\\Attendance\\Database\\Factories\\AttendanceFactory',
+            'user' => 'Modules\\User\\App\\Models\\User',
+            'logsactivity' => 'Spatie\\Activitylog\\Models\\Concerns\\LogsActivity',
+            'logoptions' => 'Spatie\\Activitylog\\Support\\LogOptions',
+          ),
+           'className' => 'Modules\\Attendance\\App\\Models\\Attendance',
+           'functionName' => NULL,
+           'templatePhpDocNodes' => 
+          array (
+          ),
+           'parent' => NULL,
+           'typeAliasesMap' => 
+          array (
+          ),
+           'bypassTypeAliases' => false,
+           'constUses' => 
+          array (
+          ),
+           'typeAliasClassName' => NULL,
+           'traitData' => NULL,
+        )),
          'typeAliasesMap' => 
         array (
         ),
@@ -1439,8 +1476,10 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'Modules\\Attendance\\App\\Models',
          'uses' => 
         array (
+          'builder' => 'Illuminate\\Database\\Eloquent\\Builder',
           'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
           'model' => 'Illuminate\\Database\\Eloquent\\Model',
+          'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
           'companyscope' => 'Modules\\Attendance\\App\\Scopes\\CompanyScope',
           'attendancefactory' => 'Modules\\Attendance\\Database\\Factories\\AttendanceFactory',
           'user' => 'Modules\\User\\App\\Models\\User',
@@ -1452,7 +1491,37 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'templatePhpDocNodes' => 
         array (
         ),
-         'parent' => NULL,
+         'parent' => 
+        \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+           'namespace' => 'Modules\\Attendance\\App\\Models',
+           'uses' => 
+          array (
+            'builder' => 'Illuminate\\Database\\Eloquent\\Builder',
+            'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+            'model' => 'Illuminate\\Database\\Eloquent\\Model',
+            'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+            'companyscope' => 'Modules\\Attendance\\App\\Scopes\\CompanyScope',
+            'attendancefactory' => 'Modules\\Attendance\\Database\\Factories\\AttendanceFactory',
+            'user' => 'Modules\\User\\App\\Models\\User',
+            'logsactivity' => 'Spatie\\Activitylog\\Models\\Concerns\\LogsActivity',
+            'logoptions' => 'Spatie\\Activitylog\\Support\\LogOptions',
+          ),
+           'className' => 'Modules\\Attendance\\App\\Models\\Attendance',
+           'functionName' => NULL,
+           'templatePhpDocNodes' => 
+          array (
+          ),
+           'parent' => NULL,
+           'typeAliasesMap' => 
+          array (
+          ),
+           'bypassTypeAliases' => false,
+           'constUses' => 
+          array (
+          ),
+           'typeAliasClassName' => NULL,
+           'traitData' => NULL,
+        )),
          'typeAliasesMap' => 
         array (
         ),
@@ -1468,8 +1537,10 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'Modules\\Attendance\\App\\Models',
          'uses' => 
         array (
+          'builder' => 'Illuminate\\Database\\Eloquent\\Builder',
           'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
           'model' => 'Illuminate\\Database\\Eloquent\\Model',
+          'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
           'companyscope' => 'Modules\\Attendance\\App\\Scopes\\CompanyScope',
           'attendancefactory' => 'Modules\\Attendance\\Database\\Factories\\AttendanceFactory',
           'user' => 'Modules\\User\\App\\Models\\User',
@@ -1481,7 +1552,281 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'templatePhpDocNodes' => 
         array (
         ),
-         'parent' => NULL,
+         'parent' => 
+        \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+           'namespace' => 'Modules\\Attendance\\App\\Models',
+           'uses' => 
+          array (
+            'builder' => 'Illuminate\\Database\\Eloquent\\Builder',
+            'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+            'model' => 'Illuminate\\Database\\Eloquent\\Model',
+            'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+            'companyscope' => 'Modules\\Attendance\\App\\Scopes\\CompanyScope',
+            'attendancefactory' => 'Modules\\Attendance\\Database\\Factories\\AttendanceFactory',
+            'user' => 'Modules\\User\\App\\Models\\User',
+            'logsactivity' => 'Spatie\\Activitylog\\Models\\Concerns\\LogsActivity',
+            'logoptions' => 'Spatie\\Activitylog\\Support\\LogOptions',
+          ),
+           'className' => 'Modules\\Attendance\\App\\Models\\Attendance',
+           'functionName' => NULL,
+           'templatePhpDocNodes' => 
+          array (
+          ),
+           'parent' => NULL,
+           'typeAliasesMap' => 
+          array (
+          ),
+           'bypassTypeAliases' => false,
+           'constUses' => 
+          array (
+          ),
+           'typeAliasClassName' => NULL,
+           'traitData' => NULL,
+        )),
+         'typeAliasesMap' => 
+        array (
+        ),
+         'bypassTypeAliases' => false,
+         'constUses' => 
+        array (
+        ),
+         'typeAliasClassName' => NULL,
+         'traitData' => NULL,
+      )),
+      'd8e55a5f8ff6c46e2851ae9140c77730' => 
+      \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+         'namespace' => 'Modules\\Attendance\\App\\Models',
+         'uses' => 
+        array (
+          'builder' => 'Illuminate\\Database\\Eloquent\\Builder',
+          'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+          'model' => 'Illuminate\\Database\\Eloquent\\Model',
+          'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+          'companyscope' => 'Modules\\Attendance\\App\\Scopes\\CompanyScope',
+          'attendancefactory' => 'Modules\\Attendance\\Database\\Factories\\AttendanceFactory',
+          'user' => 'Modules\\User\\App\\Models\\User',
+          'logsactivity' => 'Spatie\\Activitylog\\Models\\Concerns\\LogsActivity',
+          'logoptions' => 'Spatie\\Activitylog\\Support\\LogOptions',
+        ),
+         'className' => 'Modules\\Attendance\\App\\Models\\Attendance',
+         'functionName' => 'scopeToday',
+         'templatePhpDocNodes' => 
+        array (
+        ),
+         'parent' => 
+        \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+           'namespace' => 'Modules\\Attendance\\App\\Models',
+           'uses' => 
+          array (
+            'builder' => 'Illuminate\\Database\\Eloquent\\Builder',
+            'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+            'model' => 'Illuminate\\Database\\Eloquent\\Model',
+            'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+            'companyscope' => 'Modules\\Attendance\\App\\Scopes\\CompanyScope',
+            'attendancefactory' => 'Modules\\Attendance\\Database\\Factories\\AttendanceFactory',
+            'user' => 'Modules\\User\\App\\Models\\User',
+            'logsactivity' => 'Spatie\\Activitylog\\Models\\Concerns\\LogsActivity',
+            'logoptions' => 'Spatie\\Activitylog\\Support\\LogOptions',
+          ),
+           'className' => 'Modules\\Attendance\\App\\Models\\Attendance',
+           'functionName' => NULL,
+           'templatePhpDocNodes' => 
+          array (
+          ),
+           'parent' => NULL,
+           'typeAliasesMap' => 
+          array (
+          ),
+           'bypassTypeAliases' => false,
+           'constUses' => 
+          array (
+          ),
+           'typeAliasClassName' => NULL,
+           'traitData' => NULL,
+        )),
+         'typeAliasesMap' => 
+        array (
+        ),
+         'bypassTypeAliases' => false,
+         'constUses' => 
+        array (
+        ),
+         'typeAliasClassName' => NULL,
+         'traitData' => NULL,
+      )),
+      'd2a32755f78be7752edb2aeacd209cfe' => 
+      \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+         'namespace' => 'Modules\\Attendance\\App\\Models',
+         'uses' => 
+        array (
+          'builder' => 'Illuminate\\Database\\Eloquent\\Builder',
+          'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+          'model' => 'Illuminate\\Database\\Eloquent\\Model',
+          'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+          'companyscope' => 'Modules\\Attendance\\App\\Scopes\\CompanyScope',
+          'attendancefactory' => 'Modules\\Attendance\\Database\\Factories\\AttendanceFactory',
+          'user' => 'Modules\\User\\App\\Models\\User',
+          'logsactivity' => 'Spatie\\Activitylog\\Models\\Concerns\\LogsActivity',
+          'logoptions' => 'Spatie\\Activitylog\\Support\\LogOptions',
+        ),
+         'className' => 'Modules\\Attendance\\App\\Models\\Attendance',
+         'functionName' => 'scopePending',
+         'templatePhpDocNodes' => 
+        array (
+        ),
+         'parent' => 
+        \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+           'namespace' => 'Modules\\Attendance\\App\\Models',
+           'uses' => 
+          array (
+            'builder' => 'Illuminate\\Database\\Eloquent\\Builder',
+            'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+            'model' => 'Illuminate\\Database\\Eloquent\\Model',
+            'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+            'companyscope' => 'Modules\\Attendance\\App\\Scopes\\CompanyScope',
+            'attendancefactory' => 'Modules\\Attendance\\Database\\Factories\\AttendanceFactory',
+            'user' => 'Modules\\User\\App\\Models\\User',
+            'logsactivity' => 'Spatie\\Activitylog\\Models\\Concerns\\LogsActivity',
+            'logoptions' => 'Spatie\\Activitylog\\Support\\LogOptions',
+          ),
+           'className' => 'Modules\\Attendance\\App\\Models\\Attendance',
+           'functionName' => NULL,
+           'templatePhpDocNodes' => 
+          array (
+          ),
+           'parent' => NULL,
+           'typeAliasesMap' => 
+          array (
+          ),
+           'bypassTypeAliases' => false,
+           'constUses' => 
+          array (
+          ),
+           'typeAliasClassName' => NULL,
+           'traitData' => NULL,
+        )),
+         'typeAliasesMap' => 
+        array (
+        ),
+         'bypassTypeAliases' => false,
+         'constUses' => 
+        array (
+        ),
+         'typeAliasClassName' => NULL,
+         'traitData' => NULL,
+      )),
+      'd148187c32d2ec300a4c480af1ceaccb' => 
+      \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+         'namespace' => 'Modules\\Attendance\\App\\Models',
+         'uses' => 
+        array (
+          'builder' => 'Illuminate\\Database\\Eloquent\\Builder',
+          'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+          'model' => 'Illuminate\\Database\\Eloquent\\Model',
+          'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+          'companyscope' => 'Modules\\Attendance\\App\\Scopes\\CompanyScope',
+          'attendancefactory' => 'Modules\\Attendance\\Database\\Factories\\AttendanceFactory',
+          'user' => 'Modules\\User\\App\\Models\\User',
+          'logsactivity' => 'Spatie\\Activitylog\\Models\\Concerns\\LogsActivity',
+          'logoptions' => 'Spatie\\Activitylog\\Support\\LogOptions',
+        ),
+         'className' => 'Modules\\Attendance\\App\\Models\\Attendance',
+         'functionName' => 'scopeApproved',
+         'templatePhpDocNodes' => 
+        array (
+        ),
+         'parent' => 
+        \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+           'namespace' => 'Modules\\Attendance\\App\\Models',
+           'uses' => 
+          array (
+            'builder' => 'Illuminate\\Database\\Eloquent\\Builder',
+            'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+            'model' => 'Illuminate\\Database\\Eloquent\\Model',
+            'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+            'companyscope' => 'Modules\\Attendance\\App\\Scopes\\CompanyScope',
+            'attendancefactory' => 'Modules\\Attendance\\Database\\Factories\\AttendanceFactory',
+            'user' => 'Modules\\User\\App\\Models\\User',
+            'logsactivity' => 'Spatie\\Activitylog\\Models\\Concerns\\LogsActivity',
+            'logoptions' => 'Spatie\\Activitylog\\Support\\LogOptions',
+          ),
+           'className' => 'Modules\\Attendance\\App\\Models\\Attendance',
+           'functionName' => NULL,
+           'templatePhpDocNodes' => 
+          array (
+          ),
+           'parent' => NULL,
+           'typeAliasesMap' => 
+          array (
+          ),
+           'bypassTypeAliases' => false,
+           'constUses' => 
+          array (
+          ),
+           'typeAliasClassName' => NULL,
+           'traitData' => NULL,
+        )),
+         'typeAliasesMap' => 
+        array (
+        ),
+         'bypassTypeAliases' => false,
+         'constUses' => 
+        array (
+        ),
+         'typeAliasClassName' => NULL,
+         'traitData' => NULL,
+      )),
+      'b3c8aa56cb3db771555ec8de80979196' => 
+      \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+         'namespace' => 'Modules\\Attendance\\App\\Models',
+         'uses' => 
+        array (
+          'builder' => 'Illuminate\\Database\\Eloquent\\Builder',
+          'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+          'model' => 'Illuminate\\Database\\Eloquent\\Model',
+          'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+          'companyscope' => 'Modules\\Attendance\\App\\Scopes\\CompanyScope',
+          'attendancefactory' => 'Modules\\Attendance\\Database\\Factories\\AttendanceFactory',
+          'user' => 'Modules\\User\\App\\Models\\User',
+          'logsactivity' => 'Spatie\\Activitylog\\Models\\Concerns\\LogsActivity',
+          'logoptions' => 'Spatie\\Activitylog\\Support\\LogOptions',
+        ),
+         'className' => 'Modules\\Attendance\\App\\Models\\Attendance',
+         'functionName' => 'scopeRejected',
+         'templatePhpDocNodes' => 
+        array (
+        ),
+         'parent' => 
+        \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+           'namespace' => 'Modules\\Attendance\\App\\Models',
+           'uses' => 
+          array (
+            'builder' => 'Illuminate\\Database\\Eloquent\\Builder',
+            'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+            'model' => 'Illuminate\\Database\\Eloquent\\Model',
+            'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+            'companyscope' => 'Modules\\Attendance\\App\\Scopes\\CompanyScope',
+            'attendancefactory' => 'Modules\\Attendance\\Database\\Factories\\AttendanceFactory',
+            'user' => 'Modules\\User\\App\\Models\\User',
+            'logsactivity' => 'Spatie\\Activitylog\\Models\\Concerns\\LogsActivity',
+            'logoptions' => 'Spatie\\Activitylog\\Support\\LogOptions',
+          ),
+           'className' => 'Modules\\Attendance\\App\\Models\\Attendance',
+           'functionName' => NULL,
+           'templatePhpDocNodes' => 
+          array (
+          ),
+           'parent' => NULL,
+           'typeAliasesMap' => 
+          array (
+          ),
+           'bypassTypeAliases' => false,
+           'constUses' => 
+          array (
+          ),
+           'typeAliasClassName' => NULL,
+           'traitData' => NULL,
+        )),
          'typeAliasesMap' => 
         array (
         ),
@@ -1497,8 +1842,10 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'Modules\\Attendance\\App\\Models',
          'uses' => 
         array (
+          'builder' => 'Illuminate\\Database\\Eloquent\\Builder',
           'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
           'model' => 'Illuminate\\Database\\Eloquent\\Model',
+          'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
           'companyscope' => 'Modules\\Attendance\\App\\Scopes\\CompanyScope',
           'attendancefactory' => 'Modules\\Attendance\\Database\\Factories\\AttendanceFactory',
           'user' => 'Modules\\User\\App\\Models\\User',
@@ -1524,7 +1871,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     1 => 
     array (
-      '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Models/Attendance.php' => 'efae4dd3f69d18849eee4f001a8a8cbd6bc4175808ad4d266e99d06cd6ea3753',
+      '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Models/Attendance.php' => '94e1821daee22a28dcda64da50dde07f84be6f90587dacd44a6914c6989c5686',
       '/Users/lahoathanh/Desktop/laravel/keyagatwo/vendor/composer/../laravel/framework/src/Illuminate/Database/Eloquent/Factories/HasFactory.php' => 'b6cb2b164e90168e80963a5549541f5f3188a3ec8cfd368bf3611bd94fbd46a7',
       '/Users/lahoathanh/Desktop/laravel/keyagatwo/vendor/composer/../spatie/laravel-activitylog/src/Models/Concerns/LogsActivity.php' => 'be061002a1b850a1a210ed0ef3f26f3aac19b405fcfbe9525db27a5972ed7436',
     ),

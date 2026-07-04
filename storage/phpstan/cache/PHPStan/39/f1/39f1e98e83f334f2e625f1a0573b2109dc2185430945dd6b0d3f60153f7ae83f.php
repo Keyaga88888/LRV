@@ -2,7 +2,7 @@
 
 // odsl-/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Models/SalaryMechanism.php-PHPStan\BetterReflection\Reflection\ReflectionClass-Modules\Salary\App\Models\SalaryMechanism
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.4.21-fbe3246924a6b0698eb0338164f2b387ce399ad60765f2490dfb825ffbca828a',
+   'variableKey' => 'v2-6.70.0.3-8.4.21-680535c9e5747d88135cd221766ef5f113e3a2908f6e8e4679e1ced37d60fd6c',
    'data' => 
   array (
     'locatedSource' => 
@@ -26,8 +26,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     'attributes' => 
     array (
     ),
-    'startLine' => 79,
-    'endLine' => 257,
+    'startLine' => 80,
+    'endLine' => 252,
     'startColumn' => 1,
     'endColumn' => 1,
     'parentClassName' => 'Illuminate\\Database\\Eloquent\\Model',
@@ -56,12 +56,12 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'code' => '\'salary_mechanisms\'',
           'attributes' => 
           array (
-            'startLine' => 110,
-            'endLine' => 110,
-            'startTokenPos' => 108,
-            'startFilePos' => 1950,
-            'endTokenPos' => 108,
-            'endFilePos' => 1968,
+            'startLine' => 111,
+            'endLine' => 111,
+            'startTokenPos' => 113,
+            'startFilePos' => 2004,
+            'endTokenPos' => 113,
+            'endFilePos' => 2022,
           ),
         ),
         'docComment' => '/**
@@ -76,8 +76,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'attributes' => 
         array (
         ),
-        'startLine' => 110,
-        'endLine' => 110,
+        'startLine' => 111,
+        'endLine' => 111,
         'startColumn' => 5,
         'endColumn' => 43,
         'isPromoted' => false,
@@ -99,12 +99,12 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'code' => '[\'user_id\', \'basic_salary\', \'allowance\', \'bonus\', \'insurance_deduction\', \'tax_deduction\', \'overtime_salary\', \'late_penalty\', \'performance_score\', \'note\', \'salary_month\']',
           'attributes' => 
           array (
-            'startLine' => 123,
-            'endLine' => 135,
-            'startTokenPos' => 119,
-            'startFilePos' => 2272,
-            'endTokenPos' => 154,
-            'endFilePos' => 2535,
+            'startLine' => 124,
+            'endLine' => 136,
+            'startTokenPos' => 124,
+            'startFilePos' => 2326,
+            'endTokenPos' => 159,
+            'endFilePos' => 2589,
           ),
         ),
         'docComment' => '/**
@@ -121,8 +121,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'attributes' => 
         array (
         ),
-        'startLine' => 123,
-        'endLine' => 135,
+        'startLine' => 124,
+        'endLine' => 136,
         'startColumn' => 5,
         'endColumn' => 6,
         'isPromoted' => false,
@@ -144,12 +144,12 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'code' => '[\'basic_salary\', \'bonus\']',
           'attributes' => 
           array (
-            'startLine' => 178,
-            'endLine' => 181,
-            'startTokenPos' => 238,
-            'startFilePos' => 3608,
-            'endTokenPos' => 246,
-            'endFilePos' => 3655,
+            'startLine' => 179,
+            'endLine' => 182,
+            'startTokenPos' => 243,
+            'startFilePos' => 3662,
+            'endTokenPos' => 251,
+            'endFilePos' => 3709,
           ),
         ),
         'docComment' => '/**
@@ -164,8 +164,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'attributes' => 
         array (
         ),
-        'startLine' => 178,
-        'endLine' => 181,
+        'startLine' => 179,
+        'endLine' => 182,
         'startColumn' => 5,
         'endColumn' => 6,
         'isPromoted' => false,
@@ -187,12 +187,12 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'code' => '\'salary\'',
           'attributes' => 
           array (
-            'startLine' => 186,
-            'endLine' => 186,
-            'startTokenPos' => 259,
-            'startFilePos' => 3729,
-            'endTokenPos' => 259,
-            'endFilePos' => 3736,
+            'startLine' => 187,
+            'endLine' => 187,
+            'startTokenPos' => 264,
+            'startFilePos' => 3783,
+            'endTokenPos' => 264,
+            'endFilePos' => 3790,
           ),
         ),
         'docComment' => '/**
@@ -201,8 +201,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'attributes' => 
         array (
         ),
-        'startLine' => 186,
-        'endLine' => 186,
+        'startLine' => 187,
+        'endLine' => 187,
         'startColumn' => 5,
         'endColumn' => 41,
         'isPromoted' => false,
@@ -245,8 +245,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
  *
  * activity_log table
  */',
-        'startLine' => 148,
-        'endLine' => 167,
+        'startLine' => 149,
+        'endLine' => 168,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -284,8 +284,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 191,
-            'endLine' => 191,
+            'startLine' => 192,
+            'endLine' => 192,
             'startColumn' => 44,
             'endColumn' => 60,
             'parameterIndex' => 0,
@@ -308,8 +308,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'docComment' => '/**
  * mô tả event
  */',
-        'startLine' => 191,
-        'endLine' => 194,
+        'startLine' => 192,
+        'endLine' => 195,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -330,7 +330,15 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'returnsReference' => false,
-        'returnType' => NULL,
+        'returnType' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+            'isIdentifier' => false,
+          ),
+        ),
         'attributes' => 
         array (
         ),
@@ -345,8 +353,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
  *
  * belongsTo
  */',
-        'startLine' => 207,
-        'endLine' => 212,
+        'startLine' => 208,
+        'endLine' => 213,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -367,7 +375,15 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'returnsReference' => false,
-        'returnType' => NULL,
+        'returnType' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'float',
+            'isIdentifier' => true,
+          ),
+        ),
         'attributes' => 
         array (
         ),
@@ -397,8 +413,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
  *
  * Blade
  */',
-        'startLine' => 240,
-        'endLine' => 256,
+        'startLine' => 241,
+        'endLine' => 251,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,

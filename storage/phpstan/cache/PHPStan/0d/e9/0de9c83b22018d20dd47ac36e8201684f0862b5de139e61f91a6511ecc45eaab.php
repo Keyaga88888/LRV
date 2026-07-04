@@ -2,7 +2,7 @@
 
 // odsl-/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Product/App/Http/Controllers/ProductController.php-PHPStan\BetterReflection\Reflection\ReflectionClass-Modules\Product\App\Http\Controllers\ProductController
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.4.21-f6dd4b4282da3a7680811f2a48c9c19aae5a038f8363d0a2af4102bf7d55f900',
+   'variableKey' => 'v2-6.70.0.3-8.4.21-5ea3f0837f0581961baa52f7bd1e0c2455840962d997896980a7381cf05ac157',
    'data' => 
   array (
     'locatedSource' => 
@@ -27,7 +27,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     array (
     ),
     'startLine' => 8,
-    'endLine' => 56,
+    'endLine' => 47,
     'startColumn' => 1,
     'endColumn' => 1,
     'parentClassName' => 'App\\Http\\Controllers\\Controller',
@@ -56,10 +56,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'attributes' => 
         array (
         ),
-        'docComment' => '/**
- * Display a listing of the resource.
- */',
-        'startLine' => 13,
+        'docComment' => NULL,
+        'startLine' => 10,
         'endLine' => 16,
         'startColumn' => 5,
         'endColumn' => 5,
@@ -85,10 +83,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'attributes' => 
         array (
         ),
-        'docComment' => '/**
- * Show the form for creating a new resource.
- */',
-        'startLine' => 21,
+        'docComment' => NULL,
+        'startLine' => 18,
         'endLine' => 24,
         'startColumn' => 5,
         'endColumn' => 5,
@@ -127,8 +123,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 29,
-            'endLine' => 29,
+            'startLine' => 26,
+            'endLine' => 26,
             'startColumn' => 27,
             'endColumn' => 42,
             'parameterIndex' => 0,
@@ -140,11 +136,9 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'attributes' => 
         array (
         ),
-        'docComment' => '/**
- * Store a newly created resource in storage.
- */',
-        'startLine' => 29,
-        'endLine' => 29,
+        'docComment' => NULL,
+        'startLine' => 26,
+        'endLine' => 26,
         'startColumn' => 5,
         'endColumn' => 46,
         'couldThrow' => false,
@@ -174,8 +168,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 34,
-            'endLine' => 34,
+            'startLine' => 28,
+            'endLine' => 28,
             'startColumn' => 26,
             'endColumn' => 28,
             'parameterIndex' => 0,
@@ -187,11 +181,9 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'attributes' => 
         array (
         ),
-        'docComment' => '/**
- * Show the specified resource.
- */',
-        'startLine' => 34,
-        'endLine' => 37,
+        'docComment' => NULL,
+        'startLine' => 28,
+        'endLine' => 34,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -221,8 +213,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 42,
-            'endLine' => 42,
+            'startLine' => 36,
+            'endLine' => 36,
             'startColumn' => 26,
             'endColumn' => 28,
             'parameterIndex' => 0,
@@ -234,11 +226,9 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'attributes' => 
         array (
         ),
-        'docComment' => '/**
- * Show the form for editing the specified resource.
- */',
-        'startLine' => 42,
-        'endLine' => 45,
+        'docComment' => NULL,
+        'startLine' => 36,
+        'endLine' => 42,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -276,8 +266,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 50,
-            'endLine' => 50,
+            'startLine' => 44,
+            'endLine' => 44,
             'startColumn' => 28,
             'endColumn' => 43,
             'parameterIndex' => 0,
@@ -294,8 +284,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 50,
-            'endLine' => 50,
+            'startLine' => 44,
+            'endLine' => 44,
             'startColumn' => 46,
             'endColumn' => 48,
             'parameterIndex' => 1,
@@ -307,11 +297,9 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'attributes' => 
         array (
         ),
-        'docComment' => '/**
- * Update the specified resource in storage.
- */',
-        'startLine' => 50,
-        'endLine' => 50,
+        'docComment' => NULL,
+        'startLine' => 44,
+        'endLine' => 44,
         'startColumn' => 5,
         'endColumn' => 52,
         'couldThrow' => false,
@@ -341,8 +329,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 55,
-            'endLine' => 55,
+            'startLine' => 46,
+            'endLine' => 46,
             'startColumn' => 29,
             'endColumn' => 31,
             'parameterIndex' => 0,
@@ -354,11 +342,9 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'attributes' => 
         array (
         ),
-        'docComment' => '/**
- * Remove the specified resource from storage.
- */',
-        'startLine' => 55,
-        'endLine' => 55,
+        'docComment' => NULL,
+        'startLine' => 46,
+        'endLine' => 46,
         'startColumn' => 5,
         'endColumn' => 35,
         'couldThrow' => false,

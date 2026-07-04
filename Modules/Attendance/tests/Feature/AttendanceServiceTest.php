@@ -35,9 +35,9 @@ class AttendanceServiceTest extends TestCase
                 'status' => 'present',
             ]);
 
-       $this->assertGreaterThan(
-    0,
-    $attendance->id
-);
+        $this->assertGreaterThan(
+            0,
+            $attendance->id
+        );
     }
 }

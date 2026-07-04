@@ -2,7 +2,7 @@
 
 // odsl-/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/User.php-PHPStan\BetterReflection\Reflection\ReflectionClass-Modules\User\App\Models\User
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.4.21-0fc01ca321b503ec262adde4f07ed7b177f0bbc502c83dbd0c0d5dccef521c90',
+   'variableKey' => 'v2-6.70.0.3-8.4.21-94c088403fbcb76df3cce30a210779acd81a806d09e0b6818cf2629df15a90a3',
    'data' => 
   array (
     'locatedSource' => 
@@ -31,8 +31,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     'attributes' => 
     array (
     ),
-    'startLine' => 201,
-    'endLine' => 273,
+    'startLine' => 198,
+    'endLine' => 270,
     'startColumn' => 1,
     'endColumn' => 1,
     'parentClassName' => 'Illuminate\\Foundation\\Auth\\User',
@@ -65,20 +65,20 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'code' => '[\'thumbnail\', \'name\', \'email\', \'password\', \'birthday\', \'sex\', \'part_id\', \'position_id\', \'type_work\', \'team_id\', \'phone\', \'address\', \'status\', \'start_day\', \'end_day\', \'type_account_id\']',
           'attributes' => 
           array (
-            'startLine' => 209,
-            'endLine' => 226,
-            'startTokenPos' => 436,
-            'startFilePos' => 5862,
-            'endTokenPos' => 486,
-            'endFilePos' => 6180,
+            'startLine' => 206,
+            'endLine' => 223,
+            'startTokenPos' => 421,
+            'startFilePos' => 5767,
+            'endTokenPos' => 471,
+            'endFilePos' => 6085,
           ),
         ),
         'docComment' => NULL,
         'attributes' => 
         array (
         ),
-        'startLine' => 209,
-        'endLine' => 226,
+        'startLine' => 206,
+        'endLine' => 223,
         'startColumn' => 5,
         'endColumn' => 6,
         'isPromoted' => false,
@@ -100,20 +100,20 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'code' => '[\'password\', \'remember_token\']',
           'attributes' => 
           array (
-            'startLine' => 228,
-            'endLine' => 231,
-            'startTokenPos' => 495,
-            'startFilePos' => 6208,
-            'endTokenPos' => 503,
-            'endFilePos' => 6260,
+            'startLine' => 225,
+            'endLine' => 228,
+            'startTokenPos' => 480,
+            'startFilePos' => 6113,
+            'endTokenPos' => 488,
+            'endFilePos' => 6165,
           ),
         ),
         'docComment' => NULL,
         'attributes' => 
         array (
         ),
-        'startLine' => 228,
-        'endLine' => 231,
+        'startLine' => 225,
+        'endLine' => 228,
         'startColumn' => 5,
         'endColumn' => 6,
         'isPromoted' => false,
@@ -135,20 +135,20 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'code' => '[\'email_verified_at\' => \'datetime\', \'password\' => \'hashed\']',
           'attributes' => 
           array (
-            'startLine' => 233,
-            'endLine' => 236,
-            'startTokenPos' => 512,
-            'startFilePos' => 6287,
-            'endTokenPos' => 528,
-            'endFilePos' => 6368,
+            'startLine' => 230,
+            'endLine' => 233,
+            'startTokenPos' => 497,
+            'startFilePos' => 6192,
+            'endTokenPos' => 513,
+            'endFilePos' => 6273,
           ),
         ),
         'docComment' => NULL,
         'attributes' => 
         array (
         ),
-        'startLine' => 233,
-        'endLine' => 236,
+        'startLine' => 230,
+        'endLine' => 233,
         'startColumn' => 5,
         'endColumn' => 6,
         'isPromoted' => false,
@@ -181,10 +181,10 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 238,
-        'endLine' => 241,
-        'startColumn' => 3,
-        'endColumn' => 1,
+        'startLine' => 235,
+        'endLine' => 238,
+        'startColumn' => 5,
+        'endColumn' => 5,
         'couldThrow' => false,
         'isClosure' => false,
         'isGenerator' => false,
@@ -216,10 +216,10 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 243,
-        'endLine' => 246,
-        'startColumn' => 3,
-        'endColumn' => 1,
+        'startLine' => 240,
+        'endLine' => 243,
+        'startColumn' => 5,
+        'endColumn' => 5,
         'couldThrow' => false,
         'isClosure' => false,
         'isGenerator' => false,
@@ -251,10 +251,10 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 248,
-        'endLine' => 251,
-        'startColumn' => 1,
-        'endColumn' => 1,
+        'startLine' => 245,
+        'endLine' => 248,
+        'startColumn' => 5,
+        'endColumn' => 5,
         'couldThrow' => false,
         'isClosure' => false,
         'isGenerator' => false,
@@ -286,10 +286,10 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 253,
-        'endLine' => 256,
-        'startColumn' => 1,
-        'endColumn' => 1,
+        'startLine' => 250,
+        'endLine' => 253,
+        'startColumn' => 5,
+        'endColumn' => 5,
         'couldThrow' => false,
         'isClosure' => false,
         'isGenerator' => false,
@@ -313,7 +313,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
           'data' => 
           array (
-            'name' => 'Modules\\User\\App\\Models\\HasMany',
+            'name' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
             'isIdentifier' => false,
           ),
         ),
@@ -321,10 +321,10 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 258,
-        'endLine' => 264,
-        'startColumn' => 1,
-        'endColumn' => 1,
+        'startLine' => 255,
+        'endLine' => 261,
+        'startColumn' => 5,
+        'endColumn' => 5,
         'couldThrow' => false,
         'isClosure' => false,
         'isGenerator' => false,
@@ -348,7 +348,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
           'data' => 
           array (
-            'name' => 'Modules\\User\\App\\Models\\HasMany',
+            'name' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
             'isIdentifier' => false,
           ),
         ),
@@ -356,10 +356,10 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 266,
-        'endLine' => 272,
-        'startColumn' => 1,
-        'endColumn' => 1,
+        'startLine' => 263,
+        'endLine' => 269,
+        'startColumn' => 5,
+        'endColumn' => 5,
         'couldThrow' => false,
         'isClosure' => false,
         'isGenerator' => false,

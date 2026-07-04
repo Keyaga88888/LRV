@@ -2,7 +2,7 @@
 
 // odsl-/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceServiceTest.php-PHPStan\BetterReflection\Reflection\ReflectionClass-Modules\Attendance\Tests\Feature\AttendanceServiceTest
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.4.21-e7dcba110dd72ccb3a0dcf6d1331b0caea3e23eb1a0495c74d5216daa498aa3b',
+   'variableKey' => 'v2-6.70.0.3-8.4.21-9b03f129837c2229780cad76902dadbd7da4712338220dabb803a5fc57295a0d',
    'data' => 
   array (
     'locatedSource' => 
@@ -27,7 +27,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     array (
     ),
     'startLine' => 10,
-    'endLine' => 42,
+    'endLine' => 43,
     'startColumn' => 1,
     'endColumn' => 1,
     'parentClassName' => 'Tests\\TestCase',
@@ -59,7 +59,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         ),
         'docComment' => NULL,
         'startLine' => 14,
-        'endLine' => 41,
+        'endLine' => 42,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,

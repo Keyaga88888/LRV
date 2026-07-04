@@ -14,6 +14,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
           'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
           'model' => 'Illuminate\\Database\\Eloquent\\Model',
+          'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
           'user' => 'Modules\\User\\App\\Models\\User',
           'logsactivity' => 'Spatie\\Activitylog\\Models\\Concerns\\LogsActivity',
           'logoptions' => 'Spatie\\Activitylog\\Support\\LogOptions',
@@ -1412,6 +1413,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
           'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
           'model' => 'Illuminate\\Database\\Eloquent\\Model',
+          'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
           'user' => 'Modules\\User\\App\\Models\\User',
           'logsactivity' => 'Spatie\\Activitylog\\Models\\Concerns\\LogsActivity',
           'logoptions' => 'Spatie\\Activitylog\\Support\\LogOptions',
@@ -1439,6 +1441,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
           'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
           'model' => 'Illuminate\\Database\\Eloquent\\Model',
+          'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
           'user' => 'Modules\\User\\App\\Models\\User',
           'logsactivity' => 'Spatie\\Activitylog\\Models\\Concerns\\LogsActivity',
           'logoptions' => 'Spatie\\Activitylog\\Support\\LogOptions',
@@ -1466,6 +1469,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
           'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
           'model' => 'Illuminate\\Database\\Eloquent\\Model',
+          'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
           'user' => 'Modules\\User\\App\\Models\\User',
           'logsactivity' => 'Spatie\\Activitylog\\Models\\Concerns\\LogsActivity',
           'logoptions' => 'Spatie\\Activitylog\\Support\\LogOptions',
@@ -1493,6 +1497,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
           'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
           'model' => 'Illuminate\\Database\\Eloquent\\Model',
+          'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
           'user' => 'Modules\\User\\App\\Models\\User',
           'logsactivity' => 'Spatie\\Activitylog\\Models\\Concerns\\LogsActivity',
           'logoptions' => 'Spatie\\Activitylog\\Support\\LogOptions',
@@ -1520,6 +1525,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
           'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
           'model' => 'Illuminate\\Database\\Eloquent\\Model',
+          'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
           'user' => 'Modules\\User\\App\\Models\\User',
           'logsactivity' => 'Spatie\\Activitylog\\Models\\Concerns\\LogsActivity',
           'logoptions' => 'Spatie\\Activitylog\\Support\\LogOptions',
@@ -1543,7 +1549,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     1 => 
     array (
-      '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Models/SalaryMechanism.php' => 'fbe3246924a6b0698eb0338164f2b387ce399ad60765f2490dfb825ffbca828a',
+      '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Salary/App/Models/SalaryMechanism.php' => '680535c9e5747d88135cd221766ef5f113e3a2908f6e8e4679e1ced37d60fd6c',
       '/Users/lahoathanh/Desktop/laravel/keyagatwo/vendor/composer/../laravel/framework/src/Illuminate/Database/Eloquent/Factories/HasFactory.php' => 'b6cb2b164e90168e80963a5549541f5f3188a3ec8cfd368bf3611bd94fbd46a7',
       '/Users/lahoathanh/Desktop/laravel/keyagatwo/vendor/composer/../spatie/laravel-activitylog/src/Models/Concerns/LogsActivity.php' => 'be061002a1b850a1a210ed0ef3f26f3aac19b405fcfbe9525db27a5972ed7436',
     ),

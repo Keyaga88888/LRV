@@ -2,7 +2,7 @@
 
 // odsl-/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Exports/AttendanceExport.php-PHPStan\BetterReflection\Reflection\ReflectionClass-App\Exports\AttendanceExport
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.4.21-c534c34bba9f4f0c5b06763fb47c069f78c73ac16a34924068ad0477f2beba28',
+   'variableKey' => 'v2-6.70.0.3-8.4.21-062ddc8c60733aa0659540ef29bf33975e34c199ecddb1a547bf9829c558695b',
    'data' => 
   array (
     'locatedSource' => 
@@ -27,7 +27,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     array (
     ),
     'startLine' => 8,
-    'endLine' => 17,
+    'endLine' => 14,
     'startColumn' => 1,
     'endColumn' => 1,
     'parentClassName' => NULL,
@@ -65,11 +65,9 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'attributes' => 
         array (
         ),
-        'docComment' => '/**
- * @return Collection
- */',
-        'startLine' => 13,
-        'endLine' => 16,
+        'docComment' => NULL,
+        'startLine' => 10,
+        'endLine' => 13,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,

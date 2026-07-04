@@ -670,7 +670,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     1 => 
     array (
-      '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/AttendanceController.php' => '066b34c40af7e618b49537ee365cf987943f31e2901025a405a6698aed162edf',
+      '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/AttendanceController.php' => 'b0f1783caeab6618946a84dbfad078d248c3028a5c0f80dd74137ff14cc1c717',
     ),
   ),
 ));
