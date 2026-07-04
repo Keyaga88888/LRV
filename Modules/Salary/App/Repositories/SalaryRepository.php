@@ -61,6 +61,8 @@
 namespace Modules\Salary\App\Repositories;
 
 use Modules\Salary\App\Models\SalaryMechanism;
+use Illuminate\Database\Eloquent\Collection;
+
 
 /**
  * ==========================================================
@@ -103,7 +105,7 @@ class SalaryRepository
      *      ↓
      * DataTable
      */
-    public function getDataForTable()
+    public function getDataForTable(): Collection
     {
         return SalaryMechanism::with([
             'user.part',
@@ -116,7 +118,7 @@ class SalaryRepository
      * CREATE
      * ======================================================
      */
-    public function create(array $data)
+    public function create(array $data): SalaryMechanism
     {
         /**
          * create()
@@ -131,10 +133,14 @@ class SalaryRepository
      * UPDATE
      * ======================================================
      */
-    public function update($id, array $data)
-    {
-        return tap(SalaryMechanism::findOrFail($id))->update($data); // findOrFail() Nếu không có đi→ tự động throw 404
-    }
+public function update($id, array $data): SalaryMechanism
+{
+    $salary = SalaryMechanism::findOrFail($id);
+
+    $salary->update($data);
+
+    return $salary;
+}
 
     /**
      * ======================================================
@@ -151,7 +157,7 @@ class SalaryRepository
      * DELETE
      * ======================================================
      */
-    public function delete($id)
+    public function delete($id): bool
     {
         return SalaryMechanism::findOrFail($id)->delete(); // findOrFail() Nếu không có đi→ tự động throw 404
     }
