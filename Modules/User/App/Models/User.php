@@ -177,7 +177,6 @@
 
 namespace Modules\User\App\Models;
 
-
 use Illuminate\Auth\MustVerifyEmail;
 use Illuminate\Contracts\Auth\MustVerifyEmail as MustVerifyEmailContract;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -188,10 +187,13 @@ use Modules\Attendance\App\Models\Attendance;
 use Modules\Salary\App\Models\SalaryMechanism;
 use Spatie\Permission\Traits\HasRoles;
 
-class User extends Authenticatable  implements MustVerifyEmailContract
-
+class User extends Authenticatable implements MustVerifyEmailContract
 {
-    use HasApiTokens, HasFactory, HasRoles, Notifiable, MustVerifyEmail; // HasRoles ?
+    use HasApiTokens;
+    use HasFactory;
+    use HasRoles;
+    use MustVerifyEmail;
+    use Notifiable; // HasRoles ?
 
     protected $fillable = [
         'thumbnail',

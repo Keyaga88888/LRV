@@ -2469,6 +2469,7 @@ git push
 Nếu lỗi Laravel Pint :
 cho pint tự sửa toàn bộ projec
 ./vendor/bin/pint
+
 xem các file đã được format.
 git status
 Commit:
