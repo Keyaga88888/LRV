@@ -14,6 +14,7 @@ class AttendanceApiTest extends TestCase
 
     public function test_attendance_api_can_create()
     {
+        /** @var User $user */
         $user = User::factory()->create();
 
         Sanctum::actingAs($user);
@@ -31,11 +32,10 @@ class AttendanceApiTest extends TestCase
 
     public function test_attendance_api_list()
     {
+        /** @var User $user */
         $user = User::factory()->create();
 
-        $user->givePermissionTo(
-            'attendance.view'
-        );
+        $user->givePermissionTo('attendance.view');
 
         Attendance::factory()->count(3)->create([
             'user_id' => $user->id,
@@ -43,9 +43,7 @@ class AttendanceApiTest extends TestCase
 
         Sanctum::actingAs($user);
 
-        $response = $this->getJson(
-            '/api/v1/attendances'
-        );
+        $response = $this->getJson('/api/v1/attendances');
 
         $response
             ->assertOk()
@@ -58,22 +56,19 @@ class AttendanceApiTest extends TestCase
 
     public function test_attendance_api_requires_authentication()
     {
-        $response = $this->getJson(
-            '/api/v1/attendances'
-        );
+        $response = $this->getJson('/api/v1/attendances');
 
         $response->assertUnauthorized();
     }
 
     public function test_attendance_api_requires_permission()
     {
+        /** @var User $user */
         $user = User::factory()->create();
 
         Sanctum::actingAs($user);
 
-        $response = $this->getJson(
-            '/api/v1/attendances'
-        );
+        $response = $this->getJson('/api/v1/attendances');
 
         $response->assertForbidden();
     }

@@ -14,8 +14,8 @@ class AttendanceDashboardTest extends TestCase
 
     public function test_dashboard_stats()
     {
-        $user =
-            User::factory()->create();
+        /** @var User $user */
+        $user = User::factory()->create();
 
         Attendance::factory()
             ->count(5)
@@ -23,14 +23,8 @@ class AttendanceDashboardTest extends TestCase
                 'user_id' => $user->id,
             ]);
 
-        $stats =
-            app(
-                AttendanceDashboardService::class
-            )->stats();
+        $stats = app(AttendanceDashboardService::class)->stats();
 
-        $this->assertEquals(
-            5,
-            $stats['total']
-        );
+        $this->assertEquals(5, $stats['total']);
     }
 }
