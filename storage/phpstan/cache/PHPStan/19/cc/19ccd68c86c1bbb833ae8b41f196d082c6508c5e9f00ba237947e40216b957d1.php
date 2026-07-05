@@ -262,7 +262,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/AttendanceController.php' => 
     array (
-      0 => 'b0f1783caeab6618946a84dbfad078d248c3028a5c0f80dd74137ff14cc1c717',
+      0 => '222faaad400ad0ce0097a5fb4ff63c919d05ebf8358fc0202fc60eafcddec332',
       1 => 
       array (
         0 => 'modules\\attendance\\app\\http\\controllers\\attendancecontroller',
@@ -661,17 +661,16 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Observers/AttendanceObserver.php' => 
     array (
-      0 => 'e38086867f285e8660428096da8a175200097c977201f8acce11288116c2e8fd',
+      0 => 'acf0a43389c7cb2c98e5b34c0a60e22aeed0c19db8e8599e0ff185859316ba2c',
       1 => 
       array (
         0 => 'modules\\attendance\\app\\observers\\attendanceobserver',
       ),
       2 => 
       array (
-        0 => 'modules\\attendance\\app\\observers\\clearcache',
-        1 => 'modules\\attendance\\app\\observers\\created',
-        2 => 'modules\\attendance\\app\\observers\\updated',
-        3 => 'modules\\attendance\\app\\observers\\deleted',
+        0 => 'modules\\attendance\\app\\observers\\created',
+        1 => 'modules\\attendance\\app\\observers\\updated',
+        2 => 'modules\\attendance\\app\\observers\\deleted',
       ),
       3 => 
       array (
@@ -807,7 +806,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Scopes/CompanyScope.php' => 
     array (
-      0 => '910cecb4c1b4e95a533e4d0e48119fd7ca52fd6274c8885070a93392e21c42ce',
+      0 => '79c4011d999eea303b5aeeeb80ea40acaa901ba6431b6e9087351fd3d9d25809',
       1 => 
       array (
         0 => 'modules\\attendance\\app\\scopes\\companyscope',
@@ -1794,7 +1793,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/User.php' => 
     array (
-      0 => '94c088403fbcb76df3cce30a210779acd81a806d09e0b6818cf2629df15a90a3',
+      0 => '9bf1fa0ab468c35a1c7b3f4562cb90d0a1b09bdf3c5b6c5836c2a2487111706f',
       1 => 
       array (
         0 => 'modules\\user\\app\\models\\user',

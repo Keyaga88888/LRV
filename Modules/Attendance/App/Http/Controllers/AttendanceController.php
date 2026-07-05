@@ -461,7 +461,7 @@ class AttendanceController extends Controller
         );
         cache()->forget('attendance_today'); // ghi log ai đang tương tác chỉnh sửa
         event(new AttendanceUpdated($attendance));
-        if ($user) {
+        
             activity()
                 ->performedOn($attendance)
                 ->causedBy($user)
@@ -470,7 +470,7 @@ class AttendanceController extends Controller
                     'user_agent' => request()->userAgent(),
                 ])
                 ->log('Attendance Updated');
-        }
+        
 
         return response()->json([
             'success' => true,

@@ -4149,7 +4149,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     1 => 
     array (
-      '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/User.php' => '94c088403fbcb76df3cce30a210779acd81a806d09e0b6818cf2629df15a90a3',
+      '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/User.php' => '9bf1fa0ab468c35a1c7b3f4562cb90d0a1b09bdf3c5b6c5836c2a2487111706f',
       '/Users/lahoathanh/Desktop/laravel/keyagatwo/vendor/composer/../laravel/sanctum/src/HasApiTokens.php' => '7400600b832dc377ac5f51d051a917775f6efc0d2176a1de7bd7826499ae6509',
       '/Users/lahoathanh/Desktop/laravel/keyagatwo/vendor/composer/../laravel/framework/src/Illuminate/Database/Eloquent/Factories/HasFactory.php' => 'b6cb2b164e90168e80963a5549541f5f3188a3ec8cfd368bf3611bd94fbd46a7',
       '/Users/lahoathanh/Desktop/laravel/keyagatwo/vendor/composer/../spatie/laravel-permission/src/Traits/HasRoles.php' => '3ecec576ac1331eb1a726e12210cdcf1acec58ec0b5658d07d153a36fddc360b',

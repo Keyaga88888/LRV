@@ -2,7 +2,7 @@
 
 // odsl-/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Scopes/CompanyScope.php-PHPStan\BetterReflection\Reflection\ReflectionClass-Modules\Attendance\App\Scopes\CompanyScope
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.4.21-910cecb4c1b4e95a533e4d0e48119fd7ca52fd6274c8885070a93392e21c42ce',
+   'variableKey' => 'v2-6.70.0.3-8.4.21-79c4011d999eea303b5aeeeb80ea40acaa901ba6431b6e9087351fd3d9d25809',
    'data' => 
   array (
     'locatedSource' => 
@@ -26,8 +26,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     'attributes' => 
     array (
     ),
-    'startLine' => 10,
-    'endLine' => 25,
+    'startLine' => 11,
+    'endLine' => 28,
     'startColumn' => 1,
     'endColumn' => 1,
     'parentClassName' => NULL,
@@ -70,8 +70,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 13,
-            'endLine' => 13,
+            'startLine' => 14,
+            'endLine' => 14,
             'startColumn' => 9,
             'endColumn' => 24,
             'parameterIndex' => 0,
@@ -96,8 +96,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 14,
-            'endLine' => 14,
+            'startLine' => 15,
+            'endLine' => 15,
             'startColumn' => 9,
             'endColumn' => 20,
             'parameterIndex' => 1,
@@ -118,8 +118,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 12,
-        'endLine' => 24,
+        'startLine' => 13,
+        'endLine' => 27,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,

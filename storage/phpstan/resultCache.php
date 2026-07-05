@@ -2965,100 +2965,6 @@ return [
 	'projectExtensionFiles' => array (
 ),
 	'errorsCallback' => static function (): array { return array (
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/AttendanceController.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Call to an undefined method Yajra\\DataTables\\DataTableAbstract::filterColumn().',
-       'file' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/AttendanceController.php',
-       'line' => 171,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/AttendanceController.php',
-       'traitFilePath' => NULL,
-       'tip' => NULL,
-       'nodeLine' => 134,
-       'nodeType' => 'PhpParser\\Node\\Expr\\MethodCall',
-       'identifier' => 'method.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    1 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'If condition is always true.',
-       'file' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/AttendanceController.php',
-       'line' => 466,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/AttendanceController.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Because the type is coming from a PHPDoc, you can turn off this check by setting <fg=cyan>treatPhpDocTypesAsCertain: false</> in your <fg=cyan>%configurationFile%</>.',
-       'nodeLine' => 466,
-       'nodeType' => 'PhpParser\\Node\\Stmt\\If_',
-       'identifier' => 'if.alwaysTrue',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    2 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'If condition is always true.',
-       'file' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/AttendanceController.php',
-       'line' => 532,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/AttendanceController.php',
-       'traitFilePath' => NULL,
-       'tip' => NULL,
-       'nodeLine' => 532,
-       'nodeType' => 'PhpParser\\Node\\Stmt\\If_',
-       'identifier' => 'if.alwaysTrue',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Observers/AttendanceObserver.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Method Modules\\Attendance\\App\\Observers\\AttendanceObserver::clearCache() is unused.',
-       'file' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Observers/AttendanceObserver.php',
-       'line' => 11,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Observers/AttendanceObserver.php',
-       'traitFilePath' => NULL,
-       'tip' => NULL,
-       'nodeLine' => 9,
-       'nodeType' => 'PHPStan\\Node\\ClassMethodsNode',
-       'identifier' => 'method.unused',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
-  '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Scopes/CompanyScope.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property Modules\\User\\App\\Models\\User::$company_id.',
-       'file' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Scopes/CompanyScope.php',
-       'line' => 21,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Scopes/CompanyScope.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 21,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
 ); },
 	'locallyIgnoredErrorsCallback' => static function (): array { return array (
 ); },
@@ -3438,17 +3344,17 @@ return [
       0 => 
       array (
         0 => 'event',
-        1 => 368,
+        1 => 366,
       ),
       1 => 
       array (
         0 => 'event',
-        1 => 465,
+        1 => 463,
       ),
       2 => 
       array (
         0 => 'event',
-        1 => 543,
+        1 => 540,
       ),
     ),
     'PHPStan\\Rules\\DeadCode\\PossiblyPureStaticCallCollector' => 
@@ -3457,13 +3363,13 @@ return [
       array (
         0 => 'Modules\\Attendance\\App\\Jobs\\ExportAttendanceExcelJob',
         1 => 'dispatch',
-        2 => 559,
+        2 => 556,
       ),
       1 => 
       array (
         0 => 'Modules\\Attendance\\App\\Jobs\\ExportAttendancePdfJob',
         1 => 'dispatch',
-        2 => 570,
+        2 => 567,
       ),
     ),
   ),
@@ -3897,47 +3803,17 @@ return [
     array (
       0 => 
       array (
-        0 => 'Illuminate\\Cache\\Repository',
-        1 => 'forget',
-        2 => 13,
-      ),
-      1 => 
-      array (
-        0 => 'Illuminate\\Cache\\Repository',
-        1 => 'forget',
-        2 => 15,
-      ),
-      2 => 
-      array (
-        0 => 'Illuminate\\Cache\\Repository',
-        1 => 'forget',
-        2 => 17,
-      ),
-      3 => 
-      array (
-        0 => 'Illuminate\\Cache\\Repository',
-        1 => 'forget',
-        2 => 19,
-      ),
-      4 => 
-      array (
-        0 => 'Illuminate\\Cache\\Repository',
-        1 => 'forget',
-        2 => 21,
-      ),
-      5 => 
-      array (
         0 => 'Modules\\Attendance\\App\\Infrastructure\\Cache\\AttendanceDashboardCache',
         1 => 'forgetAll',
         2 => 27,
       ),
-      6 => 
+      1 => 
       array (
         0 => 'Modules\\Attendance\\App\\Infrastructure\\Cache\\AttendanceDashboardCache',
         1 => 'forgetAll',
         2 => 33,
       ),
-      7 => 
+      2 => 
       array (
         0 => 'Modules\\Attendance\\App\\Infrastructure\\Cache\\AttendanceDashboardCache',
         1 => 'forgetAll',
@@ -5036,7 +4912,7 @@ return [
   ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/AttendanceController.php' => 
   array (
-    'fileHash' => 'b0f1783caeab6618946a84dbfad078d248c3028a5c0f80dd74137ff14cc1c717',
+    'fileHash' => '222faaad400ad0ce0097a5fb4ff63c919d05ebf8358fc0202fc60eafcddec332',
     'dependentFiles' => 
     array (
       0 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/routes/api.php',
@@ -5266,7 +5142,7 @@ return [
   ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Observers/AttendanceObserver.php' => 
   array (
-    'fileHash' => 'e38086867f285e8660428096da8a175200097c977201f8acce11288116c2e8fd',
+    'fileHash' => 'acf0a43389c7cb2c98e5b34c0a60e22aeed0c19db8e8599e0ff185859316ba2c',
     'dependentFiles' => 
     array (
       0 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Providers/AttendanceServiceProvider.php',
@@ -5334,7 +5210,7 @@ return [
   ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Scopes/CompanyScope.php' => 
   array (
-    'fileHash' => '910cecb4c1b4e95a533e4d0e48119fd7ca52fd6274c8885070a93392e21c42ce',
+    'fileHash' => '79c4011d999eea303b5aeeeb80ea40acaa901ba6431b6e9087351fd3d9d25809',
     'dependentFiles' => 
     array (
       0 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Models/Attendance.php',
@@ -6018,7 +5894,7 @@ return [
   ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/User.php' => 
   array (
-    'fileHash' => '94c088403fbcb76df3cce30a210779acd81a806d09e0b6818cf2629df15a90a3',
+    'fileHash' => '9bf1fa0ab468c35a1c7b3f4562cb90d0a1b09bdf3c5b6c5836c2a2487111706f',
     'dependentFiles' => 
     array (
       0 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Application/Handlers/CreateAttendanceHandler.php',
@@ -6440,8 +6316,7 @@ return [
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Observers/AttendanceObserver.php' => 
   array (
     0 => 'laravel/framework',
-    1 => 'psr/simple-cache',
-    2 => 'spatie/laravel-activitylog',
+    1 => 'spatie/laravel-activitylog',
   ),
   '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Providers/RouteServiceProvider.php' => 
   array (
@@ -18215,6 +18090,10 @@ return [
        'phpDoc' => 
       \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
          'phpDocString' => '/**
+ * @property int $id
+ * @property string $name
+ * @property string $email
+ * @property int $company_id
  * @property-read Part|null $part
  * @property-read Position|null $position
  * @property-read Team|null $team

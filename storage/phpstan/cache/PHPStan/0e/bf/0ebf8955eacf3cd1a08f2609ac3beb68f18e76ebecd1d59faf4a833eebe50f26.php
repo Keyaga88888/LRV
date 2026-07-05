@@ -2,7 +2,7 @@
 
 // odsl-/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Observers/AttendanceObserver.php-PHPStan\BetterReflection\Reflection\ReflectionClass-Modules\Attendance\App\Observers\AttendanceObserver
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.4.21-e38086867f285e8660428096da8a175200097c977201f8acce11288116c2e8fd',
+   'variableKey' => 'v2-6.70.0.3-8.4.21-acf0a43389c7cb2c98e5b34c0a60e22aeed0c19db8e8599e0ff185859316ba2c',
    'data' => 
   array (
     'locatedSource' => 
@@ -45,41 +45,6 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'immediateMethods' => 
     array (
-      'clearCache' => 
-      array (
-        'name' => 'clearCache',
-        'parameters' => 
-        array (
-        ),
-        'returnsReference' => false,
-        'returnType' => 
-        array (
-          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
-          'data' => 
-          array (
-            'name' => 'void',
-            'isIdentifier' => true,
-          ),
-        ),
-        'attributes' => 
-        array (
-        ),
-        'docComment' => NULL,
-        'startLine' => 11,
-        'endLine' => 22,
-        'startColumn' => 5,
-        'endColumn' => 5,
-        'couldThrow' => false,
-        'isClosure' => false,
-        'isGenerator' => false,
-        'isVariadic' => false,
-        'modifiers' => 4,
-        'namespace' => 'Modules\\Attendance\\App\\Observers',
-        'declaringClassName' => 'Modules\\Attendance\\App\\Observers\\AttendanceObserver',
-        'implementingClassName' => 'Modules\\Attendance\\App\\Observers\\AttendanceObserver',
-        'currentClassName' => 'Modules\\Attendance\\App\\Observers\\AttendanceObserver',
-        'aliasName' => NULL,
-      ),
       'created' => 
       array (
         'name' => 'created',
