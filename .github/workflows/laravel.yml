@@ -69,6 +69,17 @@ jobs:
       - name: Install Composer
         run: composer install --prefer-dist --no-interaction
 
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install NPM
+        run: npm install
+
+      - name: Build Vite
+        run: npm run build
+
       - name: Environment
         run: |
           cp .env.example .env
@@ -92,6 +103,12 @@ jobs:
 
       - name: PHPStan
         run: vendor/bin/phpstan analyse
+
+      - name: Debug Psalm
+        run: |
+          pwd
+          ls -la
+          cat psalm.xml
 
       - name: Psalm
         run: vendor/bin/psalm

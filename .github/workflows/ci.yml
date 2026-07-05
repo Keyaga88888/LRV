@@ -68,6 +68,17 @@ jobs:
           --prefer-dist \
           --no-progress
 
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install NPM
+        run: npm install
+
+      - name: Build Vite
+        run: npm run build
+
       - name: Debug Composer
         run: |
           composer show larastan/larastan
@@ -127,6 +138,15 @@ jobs:
           cat phpstan.neon
       - name: PHPStan
         run: ./vendor/bin/phpstan analyse --memory-limit=2G
+
+      - name: Debug Psalm
+        run: |
+          pwd
+          ls -la
+          cat psalm.xml
+
+      - name: Psalm
+        run: vendor/bin/psalm
 
       - name: PHPUnit
         run: php artisan test
