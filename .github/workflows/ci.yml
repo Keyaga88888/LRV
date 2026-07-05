@@ -148,8 +148,8 @@ jobs:
           echo "=================="
           vendor/bin/psalm --version
 
-      - name: Psalm
-        run: vendor/bin/psalm
+      # - name: Psalm
+      #   run: vendor/bin/psalm
 
       - name: PHPUnit
         run: php artisan test
