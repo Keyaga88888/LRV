@@ -461,16 +461,15 @@ class AttendanceController extends Controller
         );
         cache()->forget('attendance_today'); // ghi log ai đang tương tác chỉnh sửa
         event(new AttendanceUpdated($attendance));
-        
-            activity()
-                ->performedOn($attendance)
-                ->causedBy($user)
-                ->withProperties([
-                    'ip' => request()->ip(),
-                    'user_agent' => request()->userAgent(),
-                ])
-                ->log('Attendance Updated');
-        
+
+        activity()
+            ->performedOn($attendance)
+            ->causedBy($user)
+            ->withProperties([
+                'ip' => request()->ip(),
+                'user_agent' => request()->userAgent(),
+            ])
+            ->log('Attendance Updated');
 
         return response()->json([
             'success' => true,
