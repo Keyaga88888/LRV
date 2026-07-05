@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Scope;
 use Illuminate\Support\Facades\Auth;
+use Modules\User\App\Models\User;
 
 class CompanyScope implements Scope
 {
@@ -14,11 +15,13 @@ class CompanyScope implements Scope
         Model $model
     ): void {
 
-        if (Auth::check()) {
+        /** @var User|null $user */
+        $user = Auth::user();
 
+        if ($user) {
             $builder->where(
                 'company_id',
-                Auth::user()->company_id
+                $user->company_id
             );
         }
     }

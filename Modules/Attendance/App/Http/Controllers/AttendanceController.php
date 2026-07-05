@@ -23,7 +23,6 @@ use Modules\Attendance\App\Transformers\AttendanceResource;
 use Modules\User\App\Models\User;
 use OpenApi\Attributes as OA;
 use Spatie\Activitylog\Models\Activity;
-use Yajra\DataTables\Facades\DataTables;
 
 #[OA\Tag(
     name: 'Attendance',
@@ -130,64 +129,65 @@ class AttendanceController extends Controller
             ->leftJoin('users', 'users.id', '=', 'attendances.user_id')
             ->leftJoin('parts', 'parts.id', '=', 'users.part_id')
             ->leftJoin('positions', 'positions.id', '=', 'users.position_id');
+        /******** PHPStan ********/
+        /** @var \Yajra\DataTables\DataTables $factory */
+        $factory = app(\Yajra\DataTables\DataTables::class);
 
-        return DataTables::of($query)
-            // ->filter(function ($query) {
+        $dataTable = $factory->eloquent($query);
 
-            //     $search = request()->input('search.value');
+        return $dataTable
+                    // ->filter(function ($query) {
 
-            //     if (!$search) return;
+                    //     $search = request()->input('search.value');
 
-            //     $search = trim($search);
+                    //     if (!$search) return;
 
-            //     $date = null;
+                    //     $search = trim($search);
 
-            //     if (preg_match('/^\d{2}\/\d{2}\/\d{4}$/', $search)) {
-            //         $date = \Carbon\Carbon::createFromFormat('d/m/Y', $search)->format('Y-m-d');
-            //     }
+                    //     $date = null;
 
-            //     $query->where(function ($q) use ($search, $date) {
+                    //     if (preg_match('/^\d{2}\/\d{2}\/\d{4}$/', $search)) {
+                    //         $date = \Carbon\Carbon::createFromFormat('d/m/Y', $search)->format('Y-m-d');
+                    //     }
 
-            //         $q->orWhere('users.name', 'like', "%$search%")
-            //             ->orWhere('parts.name', 'like', "%$search%")
-            //             ->orWhere('positions.name', 'like', "%$search%")
-            //             ->orWhere('attendances.status', 'like', "%$search%");
+                    //     $query->where(function ($q) use ($search, $date) {
 
-            //         if ($date) {
-            //             $q->orWhereDate('attendances.work_date', $date)
-            //                 ->orWhereDate('attendances.created_at', $date)
-            //                 ->orWhereDate('attendances.check_in', $date)
-            //                 ->orWhereDate('attendances.check_out', $date);
-            //         }
+                    //         $q->orWhere('users.name', 'like', "%$search%")
+                    //             ->orWhere('parts.name', 'like', "%$search%")
+                    //             ->orWhere('positions.name', 'like', "%$search%")
+                    //             ->orWhere('attendances.status', 'like', "%$search%");
 
-            //         if (preg_match('/^\d{4}-\d{2}-\d{2}$/', $search)) {
-            //             $q->orWhereDate('attendances.work_date', $search)
-            //                 ->orWhereDate('attendances.created_at', $search)
-            //                 ->orWhereDate('attendances.check_in', $search)
-            //                 ->orWhereDate('attendances.check_out', $search);
-            //         }
-            //     });
-            // })
+                    //         if ($date) {
+                    //             $q->orWhereDate('attendances.work_date', $date)
+                    //                 ->orWhereDate('attendances.created_at', $date)
+                    //                 ->orWhereDate('attendances.check_in', $date)
+                    //                 ->orWhereDate('attendances.check_out', $date);
+                    //         }
+
+                    //         if (preg_match('/^\d{4}-\d{2}-\d{2}$/', $search)) {
+                    //             $q->orWhereDate('attendances.work_date', $search)
+                    //                 ->orWhereDate('attendances.created_at', $search)
+                    //                 ->orWhereDate('attendances.check_in', $search)
+                    //                 ->orWhereDate('attendances.check_out', $search);
+                    //         }
+                    //     });
+                    // })
             ->filterColumn(
                 'employee_name',
                 fn ($q, $k) => $q->where('users.name', 'like', "%{$k}%")
             )
-
             ->filterColumn(
                 'department',
                 fn ($q, $k) => $q->where('parts.name', 'like', "%{$k}%")
             )
-
             ->filterColumn(
                 'position',
                 fn ($q, $k) => $q->where('positions.name', 'like', "%{$k}%")
             )
-
             ->filterColumn(
                 'status',
                 fn ($q, $k) => $q->where('attendances.status', 'like', "%{$k}%")
             )
-
             ->addColumn('employee_name', function ($row) {
 
                 return '
@@ -221,12 +221,10 @@ class AttendanceController extends Controller
     </div>';
             })->addColumn('department', fn ($r) => $r->department_name ?? '')
             ->addColumn('position', fn ($r) => $r->position_name ?? '')
-
             ->addColumn('check_in', fn ($r) => $r->check_in_fmt)
             ->addColumn('check_out', fn ($r) => $r->check_out_fmt)
             ->addColumn('created_at', fn ($r) => $r->created_at_fmt)
             ->addColumn('work_date', fn ($r) => $r->work_date_fmt)
-
             ->addColumn('action', function ($row) {
 
                 $user = Auth::user();
@@ -284,7 +282,6 @@ class AttendanceController extends Controller
 
                 return $html.'</div>';
             })
-
             ->rawColumns([
                 'employee_name',
                 'action'])
@@ -526,18 +523,17 @@ class AttendanceController extends Controller
         );
 
         /** @var User $user */
-        // $user = Auth::user();
+        $user = Auth::user();
         $attendance =
             Attendance::findOrFail($id);
-        if ($user) {
-            activity()
-                ->performedOn($attendance)
-                ->causedBy($user)
-                ->withProperties([
-                    'ip' => request()->ip(),
-                ])
-                ->log('Attendance Deleted');
-        }
+        activity()
+            ->performedOn($attendance)
+            ->causedBy($user)
+            ->withProperties([
+                'ip' => request()->ip(),
+            ])
+            ->log('Attendance Deleted');
+
         $attendance->delete();
         cache()->forget('attendance_today'); // ghi log ai đang tương tác chỉnh sửa
         event(new AttendanceDeleted($id));

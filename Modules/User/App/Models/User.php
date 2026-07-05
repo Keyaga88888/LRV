@@ -190,6 +190,10 @@ use Modules\Salary\App\Models\SalaryMechanism;
 use Spatie\Permission\Traits\HasRoles;
 
 /**
+ * @property int $id
+ * @property string $name
+ * @property string $email
+ * @property int $company_id
  * @property-read Part|null $part
  * @property-read Position|null $position
  * @property-read Team|null $team
