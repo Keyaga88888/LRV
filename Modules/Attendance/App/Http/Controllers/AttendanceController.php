@@ -23,6 +23,7 @@ use Modules\Attendance\App\Transformers\AttendanceResource;
 use Modules\User\App\Models\User;
 use OpenApi\Attributes as OA;
 use Spatie\Activitylog\Models\Activity;
+use Yajra\DataTables\DataTables;
 
 #[OA\Tag(
     name: 'Attendance',
@@ -130,8 +131,8 @@ class AttendanceController extends Controller
             ->leftJoin('parts', 'parts.id', '=', 'users.part_id')
             ->leftJoin('positions', 'positions.id', '=', 'users.position_id');
         /******** PHPStan ********/
-        /** @var \Yajra\DataTables\DataTables $factory */
-        $factory = app(\Yajra\DataTables\DataTables::class);
+        /** @var DataTables $factory */
+        $factory = app(DataTables::class);
 
         $dataTable = $factory->eloquent($query);
 
