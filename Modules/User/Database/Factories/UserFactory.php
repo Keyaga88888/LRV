@@ -3,7 +3,7 @@
 namespace Modules\User\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Modules\User\App\Models\User;
+use Illuminate\Support\Str;
 
 class UserFactory extends Factory
 {
@@ -12,9 +12,32 @@ class UserFactory extends Factory
     public function definition(): array
     {
         return [
+
             'name' => fake()->name(),
+
             'email' => fake()->unique()->safeEmail(),
-            'password' => bcrypt('123456'),
+
+            'email_verified_at' => now(),
+
+            'password' => bcrypt('password'),
+
+            'remember_token' => Str::random(10),
+
+            'sex' => 0,
+
+            'type_work' => 0,
+
+            'status' => 0,
+
         ];
+    }
+
+    public function unverified(): static
+    {
+        return $this->state(fn () => [
+
+            'email_verified_at' => null,
+
+        ]);
     }
 }

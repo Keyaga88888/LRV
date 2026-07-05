@@ -187,6 +187,7 @@ use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 use Modules\Attendance\App\Models\Attendance;
 use Modules\Salary\App\Models\SalaryMechanism;
+use Modules\User\Database\Factories\UserFactory;
 use Spatie\Permission\Traits\HasRoles;
 
 /**
@@ -270,5 +271,10 @@ class User extends Authenticatable implements MustVerifyEmailContract
             SalaryMechanism::class,
             'user_id'
         );
+    }
+
+    protected static function newFactory(): UserFactory
+    {
+        return UserFactory::new();
     }
 }
