@@ -4,12 +4,13 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/1', function () {
+Route::get('/', function () {
     return view('welcome');
 });
 
-// Route::get('/dashboard', function () {
-Route::get('/', function () {
+// Đây là đúng chuẩn Laravel 13 + Breeze. RegistrationTest  né lỗi ExampleTest , nếu đặt / cho layout mà không cần
+Route::get('/dashboard', function () {
+    // Route::get('/', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
