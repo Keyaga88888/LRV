@@ -2544,7 +2544,9 @@ Repository > chọn projec > phóng to wed Github > setting > Secrets and variab
 Đăng nhập Docker Hub. > góc phải avatar > Account Settings > phóng to wed > bên trái: Personal access tokens 
  > Create access token > Đặt tên: github-actions > Quyền: Read, Write, Delete > Nhấn Generate. 
  > Docker sẽ hiện token một lần duy nhất, ví dụ: ở hàng dưới
- > dá vào DOCKERHUB_TOKEN :mã ở hàng dưới
+ > làm 2 lần ở GitHub → Settings → Secrets and variables → Actions
+ > Name: DOCKERHUB_TOKEN  |  dán mã token Docker vào Secret : mã ở hàng dưới
+ > Name: DOCKERHUB_TOKEN  |  dán mã token Docker vào Secret : mã ở hàng dưới
 lệnh sử dụng môi trường testing  | Dòng này KHÔNG dùng .env
 php artisan migrate:fresh --seed --env=testing
 Nếu muốn migrate vào MySQL local
