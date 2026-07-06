@@ -2532,3 +2532,8 @@ git log --oneline -5
  
 lệnh xem file lỗi trong Github Action  PHPStan
 vendor/bin/phpstan analyse --memory-limit=1G 
+
+lệnh sử dụng môi trường testing  | Dòng này KHÔNG dùng .env
+php artisan migrate:fresh --seed --env=testing
+Nếu muốn migrate vào MySQL local
+php artisan migrate:fresh

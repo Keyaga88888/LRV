@@ -13,7 +13,10 @@ test('new users can register', function () {
         'password' => 'password',
         'password_confirmation' => 'password',
     ]);
-
+    dump($response->status());
+    dump($response->headers->all());
+    dump($response->getContent());
+    dump(session()->all());
     $this->assertAuthenticated();
     $response->assertRedirect(route('dashboard', absolute: false));
 });

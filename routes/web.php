@@ -8,7 +8,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// Đây là đúng chuẩn Laravel 13 + Breeze. RegistrationTest  né lỗi ExampleTest , nếu đặt / cho layout mà không cần
+// Đây là đúng chuẩn Laravel 13 + Breeze. RegistrationTest  né lỗi ExampleTest.php , nếu đặt / cho layout mà không cần
 Route::get('/dashboard', function () {
     // Route::get('/', function () {
     return view('dashboard');
