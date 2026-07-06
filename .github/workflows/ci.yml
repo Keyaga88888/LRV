@@ -162,11 +162,15 @@ jobs:
 
       - name: Build Docker
         run: |
-          docker build -t horizon888/keyagatwo-app:latest .
+          docker build \
+          -t ${{ secrets.DOCKER_USERNAME }}/keyagatwo-app:latest .
 
       - name: Push Docker
         run: |
-          docker push horizon888/keyagatwo-app:latest
+          docker push \
+          ${{ secrets.DOCKER_USERNAME }}/keyagatwo-app:latest
+# docker push horizon888/keyagatwo-app:latest
+
 # Luồng CI
 # Git Push > Checkout > Composer > Laravel Pint 
 # > PHPStan > PHPUnit > Docker Build > Docker Hub

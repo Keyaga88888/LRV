@@ -5,15 +5,18 @@ FROM composer:2 AS vendor
 
 WORKDIR /app
 
-COPY composer.json composer.lock ./
+# Copy toàn bộ source
+COPY . .
 
+# Cài dependency production
 RUN composer install \
     --ignore-platform-reqs \
     --no-dev \
     --prefer-dist \
     --no-interaction \
     --no-progress \
-    --optimize-autoloader
+    --optimize-autoloader \
+    --no-scripts
 
 ############################################################
 # Stage 2 - PHP
@@ -82,27 +85,50 @@ COPY docker/php/php.ini /usr/local/etc/php/conf.d/custom.ini
 # Supervisor
 ############################################################
 COPY docker/supervisor/laravel-worker.conf \
-/etc/supervisor/conf.d/laravel-worker.conf
+    /etc/supervisor/conf.d/laravel-worker.conf
 
 ############################################################
-# Vendor
-############################################################
-COPY --from=vendor /app/vendor ./vendor
-
-############################################################
-# Project
+# Copy Project
 ############################################################
 COPY . .
 
 ############################################################
-# Permissions
+# Copy Vendor
+############################################################
+COPY --from=vendor /app/vendor ./vendor
+
+############################################################
+# Environment
+############################################################
+RUN cp .env.example .env \
+    && php artisan key:generate --force
+
+############################################################
+# Optimize Autoload
+############################################################
+RUN composer dump-autoload \
+    --optimize \
+    --no-dev
+
+############################################################
+# Package Discovery
+############################################################
+RUN php artisan package:discover --ansi
+
+############################################################
+# Storage
 ############################################################
 RUN mkdir -p \
     storage/framework/cache \
     storage/framework/sessions \
     storage/framework/views \
     storage/logs \
- && chown -R www-data:www-data \
+    bootstrap/cache
+
+############################################################
+# Permissions
+############################################################
+RUN chown -R www-data:www-data \
     storage \
     bootstrap/cache \
  && chmod -R 775 \
@@ -110,17 +136,13 @@ RUN mkdir -p \
     bootstrap/cache
 
 ############################################################
-# Optimize
+# Health Check
 ############################################################
-RUN php artisan package:discover --ansi || true
-
-############################################################
-# Healthcheck
-############################################################
-HEALTHCHECK --interval=30s \
-            --timeout=5s \
-            --start-period=10s \
-            --retries=3 \
+HEALTHCHECK \
+    --interval=30s \
+    --timeout=5s \
+    --start-period=10s \
+    --retries=3 \
 CMD php -v || exit 1
 
 ############################################################
@@ -129,7 +151,7 @@ CMD php -v || exit 1
 EXPOSE 9000
 
 ############################################################
-# Default Command
+# Start
 ############################################################
 CMD ["php-fpm"]
 # nếu muốn dùng Supervisor  |  laravel-worker.conf

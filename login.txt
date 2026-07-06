@@ -1824,6 +1824,9 @@ Sau đó :
 docker compose push
 nếu các service đều có image: hợp lệ.
 
+docker build .
+nghĩa là Docker sẽ tạo (build) một Docker Image từ Dockerfile trong thư mục hiện tại.
+
 12. Websocket                   composer require laravel/reverb      |     php artisan reverb:install
 13. Microservice cơ bản
 14 Queue Export Excel           php artisan module:make-job ExportAttendanceExcelJob Attendance
@@ -2533,6 +2536,15 @@ git log --oneline -5
 lệnh xem file lỗi trong Github Action  PHPStan
 vendor/bin/phpstan analyse --memory-limit=1G 
 
+GitHub Actions không đọc được DockerHub:
+DOCKER_USERNAME    hoặc    DOCKERHUB_USERNAME
+DOCKER_PASSWORD            DOCKERHUB_TOKEN
+Repository > chọn projec > phóng to wed Github > setting > Secrets and variables > Actions
+    >  mục 1 : DOCKER_USERNAME : horizon888 | mục 2 : DOCKERHUB_TOKEN : chưa có vào Docker Token :  https://hub.docker.com
+Đăng nhập Docker Hub. > góc phải avatar > Account Settings > phóng to wed > bên trái: Personal access tokens 
+ > Create access token > Đặt tên: github-actions > Quyền: Read, Write, Delete > Nhấn Generate. 
+ > Docker sẽ hiện token một lần duy nhất, ví dụ: ở hàng dưới
+ > dá vào DOCKERHUB_TOKEN :mã ở hàng dưới
 lệnh sử dụng môi trường testing  | Dòng này KHÔNG dùng .env
 php artisan migrate:fresh --seed --env=testing
 Nếu muốn migrate vào MySQL local
@@ -2556,3 +2568,16 @@ password_reset_tokens
 personal_access_tokens
 
 notifications
+<<<<<<< HEAD
+
+Workflow của bạn cần:Nếu thiếu một cái sẽ fail.
+DOCKER_USERNAME
+DOCKER_PASSWORD
+
+VPS_HOST
+VPS_USER
+VPS_PORT
+VPS_SSH_KEY
+PROJECT_PATH
+=======
+>>>>>>> e2c8eeb (Fix Pint style)
