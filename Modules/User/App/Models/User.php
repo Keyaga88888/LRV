@@ -178,6 +178,8 @@
 namespace Modules\User\App\Models;
 
 use Illuminate\Auth\MustVerifyEmail;
+use Illuminate\Auth\Passwords\CanResetPassword;
+use Illuminate\Contracts\Auth\CanResetPassword as CanResetPasswordContract;
 use Illuminate\Contracts\Auth\MustVerifyEmail as MustVerifyEmailContract;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -200,8 +202,9 @@ use Spatie\Permission\Traits\HasRoles;
  * @property-read Team|null $team
  * @property-read TypeAccount|null $typeAccount
  */
-class User extends Authenticatable implements MustVerifyEmailContract
+class User extends Authenticatable implements CanResetPasswordContract, MustVerifyEmailContract
 {
+    use CanResetPassword;
     use HasApiTokens;
     use HasFactory;
     use HasRoles;

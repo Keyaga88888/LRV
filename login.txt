@@ -2537,3 +2537,22 @@ lệnh sử dụng môi trường testing  | Dòng này KHÔNG dùng .env
 php artisan migrate:fresh --seed --env=testing
 Nếu muốn migrate vào MySQL local
 php artisan migrate:fresh
+
+
+Laravel 13 chuẩn nên có các bảng
+cache
+cache_locks
+
+jobs
+job_batches
+failed_jobs
+
+users
+
+sessions
+
+password_reset_tokens
+
+personal_access_tokens
+
+notifications
