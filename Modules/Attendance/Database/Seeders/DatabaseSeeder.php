@@ -13,3 +13,6 @@ class DatabaseSeeder extends Seeder
         ]);
     }
 }
+// Nhiệm vụ : Seeder tổng.
+// Khai báo : $this->call()
+// Luồng : db:seed > DatabaseSeeder > AttendanceSeeder

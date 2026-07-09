@@ -89,3 +89,7 @@ class AttendanceSeeder extends Seeder
 // Modules\Attendance\App\Models\Attendance::truncate();
 // tạo
 // php artisan db:seed --class="Modules\Attendance\Database\Seeders\AttendanceSeeder"
+
+// Nhiệm vụ :  Seed dữ liệu Attendance.
+// Khai báo : 30 ngày |  Random Status | Random Check In |  Random Check Out
+// Luồng : db:seed > AttendanceSeeder > Attendance Model > Database

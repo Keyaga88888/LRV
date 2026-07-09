@@ -73,3 +73,16 @@ class AttendanceApiTest extends TestCase
         $response->assertForbidden();
     }
 }
+// Tests
+// Nhiệm vụ : Kiểm thử chức năng.
+
+// AttendanceApiTest.php
+// API Test
+// AttendanceCrudTest.php
+// CRUD Test
+// AttendanceDashboardTest.php
+// Dashboard Test
+// AttendanceServiceTest.php
+// Service Test
+// AttendanceFeatureTest.php
+// AttendanceCalculator Test

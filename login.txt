@@ -2166,6 +2166,7 @@ chưa có thì tạo: touch tsconfig.json     |    kiểm tra: ls
 
 Permission
 Tạo Role trong DB      |  Nếu chưa có role.
+syncPermissions() sẽ xóa các quyền cũ không còn dùng và đồng bộ đúng danh sách bạn khai báo. givePermissionTo() chỉ thêm mới.
 php artisan tinker
 
 use Spatie\Permission\Models\Role;
@@ -2264,11 +2265,29 @@ xem tổng : name
 
 xem có cái loại tài khoản:
 TypeAccount::all(['id','name']);
+trong rotes muốn gắn cái phân quyền nào thì gắn i chang trong cái lệnh đã tạo trong dc vd:   bảng permissions : user.view    ->middleware('permission:user.view')
 
 xem toàn bộ db
 SHOW CREATE TABLE users;
 SHOW CREATE TABLE attendances;
 SHOW CREATE TABLE salary_mechanisms;
+
+> gắn role cho permission 
+> gắn permission cho routes
+> gắn role cho user      |   Ví dụ: User id = 1  
+$user = Modules\User\App\Models\User::find(1);
+
+$user->assignRole('Admin');  
+
+xem 3 bảng có gắn đúng với nhau không : 
+use Spatie\Permission\Models\Role;
+use Spatie\Permission\Models\Permission;
+
+Role::all();
+Permission::all();
+DB::table('role_has_permissions')->get();
+
+kiểm tra đầy đủ :
 
 
 File nên note trong Portfolio

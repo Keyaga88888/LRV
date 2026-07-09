@@ -181,3 +181,13 @@ class AttendanceDashboardService
     // php artisan cache:clear
     // php artisan optimize:clear
 }
+// Nhiệm vụ : Xử lý Dashboard.
+// Khai báo : Statistics | Chart | Realtime | Cache
+// Luồng :
+// DashboardController
+// ↓
+// AttendanceDashboardService
+// ↓
+// Attendance Model
+// ↓
+// Chart.js

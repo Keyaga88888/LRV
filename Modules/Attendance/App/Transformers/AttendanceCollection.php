@@ -26,3 +26,7 @@ class AttendanceCollection extends ResourceCollection
     }
 }
 // file này đang dư
+
+// Nhiệm vụ :  Format dữ liệu Collection trả về API.
+// Khai báo : data | links | meta
+// Luồng : AttendanceController > paginate() > AttendanceCollection > JSON

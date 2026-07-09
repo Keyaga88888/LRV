@@ -66,3 +66,7 @@ class AttendanceSummaryService
         );
     }
 }
+// Nhiệm vụ :  Tổng hợp thống kê trong ngày.
+// Khai báo : Present |  Late |  Absent | Leave
+// Luồng :
+// AttendanceService > AttendanceSummaryService > Cache > Attendance Model

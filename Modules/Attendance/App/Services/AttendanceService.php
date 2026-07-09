@@ -105,3 +105,21 @@ class AttendanceService implements AttendanceServiceInterface
         return $attendance->fresh();
     }
 }
+// Nhiệm vụ :  Business Logic.
+// Khai báo :
+// Create Attendance
+// Update Attendance
+// Duplicate Check
+// Transaction
+// Event
+// Repository
+// Luồng :
+// AttendanceController
+// ↓
+// AttendanceService
+// ↓
+// Repository
+// ↓
+// Model
+// ↓
+// Event

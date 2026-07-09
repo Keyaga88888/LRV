@@ -1240,3 +1240,28 @@ table.dataTable tbody td{
 }
 
 </style>
+{{--
+Nhiệm vụ : Giao diện chính.
+Khai báo :
+DataTable
+Chart.js
+AJAX
+Modal
+CRUD
+Approve
+Reject
+Check In
+Export
+
+Luồng :
+Browser
+↓
+index.blade.php
+↓
+AJAX
+↓
+Route
+↓
+Controller 
+
+--}}

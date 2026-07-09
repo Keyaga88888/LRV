@@ -9,6 +9,7 @@ Route::get('/', function () {
 });
 
 // Đây là đúng chuẩn Laravel 13 + Breeze. RegistrationTest  né lỗi ExampleTest.php , nếu đặt / cho layout mà không cần
+// Email Verification của Laravel: verified | Login > Đăng nhập thành công > Email chưa xác minh? > Gửi mail Verify > User bấm link trong mail > verified = true > Được vào Attendance
 Route::get('/dashboard', function () {
     // Route::get('/', function () {
     return view('dashboard');

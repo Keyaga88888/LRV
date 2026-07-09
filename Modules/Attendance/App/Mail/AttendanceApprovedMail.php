@@ -38,3 +38,15 @@ class AttendanceApprovedMail extends Mailable
 // php artisan tinker
 
 // Illuminate\Support\Facades\Mail::to($user->email)->send(new \App\Mail\AttendanceApprovedMail($user));
+
+// Blade Email
+// Nhiệm vụ : Template Email.
+// Khai báo : Approved | Rejected | Check In | Check Out | Summary
+// Luồng :
+// Mail Class
+// ↓
+// Blade
+// ↓
+// SMTP
+// ↓
+// User

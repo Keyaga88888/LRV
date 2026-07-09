@@ -35,3 +35,16 @@
 @endforeach
 
 </table>
+{{-- 
+Nhiệm vụ : Template Export PDF.
+Khai báo : Attendance Table
+Luồng :
+AttendancePdfController
+↓
+Blade
+↓
+DomPDF
+↓
+PDF
+
+ --}}

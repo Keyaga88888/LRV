@@ -51,3 +51,7 @@ class AttendanceResource extends JsonResource
     }
 }
 // php artisan module:make-resource AttendanceResource Attendance
+
+// Nhiệm vụ : Format một bản ghi Attendance trước khi trả API.
+// Khai báo : Employee | Work Date | Check In | Status | Work Hours
+// Luồng : Attendance Model > AttendanceResource > JSON API
