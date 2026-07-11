@@ -11,6 +11,8 @@ use Modules\Attendance\App\Services\Contracts\AttendanceServiceInterface;
 
 class AttendanceService implements AttendanceServiceInterface
 {
+    // AttendanceServiceInterface.php : Contract của Service | Dependency Injection | Giảm phụ thuộc Controller.
+
     public function getDashboard(): array
     {
         return app(
@@ -18,6 +20,9 @@ class AttendanceService implements AttendanceServiceInterface
         )->summaryToday();
     }
 
+    // AttendanceRepositoryInterface.php - Định nghĩa Contract ( Contract Repository )
+    //    ^      v
+    // AttendanceRepository.php - Toàn bộ Query Database | Ví dụ: find() | all() | create() | update() | delete() | datatable()
     public function findUserAttendance(
         int $userId
     ) {
@@ -28,6 +33,7 @@ class AttendanceService implements AttendanceServiceInterface
         );
     }
 
+    // Validate
     // Attendance::where('user_id',$data['user_id'])->whereDate('work_date',$data['work_date'])->exists();
     public function create(array $data): Attendance
     {
@@ -72,7 +78,7 @@ class AttendanceService implements AttendanceServiceInterface
 
             logger()->info('BEFORE EVENT');
 
-            event(new AttendanceCreated($attendance)); // nếu không chạy thì kiểm tra projec có trở đúng file .log ko
+            event(new AttendanceCreated($attendance)); // REALTIME | nếu không chạy thì kiểm tra projec có trở đúng file .log ko
 
             logger()->info('AFTER EVENT');
 

@@ -105,8 +105,8 @@ Schedule::call(function () {
 //  AttendancePolicy.php - Authorize.
 //      viewAny() | create() | update() | delete()
 // *Requests:
-//  StoreAttendanceRequest.php - Validate dữ liệu.
-//  UpdateAttendanceRequest.php - Validate dữ liệu.
+//  StoreAttendanceRequest.php - chặn Validate dữ liệu.
+//  UpdateAttendanceRequest.php - chặn Validate dữ liệu.
 // *Middleware:
 //  CheckAttendancePermission.php - Chặn Request.
 // *Transformers: AttendanceResource, AttendanceCollection

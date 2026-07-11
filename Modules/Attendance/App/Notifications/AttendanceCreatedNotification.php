@@ -10,6 +10,7 @@ use Illuminate\Notifications\Notification;
 class AttendanceCreatedNotification extends Notification implements ShouldQueue
 {
     use Queueable;
+    // AttendanceCreatedNotification.php: Notification. Có thể gửi:Database | Mail | Broadcast
 
     public function via(
         object $notifiable
@@ -20,7 +21,7 @@ class AttendanceCreatedNotification extends Notification implements ShouldQueue
     public function toMail($notifiable)
     {
         return (new MailMessage)
-            ->subject('Attendance Created')
+            ->subject('Attendance Created notification')
             ->line('Attendance Created Successfully');
     }
 
@@ -28,7 +29,7 @@ class AttendanceCreatedNotification extends Notification implements ShouldQueue
         object $notifiable
     ): array {
         return [
-            'title' => 'Attendance Created',
+            'title' => 'Attendance Created notification',
 
             'message' => 'New attendance record created'];
     }

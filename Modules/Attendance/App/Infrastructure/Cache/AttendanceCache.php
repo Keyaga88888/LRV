@@ -7,6 +7,7 @@ use Modules\Attendance\App\Models\Attendance;
 
 class AttendanceCache
 {
+    // AttendanceCache.php: Xóa Cache Attendance sau khi tạo dữ liệu | Dashboard không bị lấy dữ liệu cũ
     public static function summary()
     {
         return Cache::remember(

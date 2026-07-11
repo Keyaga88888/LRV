@@ -344,6 +344,10 @@ class AttendanceController extends Controller
         response: 200,
         description: 'Success'
     )]
+    // AttendanceController.php > StoreAttendanceRequest.php | UpdateAttendanceRequest.php >
+    // > AttendanceServiceInterface.php > AttendanceService.php >
+    // > AttendanceCalculator.php > AttendanceRepositoryInterface.php >
+    // > AttendanceRepository.php > Attendance.php > Database
     // public function store(Request $request)
     public function store(
         StoreAttendanceRequest $request
@@ -363,6 +367,9 @@ class AttendanceController extends Controller
             // $attendance->user?->notify(
             //     new AttendanceCreatedNotification()
             // );  này là viết event trực tiếp
+            // AttendanceCreated.php > EventServiceProvider.php > AttendanceLogListener.php > WriteAttendanceLog.php
+            // > SendAttendanceNotification.php > AttendanceCreatedNotification.php >
+            // > AttendanceCache.php > AttendanceDashboardCache.php
             event(
                 new AttendanceCreated(
                     $attendance

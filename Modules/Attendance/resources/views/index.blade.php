@@ -29,14 +29,18 @@
 </div>
                 <div>
 
-                    <button
-                        class="btn btn-success"
-                        data-toggle="modal"
-                        data-target="#createModal"
-                    >
-                        <i class="fas fa-plus"></i>
-                        Thêm chấm công
-                    </button>
+<button
+    id="openCreateModal"
+    type="button"
+    class="btn btn-success"
+    data-toggle="modal"
+    data-target="#createModal">
+
+    <i class="fas fa-plus"></i>
+
+    Thêm chấm công
+
+</button>
 <a
     href="{{ route('attendance.export') }}"
     class="btn btn-primary"
@@ -713,38 +717,63 @@ $(document).on("mouseenter", ".employee-name", function () {
 
 });
 
-
 /*
 |--------------------------------------------------------------------------
 | CREATE
 |--------------------------------------------------------------------------
 */
 
-$('#createForm').submit(function(e){
+$('#createForm').on('submit', function (e) {
 
     e.preventDefault();
 
+    let form = $(this);
+
     $.ajax({
 
-        url:'{{ route("attendance.store") }}',
+        url: '{{ route("attendance.store") }}',
 
-        method:'POST',
+        type: 'POST',
 
-        data:$(this).serialize(),
+        data: form.serialize(),
 
-        success:function(){
+        beforeSend: function () {
+
+            form.find('button[type="submit"]').prop('disabled', true);
+
+        },
+
+        success: function (res) {
+
+            form[0].reset();
 
             $('#createModal').modal('hide');
 
-            $('#createForm')[0].reset();
-
-            table.ajax.reload();
+            table.ajax.reload(null, false);
 
             Swal.fire(
                 'Thành công',
                 'Đã thêm dữ liệu',
                 'success'
             );
+
+        },
+
+        error: function (xhr) {
+
+            console.log(xhr.responseJSON);
+
+            Swal.fire(
+                'Lỗi',
+                'Không thể thêm dữ liệu',
+                'error'
+            );
+
+        },
+
+        complete: function () {
+
+            form.find('button[type="submit"]').prop('disabled', false);
 
         }
 
@@ -753,6 +782,32 @@ $('#createForm').submit(function(e){
 });
 
 
+/*
+|--------------------------------------------------------------------------
+| FIX MODAL FOCUS (Bootstrap 4)
+|--------------------------------------------------------------------------
+*/
+
+$('#createModal').on('hide.bs.modal', function () {
+
+    if (
+        document.activeElement &&
+        this.contains(document.activeElement)
+    ) {
+        document.activeElement.blur();
+    }
+
+});
+
+$('#createModal').on('hidden.bs.modal', function () {
+
+    setTimeout(function () {
+
+        $('#openCreateModal').trigger('focus');
+
+    }, 0);
+
+});
 
 /*
 |--------------------------------------------------------------------------
@@ -1095,6 +1150,7 @@ $(document).on(
 
     }
 );
+
 // Check In / Check Out
 $('#checkInBtn').click(function () {
 

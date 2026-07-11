@@ -13,6 +13,7 @@ use Modules\Attendance\App\Policies\AttendancePolicy;
 
 class EventServiceProvider extends ServiceProvider
 {
+    // EventServiceProvider.php: Đăng ký >| Event > Listener | > AttendanceLogListener.php: Audit Log | Ghi lịch sử thao tác
     /**
      * The event handler mappings for the application.
      *

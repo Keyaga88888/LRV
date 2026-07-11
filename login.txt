@@ -2602,3 +2602,34 @@ VPS_SSH_KEY
 PROJECT_PATH
 =======
 >>>>>>> e2c8eeb (Fix Pint style)
+
+
+Từ toàn bộ log bạn gửi suốt cuộc hội thoại:
+
+Không có Bootstrap 5.
+Không có double jQuery.
+Không có event focus bất thường.
+Focus đã về <body>.
+aria-hidden chỉ do Bootstrap thêm.
+Modal hoạt động đúng.
+
+=> Warning này không phải bug trong module Attendance của bạn.
+
+Nếu mục tiêu của bạn là:
+
+Console sạch hoàn toàn (0 warning)
+
+thì chỉ có 3 cách:
+
+Nâng lên Bootstrap 5.3+ (khuyến nghị).
+Patch Bootstrap 4 Modal để dùng inert thay aria-hidden.
+Nâng AdminLTE từ 3.x lên 4.x (dùng Bootstrap 5).
+Với project của bạn (Laravel + AdminLTE 3.2)
+
+Mình không khuyên sửa Bootstrap core chỉ để xóa warning này, vì:
+
+Có thể gây lỗi sau khi cập nhật.
+Không mang lại lợi ích chức năng.
+Warning này không làm ảnh hưởng đến CRUD, AJAX, DataTables, Reverb hay Queue.
+
+Nếu mục tiêu là hoàn thiện project để đưa vào Portfolio hoặc GitHub, mình sẽ để nguyên Bootstrap 4.6.1 và chấp nhận warning này, trừ khi bạn có kế hoạch nâng toàn bộ giao diện lên AdminLTE 4 / Bootstrap 5.

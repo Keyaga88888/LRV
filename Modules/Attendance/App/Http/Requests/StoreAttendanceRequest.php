@@ -9,6 +9,7 @@ use Modules\User\App\Models\User;
 
 class StoreAttendanceRequest extends FormRequest
 {
+    // StoreAttendanceRequest chặn kiểm tra trước khi Validate | Authorize Request | Validate dữ liệu
     public function authorize(): bool
     {
         /** @var User|null $user */

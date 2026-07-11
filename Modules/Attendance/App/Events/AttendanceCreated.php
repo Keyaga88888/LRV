@@ -13,6 +13,8 @@ class AttendanceCreated implements ShouldBroadcastNow
 {
     use Dispatchable, InteractsWithSockets, SerializesModels;
 
+    // AttendanceCreated.php: Event | Thông báo Attendance vừa được tạo.
+
     public function __construct(public Attendance $attendance) {}
 
     public function broadcastOn()

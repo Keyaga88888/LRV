@@ -6,6 +6,8 @@ use Carbon\Carbon;
 
 class AttendanceCalculator
 {
+    // AttendanceCalculator.php - Business Logic độc lập.
+    // Tính: Late Minutes | Work Hours | Overtime Hours
     public static function calculate(
         $checkIn,
         $checkOut

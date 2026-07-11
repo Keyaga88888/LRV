@@ -9,6 +9,9 @@ use Modules\Attendance\App\Events\AttendanceCreated;
 // class AttendanceLogListener
 class AttendanceLogListener implements ShouldQueue
 {
+    // AttendanceLogListener.php: Audit Log | Ghi lịch sử thao tác
+    //         ^    v
+    // AttendanceCreated.php
     public $queue = 'attendance';
 
     public function __construct()

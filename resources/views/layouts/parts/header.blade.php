@@ -18,6 +18,11 @@
  {{-- thêm cái link dẫn vào dataTables của adminlte3.2.0  nhúng CDN --}}
  {{-- <link rel="stylesheet"href="https://cdn.datatables.net/1.13.7/css/dataTables.bootstrap4.min.css"> --}}
   <link rel="stylesheet"href="{{ asset('adminlte/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css') }}">
+<link
+    rel="icon"
+    type="image/x-icon"
+    href="{{ asset('favicon.ico') }}"
+>
   <!--
  `body` tag options:
 

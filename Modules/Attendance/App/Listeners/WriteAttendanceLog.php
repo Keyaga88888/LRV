@@ -16,7 +16,7 @@ class WriteAttendanceLog implements ShouldQueue
     ): void {
 
         Log::info(
-            'Attendance Created',
+            'Attendance Created 1',
             [
                 'attendance_id' => $event->attendance->id,
             ]
