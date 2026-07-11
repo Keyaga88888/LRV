@@ -6,64 +6,25 @@ use Modules\Attendance\App\Models\Attendance;
 
 class AttendanceSummaryService
 {
-    public function summaryToday()
-    {
-        return cache()->remember(
+    public function summaryToday() // khai báo realtime > phải query database mỗi lần.
+    {// cái này của 4 số thống kê
+        return [
+            'present' => Attendance::whereDate('work_date', today())
+                ->where('status', 'Present')
+                ->count(),
 
-            'attendance_summary_today',
+            'late' => Attendance::whereDate('work_date', today())
+                ->where('status', 'Late')
+                ->count(),
 
-            now()->addHour(),
+            'absent' => Attendance::whereDate('work_date', today())
+                ->where('status', 'Absent')
+                ->count(),
 
-            function () {
-
-                $today =
-                    now()->toDateString();
-
-                return [
-
-                    'present' => Attendance::whereDate(
-                        'work_date',
-                        $today
-                    )
-                        ->where(
-                            'status',
-                            'present'
-                        )
-                        ->count(),
-
-                    'late' => Attendance::whereDate(
-                        'work_date',
-                        $today
-                    )
-                        ->where(
-                            'status',
-                            'late'
-                        )
-                        ->count(),
-
-                    'absent' => Attendance::whereDate(
-                        'work_date',
-                        $today
-                    )
-                        ->where(
-                            'status',
-                            'absent'
-                        )
-                        ->count(),
-
-                    'leave' => Attendance::whereDate(
-                        'work_date',
-                        $today
-                    )
-                        ->where(
-                            'status',
-                            'leave'
-                        )
-                        ->count(),
-
-                ];
-            }
-        );
+            'leave' => Attendance::whereDate('work_date', today())
+                ->where('status', 'Leave')
+                ->count(),
+        ];
     }
 }
 // Nhiệm vụ :  Tổng hợp thống kê trong ngày.

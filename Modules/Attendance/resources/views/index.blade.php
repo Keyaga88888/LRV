@@ -78,6 +78,29 @@
             <div class="card shadow-sm border-0">
 
                 <div class="card-body table-responsive">
+                    <div class="row">
+
+    <div class="col">
+        Present:
+        <span id="present">0</span>
+    </div>
+
+    <div class="col">
+        Late:
+        <span id="late">0</span>
+    </div>
+
+    <div class="col">
+        Absent:
+        <span id="absent">0</span>
+    </div>
+
+    <div class="col">
+        Leave:
+        <span id="leave">0</span>
+    </div>
+
+</div>
 <div class="d-flex mb-3 align-items-center">
 
     <select id="filter_department" class="form-control mr-2" style="width:200px;">
@@ -522,9 +545,13 @@
 
 </div>
 
+
 @include('layouts.parts.footer')
 
-
+@vite([
+    'resources/js/app.js',
+    'resources/css/app.css'
+])
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 <script>
@@ -609,14 +636,26 @@ $('#reset_filter').on('click', function () {
         .draw();
 });
 
-$.get('/attendance/dashboard-summary', function(data){
+// đếm sô 4 cái trạng thái - realtime | nhớ cho Echo vào resources/js/app.js
+function reloadSummary() {
 
-    $('#present').text(data.present);
-    $('#late').text(data.late);
-    $('#absent').text(data.absent);
-    $('#leave').text(data.leave);
+    $.get("/attendance/dashboard-summary", function (data) {
 
-});
+        $("#present").text(data.present);
+
+        $("#late").text(data.late);
+
+        $("#absent").text(data.absent);
+
+        $("#leave").text(data.leave);
+
+    });
+
+}
+
+reloadSummary();
+
+
 /*
 |--------------------------------------------------------------------------
 | HOVER CHART
@@ -1046,85 +1085,62 @@ $(document).on(
 // <sc src="https://cdn.jsdelivr.net/npm/chart.js"></sc ript>
 
 // <canvas id="attendanceChart"></canvas>
-window.addEventListener('load', function () {
+window.reloadChart = function () {
 
-    console.log('PAGE LOADED');
-
-    const canvas = document.getElementById('attendanceChart');
-
-    console.log('CANVAS =', canvas);
+    const canvas = document.getElementById("attendanceChart");
 
     if (!canvas) {
         return;
     }
 
-    $.ajax({
+    $.get("/attendance/dashboard-advanced", function (data) {
 
-        url: '/attendance/dashboard-advanced',
+        console.log("reloadChart", data);
 
-        method: 'GET',
+        // Đã có chart -> chỉ cập nhật dữ liệu
+        if (window.attendanceChartInstance) {
 
-        cache: false,
+            window.attendanceChartInstance.data.labels = data.labels;
 
-    success: function (data) {
+            window.attendanceChartInstance.data.datasets[0].data = data.totals;
 
-    console.log(data);
+            window.attendanceChartInstance.update();
 
-    if (window.attendanceChartInstance) {
-
-        window.attendanceChartInstance.destroy();
-
-    }
-
-    window.attendanceChartInstance = new Chart(canvas, {
-
-        type: 'line',
-
-        data: {
-
-            labels: data.labels,
-
-            datasets: [{
-
-                label: 'Đi trễ',
-
-                data: data.totals,
-
-                borderWidth: 2,
-
-                fill: true,
-
-                tension: 0.3
-
-            }]
-
-        },
-
-        options: {
-
-            responsive: true,
-
-            maintainAspectRatio: false,
-
-            animation: false
-
+            return;
         }
+
+        // Chưa có chart -> tạo mới
+        window.attendanceChartInstance = new Chart(
+            canvas.getContext("2d"),
+            {
+                type: "line",
+
+                data: {
+                    labels: data.labels,
+
+                    datasets: [{
+                        label: "Đi trễ",
+                        data: data.totals,
+                        borderWidth: 2,
+                        fill: true,
+                        tension: 0.3
+                    }]
+                },
+
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    animation: false
+                }
+            }
+        );
 
     });
 
-            console.log('CHART CREATED');
+};
 
-        },
-
-        error: function(xhr){
-
-            console.error('AJAX ERROR', xhr);
-
-        }
-
-    });
-
-});
+// Load lần đầu khi mở trang
+window.reloadChart();
 // ExportAttendancePdfJob
 $(document).on(
     'click',

@@ -2161,6 +2161,12 @@ php artisan reverb:start --debug
 Mở Console:
 window.Echo   
 window.Echo.connector.pusher.connection.state
+25.1 package  : Để có Echo của realtime trong js | npm install laravel-echo pusher-js
+> trong resources/js/bootstrap.js : thêm echo hỏi chatgpt
+> Trong resources/js/app.js : import './bootstrap';
+> chạy npm run dev  |  npm run build)
+> gắn @vite(...) vào index.blade.php
+> quăng cái js Echo (realtime) vào resources/js/app.js
 26 Cài TypeScript    npm install -D typescript   |  kiểm tra: npx tsc --version 
 chưa có thì tạo: touch tsconfig.json     |    kiểm tra: ls
 

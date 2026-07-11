@@ -3,3 +3,4 @@
 <p>
 Your attendance request was rejected.
 </p>
+

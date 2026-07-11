@@ -19,6 +19,7 @@ use Modules\Attendance\App\Repositories\AttendanceRepositoryInterface;
 use Modules\Attendance\App\Services\AttendanceCalculator;
 use Modules\Attendance\App\Services\AttendanceDashboardService;
 use Modules\Attendance\App\Services\AttendanceService;
+use Modules\Attendance\App\Services\AttendanceSummaryService;
 use Modules\Attendance\App\Transformers\AttendanceResource;
 use Modules\User\App\Models\User;
 use OpenApi\Attributes as OA;
@@ -58,12 +59,19 @@ class AttendanceController extends Controller
         response: 200,
         description: 'Success'
     )]
-    public function dashboard()
-    {
+    public function dashboard(
+        AttendanceSummaryService $service
+    ) {
         return response()->json(
-            cache()->get('attendance_today')
+            $service->summaryToday()
         );
     }
+    // public function dashboard()
+    // {
+    //     return response()->json(
+    //         cache()->get('attendance_today')
+    //     );
+    // }
 
     public function audit()
     {

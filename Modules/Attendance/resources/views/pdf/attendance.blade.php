@@ -35,6 +35,7 @@
 @endforeach
 
 </table>
+
 {{-- 
 Nhiệm vụ : Template Export PDF.
 Khai báo : Attendance Table

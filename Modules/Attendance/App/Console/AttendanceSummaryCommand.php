@@ -24,6 +24,8 @@ class AttendanceSummaryCommand extends Command
         return self::SUCCESS;
     }
 }
+// AttendanceSummaryCommand.php > AttendanceDailySummaryJob.php > AttendanceSummaryService.php >
+// > AttendanceService > AttendanceSummaryService > Cache > Attendance Model > AttendanceSummaryMail
 // php artisan module:make-command AttendanceSummaryCommand Attendance
 /*
 |--------------------------------------------------------------------------
