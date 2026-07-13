@@ -47,7 +47,7 @@ class AttendanceDailySummaryJob implements ShouldQueue
         );
 
         logger()->info(
-            'ATTENDANCE SUMMARY',
+            'ATTENDANCE SUMMARY JOB',
             $data
         );
         Mail::to(
@@ -57,7 +57,7 @@ class AttendanceDailySummaryJob implements ShouldQueue
                 $data
             )
         );
-    }
+    }// gửi mail tới đại chỉ
 
     public function failed(
         \Throwable $exception

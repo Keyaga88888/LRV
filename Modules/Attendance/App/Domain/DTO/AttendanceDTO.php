@@ -23,3 +23,4 @@ class AttendanceDTO
         );
     }
 }
+// DTO > CreateAttendanceCommand > Đóng gói dữ liệu

@@ -75,6 +75,7 @@ class AttendanceApiTest extends TestCase
 }
 // Tests
 // Nhiệm vụ : Kiểm thử chức năng.
+// Test request.  Browser > Route > Controller > Service > Repository > Database > Response
 
 // AttendanceApiTest.php
 // API Test

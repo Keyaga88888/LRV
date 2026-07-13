@@ -353,9 +353,10 @@ class AttendanceController extends Controller
         description: 'Success'
     )]
     // AttendanceController.php > StoreAttendanceRequest.php | UpdateAttendanceRequest.php >
-    // > AttendanceServiceInterface.php > AttendanceService.php >
-    // > AttendanceCalculator.php > AttendanceRepositoryInterface.php >
-    // > AttendanceRepository.php > Attendance.php > Database
+    // > AttendanceServiceProvider.php > RepositoryServiceProvider.php > AttendanceService.php > AttendanceServiceInterface.php >
+    // > AttendanceCalculator.php > AttendanceRepository.php >
+    // > AttendanceRepositoryInterface.php > Attendance.php > Database > AttendanceDashboardCache.php
+    // TT : Controller > Requests > Provider|khai file > |khai quan hệ > Service|validate > Service|Contracsđịnh nghĩa| > Repositories|xuất > |định nghĩa > Model  > in ra
     // public function store(Request $request)
     public function store(
         StoreAttendanceRequest $request
@@ -375,9 +376,11 @@ class AttendanceController extends Controller
             // $attendance->user?->notify(
             //     new AttendanceCreatedNotification()
             // );  này là viết event trực tiếp
-            // AttendanceCreated.php > EventServiceProvider.php > AttendanceLogListener.php > WriteAttendanceLog.php
+            // AttendanceDashboardCache.php > AttendanceCreated.php > AttendanceServiceProvider.php > RepositoryServiceProvider.php > EventServiceProvider.php > AttendanceLogListener.php > WriteAttendanceLog.php
             // > SendAttendanceNotification.php > AttendanceCreatedNotification.php >
             // > AttendanceCache.php > AttendanceDashboardCache.php
+            // TT : Events > Provider|khai file > |khaiEvent > Listeners > |mail > xoáCacheAttendance > xoáCacheDasboard
+
             event(
                 new AttendanceCreated(
                     $attendance

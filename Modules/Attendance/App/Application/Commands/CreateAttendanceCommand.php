@@ -10,3 +10,4 @@ class CreateAttendanceCommand
         public AttendanceDTO $dto
     ) {}
 }
+// file Nó chỉ chứa dữ liệu.(Đóng gói dữ liệu)

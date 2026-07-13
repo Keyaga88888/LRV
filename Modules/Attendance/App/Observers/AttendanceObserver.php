@@ -8,6 +8,8 @@ use Modules\Attendance\App\Models\Attendance;
 
 class AttendanceObserver
 {
+    // RealTime định nghĩa bắt event các nút > dẫn file xoá cache
+
     // private function clearCache(): void
     // {
     //     Cache::forget('attendance_today');

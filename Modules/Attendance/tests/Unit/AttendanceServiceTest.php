@@ -20,3 +20,13 @@ class AttendanceServiceTest extends TestCase
         );
     }
 }
+// chỉ test logic.
+// Service
+
+// ↓
+
+// Method
+
+// ↓
+
+// Assert

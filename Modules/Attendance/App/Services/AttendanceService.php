@@ -13,7 +13,7 @@ class AttendanceService implements AttendanceServiceInterface
 {
     // AttendanceServiceInterface.php : Contract của Service | Dependency Injection | Giảm phụ thuộc Controller.
 
-    public function getDashboard(): array
+    public function getDashboard(): array // cái này của bảng 4 cột trạng thái
     {
         return app(
             AttendanceSummaryService::class

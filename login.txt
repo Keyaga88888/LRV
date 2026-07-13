@@ -2326,7 +2326,8 @@ $  Resource
 Modules/Attendance/App/Transformers/AttendanceResource.php
 $  Export
 Modules/Attendance/App/Exports/AttendanceExport.php
-$  Console Command
+$  Console Command (Artisan Command)
+routes/console.php — Khai báo Scheduler (Cron Jobs).
 Modules/Attendance/App/Console/AttendanceSummaryCommand.php
 $  Swagger
 app/Swagger/OpenApiSpec.php
@@ -2345,10 +2346,11 @@ Command:
 Modules/Attendance/App/Console/AttendanceSummaryCommand.php
 Schedule:
 routes/console.php
-$  PHPUnit Testing   Chỉ test logic.
-$  Feature Testing   Test request.
+$  PHPUnit Testing   Chỉ test logic. Service > Method > Assert
+$  Feature Testing   Test request.  Browser > Route > Controller > Service > Repository > Database > Response
 Modules/Attendance/Tests/Feature/AttendanceApiTest.php
 $  Real time (Reverb) là WebSocket Server
+Modules/Attendance/App/Observers/AttendanceObserver.php(RealTime định nghĩa bắt event các nút > dẫn file xoá cache)
 Modules/Attendance/App/Events/AttendanceApproved.php
 Modules/Attendance/App/Events/AttendanceCreated.php
 Modules/Attendance/App/Events/AttendanceDeleted.php

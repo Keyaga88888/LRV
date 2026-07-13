@@ -17,17 +17,18 @@ Schedule::command(
 //     new ExportAttendanceExcelJob(1)
 // )
 //     ->dailyAt('18:00');
-// Tự động xoá cache Attendance
 
+// Tự động xoá cache Attendance
 Schedule::call(function () {
 
     Cache::tags([
         'attendance',
     ])->flush();
 })->daily();
-// Nhiệm vụ : Khai báo Scheduler.
+// Nhiệm vụ : Khai báo Scheduler.  | cái này khỏi chạy thử công: php artisan schedule:work , ko cần gọi: php artisan attendance:summary
 // Khai báo : Attendance Summary |  Queue Cleanup | Cache Flush
 // Luồng : Cron > schedule:run > console.php > Command
+// Linux Cron > php artisan schedule:run > Kernel > attendance:summary
 
 // routes/web.php — Khai báo Web Routes, middleware và phân quyền.
 // routes/api.php — Khai báo REST API với Sanctum.

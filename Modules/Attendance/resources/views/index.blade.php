@@ -1085,6 +1085,7 @@ $(document).on(
 // <sc src="https://cdn.jsdelivr.net/npm/chart.js"></sc ript>
 
 // <canvas id="attendanceChart"></canvas>
+// cái này của bảng đồ thị đi trễ
 window.reloadChart = function () {
 
     const canvas = document.getElementById("attendanceChart");
