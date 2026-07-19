@@ -8,10 +8,11 @@ open note.txt
 
 1.users
 id
+company_id     liên kết bảng companies     phân chia quy các chi nhánh
 name       varchar 255    
 email          varchar 255
 birthday       date
-sex            nam/nữ
+sex            nam/nữ          
 part_id        liên kết bảng parts            bộ phận
 position_id    liên kết bảng positions        vị trí 
 type_work      fulltime/partime     
@@ -22,6 +23,17 @@ status          đang làm/nghĩ việc
 start_day        datetime
 end_day          datetime
 type_account_id    liên kết bảng type_accounts           hệ thống tài khoản
+createdd_at      datetime
+update_at        datetime
+
+3 companies    phân chia phép truy suất các chi nhánh
+id
+name
+code
+phone
+email
+address
+status
 createdd_at      datetime
 update_at        datetime
 

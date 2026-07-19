@@ -26,6 +26,7 @@ use OpenApi\Attributes as OA;
 use Spatie\Activitylog\Models\Activity;
 use Yajra\DataTables\DataTables;
 
+// PHP Attribute của thư viện OpenAPI/Swagger, thường đến từ package: zircote/swagger-php  kết hợp  darkaonline/l5-swagger
 #[OA\Tag(
     name: 'Attendance',
     description: 'Attendance API'
@@ -85,10 +86,32 @@ class AttendanceController extends Controller
         AttendanceDashboardService $dashboardService
     ) {
         $this->attendanceService = $attendanceService;
-
         $this->repository = $repository;
-
         $this->dashboardService = $dashboardService;
+
+        // cái này là phân quyền tự động lôi từ trong db | ko cần dùng tới vì đã phân quyền ở routes
+        // Thay vì mỗi method đều viết:
+        // abort_unless(auth()->user()->can(...), 403);
+        // bạn có thể cấu hình ngay trong __construct():
+        // khai báo BaseController ở controller mặc định > cho Spatie permission  > tránh lỗi permission() trong module controller
+        // $this->middleware('permission:attendance.view')->only([
+        //     'index',
+        //     'data',
+        //     'apiList',
+        // ]);
+        // $this->middleware('permission:attendance.create')->only([
+        //     'store',
+        // ]);
+        // $this->middleware('permission:attendance.edit')->only([
+        //     'update',
+        // ]);
+        // $this->middleware('permission:attendance.delete')->only([
+        //     'destroy',
+        // ]);
+        // $this->middleware('permission:attendance.export')->only([
+        //     'export',
+        //     'exportPdf',
+        // ]);
     }
 
     // public function __construct(
@@ -108,7 +131,7 @@ class AttendanceController extends Controller
         response: 200,
         description: 'Success'
     )]
-    public function apiList()// data table
+    public function apiList() // data table
     {
         return AttendanceResource::collection(
             $this->repository->paginate()
@@ -123,18 +146,20 @@ class AttendanceController extends Controller
     // }
     public function data()
     {
-        $query = Attendance::query()
-            ->select([
+        // mọi query từ model đó đều tự động chạy qua CompanyScope::apply().
+        $query = Attendance::query() //  Attendance::query() > Laravel tạo Builder > nối với file models > CompanyScope::apply() > Sau đó mới: ->leftJoin(...)
+            ->select([ // tất cả cột của bảng attendances
                 'attendances.*',
                 'users.name as employee_name',
                 'parts.name as department_name',
                 'positions.name as position_name',
-
+                // DB::raw() Định dạng ngày giờ ngay trong MySQL.thành 2026-07-15 08:05:32
                 DB::raw("DATE_FORMAT(attendances.check_in, '%Y-%m-%d %H:%i:%s') as check_in_fmt"),
                 DB::raw("DATE_FORMAT(attendances.check_out, '%Y-%m-%d %H:%i:%s') as check_out_fmt"),
                 DB::raw("DATE_FORMAT(attendances.created_at, '%Y-%m-%d %H:%i:%s') as created_at_fmt"),
                 DB::raw('DATE(attendances.work_date) as work_date_fmt'),
             ])
+            // Join bảng users , phòng ban , chức vụ
             ->leftJoin('users', 'users.id', '=', 'attendances.user_id')
             ->leftJoin('parts', 'parts.id', '=', 'users.part_id')
             ->leftJoin('positions', 'positions.id', '=', 'users.position_id');
@@ -145,42 +170,42 @@ class AttendanceController extends Controller
         $dataTable = $factory->eloquent($query);
 
         return $dataTable
-                    // ->filter(function ($query) {
+            // ->filter(function ($query) {
 
-                    //     $search = request()->input('search.value');
+            //     $search = request()->input('search.value');
 
-                    //     if (!$search) return;
+            //     if (!$search) return;
 
-                    //     $search = trim($search);
+            //     $search = trim($search);
 
-                    //     $date = null;
+            //     $date = null;
 
-                    //     if (preg_match('/^\d{2}\/\d{2}\/\d{4}$/', $search)) {
-                    //         $date = \Carbon\Carbon::createFromFormat('d/m/Y', $search)->format('Y-m-d');
-                    //     }
+            //     if (preg_match('/^\d{2}\/\d{2}\/\d{4}$/', $search)) {
+            //         $date = \Carbon\Carbon::createFromFormat('d/m/Y', $search)->format('Y-m-d');
+            //     }
 
-                    //     $query->where(function ($q) use ($search, $date) {
+            //     $query->where(function ($q) use ($search, $date) {
 
-                    //         $q->orWhere('users.name', 'like', "%$search%")
-                    //             ->orWhere('parts.name', 'like', "%$search%")
-                    //             ->orWhere('positions.name', 'like', "%$search%")
-                    //             ->orWhere('attendances.status', 'like', "%$search%");
+            //         $q->orWhere('users.name', 'like', "%$search%")
+            //             ->orWhere('parts.name', 'like', "%$search%")
+            //             ->orWhere('positions.name', 'like', "%$search%")
+            //             ->orWhere('attendances.status', 'like', "%$search%");
 
-                    //         if ($date) {
-                    //             $q->orWhereDate('attendances.work_date', $date)
-                    //                 ->orWhereDate('attendances.created_at', $date)
-                    //                 ->orWhereDate('attendances.check_in', $date)
-                    //                 ->orWhereDate('attendances.check_out', $date);
-                    //         }
+            //         if ($date) {
+            //             $q->orWhereDate('attendances.work_date', $date)
+            //                 ->orWhereDate('attendances.created_at', $date)
+            //                 ->orWhereDate('attendances.check_in', $date)
+            //                 ->orWhereDate('attendances.check_out', $date);
+            //         }
 
-                    //         if (preg_match('/^\d{4}-\d{2}-\d{2}$/', $search)) {
-                    //             $q->orWhereDate('attendances.work_date', $search)
-                    //                 ->orWhereDate('attendances.created_at', $search)
-                    //                 ->orWhereDate('attendances.check_in', $search)
-                    //                 ->orWhereDate('attendances.check_out', $search);
-                    //         }
-                    //     });
-                    // })
+            //         if (preg_match('/^\d{4}-\d{2}-\d{2}$/', $search)) {
+            //             $q->orWhereDate('attendances.work_date', $search)
+            //                 ->orWhereDate('attendances.created_at', $search)
+            //                 ->orWhereDate('attendances.check_in', $search)
+            //                 ->orWhereDate('attendances.check_out', $search);
+            //         }
+            //     });
+            // })
             ->filterColumn(
                 'employee_name',
                 fn ($q, $k) => $q->where('users.name', 'like', "%{$k}%")
@@ -228,6 +253,8 @@ class AttendanceController extends Controller
         </div>
 
     </div>';
+                // phần cấu hình của Yajra DataTables
+                // Thêm cột department vào DataTable | Nếu $r->department_name có giá trị thì hiển thị | Nếu null thì trả về chuỗi rỗng ''
             })->addColumn('department', fn ($r) => $r->department_name ?? '')
             ->addColumn('position', fn ($r) => $r->position_name ?? '')
             ->addColumn('check_in', fn ($r) => $r->check_in_fmt)
@@ -236,22 +263,35 @@ class AttendanceController extends Controller
             ->addColumn('work_date', fn ($r) => $r->work_date_fmt)
             ->addColumn('action', function ($row) {
 
+                // // Đúng. Đoạn code của bạn đang gắn quyền thủ công (hard-code) theo tên role.
+                // // Lấy tất cả role của user:
+                // $user = Auth::user();
+                // if (! $user) {
+                //     return '';
+                // }
+                // $roles = $user->roles->pluck('name')->toArray();
+                // // Quyền sửa
+                // $canEdit = in_array('Admin', $roles)
+                //     || in_array('HR Manager', $roles)
+                //     || in_array('HR Staff', $roles);
+
+                // $canDelete = in_array('Admin', $roles)
+                //     || in_array('HR Manager', $roles);
+
+                // Nếu dùng Spatie Permission thì sửa thành : Không cần lấy role nữa.
+                // đang dùng:use App\Http\Controllers\Controller;     khai báo BaseController ở controller mặc định > cho Spatie permission  > tránh lỗi permission() trong module controller
+                // Mục đích dùng can():ẩn/hiện nút Edit | Delete
                 $user = Auth::user();
                 if (! $user) {
                     return '';
                 }
-
-                $roles = $user->roles->pluck('name')->toArray();
-
-                $canEdit = in_array('Admin', $roles)
-                    || in_array('HR Manager', $roles)
-                    || in_array('HR Staff', $roles);
-
-                $canDelete = in_array('Admin', $roles)
-                    || in_array('HR Manager', $roles);
+                /** @var User $user */
+                $canEdit = $user->can('attendance.edit');
+                $canDelete = $user->can('attendance.delete');
 
                 $html = '<div class="btn-group btn-group-sm">';
 
+                // if (auth()->user()->can('attendance.edit')) {
                 if ($canEdit) {
                     $html .= '<button class="btn btn-outline-primary editBtn"
             data-id="'.$row->id.'"
@@ -293,7 +333,8 @@ class AttendanceController extends Controller
             })
             ->rawColumns([
                 'employee_name',
-                'action'])
+                'action',
+            ])
             ->make(true);
     }
 
@@ -352,6 +393,8 @@ class AttendanceController extends Controller
         response: 200,
         description: 'Success'
     )]
+
+    // kiểu Service - Reponsitory
     // AttendanceController.php > StoreAttendanceRequest.php | UpdateAttendanceRequest.php >
     // > AttendanceServiceProvider.php > RepositoryServiceProvider.php > AttendanceService.php > AttendanceServiceInterface.php >
     // > AttendanceCalculator.php > AttendanceRepository.php >
@@ -368,33 +411,45 @@ class AttendanceController extends Controller
                 $request->all()
             );
 
-            $attendance = $this->attendanceService->create(
+            $attendance = $this->attendanceService->create( // create() không dùng Global Scope, vì đây là INSERT. => Không gọi.
                 $request->validated()
             );
-            cache()->forget('attendance_today'); // ghi log ai đang tương tác chỉnh sửa
-
+            // attendance_today : của Summary: AttendanceDailySummaryJob.php
+            cache()->forget('attendance_today'); // Xóa cache dashboard để lần truy cập sau lấy dữ liệu mới từ DB |  Khai báo Scheduler tự động ròi ở console.php ròi | còn cái xoá cache này dành cho báo cáo mỗi ngày thủ công Summary
             // $attendance->user?->notify(
-            //     new AttendanceCreatedNotification()
+            //     new Atten danceCreatedNotification()
             // );  này là viết event trực tiếp
             // AttendanceDashboardCache.php > AttendanceCreated.php > AttendanceServiceProvider.php > RepositoryServiceProvider.php > EventServiceProvider.php > AttendanceLogListener.php > WriteAttendanceLog.php
             // > SendAttendanceNotification.php > AttendanceCreatedNotification.php >
             // > AttendanceCache.php > AttendanceDashboardCache.php
             // TT : Events > Provider|khai file > |khaiEvent > Listeners > |mail > xoáCacheAttendance > xoáCacheDasboard
-
             event(
                 new AttendanceCreated(
                     $attendance
                 )
             ); // này là viết event nối các file
+            // Log: attributes_changes | Đây không phải do bạn tự gọi > use Spatie\Activitylog\Traits\LogsActivity; | Log tự động của package Spatie Activity Log |  public function getActivitylogOptions(): LogOptions  ở Model
             /** @var User|null $user */
             $user = Auth::user();
 
             if (Auth::check()) {
-                activity()
+                activity() // Spatie Activity Log | Đây là log của package: spatie/laravel-activitylog | Nó lưu vào bảng: activity_log
                     ->performedOn($attendance)
                     ->causedBy($user)
                     ->withProperties([
+                        'browser' => request()->userAgent(),
                         'ip' => request()->ip(),
+                        'device' => 'MacBook',
+                        'changes' => [
+                            'status' => [
+                                'old' => 'present',
+                                'new' => 'late',
+                            ],
+                            'check_in' => [
+                                'old' => '08:00',
+                                'new' => '08:30',
+                            ],
+                        ],
                     ])
                     ->log('Attendance Created');
             }
@@ -419,7 +474,25 @@ class AttendanceController extends Controller
 
             throw $e;
         }
+        // kiểu CQRS
+        // Handler > Model > Event
+        // public function store(StoreAttendanceRequest $request)
+        // {
+        //     $dto = AttendanceDTO::fromRequest(
+        //         $request->validated()
+        //     );
 
+        //     $command = new CreateAttendanceCommand($dto);
+
+        //     $attendance = app(CreateAttendanceHandler::class)
+        //         ->handle($command);
+
+        //     return response()->json([
+        //         'success' => true,
+        //         'data' => $attendance
+        //     ]);
+        // }
+        // -----------------------------------------------------
         // $calc = AttendanceCalculator::calculate(
         //     $request->check_in,
         //     $request->check_out
@@ -469,7 +542,7 @@ class AttendanceController extends Controller
         $id
     ) {
         $attendance =
-            Attendance::findOrFail($id);
+            Attendance::findOrFail($id); //  Attendance::findOrFail($id) > nối với file models > CompanyScope::apply() > Sau đó mới: ->leftJoin(...)
 
         /** @var User $user */
         $user = Auth::user();
@@ -529,21 +602,19 @@ class AttendanceController extends Controller
     )]
     public function destroy($id)
     {
-        $user = Auth::user();
-
-        abort_if(! $user, 401);
-
-        $roles = $user->roles->pluck('name')->toArray();
-
-        abort_unless(
-            in_array('Admin', $roles) || in_array('HR Manager', $roles),
-            403
-        );
+        // đã dùng permission trong routes ròi ko cần dùng phân quyền thủ công
+        // $user = Auth::user();
+        // abort_if(! $user, 401);
+        // $roles = $user->roles->pluck('name')->toArray();
+        // abort_unless(
+        //     in_array('Admin', $roles) || in_array('HR Manager', $roles),
+        //     403
+        // );
 
         /** @var User $user */
         $user = Auth::user();
         $attendance =
-            Attendance::findOrFail($id);
+            Attendance::findOrFail($id); // Attendance::findOrFail($id) > nối với file models > CompanyScope::apply() > Sau đó mới: ->leftJoin(...)
         activity()
             ->performedOn($attendance)
             ->causedBy($user)
@@ -600,10 +671,9 @@ class AttendanceController extends Controller
             )->advancedStats()
 
         );
-
     }
 
-    public function dashboardData()// Realtime
+    public function dashboardData() // Realtime
     {
         return response()->json(
 

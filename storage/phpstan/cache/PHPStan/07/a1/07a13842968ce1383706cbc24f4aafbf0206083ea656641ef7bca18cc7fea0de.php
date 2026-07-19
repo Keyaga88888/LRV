@@ -2,7 +2,7 @@
 
 // odsl-/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Application/Handlers/CreateAttendanceHandler.php-PHPStan\BetterReflection\Reflection\ReflectionClass-Modules\Attendance\App\Application\Handlers\CreateAttendanceHandler
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.4.21-b268848de61cda7ae5bfee00c6d43f4b0267e0d09989c6e12240bdf7a1228dba',
+   'variableKey' => 'v2-6.70.0.3-8.4.21-2a244bda0bcb405ca83516adb1c32349cc54a80b2a0c52d772f7f6f2495879b9',
    'data' => 
   array (
     'locatedSource' => 
@@ -26,8 +26,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     'attributes' => 
     array (
     ),
-    'startLine' => 8,
-    'endLine' => 22,
+    'startLine' => 9,
+    'endLine' => 33,
     'startColumn' => 1,
     'endColumn' => 1,
     'parentClassName' => NULL,
@@ -69,8 +69,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 11,
-            'endLine' => 11,
+            'startLine' => 12,
+            'endLine' => 12,
             'startColumn' => 9,
             'endColumn' => 40,
             'parameterIndex' => 0,
@@ -91,8 +91,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 10,
-        'endLine' => 21,
+        'startLine' => 11,
+        'endLine' => 32,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,

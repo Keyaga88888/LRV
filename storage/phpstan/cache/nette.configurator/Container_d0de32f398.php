@@ -8,7 +8,7 @@
 
 declare(strict_types=1);
 
-class Container_379f35e2d1 extends _PHPStan_7891782a6\Nette\DI\Container
+class Container_d0de32f398 extends _PHPStan_7891782a6\Nette\DI\Container
 {
 	protected $tags = [
 		'phpstan.broker.allowedSubTypesClassReflectionExtension' => ['017' => true, '018' => true],
@@ -5899,7 +5899,7 @@ class Container_379f35e2d1 extends _PHPStan_7891782a6\Nette\DI\Container
 			private $container;
 
 
-			public function __construct(Container_379f35e2d1 $container)
+			public function __construct(Container_d0de32f398 $container)
 			{
 				$this->container = $container;
 			}
@@ -5947,7 +5947,7 @@ class Container_379f35e2d1 extends _PHPStan_7891782a6\Nette\DI\Container
 			private $container;
 
 
-			public function __construct(Container_379f35e2d1 $container)
+			public function __construct(Container_d0de32f398 $container)
 			{
 				$this->container = $container;
 			}
@@ -6005,7 +6005,7 @@ class Container_379f35e2d1 extends _PHPStan_7891782a6\Nette\DI\Container
 			private $container;
 
 
-			public function __construct(Container_379f35e2d1 $container)
+			public function __construct(Container_d0de32f398 $container)
 			{
 				$this->container = $container;
 			}
@@ -6072,7 +6072,7 @@ class Container_379f35e2d1 extends _PHPStan_7891782a6\Nette\DI\Container
 			private $container;
 
 
-			public function __construct(Container_379f35e2d1 $container)
+			public function __construct(Container_d0de32f398 $container)
 			{
 				$this->container = $container;
 			}
@@ -6092,7 +6092,7 @@ class Container_379f35e2d1 extends _PHPStan_7891782a6\Nette\DI\Container
 			private $container;
 
 
-			public function __construct(Container_379f35e2d1 $container)
+			public function __construct(Container_d0de32f398 $container)
 			{
 				$this->container = $container;
 			}
@@ -6117,7 +6117,7 @@ class Container_379f35e2d1 extends _PHPStan_7891782a6\Nette\DI\Container
 			private $container;
 
 
-			public function __construct(Container_379f35e2d1 $container)
+			public function __construct(Container_d0de32f398 $container)
 			{
 				$this->container = $container;
 			}
@@ -6137,7 +6137,7 @@ class Container_379f35e2d1 extends _PHPStan_7891782a6\Nette\DI\Container
 			private $container;
 
 
-			public function __construct(Container_379f35e2d1 $container)
+			public function __construct(Container_d0de32f398 $container)
 			{
 				$this->container = $container;
 			}
@@ -6157,7 +6157,7 @@ class Container_379f35e2d1 extends _PHPStan_7891782a6\Nette\DI\Container
 			private $container;
 
 
-			public function __construct(Container_379f35e2d1 $container)
+			public function __construct(Container_d0de32f398 $container)
 			{
 				$this->container = $container;
 			}
@@ -9632,7 +9632,7 @@ class Container_379f35e2d1 extends _PHPStan_7891782a6\Nette\DI\Container
 	}
 
 
-	public function createServiceContainer(): Container_379f35e2d1
+	public function createServiceContainer(): Container_d0de32f398
 	{
 		return $this;
 	}
@@ -10281,104 +10281,53 @@ class Container_379f35e2d1 extends _PHPStan_7891782a6\Nette\DI\Container
 			'usedLevel' => '5',
 			'cliAutoloadFile' => null,
 			'env' => [
-				'APP_FAKER_LOCALE' => 'en_US',
-				'NVM_INC' => '/Users/lahoathanh/Library/Application Support/Herd/config/nvm/versions/node/v22.22.0/include/node',
-				'MAIL_FROM_ADDRESS' => 'lahoathanh35@gmail.com',
-				'MAIL_PORT' => '587',
-				'REVERB_SCHEME' => 'http',
-				'AWS_USE_PATH_STYLE_ENDPOINT' => 'false',
-				'LOG_STACK' => 'single',
-				'TERM_PROGRAM' => 'vscode',
-				'NVM_CD_FLAGS' => '-q',
-				'TERM' => 'xterm-256color',
-				'SHELL' => '/bin/zsh',
-				'SESSION_DOMAIN' => 'null',
-				'CACHE_STORE' => 'redis',
-				'HOMEBREW_REPOSITORY' => '/opt/homebrew',
-				'TMPDIR' => '/var/folders/c4/06jwpsxj6sn956r2z9nhp7zc0000gn/T/',
-				'SESSION_DRIVER' => 'database',
-				'VITE_REVERB_HOST' => '127.0.0.1',
-				'VSCODE_PYTHON_AUTOACTIVATE_GUARD' => '1',
-				'TERM_PROGRAM_VERSION' => '1.118.1',
-				'MAIL_ENCRYPTION' => 'tls',
-				'APP_FALLBACK_LOCALE' => 'en',
-				'FPATH' => '/opt/homebrew/share/zsh/site-functions:/opt/homebrew/share/zsh/site-functions:/usr/local/share/zsh/site-functions:/usr/share/zsh/site-functions:/usr/share/zsh/5.9/functions',
-				'LOG_DEPRECATIONS_CHANNEL' => 'null',
-				'ZDOTDIR' => '/Users/lahoathanh',
 				'MallocNanoZone' => '0',
-				'APP_NAME' => 'Laravel',
-				'AWS_BUCKET' => '',
-				'MAIL_USERNAME' => 'lahoathanh35@gmail.com',
-				'NVM_DIR' => '/Users/lahoathanh/Library/Application Support/Herd/config/nvm',
 				'USER' => 'lahoathanh',
-				'REVERB_APP_SECRET' => 'local',
+				'SECURITYSESSIONID' => '186a3',
 				'COMMAND_MODE' => 'unix2003',
-				'VITE_REVERB_APP_KEY' => 'local',
-				'MEMCACHED_HOST' => '127.0.0.1',
-				'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.BwjuXlRlAf/Listeners',
-				'FILESYSTEM_DISK' => 'local',
-				'APP_URL' => 'http://keyagatwo.test',
-				'VSCODE_PROFILE_INITIALIZED' => '1',
-				'__CF_USER_TEXT_ENCODING' => '0x1F5:0x0:0x0',
-				'REDIS_CLIENT' => 'phpredis',
-				'COLUMNS' => '120',
-				'REDIS_HOST' => '127.0.0.1',
-				'MAIL_PASSWORD' => 'zizsmsffntecexiv',
-				'MAIL_MAILER' => 'smtp',
-				'DB_CONNECTION' => 'mysql',
-				'PATH' => '/Users/lahoathanh/Library/Application Support/Herd/bin/:/Users/lahoathanh/Library/Application Support/Herd/config/nvm/versions/node/v22.22.0/bin:/Users/lahoathanh/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand:/Users/lahoathanh/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Users/lahoathanh/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand:/Users/lahoathanh/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli:/Users/lahoathanh/Library/Application Support/Herd/bin/:/Users/lahoathanh/Library/Application Support/Herd/config/nvm/versions/node/v22.22.0/bin',
-				'HERD_PHP_84_INI_SCAN_DIR' => '/Users/lahoathanh/Library/Application Support/Herd/config/php/84/',
-				'REDIS_PASSWORD' => 'null',
-				'_' => '/Users/lahoathanh/Library/Application Support/Herd/bin/php84',
-				'AWS_DEFAULT_REGION' => 'us-east-1',
-				'AUTH_MODEL' => 'Modules\\\User\\\App\\\Models\\\User',
-				'USER_ZDOTDIR' => '/Users/lahoathanh',
 				'__CFBundleIdentifier' => 'com.microsoft.VSCode',
-				'PWD' => '/Users/lahoathanh/Desktop/laravel/keyagatwo',
-				'MAIL_FROM_NAME' => 'Attendance System',
-				'SESSION_ENCRYPT' => 'false',
-				'APP_LOCALE' => 'en',
-				'AWS_SECRET_ACCESS_KEY' => '',
-				'BROADCAST_CONNECTION' => 'reverb',
-				'LANG' => 'en_US.UTF-8',
-				'REVERB_PORT' => '8080',
-				'SESSION_PATH' => '/',
-				'VSCODE_GIT_ASKPASS_EXTRA_ARGS' => '',
-				'XPC_FLAGS' => '0x0',
-				'REVERB_HOST' => '127.0.0.1',
-				'APP_DEBUG' => 'true',
-				'APP_KEY' => 'base64:kfLVbOSng4gF+/brAyEppnXEsbLssrLUXttp4oP7Uyk=',
-				'LINES' => '14',
-				'XPC_SERVICE_NAME' => '0',
-				'AWS_ACCESS_KEY_ID' => '',
-				'SHELL_VERBOSITY' => '0',
-				'VSCODE_INJECTION' => '1',
-				'REDIS_PORT' => '6379',
-				'LOG_LEVEL' => 'debug',
-				'SHLVL' => '2',
+				'PATH' => '/Users/lahoathanh/Library/Application Support/Herd/bin/:/Users/lahoathanh/Library/Application Support/Herd/config/nvm/versions/node/v22.22.0/bin:/Users/lahoathanh/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand:/Users/lahoathanh/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Users/lahoathanh/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand:/Users/lahoathanh/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli:/Users/lahoathanh/Library/Application Support/Herd/bin/:/Users/lahoathanh/Library/Application Support/Herd/config/nvm/versions/node/v22.22.0/bin',
 				'HOME' => '/Users/lahoathanh',
-				'VSCODE_GIT_ASKPASS_MAIN' => '/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/git/dist/askpass-main.js',
-				'VITE_APP_NAME' => 'Laravel',
-				'HOMEBREW_PREFIX' => '/opt/homebrew',
-				'LOG_CHANNEL' => 'single',
+				'SHELL' => '/bin/zsh',
+				'LaunchInstanceID' => '7FBB7E0D-C9BD-40DA-A515-D8F2D578BEB0',
+				'__CF_USER_TEXT_ENCODING' => '0x1F5:0x0:0x0',
+				'XPC_SERVICE_NAME' => '0',
+				'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.3anD0NjNm4/Listeners',
+				'XPC_FLAGS' => '0x0',
 				'LOGNAME' => 'lahoathanh',
-				'VSCODE_GIT_IPC_HANDLE' => '/var/folders/c4/06jwpsxj6sn956r2z9nhp7zc0000gn/T/vscode-git-76f15ed3ab.sock',
-				'SESSION_LIFETIME' => '120',
-				'NVM_BIN' => '/Users/lahoathanh/Library/Application Support/Herd/config/nvm/versions/node/v22.22.0/bin',
-				'REVERB_APP_ID' => 'local',
-				'QUEUE_CONNECTION' => 'redis',
-				'VITE_REVERB_SCHEME' => 'http',
-				'APP_ENV' => 'local',
-				'VSCODE_GIT_ASKPASS_NODE' => '/Applications/Visual Studio Code.app/Contents/Frameworks/Code Helper (Plugin).app/Contents/MacOS/Code Helper (Plugin)',
-				'GIT_ASKPASS' => '/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/git/dist/askpass.sh',
-				'INFOPATH' => '/opt/homebrew/share/info:/opt/homebrew/share/info:',
+				'TMPDIR' => '/var/folders/c4/06jwpsxj6sn956r2z9nhp7zc0000gn/T/',
+				'SHLVL' => '1',
+				'PWD' => '/Users/lahoathanh/Desktop/laravel/keyagatwo',
+				'OLDPWD' => '/Users/lahoathanh/Desktop/laravel/keyagatwo',
+				'HOMEBREW_PREFIX' => '/opt/homebrew',
 				'HOMEBREW_CELLAR' => '/opt/homebrew/Cellar',
-				'BCRYPT_ROUNDS' => '12',
-				'REVERB_APP_KEY' => 'local',
-				'VITE_REVERB_PORT' => '8080',
-				'MAIL_HOST' => 'smtp.gmail.com',
-				'APP_MAINTENANCE_DRIVER' => 'file',
+				'HOMEBREW_REPOSITORY' => '/opt/homebrew',
+				'FPATH' => '/opt/homebrew/share/zsh/site-functions:/opt/homebrew/share/zsh/site-functions:/usr/local/share/zsh/site-functions:/usr/share/zsh/site-functions:/usr/share/zsh/5.9/functions',
+				'INFOPATH' => '/opt/homebrew/share/info:/opt/homebrew/share/info:',
+				'HERD_PHP_84_INI_SCAN_DIR' => '/Users/lahoathanh/Library/Application Support/Herd/config/php/84/',
+				'NVM_DIR' => '/Users/lahoathanh/Library/Application Support/Herd/config/nvm',
+				'NVM_CD_FLAGS' => '-q',
+				'NVM_BIN' => '/Users/lahoathanh/Library/Application Support/Herd/config/nvm/versions/node/v22.22.0/bin',
+				'NVM_INC' => '/Users/lahoathanh/Library/Application Support/Herd/config/nvm/versions/node/v22.22.0/include/node',
+				'TERM_PROGRAM' => 'vscode',
+				'TERM_PROGRAM_VERSION' => '1.118.1',
+				'LANG' => 'en_US.UTF-8',
 				'COLORTERM' => 'truecolor',
+				'GIT_ASKPASS' => '/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/git/dist/askpass.sh',
+				'VSCODE_GIT_ASKPASS_NODE' => '/Applications/Visual Studio Code.app/Contents/Frameworks/Code Helper (Plugin).app/Contents/MacOS/Code Helper (Plugin)',
+				'VSCODE_GIT_ASKPASS_EXTRA_ARGS' => '',
+				'VSCODE_GIT_ASKPASS_MAIN' => '/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/git/dist/askpass-main.js',
+				'VSCODE_GIT_IPC_HANDLE' => '/var/folders/c4/06jwpsxj6sn956r2z9nhp7zc0000gn/T/vscode-git-76f15ed3ab.sock',
+				'VSCODE_INJECTION' => '1',
+				'ZDOTDIR' => '/Users/lahoathanh',
+				'USER_ZDOTDIR' => '/Users/lahoathanh',
+				'TERM' => 'xterm-256color',
+				'VSCODE_PROFILE_INITIALIZED' => '1',
+				'VSCODE_PYTHON_AUTOACTIVATE_GUARD' => '1',
+				'_' => '/Users/lahoathanh/Desktop/laravel/keyagatwo/vendor/bin/phpstan',
+				'LINES' => '14',
+				'COLUMNS' => '98',
+				'SHELL_VERBOSITY' => '0',
 			],
 		];
 	}

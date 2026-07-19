@@ -2,6 +2,35 @@
 {{-- {{
     dd($user);
 }} --}}
+{{-- =========================
+     COMPANY
+     Chỉ Super Admin mới được chọn Company
+========================= --}}
+
+@hasrole('Super Admin')
+<div class="col-md-4 mb-3">
+    <label>Company</label>
+    <select
+        name="company_id"
+        class="form-control form-select">
+        <option value="">
+            Chọn Company
+        </option>
+        @foreach($option['company'] as $item)
+            <option
+                value="{{ $item->id }}"
+                {{ old('company_id', $user->company_id) == $item->id ? 'selected' : '' }}>
+                {{ $item->text }}
+            </option>
+        @endforeach
+    </select>
+    @error('company_id')
+        <div class="text-danger small">
+            {{ $message }}
+        </div>
+    @enderror
+</div>
+@endhasrole
     {{-- Họ tên --}}
     <div class="col-md-4 mb-3">
 

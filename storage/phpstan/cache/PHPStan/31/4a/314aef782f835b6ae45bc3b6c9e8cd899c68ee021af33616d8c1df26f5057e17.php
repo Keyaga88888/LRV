@@ -13,6 +13,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'uses' => 
         array (
           'mustverifyemail' => 'Illuminate\\Auth\\MustVerifyEmail',
+          'canresetpassword' => 'Illuminate\\Auth\\Passwords\\CanResetPassword',
+          'canresetpasswordcontract' => 'Illuminate\\Contracts\\Auth\\CanResetPassword',
           'mustverifyemailcontract' => 'Illuminate\\Contracts\\Auth\\MustVerifyEmail',
           'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
           'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
@@ -22,6 +24,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'hasapitokens' => 'Laravel\\Sanctum\\HasApiTokens',
           'attendance' => 'Modules\\Attendance\\App\\Models\\Attendance',
           'salarymechanism' => 'Modules\\Salary\\App\\Models\\SalaryMechanism',
+          'userfactory' => 'Modules\\User\\Database\\Factories\\UserFactory',
           'hasroles' => 'Spatie\\Permission\\Traits\\HasRoles',
         ),
          'className' => 'Modules\\User\\App\\Models\\User',
@@ -39,6 +42,96 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         ),
          'typeAliasClassName' => NULL,
          'traitData' => NULL,
+      )),
+      'eadbe0f3b95b73cc8cb3021ba2df9f12' => 
+      \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+         'namespace' => 'Illuminate\\Auth\\Passwords',
+         'uses' => 
+        array (
+          'resetpasswordnotification' => 'Illuminate\\Auth\\Notifications\\ResetPassword',
+        ),
+         'className' => 'Modules\\User\\App\\Models\\User',
+         'functionName' => NULL,
+         'templatePhpDocNodes' => 
+        array (
+        ),
+         'parent' => NULL,
+         'typeAliasesMap' => 
+        array (
+        ),
+         'bypassTypeAliases' => false,
+         'constUses' => 
+        array (
+        ),
+         'typeAliasClassName' => 'Illuminate\\Auth\\Passwords\\CanResetPassword',
+         'traitData' => 
+        array (
+          0 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/User.php',
+          1 => 'Modules\\User\\App\\Models\\User',
+          2 => 'Illuminate\\Auth\\Passwords\\CanResetPassword',
+          3 => NULL,
+          4 => NULL,
+        ),
+      )),
+      'c8a3368673ad1e3fa024e5f90bc889e5' => 
+      \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+         'namespace' => 'Illuminate\\Auth\\Passwords',
+         'uses' => 
+        array (
+          'resetpasswordnotification' => 'Illuminate\\Auth\\Notifications\\ResetPassword',
+        ),
+         'className' => 'Modules\\User\\App\\Models\\User',
+         'functionName' => 'getEmailForPasswordReset',
+         'templatePhpDocNodes' => 
+        array (
+        ),
+         'parent' => NULL,
+         'typeAliasesMap' => 
+        array (
+        ),
+         'bypassTypeAliases' => false,
+         'constUses' => 
+        array (
+        ),
+         'typeAliasClassName' => 'Illuminate\\Auth\\Passwords\\CanResetPassword',
+         'traitData' => 
+        array (
+          0 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/User.php',
+          1 => 'Modules\\User\\App\\Models\\User',
+          2 => 'Illuminate\\Auth\\Passwords\\CanResetPassword',
+          3 => NULL,
+          4 => NULL,
+        ),
+      )),
+      'e1ecb3955568b8f70a0415aa09369637' => 
+      \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+         'namespace' => 'Illuminate\\Auth\\Passwords',
+         'uses' => 
+        array (
+          'resetpasswordnotification' => 'Illuminate\\Auth\\Notifications\\ResetPassword',
+        ),
+         'className' => 'Modules\\User\\App\\Models\\User',
+         'functionName' => 'sendPasswordResetNotification',
+         'templatePhpDocNodes' => 
+        array (
+        ),
+         'parent' => NULL,
+         'typeAliasesMap' => 
+        array (
+        ),
+         'bypassTypeAliases' => false,
+         'constUses' => 
+        array (
+        ),
+         'typeAliasClassName' => 'Illuminate\\Auth\\Passwords\\CanResetPassword',
+         'traitData' => 
+        array (
+          0 => '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/User.php',
+          1 => 'Modules\\User\\App\\Models\\User',
+          2 => 'Illuminate\\Auth\\Passwords\\CanResetPassword',
+          3 => NULL,
+          4 => NULL,
+        ),
       )),
       '46bcddddba19f9eba8b23457ec64d279' => 
       \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
@@ -3762,6 +3855,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'uses' => 
         array (
           'mustverifyemail' => 'Illuminate\\Auth\\MustVerifyEmail',
+          'canresetpassword' => 'Illuminate\\Auth\\Passwords\\CanResetPassword',
+          'canresetpasswordcontract' => 'Illuminate\\Contracts\\Auth\\CanResetPassword',
           'mustverifyemailcontract' => 'Illuminate\\Contracts\\Auth\\MustVerifyEmail',
           'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
           'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
@@ -3771,6 +3866,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'hasapitokens' => 'Laravel\\Sanctum\\HasApiTokens',
           'attendance' => 'Modules\\Attendance\\App\\Models\\Attendance',
           'salarymechanism' => 'Modules\\Salary\\App\\Models\\SalaryMechanism',
+          'userfactory' => 'Modules\\User\\Database\\Factories\\UserFactory',
           'hasroles' => 'Spatie\\Permission\\Traits\\HasRoles',
         ),
          'className' => 'Modules\\User\\App\\Models\\User',
@@ -3784,6 +3880,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
            'uses' => 
           array (
             'mustverifyemail' => 'Illuminate\\Auth\\MustVerifyEmail',
+            'canresetpassword' => 'Illuminate\\Auth\\Passwords\\CanResetPassword',
+            'canresetpasswordcontract' => 'Illuminate\\Contracts\\Auth\\CanResetPassword',
             'mustverifyemailcontract' => 'Illuminate\\Contracts\\Auth\\MustVerifyEmail',
             'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
             'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
@@ -3793,6 +3891,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'hasapitokens' => 'Laravel\\Sanctum\\HasApiTokens',
             'attendance' => 'Modules\\Attendance\\App\\Models\\Attendance',
             'salarymechanism' => 'Modules\\Salary\\App\\Models\\SalaryMechanism',
+            'userfactory' => 'Modules\\User\\Database\\Factories\\UserFactory',
             'hasroles' => 'Spatie\\Permission\\Traits\\HasRoles',
           ),
            'className' => 'Modules\\User\\App\\Models\\User',
@@ -3827,6 +3926,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'uses' => 
         array (
           'mustverifyemail' => 'Illuminate\\Auth\\MustVerifyEmail',
+          'canresetpassword' => 'Illuminate\\Auth\\Passwords\\CanResetPassword',
+          'canresetpasswordcontract' => 'Illuminate\\Contracts\\Auth\\CanResetPassword',
           'mustverifyemailcontract' => 'Illuminate\\Contracts\\Auth\\MustVerifyEmail',
           'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
           'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
@@ -3836,6 +3937,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'hasapitokens' => 'Laravel\\Sanctum\\HasApiTokens',
           'attendance' => 'Modules\\Attendance\\App\\Models\\Attendance',
           'salarymechanism' => 'Modules\\Salary\\App\\Models\\SalaryMechanism',
+          'userfactory' => 'Modules\\User\\Database\\Factories\\UserFactory',
           'hasroles' => 'Spatie\\Permission\\Traits\\HasRoles',
         ),
          'className' => 'Modules\\User\\App\\Models\\User',
@@ -3849,6 +3951,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
            'uses' => 
           array (
             'mustverifyemail' => 'Illuminate\\Auth\\MustVerifyEmail',
+            'canresetpassword' => 'Illuminate\\Auth\\Passwords\\CanResetPassword',
+            'canresetpasswordcontract' => 'Illuminate\\Contracts\\Auth\\CanResetPassword',
             'mustverifyemailcontract' => 'Illuminate\\Contracts\\Auth\\MustVerifyEmail',
             'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
             'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
@@ -3858,6 +3962,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'hasapitokens' => 'Laravel\\Sanctum\\HasApiTokens',
             'attendance' => 'Modules\\Attendance\\App\\Models\\Attendance',
             'salarymechanism' => 'Modules\\Salary\\App\\Models\\SalaryMechanism',
+            'userfactory' => 'Modules\\User\\Database\\Factories\\UserFactory',
             'hasroles' => 'Spatie\\Permission\\Traits\\HasRoles',
           ),
            'className' => 'Modules\\User\\App\\Models\\User',
@@ -3892,6 +3997,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'uses' => 
         array (
           'mustverifyemail' => 'Illuminate\\Auth\\MustVerifyEmail',
+          'canresetpassword' => 'Illuminate\\Auth\\Passwords\\CanResetPassword',
+          'canresetpasswordcontract' => 'Illuminate\\Contracts\\Auth\\CanResetPassword',
           'mustverifyemailcontract' => 'Illuminate\\Contracts\\Auth\\MustVerifyEmail',
           'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
           'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
@@ -3901,6 +4008,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'hasapitokens' => 'Laravel\\Sanctum\\HasApiTokens',
           'attendance' => 'Modules\\Attendance\\App\\Models\\Attendance',
           'salarymechanism' => 'Modules\\Salary\\App\\Models\\SalaryMechanism',
+          'userfactory' => 'Modules\\User\\Database\\Factories\\UserFactory',
           'hasroles' => 'Spatie\\Permission\\Traits\\HasRoles',
         ),
          'className' => 'Modules\\User\\App\\Models\\User',
@@ -3914,6 +4022,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
            'uses' => 
           array (
             'mustverifyemail' => 'Illuminate\\Auth\\MustVerifyEmail',
+            'canresetpassword' => 'Illuminate\\Auth\\Passwords\\CanResetPassword',
+            'canresetpasswordcontract' => 'Illuminate\\Contracts\\Auth\\CanResetPassword',
             'mustverifyemailcontract' => 'Illuminate\\Contracts\\Auth\\MustVerifyEmail',
             'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
             'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
@@ -3923,6 +4033,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'hasapitokens' => 'Laravel\\Sanctum\\HasApiTokens',
             'attendance' => 'Modules\\Attendance\\App\\Models\\Attendance',
             'salarymechanism' => 'Modules\\Salary\\App\\Models\\SalaryMechanism',
+            'userfactory' => 'Modules\\User\\Database\\Factories\\UserFactory',
             'hasroles' => 'Spatie\\Permission\\Traits\\HasRoles',
           ),
            'className' => 'Modules\\User\\App\\Models\\User',
@@ -3957,6 +4068,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'uses' => 
         array (
           'mustverifyemail' => 'Illuminate\\Auth\\MustVerifyEmail',
+          'canresetpassword' => 'Illuminate\\Auth\\Passwords\\CanResetPassword',
+          'canresetpasswordcontract' => 'Illuminate\\Contracts\\Auth\\CanResetPassword',
           'mustverifyemailcontract' => 'Illuminate\\Contracts\\Auth\\MustVerifyEmail',
           'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
           'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
@@ -3966,6 +4079,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'hasapitokens' => 'Laravel\\Sanctum\\HasApiTokens',
           'attendance' => 'Modules\\Attendance\\App\\Models\\Attendance',
           'salarymechanism' => 'Modules\\Salary\\App\\Models\\SalaryMechanism',
+          'userfactory' => 'Modules\\User\\Database\\Factories\\UserFactory',
           'hasroles' => 'Spatie\\Permission\\Traits\\HasRoles',
         ),
          'className' => 'Modules\\User\\App\\Models\\User',
@@ -3979,6 +4093,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
            'uses' => 
           array (
             'mustverifyemail' => 'Illuminate\\Auth\\MustVerifyEmail',
+            'canresetpassword' => 'Illuminate\\Auth\\Passwords\\CanResetPassword',
+            'canresetpasswordcontract' => 'Illuminate\\Contracts\\Auth\\CanResetPassword',
             'mustverifyemailcontract' => 'Illuminate\\Contracts\\Auth\\MustVerifyEmail',
             'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
             'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
@@ -3988,6 +4104,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'hasapitokens' => 'Laravel\\Sanctum\\HasApiTokens',
             'attendance' => 'Modules\\Attendance\\App\\Models\\Attendance',
             'salarymechanism' => 'Modules\\Salary\\App\\Models\\SalaryMechanism',
+            'userfactory' => 'Modules\\User\\Database\\Factories\\UserFactory',
             'hasroles' => 'Spatie\\Permission\\Traits\\HasRoles',
           ),
            'className' => 'Modules\\User\\App\\Models\\User',
@@ -4022,6 +4139,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'uses' => 
         array (
           'mustverifyemail' => 'Illuminate\\Auth\\MustVerifyEmail',
+          'canresetpassword' => 'Illuminate\\Auth\\Passwords\\CanResetPassword',
+          'canresetpasswordcontract' => 'Illuminate\\Contracts\\Auth\\CanResetPassword',
           'mustverifyemailcontract' => 'Illuminate\\Contracts\\Auth\\MustVerifyEmail',
           'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
           'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
@@ -4031,6 +4150,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'hasapitokens' => 'Laravel\\Sanctum\\HasApiTokens',
           'attendance' => 'Modules\\Attendance\\App\\Models\\Attendance',
           'salarymechanism' => 'Modules\\Salary\\App\\Models\\SalaryMechanism',
+          'userfactory' => 'Modules\\User\\Database\\Factories\\UserFactory',
           'hasroles' => 'Spatie\\Permission\\Traits\\HasRoles',
         ),
          'className' => 'Modules\\User\\App\\Models\\User',
@@ -4044,6 +4164,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
            'uses' => 
           array (
             'mustverifyemail' => 'Illuminate\\Auth\\MustVerifyEmail',
+            'canresetpassword' => 'Illuminate\\Auth\\Passwords\\CanResetPassword',
+            'canresetpasswordcontract' => 'Illuminate\\Contracts\\Auth\\CanResetPassword',
             'mustverifyemailcontract' => 'Illuminate\\Contracts\\Auth\\MustVerifyEmail',
             'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
             'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
@@ -4053,6 +4175,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'hasapitokens' => 'Laravel\\Sanctum\\HasApiTokens',
             'attendance' => 'Modules\\Attendance\\App\\Models\\Attendance',
             'salarymechanism' => 'Modules\\Salary\\App\\Models\\SalaryMechanism',
+            'userfactory' => 'Modules\\User\\Database\\Factories\\UserFactory',
             'hasroles' => 'Spatie\\Permission\\Traits\\HasRoles',
           ),
            'className' => 'Modules\\User\\App\\Models\\User',
@@ -4087,6 +4210,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'uses' => 
         array (
           'mustverifyemail' => 'Illuminate\\Auth\\MustVerifyEmail',
+          'canresetpassword' => 'Illuminate\\Auth\\Passwords\\CanResetPassword',
+          'canresetpasswordcontract' => 'Illuminate\\Contracts\\Auth\\CanResetPassword',
           'mustverifyemailcontract' => 'Illuminate\\Contracts\\Auth\\MustVerifyEmail',
           'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
           'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
@@ -4096,6 +4221,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'hasapitokens' => 'Laravel\\Sanctum\\HasApiTokens',
           'attendance' => 'Modules\\Attendance\\App\\Models\\Attendance',
           'salarymechanism' => 'Modules\\Salary\\App\\Models\\SalaryMechanism',
+          'userfactory' => 'Modules\\User\\Database\\Factories\\UserFactory',
           'hasroles' => 'Spatie\\Permission\\Traits\\HasRoles',
         ),
          'className' => 'Modules\\User\\App\\Models\\User',
@@ -4109,6 +4235,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
            'uses' => 
           array (
             'mustverifyemail' => 'Illuminate\\Auth\\MustVerifyEmail',
+            'canresetpassword' => 'Illuminate\\Auth\\Passwords\\CanResetPassword',
+            'canresetpasswordcontract' => 'Illuminate\\Contracts\\Auth\\CanResetPassword',
             'mustverifyemailcontract' => 'Illuminate\\Contracts\\Auth\\MustVerifyEmail',
             'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
             'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
@@ -4118,6 +4246,78 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'hasapitokens' => 'Laravel\\Sanctum\\HasApiTokens',
             'attendance' => 'Modules\\Attendance\\App\\Models\\Attendance',
             'salarymechanism' => 'Modules\\Salary\\App\\Models\\SalaryMechanism',
+            'userfactory' => 'Modules\\User\\Database\\Factories\\UserFactory',
+            'hasroles' => 'Spatie\\Permission\\Traits\\HasRoles',
+          ),
+           'className' => 'Modules\\User\\App\\Models\\User',
+           'functionName' => NULL,
+           'templatePhpDocNodes' => 
+          array (
+          ),
+           'parent' => NULL,
+           'typeAliasesMap' => 
+          array (
+          ),
+           'bypassTypeAliases' => false,
+           'constUses' => 
+          array (
+          ),
+           'typeAliasClassName' => NULL,
+           'traitData' => NULL,
+        )),
+         'typeAliasesMap' => 
+        array (
+        ),
+         'bypassTypeAliases' => false,
+         'constUses' => 
+        array (
+        ),
+         'typeAliasClassName' => NULL,
+         'traitData' => NULL,
+      )),
+      '267cd78bdab8d282038069cbb2dc2ec1' => 
+      \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+         'namespace' => 'Modules\\User\\App\\Models',
+         'uses' => 
+        array (
+          'mustverifyemail' => 'Illuminate\\Auth\\MustVerifyEmail',
+          'canresetpassword' => 'Illuminate\\Auth\\Passwords\\CanResetPassword',
+          'canresetpasswordcontract' => 'Illuminate\\Contracts\\Auth\\CanResetPassword',
+          'mustverifyemailcontract' => 'Illuminate\\Contracts\\Auth\\MustVerifyEmail',
+          'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+          'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+          'hasmany' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
+          'authenticatable' => 'Illuminate\\Foundation\\Auth\\User',
+          'notifiable' => 'Illuminate\\Notifications\\Notifiable',
+          'hasapitokens' => 'Laravel\\Sanctum\\HasApiTokens',
+          'attendance' => 'Modules\\Attendance\\App\\Models\\Attendance',
+          'salarymechanism' => 'Modules\\Salary\\App\\Models\\SalaryMechanism',
+          'userfactory' => 'Modules\\User\\Database\\Factories\\UserFactory',
+          'hasroles' => 'Spatie\\Permission\\Traits\\HasRoles',
+        ),
+         'className' => 'Modules\\User\\App\\Models\\User',
+         'functionName' => 'newFactory',
+         'templatePhpDocNodes' => 
+        array (
+        ),
+         'parent' => 
+        \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+           'namespace' => 'Modules\\User\\App\\Models',
+           'uses' => 
+          array (
+            'mustverifyemail' => 'Illuminate\\Auth\\MustVerifyEmail',
+            'canresetpassword' => 'Illuminate\\Auth\\Passwords\\CanResetPassword',
+            'canresetpasswordcontract' => 'Illuminate\\Contracts\\Auth\\CanResetPassword',
+            'mustverifyemailcontract' => 'Illuminate\\Contracts\\Auth\\MustVerifyEmail',
+            'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+            'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+            'hasmany' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
+            'authenticatable' => 'Illuminate\\Foundation\\Auth\\User',
+            'notifiable' => 'Illuminate\\Notifications\\Notifiable',
+            'hasapitokens' => 'Laravel\\Sanctum\\HasApiTokens',
+            'attendance' => 'Modules\\Attendance\\App\\Models\\Attendance',
+            'salarymechanism' => 'Modules\\Salary\\App\\Models\\SalaryMechanism',
+            'userfactory' => 'Modules\\User\\Database\\Factories\\UserFactory',
             'hasroles' => 'Spatie\\Permission\\Traits\\HasRoles',
           ),
            'className' => 'Modules\\User\\App\\Models\\User',
@@ -4149,7 +4349,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     1 => 
     array (
-      '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/User.php' => '9bf1fa0ab468c35a1c7b3f4562cb90d0a1b09bdf3c5b6c5836c2a2487111706f',
+      '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/User.php' => '293a50b563dd1f0411e8a71a8afdd9297c89b713d10dcbe2824c79145070c5b6',
+      '/Users/lahoathanh/Desktop/laravel/keyagatwo/vendor/composer/../laravel/framework/src/Illuminate/Auth/Passwords/CanResetPassword.php' => 'b13e21923f19afa3f7d27913996b8c49da8d2e4790c8a4dbb5632b0d23b9bfea',
       '/Users/lahoathanh/Desktop/laravel/keyagatwo/vendor/composer/../laravel/sanctum/src/HasApiTokens.php' => '7400600b832dc377ac5f51d051a917775f6efc0d2176a1de7bd7826499ae6509',
       '/Users/lahoathanh/Desktop/laravel/keyagatwo/vendor/composer/../laravel/framework/src/Illuminate/Database/Eloquent/Factories/HasFactory.php' => 'b6cb2b164e90168e80963a5549541f5f3188a3ec8cfd368bf3611bd94fbd46a7',
       '/Users/lahoathanh/Desktop/laravel/keyagatwo/vendor/composer/../spatie/laravel-permission/src/Traits/HasRoles.php' => '3ecec576ac1331eb1a726e12210cdcf1acec58ec0b5658d07d153a36fddc360b',

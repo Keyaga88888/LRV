@@ -2,7 +2,7 @@
 
 // odsl-/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Providers/EventServiceProvider.php-PHPStan\BetterReflection\Reflection\ReflectionClass-Modules\Attendance\App\Providers\EventServiceProvider
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.4.21-4a056ff70065b2fa8d3009b10a445a4a80af02a2e61b469c087922c18a56a780',
+   'variableKey' => 'v2-6.70.0.3-8.4.21-dd2ed9f1dd0d94b07ec5fcae28f40f099c15293185ff1ae14d80a895d1c99c93',
    'data' => 
   array (
     'locatedSource' => 
@@ -27,7 +27,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     array (
     ),
     'startLine' => 14,
-    'endLine' => 60,
+    'endLine' => 61,
     'startColumn' => 1,
     'endColumn' => 1,
     'parentClassName' => 'Illuminate\\Foundation\\Support\\Providers\\EventServiceProvider',
@@ -54,12 +54,12 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'code' => '[\\Modules\\Attendance\\App\\Events\\AttendanceCreated::class => [\\Modules\\Attendance\\App\\Listeners\\AttendanceLogListener::class, \\Modules\\Attendance\\App\\Listeners\\CalculateAttendanceSalary::class, \\Modules\\Attendance\\App\\Listeners\\SendAttendanceNotification::class, \\Modules\\Attendance\\App\\Listeners\\WriteAttendanceLog::class]]',
           'attributes' => 
           array (
-            'startLine' => 21,
-            'endLine' => 34,
-            'startTokenPos' => 69,
-            'startFilePos' => 738,
-            'endTokenPos' => 102,
-            'endFilePos' => 973,
+            'startLine' => 22,
+            'endLine' => 35,
+            'startTokenPos' => 71,
+            'startFilePos' => 871,
+            'endTokenPos' => 104,
+            'endFilePos' => 1106,
           ),
         ),
         'docComment' => '/**
@@ -70,8 +70,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'attributes' => 
         array (
         ),
-        'startLine' => 21,
-        'endLine' => 34,
+        'startLine' => 22,
+        'endLine' => 35,
         'startColumn' => 5,
         'endColumn' => 6,
         'isPromoted' => false,
@@ -93,12 +93,12 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'code' => 'true',
           'attributes' => 
           array (
-            'startLine' => 41,
-            'endLine' => 41,
-            'startTokenPos' => 115,
-            'startFilePos' => 1111,
-            'endTokenPos' => 115,
-            'endFilePos' => 1114,
+            'startLine' => 42,
+            'endLine' => 42,
+            'startTokenPos' => 117,
+            'startFilePos' => 1244,
+            'endTokenPos' => 117,
+            'endFilePos' => 1247,
           ),
         ),
         'docComment' => '/**
@@ -109,8 +109,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'attributes' => 
         array (
         ),
-        'startLine' => 41,
-        'endLine' => 41,
+        'startLine' => 42,
+        'endLine' => 42,
         'startColumn' => 5,
         'endColumn' => 50,
         'isPromoted' => false,
@@ -132,20 +132,20 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'code' => '[\\Modules\\Attendance\\App\\Models\\Attendance::class => \\Modules\\Attendance\\App\\Policies\\AttendancePolicy::class]',
           'attributes' => 
           array (
-            'startLine' => 55,
-            'endLine' => 59,
-            'startTokenPos' => 164,
-            'startFilePos' => 1430,
-            'endTokenPos' => 177,
-            'endFilePos' => 1492,
+            'startLine' => 56,
+            'endLine' => 60,
+            'startTokenPos' => 166,
+            'startFilePos' => 1563,
+            'endTokenPos' => 179,
+            'endFilePos' => 1625,
           ),
         ),
         'docComment' => NULL,
         'attributes' => 
         array (
         ),
-        'startLine' => 55,
-        'endLine' => 59,
+        'startLine' => 56,
+        'endLine' => 60,
         'startColumn' => 5,
         'endColumn' => 6,
         'isPromoted' => false,
@@ -180,8 +180,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'docComment' => '/**
  * Configure the proper event listeners for email verification.
  */',
-        'startLine' => 46,
-        'endLine' => 46,
+        'startLine' => 47,
+        'endLine' => 47,
         'startColumn' => 5,
         'endColumn' => 60,
         'couldThrow' => false,
@@ -215,8 +215,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 48,
-        'endLine' => 53,
+        'startLine' => 49,
+        'endLine' => 54,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,

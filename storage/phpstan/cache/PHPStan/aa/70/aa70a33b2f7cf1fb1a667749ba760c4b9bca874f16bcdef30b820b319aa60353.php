@@ -100,7 +100,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     1 => 
     array (
-      '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Providers/EventServiceProvider.php' => '4a056ff70065b2fa8d3009b10a445a4a80af02a2e61b469c087922c18a56a780',
+      '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Providers/EventServiceProvider.php' => 'dd2ed9f1dd0d94b07ec5fcae28f40f099c15293185ff1ae14d80a895d1c99c93',
     ),
   ),
 ));

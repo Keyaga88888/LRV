@@ -26,7 +26,7 @@ class AttendanceApproved implements ShouldBroadcastNow
     public function broadcastOn(): array
     {
         return [
-            new Channel(
+            new Channel( // Channel: là kênh công khai (public channel) . Bất kỳ ai cũng có thể subscribe.
                 'attendance-channel'
             ),
         ];

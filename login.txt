@@ -2177,7 +2177,7 @@ php artisan tinker
 
 use Spatie\Permission\Models\Role;
 
-Role::create(['name' => 'Admin']);
+Role::create(['name' => 'Super Admin']);
 Role::create(['name' => 'Employee']);
 Role::create(['name' => 'Accountant']);
 
@@ -2189,7 +2189,7 @@ User::all()->each(function ($user) {
 });
 
 Sau đó phân quyền:
-Role::findByName('Admin')->givePermissionTo([
+Role::findByName('Super Admin')->givePermissionTo([
     'users.create',
     'users.edit',
     'users.delete'
@@ -2217,11 +2217,11 @@ Permission::create(['name' => 'users.delete']);
 Gán quyền:
 use Spatie\Permission\Models\Role;
 
-Role::findByName('Admin')->givePermissionTo([
-    'users.view',
-    'users.create',
-    'users.edit',
-    'users.delete',
+Role::findByName('Super Admin')->givePermissionTo([
+    'user.view',
+    'user.create',
+    'user.edit',
+    'user.delete',
 ]);
 Role::findByName('HR Manager')->givePermissionTo([
     'users.view',
@@ -2281,7 +2281,7 @@ SHOW CREATE TABLE salary_mechanisms;
 > gắn role cho permission 
 > gắn permission cho routes
 > gắn role cho user      |   Ví dụ: User id = 1  
-$user = Modules\User\App\Models\User::find(1);
+$user = Modules\User\App\Models\User::find(2);
 
 $user->assignRole('Admin');  
 
@@ -2310,6 +2310,15 @@ Modules/Attendance/App/Services/AttendanceService.php
 Modules/Attendance/App/Services/AttendanceDashboardService.php
 
 Modules/Attendance/App/Services/AttendanceCalculator.php
+$  CQRS 
+chưa dùng 
+$ ( Multi-Tenant ) Global Scope    khai báo ở Models
+database/seeders/CompanySeeder.php 
+mọi query từ model đó đều tự động chạy qua
+Modules/Attendance/App/Scopes/CompanyScope.php
+Modules/Attendance/App/Services/AttendanceDashboardService.php
+Modules/Attendance/App/Providers/AttendanceServiceProvider.php
+Modules/Attendance/App/Models/Attendance.php
 $  Request Validation
 Modules/Attendance/App/Http/Requests/StoreAttendanceRequest.php
 

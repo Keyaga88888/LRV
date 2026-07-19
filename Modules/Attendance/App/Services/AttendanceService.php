@@ -2,6 +2,7 @@
 
 namespace Modules\Attendance\App\Services;
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Validation\ValidationException;
 use Modules\Attendance\App\Events\AttendanceCreated;
@@ -62,6 +63,7 @@ class AttendanceService implements AttendanceServiceInterface
             );
 
             $attendance = Attendance::create([
+                'company_id' => Auth::user()->company_id,
 
                 'user_id' => $data['user_id'],
                 'work_date' => $data['work_date'],

@@ -11,3 +11,4 @@ class CreateAttendanceCommand
     ) {}
 }
 // file Nó chỉ chứa dữ liệu.(Đóng gói dữ liệu)
+// thao tác nút theo luồng CQRS

@@ -7,7 +7,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
   array (
     '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Application/Commands/CreateAttendanceCommand.php' => 
     array (
-      0 => 'bfa067d3c323ec397afd54d51451e0f5da734ee504d880c7d30dc533e2a899a4',
+      0 => 'ad3ed4126ef53301d3594998cd4cc81187720c98b83854faee7df5c2b688ab89',
       1 => 
       array (
         0 => 'modules\\attendance\\app\\application\\commands\\createattendancecommand',
@@ -22,7 +22,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Application/Handlers/CreateAttendanceHandler.php' => 
     array (
-      0 => 'b268848de61cda7ae5bfee00c6d43f4b0267e0d09989c6e12240bdf7a1228dba',
+      0 => '2a244bda0bcb405ca83516adb1c32349cc54a80b2a0c52d772f7f6f2495879b9',
       1 => 
       array (
         0 => 'modules\\attendance\\app\\application\\handlers\\createattendancehandler',
@@ -35,38 +35,9 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       array (
       ),
     ),
-    '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Application/Handlers/GetAttendanceListHandler.php' => 
-    array (
-      0 => 'c6abd01f6f051f0a1bf0f94ac9b812ae01f13e5efed76c8bf39ed271be8cc1f0',
-      1 => 
-      array (
-        0 => 'modules\\attendance\\app\\application\\handlers\\getattendancelisthandler',
-      ),
-      2 => 
-      array (
-        0 => 'modules\\attendance\\app\\application\\handlers\\handle',
-      ),
-      3 => 
-      array (
-      ),
-    ),
-    '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Application/Queries/GetAttendanceListQuery.php' => 
-    array (
-      0 => '0db206a3c27cec4d42013d5c04c083912895a7a43f35fe36217ddafafbacb3be',
-      1 => 
-      array (
-        0 => 'modules\\attendance\\app\\application\\queries\\getattendancelistquery',
-      ),
-      2 => 
-      array (
-      ),
-      3 => 
-      array (
-      ),
-    ),
     '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Console/AttendanceSummaryCommand.php' => 
     array (
-      0 => '1ba119b01346d7dd82060d0f6f32f73c16484c55c68093b9f87401bc43c870f4',
+      0 => 'f5ba623a096d8c6bdd589e3daf4e561d6669190c5a7dad28866d41aba6a78155',
       1 => 
       array (
         0 => 'modules\\attendance\\app\\console\\attendancesummarycommand',
@@ -94,7 +65,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Domain/DTO/AttendanceDTO.php' => 
     array (
-      0 => 'f88719dfa0143bd59e9a3faedc235928f4a9ef60dd9dbf46a01c42869946d4d1',
+      0 => 'a99b9af492dd2bf7d847beb5e29d4d3beec30983a6bfe51a83853f159adce01c',
       1 => 
       array (
         0 => 'modules\\attendance\\app\\domain\\dto\\attendancedto',
@@ -125,7 +96,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Events/AttendanceApproved.php' => 
     array (
-      0 => 'd520a9503cd21af929be4cbd38dacbe6ea7ccf1aed0f85215d71b081d78b13e5',
+      0 => '08d9ed7a94cb6a84a2332136c51668445db1cc47b20956c7535d5f0477f0013f',
       1 => 
       array (
         0 => 'modules\\attendance\\app\\events\\attendanceapproved',
@@ -143,7 +114,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Events/AttendanceCreated.php' => 
     array (
-      0 => '2b6fb956a48c4c9dd0353e3a37a88da036c7a1114afe9f180239267d3c33be21',
+      0 => '776501980536885b54dcf5c48d6b710b955e8b37f975459a128344f1a9f303e7',
       1 => 
       array (
         0 => 'modules\\attendance\\app\\events\\attendancecreated',
@@ -262,7 +233,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Controllers/AttendanceController.php' => 
     array (
-      0 => '222faaad400ad0ce0097a5fb4ff63c919d05ebf8358fc0202fc60eafcddec332',
+      0 => '898bae59a8ab773b9bb94dc7b44e64a3a9ea52e9c60593e4c9311a289dc788d1',
       1 => 
       array (
         0 => 'modules\\attendance\\app\\http\\controllers\\attendancecontroller',
@@ -334,7 +305,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Http/Requests/StoreAttendanceRequest.php' => 
     array (
-      0 => '42b3baf5f60b4c7d1dd3fa5fd402b2fee7c44f8fc95080ec35d65f3e337b9330',
+      0 => '9b6ad5200e8d30e1e8adc1199f87817776b960fbc183c252b872d84d8795005b',
       1 => 
       array (
         0 => 'modules\\attendance\\app\\http\\requests\\storeattendancerequest',
@@ -367,7 +338,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Infrastructure/Cache/AttendanceCache.php' => 
     array (
-      0 => '1de569b6009a0ead1457ab754fcc5689d451b6e893ee40ae31cdeae163cd42ca',
+      0 => '6a8847803969ba79b2534098f7097dd4ff0f6ca8ddef9d8b19efc1fb44357c6c',
       1 => 
       array (
         0 => 'modules\\attendance\\app\\infrastructure\\cache\\attendancecache',
@@ -382,7 +353,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Infrastructure/Cache/AttendanceDashboardCache.php' => 
     array (
-      0 => 'c68823c604b1316fe469865ba9fef5bb51a05cf8e7573afa2152a0fd931dc82b',
+      0 => '0982ed2743a85ae621454ab32bfe0902e7f5c72323e23b4802d3a301965c6199',
       1 => 
       array (
         0 => 'modules\\attendance\\app\\infrastructure\\cache\\attendancedashboardcache',
@@ -398,7 +369,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Jobs/AttendanceDailySummaryJob.php' => 
     array (
-      0 => '65dd11a463525c7854757bc35e764bd674c64ceda123e14ecfb34a4899f78cce',
+      0 => 'a96ade8e3b6dcf36a20f3c8d49e5c1bfa4037febed1eb2759fcea2447d070cef',
       1 => 
       array (
         0 => 'modules\\attendance\\app\\jobs\\attendancedailysummaryjob',
@@ -464,7 +435,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Listeners/AttendanceLogListener.php' => 
     array (
-      0 => '5f05c50f3c2438b5cbc762a642791670a910812bc7d8a61267dff4e3423dda12',
+      0 => '022cb2f876b7714039ba913c493a9e378ca5e818b717905264172c37373ea3bf',
       1 => 
       array (
         0 => 'modules\\attendance\\app\\listeners\\attendanceloglistener',
@@ -510,7 +481,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Listeners/WriteAttendanceLog.php' => 
     array (
-      0 => 'b7b44a07fa91e84a4470f3f356133dbc354eee2cbc2c737f7f54645a9b63d701',
+      0 => '491d9958ab10876c59a28ca35e5d903caa74aa728b326688bf48b018173f531c',
       1 => 
       array (
         0 => 'modules\\attendance\\app\\listeners\\writeattendancelog',
@@ -525,7 +496,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Mail/AttendanceApprovedMail.php' => 
     array (
-      0 => '49b299c1f2d1e4f9ec8e0922b2c67ecdeca87f6a814fdef704e76a269dfcfe22',
+      0 => '34d84da2041a05544c5a12b54f15c375511c74f122fb04380a91fb80fe733b58',
       1 => 
       array (
         0 => 'modules\\attendance\\app\\mail\\attendanceapprovedmail',
@@ -644,7 +615,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Notifications/AttendanceCreatedNotification.php' => 
     array (
-      0 => '978d19f3dbfbded6640201c8026718d14e4763686fef9f96ed40942194972b2d',
+      0 => 'e80be7f862ba7da10965cd1785911b78ce6309b0e7d4dde1e4db523cd1cd5846',
       1 => 
       array (
         0 => 'modules\\attendance\\app\\notifications\\attendancecreatednotification',
@@ -661,7 +632,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Observers/AttendanceObserver.php' => 
     array (
-      0 => 'acf0a43389c7cb2c98e5b34c0a60e22aeed0c19db8e8599e0ff185859316ba2c',
+      0 => '34f0c8500b465123a774b523d0ea39382fa6eb0b039fb3d8aeb709d69f6d28ba',
       1 => 
       array (
         0 => 'modules\\attendance\\app\\observers\\attendanceobserver',
@@ -711,7 +682,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Providers/EventServiceProvider.php' => 
     array (
-      0 => '4a056ff70065b2fa8d3009b10a445a4a80af02a2e61b469c087922c18a56a780',
+      0 => 'dd2ed9f1dd0d94b07ec5fcae28f40f099c15293185ff1ae14d80a895d1c99c93',
       1 => 
       array (
         0 => 'modules\\attendance\\app\\providers\\eventserviceprovider',
@@ -821,7 +792,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Services/AttendanceCalculator.php' => 
     array (
-      0 => '04ea322e7b50f9c661022b951d9bf315c1df0ac667d01fada89efd4d5d17baef',
+      0 => 'fd239d7da96474d756ce43ba44df69ff70e134ebae55bc9acdba9165e1406f80',
       1 => 
       array (
         0 => 'modules\\attendance\\app\\services\\attendancecalculator',
@@ -836,7 +807,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Services/AttendanceDashboardService.php' => 
     array (
-      0 => 'f6827cb065c50b66980add7a04622ba48e0a4e718a2034733afd8d3327e6787b',
+      0 => 'c0a039ff63cff596d6fdc89b9e8cf040d29588bb024e0be5f045fe125ea9b7b4',
       1 => 
       array (
         0 => 'modules\\attendance\\app\\services\\attendancedashboardservice',
@@ -853,7 +824,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Services/AttendanceService.php' => 
     array (
-      0 => '5c571c19fa44f9358412523ae1e3532dc09f72fe6ed375039f9c723a6b667d59',
+      0 => '721c8807cef135815495b3b257c088c1a09f9591bf366a7a9b5d872f2f6c75e3',
       1 => 
       array (
         0 => 'modules\\attendance\\app\\services\\attendanceservice',
@@ -871,7 +842,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Services/AttendanceSummaryService.php' => 
     array (
-      0 => '1e46b9fb4e10b81708c797e293a1bd044688d77643af9d44a5e98fec0dc8a35e',
+      0 => '0065aed8aee779ba5a29bbdc9b1a938298166aeea7a647645b43a3f6773fb653',
       1 => 
       array (
         0 => 'modules\\attendance\\app\\services\\attendancesummaryservice',
@@ -886,7 +857,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Services/Contracts/AttendanceServiceInterface.php' => 
     array (
-      0 => '5beb0ae5fc1f2d4040d5cbe49e5ed7897eec9b468e843fdf5eef0d55bf0b7661',
+      0 => '2370289eced132bd5c2bdae819381341e49fb995c2405f96a4a94f6da5fe91b4',
       1 => 
       array (
         0 => 'modules\\attendance\\app\\services\\contracts\\attendanceserviceinterface',
@@ -904,7 +875,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Transformers/AttendanceResource.php' => 
     array (
-      0 => '31a28297d3f3c31bbe266d790f36667a1946dd27107ad858e55a8c4350977808',
+      0 => '911411fff248a29c6b297a36229373ccc0adeb08f0940172b7d6ef591fe76fff',
       1 => 
       array (
         0 => 'modules\\attendance\\app\\transformers\\attendanceresource',
@@ -949,7 +920,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/Database/Seeders/AttendanceSeeder.php' => 
     array (
-      0 => '05300f68aa0637fac3ff46c5be0cd0f427e7870c740dffc8fd9d362d0b389b72',
+      0 => '1dc53249f0f1d130efc01819c20c3f87169e7712eecc066aa37bbaf038a16e0f',
       1 => 
       array (
         0 => 'modules\\attendance\\database\\seeders\\attendanceseeder',
@@ -964,7 +935,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/Database/Seeders/DatabaseSeeder.php' => 
     array (
-      0 => 'd380ca608e5889f42eaa261d528beecdb595cdcf13cd34510f9c7d85b00920cf',
+      0 => '48e46a389ca5328e1912a1b51f0a8c812c29fa4e50950fa9b497d3468d67b516',
       1 => 
       array (
         0 => 'modules\\attendance\\database\\seeders\\databaseseeder',
@@ -1005,7 +976,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/resources/views/emails/attendance-approved.blade.php' => 
     array (
-      0 => '2cb88e1dc3aa44291f62a743215c817d3acb3db71026b816dc6000c5e4ddd534',
+      0 => '96adfeeac4a6a9dc4dee6108b2ed15a37264a169c3c1f9d34b5b94c3bb3eb2cb',
       1 => 
       array (
       ),
@@ -1018,7 +989,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/resources/views/emails/attendance_export.blade.php' => 
     array (
-      0 => '3d5a63363b82b2174be6aa60595133f646131f5f5675b04b4328034a971fda37',
+      0 => '6a8b42427e5fb0f0bb5019846aaabac8eee53a325e4cb5c500ef31893493e101',
       1 => 
       array (
       ),
@@ -1031,7 +1002,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/resources/views/emails/check-in.blade.php' => 
     array (
-      0 => '45e910d110935c1130ae667e9dbfa9d63ae5e5693a5de22311bf10eb3c183e2b',
+      0 => 'a705feec5592f6da59da805e17459797c27627117b8f9c266231db5ff2fc98fd',
       1 => 
       array (
       ),
@@ -1044,7 +1015,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/resources/views/emails/check-out.blade.php' => 
     array (
-      0 => 'c7edc1d6496a6e527e3233298b7e6f263c4b2378d6d2b8f943133f699bd65d13',
+      0 => '75f105e9d552d8f7a1acc56872d37d576ce4c4b075d85e866d6cdfb8697853a5',
       1 => 
       array (
       ),
@@ -1057,7 +1028,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/resources/views/emails/rejected.blade.php' => 
     array (
-      0 => '51de433a0c02be09152daaa57f9d7edd848c5af3b5367b554d22a4fb47b1b419',
+      0 => '62659b3c03f1ea81fedc96a0f370833e10683a20c43b5cfdfa772a628739fa85',
       1 => 
       array (
       ),
@@ -1070,7 +1041,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/resources/views/emails/summary.blade.php' => 
     array (
-      0 => 'e3d69b0f54dc8bb1c45c3742ce11d6abc69300d615214f9425898d1fdf847058',
+      0 => '07c2da8b66a15c11a360826f0415d05bc011dc12ca66a96726156154a0bd7e22',
       1 => 
       array (
       ),
@@ -1083,7 +1054,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/resources/views/index.blade.php' => 
     array (
-      0 => '2f7b2a0a566f905ae2bcbc9484717bb4a61046091173ecf338275ecf204bada6',
+      0 => '703da6844ad3a717801dd9f372132e8b8ce515710f6807e3915113dc0d3567c3',
       1 => 
       array (
       ),
@@ -1096,7 +1067,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/resources/views/pdf/attendance.blade.php' => 
     array (
-      0 => '090c10919f3da0fd2338bfd6725b703a18d990514049685ae8f6c50fb7f777d4',
+      0 => 'acf701309cccdd8f57c3c578a065d066f05289611b6e701764fb56088a3380bb',
       1 => 
       array (
       ),
@@ -1109,7 +1080,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/routes/api.php' => 
     array (
-      0 => 'd1e751e4f01237e6d4e316c86b3d5159b515243ec8bce9bb4a3c2ff129f451d7',
+      0 => '6725ee2864fdaea6831709b116605b060662fe3e280b7a20a33a81873e5ea434',
       1 => 
       array (
       ),
@@ -1122,7 +1093,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/routes/console.php' => 
     array (
-      0 => '5a9f430d36c29059c51e0e9eb6ab4ac91f93993b1b0b8b4a3557b156a50eded2',
+      0 => 'ec8d88913cd76e50a48780ad2f729c106fad658fcbb824cfd2a037add8753485',
       1 => 
       array (
       ),
@@ -1148,7 +1119,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceApiTest.php' => 
     array (
-      0 => '61203eaa7843f74ecaaf0bbca5ef1e71eb28683bf3b170e8798d0e4f6b14cfa4',
+      0 => '430f0a988195e0ca0a1a01b7897ccb4d876432767785a34d82876ba51baf8ba9',
       1 => 
       array (
         0 => 'modules\\attendance\\tests\\feature\\attendanceapitest',
@@ -1166,7 +1137,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceCrudTest.php' => 
     array (
-      0 => '67e31ade670635fd18c91d4bba1e5d6475c8e64f2fb699601c6dce94c2f99b8c',
+      0 => '90c8edb11131ea4b26a1ec57245db76b78236c0c1262036f7e4e85b2ae15b4d8',
       1 => 
       array (
         0 => 'modules\\attendance\\tests\\feature\\attendancecrudtest',
@@ -1183,7 +1154,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceDashboardTest.php' => 
     array (
-      0 => '588eb5674df82f11afd784f3443e8f712790d4ff3bfb25702aa23bac11fcfb60',
+      0 => '20739275e8a91918c3f02c1234b3de686a6ed4e79e1b01b25b1f1e6f842384e7',
       1 => 
       array (
         0 => 'modules\\attendance\\tests\\feature\\attendancedashboardtest',
@@ -1198,7 +1169,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Feature/AttendanceServiceTest.php' => 
     array (
-      0 => '9b03f129837c2229780cad76902dadbd7da4712338220dabb803a5fc57295a0d',
+      0 => '137ae526bd4d076d78342f08cbc9bb50cd93680ec6515ed6219b5ce727ba83c4',
       1 => 
       array (
         0 => 'modules\\attendance\\tests\\feature\\attendanceservicetest',
@@ -1793,7 +1764,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/App/Models/User.php' => 
     array (
-      0 => '9bf1fa0ab468c35a1c7b3f4562cb90d0a1b09bdf3c5b6c5836c2a2487111706f',
+      0 => '293a50b563dd1f0411e8a71a8afdd9297c89b713d10dcbe2824c79145070c5b6',
       1 => 
       array (
         0 => 'modules\\user\\app\\models\\user',
@@ -1806,6 +1777,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         3 => 'modules\\user\\app\\models\\typeaccount',
         4 => 'modules\\user\\app\\models\\attendances',
         5 => 'modules\\user\\app\\models\\salarymechanisms',
+        6 => 'modules\\user\\app\\models\\newfactory',
       ),
       3 => 
       array (
@@ -1902,7 +1874,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/User/Database/Factories/UserFactory.php' => 
     array (
-      0 => '38e625c08f36f99f612776cb941d7a55bcae0004372eac9f1cf2e6ea264609e9',
+      0 => '3d64cfee3f69c4d57b1c507a2259744aa1face8ab6092025be2a3d4055aeec42',
       1 => 
       array (
         0 => 'modules\\user\\database\\factories\\userfactory',
@@ -1910,6 +1882,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       2 => 
       array (
         0 => 'modules\\user\\database\\factories\\definition',
+        1 => 'modules\\user\\database\\factories\\unverified',
       ),
       3 => 
       array (
@@ -2055,6 +2028,65 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       ),
       2 => 
       array (
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Application/Handlers/GetAttendanceDataHandler.php' => 
+    array (
+      0 => '7f25d0ef7c2165a112934afedd49f5e92259b6f67347fed75b7fc91f5425aff6',
+      1 => 
+      array (
+        0 => 'modules\\attendance\\app\\application\\handlers\\getattendancedatahandler',
+      ),
+      2 => 
+      array (
+        0 => 'modules\\attendance\\app\\application\\handlers\\handle',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Application/Queries/GetAttendanceDataQuery.php' => 
+    array (
+      0 => 'a59ebe8d8b3552a03e7d3823c2032c871fa1ad613175ac6320f8d66b8ac0f184',
+      1 => 
+      array (
+        0 => 'modules\\attendance\\app\\application\\queries\\getattendancedataquery',
+      ),
+      2 => 
+      array (
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Transformers/AttendanceCollection.php' => 
+    array (
+      0 => 'c9c74dfd25238209c418d171658c934ae4f32544a1e659ea2cf652196d0dcf4f',
+      1 => 
+      array (
+        0 => 'modules\\attendance\\app\\transformers\\attendancecollection',
+      ),
+      2 => 
+      array (
+        0 => 'modules\\attendance\\app\\transformers\\toarray',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    '/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/tests/Unit/AttendanceServiceTest.php' => 
+    array (
+      0 => '1611437b8a12a17bfa0187429631de45565db91dddbee791043dae099c633575',
+      1 => 
+      array (
+        0 => 'modules\\attendance\\tests\\unit\\attendanceservicetest',
+      ),
+      2 => 
+      array (
+        0 => 'modules\\attendance\\tests\\unit\\test_service_can_be_resolved',
       ),
       3 => 
       array (

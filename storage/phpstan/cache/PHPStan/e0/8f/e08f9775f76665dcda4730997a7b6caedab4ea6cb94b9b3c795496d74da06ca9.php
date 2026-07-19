@@ -2,7 +2,7 @@
 
 // odsl-/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Mail/AttendanceApprovedMail.php-PHPStan\BetterReflection\Reflection\ReflectionClass-Modules\Attendance\App\Mail\AttendanceApprovedMail
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.4.21-49b299c1f2d1e4f9ec8e0922b2c67ecdeca87f6a814fdef704e76a269dfcfe22',
+   'variableKey' => 'v2-6.70.0.3-8.4.21-34d84da2041a05544c5a12b54f15c375511c74f122fb04380a91fb80fe733b58',
    'data' => 
   array (
     'locatedSource' => 

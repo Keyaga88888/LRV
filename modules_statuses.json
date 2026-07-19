@@ -2,5 +2,6 @@
     "User": true,
     "Product": true,
     "Salary": true,
-    "Attendance": true
+    "Attendance": true,
+    "Company": true
 }

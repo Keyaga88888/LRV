@@ -132,7 +132,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/lahoathanh/Desktop/laravel/keyagatwo/app/Http/Controllers/Auth/RegisteredUserController.php' => 
     array (
-      0 => '178389b79149f7d2785a69085ebd52eb105223073a915d17742bb17bdfcb2a43',
+      0 => 'a7579e5d036a87477d839289127854283ce171a084d0c792592009cb5c014ffd',
       1 => 
       array (
         0 => 'app\\http\\controllers\\auth\\registeredusercontroller',

@@ -2,7 +2,7 @@
 
 // odsl-/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Services/AttendanceCalculator.php-PHPStan\BetterReflection\Reflection\ReflectionClass-Modules\Attendance\App\Services\AttendanceCalculator
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.4.21-04ea322e7b50f9c661022b951d9bf315c1df0ac667d01fada89efd4d5d17baef',
+   'variableKey' => 'v2-6.70.0.3-8.4.21-fd239d7da96474d756ce43ba44df69ff70e134ebae55bc9acdba9165e1406f80',
    'data' => 
   array (
     'locatedSource' => 
@@ -27,7 +27,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     array (
     ),
     'startLine' => 7,
-    'endLine' => 83,
+    'endLine' => 85,
     'startColumn' => 1,
     'endColumn' => 1,
     'parentClassName' => NULL,
@@ -61,8 +61,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 10,
-            'endLine' => 10,
+            'startLine' => 12,
+            'endLine' => 12,
             'startColumn' => 9,
             'endColumn' => 16,
             'parameterIndex' => 0,
@@ -79,8 +79,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 11,
-            'endLine' => 11,
+            'startLine' => 13,
+            'endLine' => 13,
             'startColumn' => 9,
             'endColumn' => 17,
             'parameterIndex' => 1,
@@ -101,8 +101,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 9,
-        'endLine' => 82,
+        'startLine' => 11,
+        'endLine' => 84,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,

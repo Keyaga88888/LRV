@@ -2,7 +2,7 @@
 
 // odsl-/Users/lahoathanh/Desktop/laravel/keyagatwo/Modules/Attendance/App/Listeners/AttendanceLogListener.php-PHPStan\BetterReflection\Reflection\ReflectionClass-Modules\Attendance\App\Listeners\AttendanceLogListener
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.4.21-5f05c50f3c2438b5cbc762a642791670a910812bc7d8a61267dff4e3423dda12',
+   'variableKey' => 'v2-6.70.0.3-8.4.21-022cb2f876b7714039ba913c493a9e378ca5e818b717905264172c37373ea3bf',
    'data' => 
   array (
     'locatedSource' => 
@@ -27,7 +27,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     array (
     ),
     'startLine' => 10,
-    'endLine' => 28,
+    'endLine' => 31,
     'startColumn' => 1,
     'endColumn' => 1,
     'parentClassName' => NULL,
@@ -55,20 +55,20 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'code' => '\'attendance\'',
           'attributes' => 
           array (
-            'startLine' => 12,
-            'endLine' => 12,
-            'startTokenPos' => 40,
-            'startFilePos' => 290,
-            'endTokenPos' => 40,
-            'endFilePos' => 301,
+            'startLine' => 15,
+            'endLine' => 15,
+            'startTokenPos' => 46,
+            'startFilePos' => 413,
+            'endTokenPos' => 46,
+            'endFilePos' => 424,
           ),
         ),
         'docComment' => NULL,
         'attributes' => 
         array (
         ),
-        'startLine' => 12,
-        'endLine' => 12,
+        'startLine' => 15,
+        'endLine' => 15,
         'startColumn' => 5,
         'endColumn' => 33,
         'isPromoted' => false,
@@ -93,8 +93,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 14,
-        'endLine' => 17,
+        'startLine' => 17,
+        'endLine' => 20,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -132,8 +132,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 19,
-            'endLine' => 19,
+            'startLine' => 22,
+            'endLine' => 22,
             'startColumn' => 28,
             'endColumn' => 51,
             'parameterIndex' => 0,
@@ -154,8 +154,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 19,
-        'endLine' => 27,
+        'startLine' => 22,
+        'endLine' => 30,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,

@@ -5,6 +5,7 @@ namespace Modules\User\App\Http\Controllers;
 // use Modules\User\App\Http\Controllers\Controller;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\Rule;
 use Modules\User\App\Models\User;
 use Modules\User\App\Repositories\Interfaces\UserRepositoryInterface;
@@ -216,8 +217,9 @@ class UserController extends Controller
     // VALIDATE kiểm tra trước khi vào db
     public function store(Request $request)
     {
-        $validated = $request->validate([
+        $rules = [
             // CRUD gắn cho từng ô input tên thẻ
+            // 'company_id' => ['required','integer',], //Nếu Multi-Tenant thì bỏ luôn. ko cho ng dùng chọn cty
             'name' => ['required', 'string', 'max:255'], // bắt buộc , kiểu chuổi , tối đa bao nhiu ký tự |  name của thẻ form name="name"
             'email' => ['required', 'email', 'max:255', Rule::unique('users', 'email')], // bắt buộc , định dạng email , tối đa bao nhiu ký tự,unique() 1 lần duy nhất-bảng users-cột email |  email của thẻ form name="email"
             'password' => ['required', 'string', 'min:6'],
@@ -235,7 +237,19 @@ class UserController extends Controller
             'statuss' => ['required'],
             'start_day' => ['nullable', 'date'],
             'end_day' => ['nullable', 'date'],
-        ], [
+        ];
+        /** @var User|null $authUser */
+        $authUser = Auth::user();
+
+        if ($authUser && $authUser->hasRole('Super Admin')) {
+            $rules['company_id'] = [
+                'required',
+                'integer',
+                'exists:companies,id',
+            ];
+        }
+
+        $validated = $request->validate($rules, [
             // tên thẻ
             'name.required' => 'Họ tên bắt buộc phải nhập',
             'email.required' => 'Email bắt buộc phải nhập',
@@ -286,8 +300,9 @@ class UserController extends Controller
 
     public function update(Request $request, User $user)
     {
-        $validated = $request->validate([
+        $rules = [
             // CRUD gắn cho từng ô input tên thẻ
+            // 'company_id' => ['required', 'integer',],
             'name' => ['required', 'string', 'max:255'], // bắt buộc , kiểu chuổi , tối đa bao nhiu ký tự |  name của thẻ form name="name"
             'email' => ['required', 'email', 'max:255', Rule::unique('users', 'email')->ignore($user->id)], // bắt buộc , định dạng email , tối đa bao nhiu ký tự,unique() 1 lần duy nhất-bảng users-cột email |  email của thẻ form name="email" | ignore() Bỏ qua record có id = user hiện tại > email cũ vẫn update được bình thường.
             'password' => ['nullable', 'string', 'min:6'],
@@ -304,7 +319,19 @@ class UserController extends Controller
             'statuss' => ['required'],
             'start_day' => ['nullable', 'date'],
             'end_day' => ['nullable', 'date'],
-        ], [
+        ];
+
+        /** @var User|null $authUser */
+        $authUser = Auth::user();
+
+        if ($authUser && $authUser->hasRole('Super Admin')) {
+            $rules['company_id'] = [
+                'required',
+                'integer',
+                'exists:companies,id',
+            ];
+        }
+        $validated = $request->validate($rules, [
             // tên thẻ
             'name.required' => 'Họ tên bắt buộc phải nhập',
             'email.required' => 'Email bắt buộc phải nhập',

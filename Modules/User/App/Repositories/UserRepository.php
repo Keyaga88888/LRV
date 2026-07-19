@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Storage;
+use Modules\Company\App\Models\Company;
 use Modules\User\App\Models\Part;
 use Modules\User\App\Models\Position;
 use Modules\User\App\Models\Team;
@@ -259,6 +260,7 @@ class UserRepository implements UserRepositoryInterface
     public function fromOptions(): array
     {
         return [
+            'company' => Company::select('id', 'name as text')->orderBy('name')->get(),
             'users' => User::with(['part', 'position'])
                 ->orderBy('name')
                 ->get(),
@@ -285,6 +287,14 @@ class UserRepository implements UserRepositoryInterface
     // public function store(Request $request);
     public function store(array $validated): User
     {
+        /** @var User $loginUser */
+        $loginUser = Auth::user();
+
+        $companyId = $loginUser->hasRole('Super Admin')
+
+            ? $validated['company_id']
+
+            : $loginUser->company_id;
         // upload thumbnail
         if (isset($validated['thumbnail'])) {
 
@@ -296,6 +306,7 @@ class UserRepository implements UserRepositoryInterface
         //  $user = User::create([ > User mới tạo sẽ tự động được gán role theo type_account_id.
         $user = User::create([
             // tên cột DB => tên thẻ
+            'company_id' => Auth::user()->company_id,
             'name' => $validated['name'],
             'email' => $validated['email'],
             'password' => Hash::make($validated['password']),
@@ -326,8 +337,16 @@ class UserRepository implements UserRepositoryInterface
 
     public function update(array $validated, User $user): bool
     {
+        /** @var User $loginUser */
+        $loginUser = Auth::user();
 
+        $companyId = $loginUser->hasRole('Super Admin')
+
+            ? $validated['company_id']
+
+            : $loginUser->company_id;
         $dataUpdate = [
+            'company_id' => Auth::user()->company_id,
             'name' => $validated['name'],
             'email' => $validated['email'],
             // 'password' => Hash::make($validated['password']),// bỏ

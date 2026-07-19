@@ -95,5 +95,6 @@ class AttendanceServiceProvider extends ModuleServiceProvider
             'attendance',
             base_path('Modules/Attendance/resources/views')
         );
+
     }
 }

@@ -10,16 +10,16 @@ class AttendanceDashboardService
 {
     public function stats()
     {
-        return Cache::remember(
+        return Cache::remember( // → tạo key: attendance.dashboard
             'attendance.dashboard',
             3600,
             function () {
 
                 return [
+                    // mọi query từ model đó đều tự động chạy qua CompanyScope::apply()
+                    'total' => Attendance::count(), //  Attendance::count(); nối với file models > CompanyScope::apply()
 
-                    'total' => Attendance::count(),
-
-                    'today' => Attendance::today()->count(), // nối với file models
+                    'today' => Attendance::today()->count(), // Attendance::today()->count(); nối với file models > CompanyScope::apply()
 
                     // Attendance::whereDate(
                     //     'work_date',
@@ -39,8 +39,8 @@ class AttendanceDashboardService
     public function advancedStats()// cái này cho nối js để lấy dữ liệu gì để xuất ra view char | nếu lấy dữ liệu xuất ko cần thiết thì char bị lag ko hiện view
     {
         $days = now()->daysInMonth;
-
-        $chart = Attendance::selectRaw('
+        // Attendance::selectRaw() nối với file models > CompanyScope::apply()
+        $chart = Attendance::selectRaw(' 
         DAY(work_date) as day,
         COUNT(*) as total
     ')
@@ -73,13 +73,13 @@ class AttendanceDashboardService
     {
         return [
 
-            'total' => Attendance::count(),
+            'total' => Attendance::count(), //  Attendance::count(); nối với file models > CompanyScope::apply()
 
-            'today' => Attendance::today()->count(),
+            'today' => Attendance::today()->count(), // Attendance::today()->count(); nối với file models > CompanyScope::apply()
 
-            'pending' => Attendance::pending()->count(),
+            'pending' => Attendance::pending()->count(), // Attendance::pending()->count() nối với file models > CompanyScope::apply()
 
-            'approved' => Attendance::where(
+            'approved' => Attendance::where( // nối với file models > CompanyScope::apply()
                 'approval_status',
                 'approved'
             )->count(),

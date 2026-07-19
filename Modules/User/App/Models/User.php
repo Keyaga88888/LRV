@@ -188,6 +188,8 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 use Modules\Attendance\App\Models\Attendance;
+use Modules\Attendance\App\Scopes\CompanyScope;
+use Modules\Company\App\Models\Company;
 use Modules\Salary\App\Models\SalaryMechanism;
 use Modules\User\Database\Factories\UserFactory;
 use Spatie\Permission\Traits\HasRoles;
@@ -207,11 +209,12 @@ class User extends Authenticatable implements CanResetPasswordContract, MustVeri
     use CanResetPassword;
     use HasApiTokens;
     use HasFactory;
-    use HasRoles;
+    use HasRoles; // của permission
     use MustVerifyEmail;
     use Notifiable; // HasRoles ?
 
     protected $fillable = [
+        'company_id',
         'thumbnail',
         'name',
         'email',
@@ -240,7 +243,28 @@ class User extends Authenticatable implements CanResetPasswordContract, MustVeri
         'password' => 'hashed',
     ];
 
-    public function part(): BelongsTo
+    // Đúng chuẩn Multi Tenant
+    // KHÔNG BAO GIỜ gắn GlobalScope lên User model.
+    // projec lớn thì đặt có thể khai báo bảng phụ trợ trong Module của chính tên ánh xạ
+    public function company(): BelongsTo // Đúng DDD thì Company là Aggregate riêng.
+    {
+        return $this->belongsTo(
+            Company::class,
+            'company_id',
+            'id'
+        ); // nối tới bảng Company đặt trong module Company | User > belongsTo > < hasMany < Company
+
+    }
+    // protected static function booted()
+    // {
+    //     static::addGlobalScope(
+
+    //         new CompanyScope()
+
+    //     );
+    // }
+    // projec nhỏ thì đặt có thể khai báo bảng phụ trợ trong Module User
+    public function part(): BelongsTo // đang nối nối tới bảng Part dặt trong Module User
     {
         return $this->belongsTo(Part::class, 'part_id');
     }
